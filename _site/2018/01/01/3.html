@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>마크다운(Markdown) 문법 정리 | devYurim</title>
+	<meta name="description" content="이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2018/01/01/3.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+            
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+    
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">마크다운(Markdown) 문법 정리</h1>
+    
+    <p class="meta">
+      January 1, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.<br /><br /></p>
+
+<blockquote>
+  <p><strong>1. 헤더(Header)</strong></p>
+</blockquote>
+
+<p>헤더 크기는 1~6까지 지원한다.<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is H1        
+## This is H2
+### This is H3
+#### This is H4
+##### This is H5
+###### This is H6
+</code></pre></div></div>
+
+<h1 id="this-is-h1">This is H1</h1>
+<h2 id="this-is-h2">This is H2</h2>
+<h3 id="this-is-h3">This is H3</h3>
+<h4 id="this-is-h4">This is H4</h4>
+<h5 id="this-is-h5">This is H5</h5>
+<h6 id="this-is-h6">This is H6</h6>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong>2. 인용구</strong>*</p>
+</blockquote>
+
+<p>인용구는 <code class="highlighter-rouge">&gt;</code>를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 안녕
+&gt; &gt; 안녕
+&gt; &gt; * 안녕
+&gt; &gt; &gt; * 안녕
+</code></pre></div></div>
+<blockquote>
+  <p>안녕</p>
+  <blockquote>
+    <p>안녕</p>
+    <ul>
+      <li>안녕
+        <blockquote>
+          <ul>
+            <li>안녕</li>
+          </ul>
+        </blockquote>
+      </li>
+    </ul>
+  </blockquote>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong>3. 목록</strong></p>
+</blockquote>
+
+<ul>
+  <li>순서가 있는 목록<br /></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. 일번
+  2. 이번
+  3. 삼번
+</code></pre></div></div>
+<ol>
+  <li>일번</li>
+  <li>이번</li>
+  <li>삼번</li>
+</ol>
+
+<ul>
+  <li>순서가 없는 목록<br /></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* 일번
+  * 이번
+    * 삼번
++ 일번
+  + 이번
+    + 삼번
+- 일번
+  - 이번
+    - 삼번
+</code></pre></div></div>
+<ul>
+  <li>일번
+    <ul>
+      <li>이번
+        <ul>
+          <li>삼번</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>일번
+    <ul>
+      <li>이번
+        <ul>
+          <li>삼번</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>일번
+    <ul>
+      <li>이번
+        <ul>
+          <li>삼번</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>4. 코드</strong></p>
+</blockquote>
+
+<p>&lt; pre &gt; &lt; code &gt; 에 감싸서 사용한다.<br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;Github&lt;/code&gt;
+</code></pre></div></div>
+<p><code>Github</code>
+<br /><br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;pre&gt;&lt;code&gt;
+  for i in range(1,2):
+    print(i)
+  &lt;/code&gt;&lt;/pre&gt;
+</code></pre></div></div>
+
+<pre><code>for i in range(1,2):
+  print(i)
+</code></pre>
+
+<p><br /><br />
+ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)<br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png" width="30%" /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+  <span class="nx">print</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span></code></pre></figure>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>5. 수평선</strong></p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------
+************
+</code></pre></div></div>
+
+<hr />
+<hr />
+
+<p><br /></p>
+<blockquote>
+  <p><strong>6. 링크</strong></p>
+</blockquote>
+
+<ul>
+  <li>인라인 링크</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Google](http://google.com)
+</code></pre></div></div>
+<p><a href="http://google.com">Google</a></p>
+
+<p><br /></p>
+<ul>
+  <li>자동 연결 링크</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;http://google.com&gt;
+</code></pre></div></div>
+<p><a href="http://google.com">http://google.com</a></p>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>8. 강조</strong></p>
+</blockquote>
+
+<p>진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+</code></pre></div></div>
+
+<p><em>single asterisks</em><br />
+<em>single underscores</em><br />
+<strong>double asterisks</strong><br />
+<strong>double underscores</strong><br />
+<del>cancelline</del><br /></p>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>9. 이미지</strong></p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.
+![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" alt="Image name" /></p>
+
+<p>ps. 사이즈 조정</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img src="이미지 url" width="원하는 크기"&gt;
+&lt;img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%"&gt;
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%" /></p>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>10. 표 그리기</strong></p>
+</blockquote>
+
+<p>표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.</p>
+
+<ul>
+  <li>표 generate 사이트 : https://www.tablesgenerator.com/markdown_tables<br /></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+</code></pre></div></div>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>내용 정렬은 아래와 같이 한다.<br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header  | Second Header | Third Header
+:------------ | :-----------: | -----------:
+Left          | Center        | Right
+</code></pre></div></div>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">First Header</th>
+      <th style="text-align: center">Second Header</th>
+      <th style="text-align: right">Third Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Left</td>
+      <td style="text-align: center">Center</td>
+      <td style="text-align: right">Right</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>11. 수식(테마에서 지원)</strong></p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
+</code></pre></div></div>
+<p><script type="math/tex">f(x) = \int \frac{2x^2+4x+6}{x-2}</script></p>
+
+<p><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#markdown">#markdown</a>
+    
+    <a class="tag" href="/tags#github-blog">#github-blog</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/2018/01/01/3.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/01/01/2.html">
+        깃허브(Github) 블로그에 포스팅하기
+      </a>
+  </div>
+  
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

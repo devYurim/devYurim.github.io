@@ -5,16 +5,310 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Mon, 01 Jan 2018 23:47:34 +0900</pubDate>
+    <pubDate>Tue, 02 Jan 2018 01:11:47 +0900</pubDate>
+    
+      <item>
+        <title>마크다운(Markdown) 문법 정리</title>
+        <link>/2018/01/01/3.html</link>
+        <guid isPermaLink="true">/2018/01/01/3.html</guid>
+        <description>&lt;p&gt;이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;1. 헤더(Header)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;헤더 크기는 1~6까지 지원한다.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is H1        
+## This is H2
+### This is H3
+#### This is H4
+##### This is H5
+###### This is H6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;this-is-h1&quot;&gt;This is H1&lt;/h1&gt;
+&lt;h2 id=&quot;this-is-h2&quot;&gt;This is H2&lt;/h2&gt;
+&lt;h3 id=&quot;this-is-h3&quot;&gt;This is H3&lt;/h3&gt;
+&lt;h4 id=&quot;this-is-h4&quot;&gt;This is H4&lt;/h4&gt;
+&lt;h5 id=&quot;this-is-h5&quot;&gt;This is H5&lt;/h5&gt;
+&lt;h6 id=&quot;this-is-h6&quot;&gt;This is H6&lt;/h6&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;2. 인용구&lt;/strong&gt;*&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;인용구는 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; 안녕
+&amp;gt; &amp;gt; 안녕
+&amp;gt; &amp;gt; * 안녕
+&amp;gt; &amp;gt; &amp;gt; * 안녕
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;안녕&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;안녕&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;안녕
+        &lt;blockquote&gt;
+          &lt;ul&gt;
+            &lt;li&gt;안녕&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;3. 목록&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;순서가 있는 목록&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. 일번
+  2. 이번
+  3. 삼번
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;일번&lt;/li&gt;
+  &lt;li&gt;이번&lt;/li&gt;
+  &lt;li&gt;삼번&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;순서가 없는 목록&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 일번
+  * 이번
+    * 삼번
++ 일번
+  + 이번
+    + 삼번
+- 일번
+  - 이번
+    - 삼번
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;4. 코드&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;lt; pre &amp;gt; &amp;lt; code &amp;gt; 에 감싸서 사용한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;code&amp;gt;Github&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;Github&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;
+  for i in range(1,2):
+    print(i)
+  &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in range(1,2):
+  print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;5. 수평선&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;------
+************
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;6. 링크&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인라인 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [Google](http://google.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자동 연결 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://google.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;http://google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;8. 강조&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;single underscores&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;double underscores&lt;/strong&gt;&lt;br /&gt;
+&lt;del&gt;cancelline&lt;/del&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;9. 이미지&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.
+![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; alt=&quot;Image name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ps. 사이즈 조정&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;img src=&quot;이미지 url&quot; width=&quot;원하는 크기&quot;&amp;gt;
+&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;10. 표 그리기&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;표 generate 사이트 : https://www.tablesgenerator.com/markdown_tables&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;내용 정렬은 아래와 같이 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header | Third Header
+:------------ | :-----------: | -----------:
+Left          | Center        | Right
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;First Header&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Second Header&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Third Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Left&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Center&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Right&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;11. 수식(테마에서 지원)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x) = \int \frac{2x^2+4x+6}{x-2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>깃허브(Github) 블로그에 포스팅하기</title>
         <link>/2018/01/01/2.html</link>
         <guid isPermaLink="true">/2018/01/01/2.html</guid>
-        <description>&lt;p&gt;이번에 블로그 내용은 &lt;code&gt;마크다운(Markdown)&lt;/code&gt; 형식의 문법을 정리하고 이를 작성하기 위하여 사용하는 에디터, 깃허브 블로그에 포스팅 적용방법 및 팁 사항을 정리하기 위하여 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;이번에 블로그 내용은 마크다운 문서를 작성하기 위하여 사용하는 에디터, 깃허브 블로그에 포스팅 적용방법 및 페이지 만드는 법을 정리하기 위하여 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;0. 마크다운 에디터&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;1. 마크다운 에디터&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;마크다운(Markdown) 형식의 문서를 작성하기 위해서는 마크다운 에디터를 사용하는 것이 편하다.
@@ -24,16 +318,16 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. 마크다운 파일 생성&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;2. 마크다운 파일 생성&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;깃허브 블로그 페이지는 &lt;code&gt;마크다운(Markdown) 문서(.md)&lt;/code&gt;로 작성 한다.&lt;br /&gt;
-블로그 디렉터리를 확인하면 &lt;strong&gt;posts&lt;/strong&gt; 라는 폴더가 있는데 이곳이 블로그 포스팅으로 작성한 파일을 넣어두는 부분이다.&lt;br /&gt;&lt;/p&gt;
+블로그 디렉터리를 확인하면 &lt;strong&gt;posts&lt;/strong&gt; 라는 폴더가 있는데 이곳이 블로그 포스팅으로 작성한 파일을 넣어두는 부분이다. &lt;strong&gt;제목은 왠만하면 영어 또는 숫자로 적는 것이 좋다. 한글로 작성하게 되면 가끔 인코딩 오류가 발생하여 페이지 로드 오류가 발생했다.&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34467342-1c90967a-ef32-11e7-83bd-0e59c2ac80ac.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468553-d5fbf2d2-ef4e-11e7-8733-b5adde5b68d1.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;블로그 테마별로 날짜를 적는 형식이 조금씩 다른 것 같다. 어떤 테마에는 위의 yml 형식 부분에 적어 두는 곳도 있고 나처럼 제목에 날짜를 달면 자동으로 포스팅한 날짜가 블로그에 적용이 되는 테마도 있는 것 같다. 파일 제목은 포스팅 콘텐츠의 url에 사용이 된다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;블로그 테마별로 날짜를 적는 형식이 조금씩 다른 것 같다. 어떤 테마에는 위의 yml 형식 부분에 적어 두는 곳도 있고 나처럼 문서 제목에 날짜를 달면 자동으로 포스팅한 날짜가 블로그에 적용이 되는 테마도 있는 것 같다. 파일 제목은 포스팅 콘텐츠의 url에 사용이 된다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34467427-cd2e76f8-ef34-11e7-8ee4-b99186fede6c.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -47,18 +341,10 @@
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. 마크다운 문법&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;3. 깃허브(Github) 블로그에 업로드&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;포스팅을 작성하기 위해서는 마크다운 문법을 사용하여 포스팅 내용을 작성하여야 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;1) 헤더(Headers) : 1~6까지 지원 &lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;표 제너레이터 : http://www.tablesgenerator.com/markdown_tables&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;포스팅 할 내용을 마크다운 문법으로 작성하고 posts 폴더안에 넣어둔다음 레퍼지토리에 커밋 및 푸쉬를 하면 내 블로그에 적용이 된다.&lt;/p&gt;
+&lt;p&gt;항상 깃허브에 변경사항을 적용할 때는 저장소에 커밋 및 푸쉬를 해주면 된다.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/*로컬 저장소로 경로 이동 후 아래의 명령어 실행*/&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
@@ -119,7 +405,7 @@
 
 &lt;p&gt;블로그를 설치하려면 &lt;a href=&quot;https://jekyllrb-ko.github.io&quot;&gt;jekyll&lt;/a&gt;을 설치하여야 한다.
 &lt;strong&gt;&lt;code&gt;루비(ruby)&lt;/code&gt;가 없다면 루비를 설치하고 진행하여야 한다.&lt;br /&gt;&lt;/strong&gt;
-맥OS에는 루비가 이미 설치되어 있다. 루비가 설치되어 있다면 아래의 명령어로 지킬을 설치한다.&lt;br /&gt;&lt;/p&gt;
+맥이나 리눅스는 brew를 이용하여 쉽게 설치가 가능하다. 또한, 이미 맥OS에는 루비가 이미 설치되어 있다. 루비가 설치되어 있다면 아래의 명령어로 지킬을 설치한다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
