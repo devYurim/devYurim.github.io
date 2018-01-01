@@ -19,7 +19,7 @@ tags: [jekyll]
 
 `Github` 블로그 개설은 `지킬(Jekyll)`이라는 깃허브 페이지에서 지원하는 블로그 정적 생성기를 이용하였다.<br><br>
 
-<h3 style="color:#DF0174"> 가이드 작성은 `MAC OS`를 기준으로 작성 되었습니다.</h4><br>
+<h3 style="color:#DF0174"> 가이드 작성은 `MAC OS`를 기준으로 작성 되었습니다.</h3><br>
 
 </center>
 
