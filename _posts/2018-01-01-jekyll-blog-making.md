@@ -4,6 +4,8 @@ title: 지킬(Jekyll)을 이용하여 깃허브(Github) 블로그 개설하기
 comments: true
 tags: [jekyll]
 ---
+
+
 <center>
 
 이번에 `Github`로 블로그를 이전하면서 `Jekyll`을 이용하여 블로그를 개설 하였다.  
