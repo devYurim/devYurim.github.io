@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 class="title">{{ page.title }}</h1>
@@ -13,7 +14,6 @@ layout: default
   <section class="post-content">{{ content }}</section>
   {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
 </article>
-
 <!-- Disqus -->
 {% if page.comments %}<a href="https://devYurim.github.io{{ page.url }}#disqus_thread"></a>{% endif %}
 {% if site.theme_settings.disqus_shortname %}
