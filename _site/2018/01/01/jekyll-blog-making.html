@@ -2,8 +2,8 @@
 <html class="no-js">
   <head>
 	<meta charset="utf-8">
-	<title>Markdown and HTML | devYurim</title>
-	<meta name="description" content="Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about te...">
+	<title>지킬(Jekyll)을 이용하여 깃허브(Github) 블로그 개설하기 | devYurim</title>
+	<meta name="description" content="이번에 Github로 블로그를 이전하면서 Jekyll을 이용하여 블로그를 개설 하였다.원래 Tistory 블로그를 사용하였는데 코드 하이라이팅이나 에디터가 맘에 들지 않아서 옮기기로 결정하였다.또한, 대학교 4학년이고 이제 석사 과정을 준비중인 나에게 뭔가 프로그래머스러운(?) 전...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/2014/11/28/markdown-and-html.html">
+	<link rel="canonical" href="/2018/01/01/jekyll-blog-making.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
@@ -109,66 +109,39 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">Markdown and HTML</h1>
+    <h1 class="title">지킬(Jekyll)을 이용하여 깃허브(Github) 블로그 개설하기</h1>
     
     <p class="meta">
-      November 28, 2014
+      January 1, 2018
       
     </p>
   </header>
-  <section class="post-content"><p>Jekyll supports the use of <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</p>
+  <section class="post-content"><p>이번에 Github로 블로그를 이전하면서 Jekyll을 이용하여 블로그를 개설 하였다.<br />
+원래 Tistory 블로그를 사용하였는데 코드 하이라이팅이나 에디터가 맘에 들지 않아서 옮기기로 결정하였다.<br />
+또한, 대학교 4학년이고 이제 석사 과정을 준비중인 나에게 뭔가 프로그래머스러운(?) 전문적인 블로그가 필요하다고 생각하였고 활발한 오픈소스 활동을 할 수 있는 곳이 github 이였다.<br /><br /></p>
 
-<p>Tables have also been extended from Markdown:</p>
+<p>이번에 블로그를 옮기면서 커스터마이징 하는데 정말 힘들었다…. 2학년때 HTML/CSS 과목을 듣긴했는데….<br />
+HTML/CSS 공부좀 열심히 해둘걸 그랬다..ㅎㅎ<br />
+테마를 다운 받아서 사용했음에도 불구하고 커스터마이징 하는데 꼬박 2일이 걸렸다.<br />
+그럼에도 불구하고 지킬 블로그를 사용하는 이유는 내가 원하는 디자인대로 레이아웃을 짤 수 있어서 좋다!<br /><br /></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>First Header</th>
-      <th>Second Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Content Cell</td>
-      <td>Content Cell</td>
-    </tr>
-    <tr>
-      <td>Content Cell</td>
-      <td>Content Cell</td>
-    </tr>
-  </tbody>
-</table>
+<p>지킬 블로그를 만드려면</p>
 
-<p>Here’s an example of an image, which is included using Markdown:</p>
-
-<p><img src="/assets/img/sample_feature_img_2.png" alt="Geometric pattern with fading gradient" /></p>
-
-<p>Highlighting for code in Jekyll is done using Pygments or Rouge. This theme makes use of Rouge by default.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// count to ten</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// count to twenty</span>
-<span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">while</span> <span class="p">(</span><span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">j</span><span class="o">++</span><span class="p">;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">j</span><span class="p">);</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>Type Theme uses KaTeX to display maths. Equations such as <script type="math/tex">S_n = a \times \frac{1-r^n}{1-r}</script> can be displayed inline.</p>
-
-<p>Alternatively, they can be shown on a new line:</p>
-
-<script type="math/tex; mode=display">f(x) = \int \frac{2x^2+4x+6}{x-2}</script>
 </section>
   
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#jekyll">#jekyll</a>
+    
+  </div>
+</footer>
+
 
 </article>
 
 <!-- Disqus -->
-<a href="https://devYurim.github.io/2014/11/28/markdown-and-html.html#disqus_thread"></a>
+<a href="https://devYurim.github.io/2018/01/01/jekyll-blog-making.html#disqus_thread"></a>
 
 <div class="comments">
   
@@ -201,13 +174,13 @@ s.setAttribute('data-timestamp', +new Date());
 
   <div id="post-nav">
   
-  
-  <div id="next-post" class="post-nav-post">
-      <p>Next post</p>
-      <a href="/2014/11/29/feature-images.html">
-        Feature images
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2014/11/30/sample-post.html">
+        Sample post
       </a>
   </div>
+  
   
 </div>
 
