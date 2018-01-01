@@ -5,12 +5,87 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Mon, 01 Jan 2018 19:50:00 +0900</pubDate>
+    <pubDate>Mon, 01 Jan 2018 23:25:34 +0900</pubDate>
+    
+      <item>
+        <title>깃허브(Github) 블로그에 포스팅하기</title>
+        <link>/2018/01/01/2.html</link>
+        <guid isPermaLink="true">/2018/01/01/2.html</guid>
+        <description>&lt;p&gt;이번에 블로그 내용은 &lt;code&gt;마크다운(Markdown)&lt;/code&gt; 형식의 문법을 정리하고 이를 작성하기 위하여 사용하는 에디터, 깃허브 블로그에 포스팅 적용방법 및 팁 사항을 정리하기 위하여 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;0. 마크다운 에디터&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;마크다운(Markdown) 형식의 문서를 작성하기 위해서는 마크다운 에디터를 사용하는 것이 편하다.
+나는 &lt;a href=&quot;https://atom.io&quot;&gt;아톰(Atom)&lt;/a&gt; 에디터로 마크다운 문서를 작성한다. &lt;code&gt;아톰 에디터&lt;/code&gt;는 &lt;strong&gt;마크다운 미리보기(Markdown preview)&lt;/strong&gt; 를 제공하여 포스팅이 어떻게 작성되는지 확인하면서 작성 할 수 있다. 마크다운 편집기는 &lt;code&gt;아톰&lt;/code&gt;이 아니더라도 미리보기가 제공되는 편집기를 사용하는 것을 추천한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468089-cf58fba0-ef44-11e7-9eef-ccda913c499d.png&quot; width=60%&amp;gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;1. 마크다운 파일 생성&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;깃허브 블로그 페이지는 &lt;code&gt;마크다운(Markdown) 문서(.md)&lt;/code&gt;로 작성 한다.&lt;br /&gt;
+블로그 디렉터리를 확인하면 &lt;strong&gt;posts&lt;/strong&gt; 라는 폴더가 있는데 이곳이 블로그 포스팅으로 작성한 파일을 넣어두는 부분이다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34467342-1c90967a-ef32-11e7-83bd-0e59c2ac80ac.png&quot; widht=60%&amp;gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;블로그 테마별로 날짜를 적는 형식이 조금씩 다른 것 같다. 어떤 테마에는 위의 yml 형식 부분에 적어 두는 곳도 있고 나처럼 제목에 날짜를 달면 자동으로 포스팅한 날짜가 블로그에 적용이 되는 테마도 있는 것 같다. 파일 제목은 포스팅 콘텐츠의 url에 사용이 된다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34467427-cd2e76f8-ef34-11e7-8ee4-b99186fede6c.png&quot; width=60%&amp;gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;먼저 블로그 포스팅 내용을 작성하기 전에 상단의 위의 그림처럼 형식을 먼저 작성한다. &lt;strong&gt;&lt;code&gt;layout: post&lt;/code&gt;&lt;/strong&gt; 는 포스팅 내용을 작성한다는 뜻이다. &lt;strong&gt;&lt;code&gt;layout: page&lt;/code&gt;&lt;/strong&gt; 이면 새로운 페이지를 생성할 수 있다. &lt;strong&gt;title&lt;/strong&gt; 은 포스팅 하는 컨텐츠의 이름, &lt;strong&gt;comments&lt;/strong&gt; 는 댓글을 달수 있도록 허용할 것인가 여부, &lt;strong&gt;tag&lt;/strong&gt; 는 포스팅에 달 태그를 작성하는 곳이다. 테마의 기능마다 작성할 수 있는 것이 제한되어 있으므로 테마 기능에 따라서 작성하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34467442-49e55c34-ef35-11e7-8e87-8505ef39b287.png&quot; width=60%&amp;gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 사진은 &lt;code&gt;about.md&lt;/code&gt;라는 마크다운 형식의 파일을 작성하여 &lt;strong&gt;page를 생성&lt;/strong&gt; 한 모습이다. 페이지를 생성하고 싶으면 루트 디렉토리에 넣어주면 생성이 된다.&lt;strong&gt;(devYurim.github.io/about.md)&lt;/strong&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;2. 마크다운 문법&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;포스팅을 작성하기 위해서는 마크다운 문법을 사용하여 포스팅 내용을 작성하여야 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;1) 헤더(Headers) : 1~6까지 지원 &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H1&lt;/span&gt;       &lt;span class=&quot;cm&quot;&gt;/* # H1*/&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H2&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* ## H2*/&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;###&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H3&lt;/span&gt;     &lt;span class=&quot;cm&quot;&gt;/* ### H3*/&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H4&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* #### H4*/&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;#####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H5&lt;/span&gt;   &lt;span class=&quot;cm&quot;&gt;/* #### H4*/&lt;/span&gt;
+ &lt;span class=&quot;err&quot;&gt;######&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;H6&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/* #### H6*/&lt;/span&gt;
+ &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;표 제너레이터 : http://www.tablesgenerator.com/markdown_tables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;포스팅 할 내용을 마크다운 문법으로 작성하고 posts 폴더안에 넣어둔다음 레퍼지토리에 커밋 및 푸쉬를 하면 내 블로그에 적용이 된다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/*로컬 저장소로 경로 이동 후 아래의 명령어 실행*/&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;커밋내용&quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;master&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>지킬(Jekyll)을 이용하여 깃허브(Github) 블로그 개설하기</title>
-        <link>/2018/01/01/jekyll-blog-making.html</link>
-        <guid isPermaLink="true">/2018/01/01/jekyll-blog-making.html</guid>
+        <link>/2018/01/01/1.html</link>
+        <guid isPermaLink="true">/2018/01/01/1.html</guid>
         <description>&lt;p&gt;이번에 Github로 블로그를 이전하면서 &lt;code&gt;Jekyll&lt;/code&gt;을 이용하여 블로그를 개설 하였다.&lt;br /&gt;&lt;br /&gt;
 원래 Tistory 블로그를 사용하였는데 코드 하이라이팅이나 에디터가 맘에 들지 않아서 옮기기로 결정하였다.&lt;br /&gt;
 또한, 대학교 4학년이고 이제 석사 과정을 준비중인 나에게 뭔가 프로그래머스러운(?) 전문적인 블로그가 필요하다고 생각하였고 활발한 오픈소스 활동을 할 수 있는 곳이 &lt;code&gt;Github&lt;/code&gt; 이였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;

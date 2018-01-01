@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>깃허브(Github) 블로그에 포스팅하기 | devYurim</title>
+	<meta name="description" content="이번에 블로그 내용은 마크다운(Markdown) 형식의 문법을 정리하고 이를 작성하기 위하여 사용하는 에디터, 깃허브 블로그에 포스팅 적용방법 및 팁 사항을 정리하기 위하여 작성하였다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2018/01/01/2.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+            
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+    
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">깃허브(Github) 블로그에 포스팅하기</h1>
+    
+    <p class="meta">
+      January 1, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>이번에 블로그 내용은 <code>마크다운(Markdown)</code> 형식의 문법을 정리하고 이를 작성하기 위하여 사용하는 에디터, 깃허브 블로그에 포스팅 적용방법 및 팁 사항을 정리하기 위하여 작성하였다.<br /><br /></p>
+
+<blockquote>
+  <p><strong>0. 마크다운 에디터</strong></p>
+</blockquote>
+
+<p>마크다운(Markdown) 형식의 문서를 작성하기 위해서는 마크다운 에디터를 사용하는 것이 편하다.
+나는 <a href="https://atom.io">아톰(Atom)</a> 에디터로 마크다운 문서를 작성한다. <code>아톰 에디터</code>는 <strong>마크다운 미리보기(Markdown preview)</strong> 를 제공하여 포스팅이 어떻게 작성되는지 확인하면서 작성 할 수 있다. 마크다운 편집기는 <code>아톰</code>이 아니더라도 미리보기가 제공되는 편집기를 사용하는 것을 추천한다.<br /></p>
+
+<center>&lt;img src="https://user-images.githubusercontent.com/20412850/34468089-cf58fba0-ef44-11e7-9eef-ccda913c499d.png" width=60%&gt;</center>
+<p><br /><br /></p>
+
+<blockquote>
+  <p><strong>1. 마크다운 파일 생성</strong></p>
+</blockquote>
+
+<p>깃허브 블로그 페이지는 <code>마크다운(Markdown) 문서(.md)</code>로 작성 한다.<br />
+블로그 디렉터리를 확인하면 <strong>posts</strong> 라는 폴더가 있는데 이곳이 블로그 포스팅으로 작성한 파일을 넣어두는 부분이다.<br /></p>
+
+<center>&lt;img src="https://user-images.githubusercontent.com/20412850/34467342-1c90967a-ef32-11e7-83bd-0e59c2ac80ac.png" widht=60%&gt;</center>
+<p><br /><br /></p>
+
+<p>블로그 테마별로 날짜를 적는 형식이 조금씩 다른 것 같다. 어떤 테마에는 위의 yml 형식 부분에 적어 두는 곳도 있고 나처럼 제목에 날짜를 달면 자동으로 포스팅한 날짜가 블로그에 적용이 되는 테마도 있는 것 같다. 파일 제목은 포스팅 콘텐츠의 url에 사용이 된다. <br /><br /></p>
+
+<center>&lt;img src="https://user-images.githubusercontent.com/20412850/34467427-cd2e76f8-ef34-11e7-8ee4-b99186fede6c.png" width=60%&gt;</center>
+<p><br /><br /></p>
+
+<p>먼저 블로그 포스팅 내용을 작성하기 전에 상단의 위의 그림처럼 형식을 먼저 작성한다. <strong><code>layout: post</code></strong> 는 포스팅 내용을 작성한다는 뜻이다. <strong><code>layout: page</code></strong> 이면 새로운 페이지를 생성할 수 있다. <strong>title</strong> 은 포스팅 하는 컨텐츠의 이름, <strong>comments</strong> 는 댓글을 달수 있도록 허용할 것인가 여부, <strong>tag</strong> 는 포스팅에 달 태그를 작성하는 곳이다. 테마의 기능마다 작성할 수 있는 것이 제한되어 있으므로 테마 기능에 따라서 작성하면 된다.<br /><br /></p>
+
+<center>&lt;img src="https://user-images.githubusercontent.com/20412850/34467442-49e55c34-ef35-11e7-8e87-8505ef39b287.png" width=60%&gt;</center>
+<p><br /><br /></p>
+
+<p>위의 사진은 <code>about.md</code>라는 마크다운 형식의 파일을 작성하여 <strong>page를 생성</strong> 한 모습이다. 페이지를 생성하고 싶으면 루트 디렉토리에 넣어주면 생성이 된다.<strong>(devYurim.github.io/about.md)</strong>
+<br /><br /></p>
+
+<blockquote>
+  <p><strong>2. 마크다운 문법</strong></p>
+</blockquote>
+
+<p>포스팅을 작성하기 위해서는 마크다운 문법을 사용하여 포스팅 내용을 작성하여야 한다.<br /></p>
+
+<p>1) 헤더(Headers) : 1~6까지 지원 <br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="err">#</span> <span class="nx">H1</span>       <span class="cm">/* # H1*/</span>
+ <span class="err">##</span> <span class="nx">H2</span>      <span class="cm">/* ## H2*/</span>
+ <span class="err">###</span> <span class="nx">H3</span>     <span class="cm">/* ### H3*/</span>
+ <span class="err">####</span> <span class="nx">H4</span>    <span class="cm">/* #### H4*/</span>
+ <span class="err">#####</span> <span class="nx">H5</span>   <span class="cm">/* #### H4*/</span>
+ <span class="err">######</span> <span class="nx">H6</span>  <span class="cm">/* #### H6*/</span>
+ </code></pre></figure>
+
+<ul>
+  <li>표 제너레이터 : http://www.tablesgenerator.com/markdown_tables</li>
+</ul>
+
+<p>포스팅 할 내용을 마크다운 문법으로 작성하고 posts 폴더안에 넣어둔다음 레퍼지토리에 커밋 및 푸쉬를 하면 내 블로그에 적용이 된다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*로컬 저장소로 경로 이동 후 아래의 명령어 실행*/</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"커밋내용"</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">push</span> <span class="nx">origin</span> <span class="nx">master</span></code></pre></figure>
+
+<p><br />
+<br />
+<br />
+<br />
+<br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#github">#github</a>
+    
+    <a class="tag" href="/tags#markdown">#markdown</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/2018/01/01/2.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/01/01/1.html">
+        지킬(Jekyll)을 이용하여 깃허브(Github) 블로그 개설하기
+      </a>
+  </div>
+  
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
