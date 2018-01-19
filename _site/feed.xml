@@ -5,7 +5,95 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Wed, 17 Jan 2018 20:59:11 +0900</pubDate>
+    <pubDate>Fri, 19 Jan 2018 17:11:37 +0900</pubDate>
+    
+      <item>
+        <title>안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼에 스크롤 뷰 적용</title>
+        <link>/2018/01/19/9.html</link>
+        <guid isPermaLink="true">/2018/01/19/9.html</guid>
+        <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼에 스크롤 뷰 적용&lt;/h2&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;기존에 작성한 &lt;a href=&quot;https://devyurim.github.io/2018/01/17/8.html&quot;&gt;로그인폼 만들기&lt;/a&gt; 에서는 입력을 위해 키보드를 띄웠을때 버튼이 가려지는 단점이 있었다. 따라서 ScrollView를 적용하여 이런 단점을 보완하였다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;1. activity_login.xml 파일 수정&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;일단 &lt;strong&gt;res -&amp;gt; layout -&amp;gt; activity_login.xml&lt;/strong&gt; 파일에서 아래의 레이아웃 구조처럼 수정하였다.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35137624-a3160a82-fd2d-11e7-93cb-2ae55041b7d6.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;스크롤 뷰(ScrollView)에 관한 기본적인 attribute를 보면 다음과 같다.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35137797-868df9d2-fd2e-11e7-9ac1-4166c94a420d.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;scrollbarStyle&lt;/strong&gt;
+안드로이드에서 지원하는 스크롤바 스타일에는 4가지가 존재한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;스타일&lt;/th&gt;
+      &lt;th&gt;&lt;center&gt;기능&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;insideOverlay&lt;/td&gt;
+      &lt;td&gt;Padding 추가 없이 내용물의 안쪽에 스크롤바를 배치한다. &lt;br /&gt; 스크롤 바가 내용물 위에 투명하게 올라간다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;insideInset&lt;/td&gt;
+      &lt;td&gt;Padding을 추가하고 패딩영역에 스크롤바를 배치한다. &lt;br /&gt; 스크롤 바가 내용물에 오버랩되지 않는다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;outsideOverlay&lt;/td&gt;
+      &lt;td&gt;Padding 추가 없이 스크롤바를 화면 가장자리에 배치한다. &lt;br /&gt; 스크롤 바가 내용물 위에 투명하게 올라간다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;outsideInset&lt;/td&gt;
+      &lt;td&gt;Padding을 추가하고 스크롤바를 화면 가장자리에 배치한다. &lt;br /&gt; 스크롤 바가 내용물에 오버랩되지 않는다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;원하는 스크롤바 스타일을 골라서 설정해 주면 된다. 나는 OutsideOverlay를 사용하였다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;style&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;스크롤바 스타일도 여러종류를 선택 할 수 있다. 선택지는 다음과 같다. 지금 현재 필요한 기능은 아닌거 같아서 default로 사용하였다.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35138980-6611f8f6-fd34-11e7-98d5-0a1c4b95b721.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;fillViewport&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;fillViewport 항목은 True일 때 내용물의 크기가 화면을 넘어가도 알아서 내용물의 크기만큼 뷰가 확장이 된다. False이면 내용물의 크기가 화면밖으로 넘어가도 보이지 않게 된다. &lt;strong&gt;따라서 스크롤 뷰 fillViewport 적용시 스크롤 뷰의 height는 자식 뷰에 있는 콘텐츠 길이에 따라 결정되 기 때문에 자식뷰의 match_parent의 속성은 적용될 수 없다.&lt;/strong&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;clipToPadding&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;clipToPadding은 스크롤의 오작동 없이 뷰( scrollView, listView, gridView )에 padding 값을 주고 싶을 때 조절할 수 있는 항목이다.&lt;br /&gt;
+( 디폴트 값은 True이다 ) &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;패딩을 주는 이유는 뷰의 맨 마지막 요소가 다른 뷰에 오버랩 되어 가려지기 때문인데 해당 뷰에 패딩을 주게 되면 스크롤이 패딩이 적용된 안쪽에서만 작동하는 오류가 생기게 된다. 그렇기 때문에 해당 뷰 위아래에 header 와 footer를 추가하는 방법도 있지만 clipToPadding 항목을 False로 사용하면 쉽게 해결된다.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이제 키보드가 올라와도 양식이 자동으로 위로 밀려서 버튼이 겹치지 않는다!&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35140310-10397dea-fd3a-11e7-838d-0b0869039986.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Jan 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼 만들기</title>
@@ -19,7 +107,7 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;
-안드로이드에서 기본적으로 로그인 폼을 지원한다. Activity 추가시 Login Activity를 생성한다.&lt;br /&gt;&lt;/p&gt;
+안드로이드에서 기본적으로 로그인 폼을 지원한다. Activity 추가시 &lt;strong&gt;Login Activity&lt;/strong&gt; 를 생성한다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35030642-29e29b2a-fba3-11e7-95a2-0be7e1f2fcb0.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -34,24 +122,24 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;
-res-&amp;gt; layout -&amp;gt; activity_login.xml 파일을 보면 현재 페이지의 레이아웃이 어떻게 구성되어지는지 볼 수 있다. 여기서 필요한 요소를 추가하거나 삭제할 수 있다. Component Tree 탭을 활용하면 현재 레이아웃 계층이 어떻게 구성되어 있는지 한눈에 알아 볼 수 있다. &lt;br /&gt;&lt;/p&gt;
+&lt;strong&gt;res-&amp;gt; layout -&amp;gt; activity_login.xml&lt;/strong&gt; 파일을 보면 현재 페이지의 레이아웃이 어떻게 구성되어지는지 볼 수 있다. 여기서 필요한 요소를 추가하거나 삭제할 수 있다. &lt;strong&gt;&lt;code&gt;Component Tree&lt;/code&gt;&lt;/strong&gt; 탭을 활용하면 현재 레이아웃 계층이 어떻게 구성되어 있는지 한눈에 알아 볼 수 있다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;로그인 폼이 어떻게 만들어 졌는지 살펴 보면 Linear Layout(Horizontal) -&amp;gt; Scroll View -&amp;gt; Linear Layout(Vertical) 안에 EditText, Button 등이 차례로 들어가져 있는 모습을 볼 수 있다. Scroll View는 필요 없을 것 같아 삭제하고 구조를 Linear Layout(Horizontal) -&amp;gt; LinearLayout(Vertical) -&amp;gt; EditText, EditText, Button, Button 구조로 수정하였다.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt; 안드로이드 어플리케이션의 화면을 구성할 때 버튼이나 텍스트 뷰, 텍스트입력, 버튼 등 각 요소를 넣으려면 Layout 안에 넣어줘야 어느 화면에서나 유동적으로 배치가 될 수 있다. 여기서는 LinearLayout이 Layout 컴포넌트에 해당이 된다. Layout 구조는 아래의 그림과 같이 다양하게 구성되어 있다. 구현시 원하는 기능대로 레이아웃을 추가하여 레이아웃 안에 컴포넌트를 추가하면 된다.
+&lt;p&gt;&lt;br /&gt; 안드로이드 어플리케이션의 화면을 구성할 때 버튼이나 텍스트 뷰, 텍스트입력, 버튼 등 각 요소를 넣으려면 &lt;strong&gt;Layout 안에 넣어줘야 어느 화면에서나 구조적으로 배치가 될 수 있다.&lt;/strong&gt; 여기서는 LinearLayout이 Layout 컴포넌트에 해당이 된다. Layout 구조는 아래의 그림과 같이 다양하게 구성되어 있다. 구현시 원하는 기능대로 레이아웃을 추가하여 레이아웃 안에 컴포넌트를 추가하면 된다.
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35031668-42697a98-fba7-11e7-82bd-e8fcccbfbfc7.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;res-&amp;gt; layout -&amp;gt; activity_login.xml 파일을 보면 레이아웃 구조를 Text로 변경해서 보면 각 요소별로 설정을 할 수 있다. id는 해당 컴포넌트를 구별하기 위하여 이름을 지어두는 곳이고, layout_width, layout_height 는 해당 컴포넌트의 가로, 세로 길이를 결정한다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;es-&amp;gt; layout -&amp;gt; activity_login.xml&lt;/strong&gt; 파일을 보면 레이아웃 구조를 Text로 변경해서 보면 각 요소별로 설정을 할 수 있다. id는 해당 컴포넌트를 구별하기 위하여 이름을 지어두는 곳이고, &lt;strong&gt;&lt;code&gt;layout_width, layout_height&lt;/code&gt;&lt;/strong&gt; 는 해당 컴포넌트의 가로, 세로 길이를 결정한다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;match_parent는 쉽게 말하면 부모 컴포넌트의 가로나 세로 길이에 맞춰서 해당 컴포넌트의 길이를 설정하라는 뜻이다. 레이아웃 뷰에서 Linear Layout의 가로 길이를 화면의 가로 길이만큼(match_parent)으로 설정 했기 때문에 button의 width(가로)를 match_parent로 설정했을때 가로 길이가 화면에 꽉차게 보이는 것이다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;match_parent&lt;/code&gt;&lt;/strong&gt; 는 쉽게 말하면 부모 컴포넌트의 가로나 세로 길이에 맞춰서 해당 컴포넌트의 길이를 설정하라는 뜻이다. 레이아웃 뷰에서 Linear Layout의 가로 길이를 화면의 가로 길이만큼(match_parent)으로 설정 했기 때문에 button의 width(가로)를 match_parent로 설정했을때 가로 길이가 화면에 꽉차게 보이는 것이다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;wrap_content는 해당 뷰에 들어있는 내용물의 크기에 따라 뷰의 크기가 결정되도록 조정한다. 즉, 컴포넌트에 텍스트가 존재하면 텍스트의 크기 만큼 컴포넌트의 크기가 결정되는 것이다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;wrap_content&lt;/code&gt;&lt;/strong&gt; 는 해당 뷰에 들어있는 내용물의 크기에 따라 뷰의 크기가 결정되도록 조정한다. 즉, 컴포넌트에 텍스트가 존재하면 텍스트의 크기 만큼 컴포넌트의 크기가 결정되는 것이다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;margin은 컴포넌트와 컴포넌트 사이의 간격(바깥 여백)을 지정하는 것이고, padding은 컴포넌트에 할당된 뷰 내부(안쪽 여백)에서 크기를 조절 할 때 사용한다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;margin&lt;/code&gt;&lt;/strong&gt; 은 컴포넌트와 컴포넌트 사이의 간격(바깥 여백)을 지정하는 것이고, &lt;strong&gt;&lt;code&gt;padding&lt;/code&gt;&lt;/strong&gt; 은 컴포넌트에 할당된 뷰 내부(안쪽 여백)에서 크기를 조절 할 때 사용한다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;아래의 로그인과 회원가입 버튼처럼 버튼을 한 행에 배치 할 때는 LinearLayout(horizontal)을 추가한 뒤 버튼 2개를 레이아웃 안에 추가해주면된다. 버튼의 길이를 결정할 때 임의의 값을 지정해주게 되면 화면 크기에 따라서 다르게 보이기때문에 weight라는 속성을 이용하여 지정하였다. 로그인 버튼과 회원가입 버튼의 weight를 1 로 지정했기 때문에 한 행에서 동일한 길이의 버튼이 생성되었다.&lt;br /&gt; 만약, 로그인 버튼의 weight를 2, 회원가입 버튼의 weight를 1로 지정하였다면 로그인의 버튼이 회원가입 버튼보다 상대적으로 길이가 길 것이다. (weight 2는 전체 길이의 2/3, weight 1은 전체 길이의 1/3)&lt;/p&gt;
+&lt;p&gt;아래의 로그인과 회원가입 버튼처럼 버튼을 한 행에 배치 할 때는 LinearLayout(horizontal)을 추가한 뒤 버튼 2개를 레이아웃 안에 추가해주면된다. 버튼의 길이를 결정할 때 임의의 값을 지정해주게 되면 화면 크기에 따라서 다르게 보이기때문에 &lt;strong&gt;&lt;code&gt;weight&lt;/code&gt;&lt;/strong&gt; 라는 속성을 이용하여 지정하였다. 로그인 버튼과 회원가입 버튼의 weight를 1 로 지정했기 때문에 한 행에서 동일한 길이의 버튼이 생성되었다.&lt;br /&gt; 만약, 로그인 버튼의 weight를 2, 회원가입 버튼의 weight를 1로 지정하였다면 로그인의 버튼이 회원가입 버튼보다 상대적으로 길이가 길 것이다. (weight 2는 전체 길이의 2/3, weight 1은 전체 길이의 1/3)&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;weight가 1:1 인 경우&lt;/li&gt;
@@ -149,7 +237,7 @@ res-&amp;gt; layout -&amp;gt; activity_login.xml 파일을 보면 현재 페이�
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;
-res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에서 사용되는 string 변수들이 자동으로 생성되어 있다. 여기서 원하는 텍스트로 수정해주면 된다.&lt;br /&gt;
+&lt;strong&gt;res -&amp;gt; values -&amp;gt;strings.xml&lt;/strong&gt; 파일에 가보면 로그인 폼에서 사용되는 string 변수들이 자동으로 생성되어 있다. 여기서 원하는 텍스트로 수정해주면 된다.&lt;br /&gt;
 (text view 글자, hint 글자, button 글자, page title 등)&lt;br /&gt;
 추가 문구가 필요하면 생성하고 컴포넌트에 매칭시켜주면 된다. 필요한 사항만 남기고 나머지는 모두 지웠다. 필요 할때마다 추가하여 사용한다.&lt;br /&gt;&lt;/p&gt;
 
@@ -158,7 +246,7 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35036587-29595b34-fbb8-11e7-9c97-64bd10124eab.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;추가적으로 화면의 타이틀을 변경하고 싶으면 AndroidManifest.xml 파일에서 해당 액티비티의 label 값을 수정해주면 된다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;추가적으로 화면의 타이틀을 변경하고 싶으면 &lt;strong&gt;AndroidManifest.xml&lt;/strong&gt; 파일에서 해당 액티비티의 label 값을 수정해주면 된다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35041667-df12b046-fbc8-11e7-8e81-572c33db322b.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;
@@ -169,7 +257,7 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;
-로그인 액티비티를 생성하면 로그인 기능에 사용되는 기본적인 함수들이 자동으로 생성이 되므로 나중에 기능을 추가할 때 문서를 보고 함수를 수정하면 된다. 아직 서버가 완성되지 않았으므로 일단은 onCreate 함수 빼고 모두 지워 주었다. 필요한 기능이 생길때 마다 그때 함수를 추가하는 방식으로 작성할 예정이다.
+로그인 액티비티를 생성하면 로그인 기능에 사용되는 기본적인 함수들이 자동으로 생성이 되므로 나중에 기능을 추가할 때 문서를 보고 함수를 수정하면 된다. 아직 서버가 완성되지 않았으므로 &lt;strong&gt;일단은 onCreate 함수 빼고 모두 지워 주었다. 필요한 기능이 생길때 마다 그때 함수를 추가하는 방식으로 작성할 예정이다.&lt;/strong&gt;
 또한, EditText나 Button에서 각각 이벤트 핸들러를 적용할 수 있도록 이벤트 핸들러 함수를 추가하였다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;또한, 이메일 입력 자동완성기능은 DB와 연동이 필요하기 때문에 AutocompleteTextView에서 textedit로 컴포넌트를 변경해 주었다.&lt;br /&gt;&lt;/p&gt;
@@ -255,7 +343,7 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;아직 서버가 연동되지 않았으므로 각 버튼을 눌렀을 시 다른 액티비티로 넘어가도록 구현하였다. 로그인 버튼을 눌렀을 때 MainActivity로 넘어가고 회원가입 버튼을 눌렀을때 RegisterActivity로 넘어가도록 핸들러를 구현하였다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;아직 서버가 연동되지 않았으므로 &lt;strong&gt;각 버튼을 눌렀을 시 다른 액티비티로 넘어가도록 구현&lt;/strong&gt; 하였다. 로그인 버튼을 눌렀을 때 &lt;strong&gt;&lt;code&gt;MainActivity&lt;/code&gt;&lt;/strong&gt; 로 넘어가고 회원가입 버튼을 눌렀을때 &lt;strong&gt;&lt;code&gt;RegisterActivity&lt;/code&gt;&lt;/strong&gt; 로 넘어가도록 핸들러를 구현하였다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;일단 RegisterActivity를 Empty Activity로 추가 해준다음 다음과 같이 코드를 수정하였다.&lt;/p&gt;
 
@@ -299,7 +387,7 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
   &lt;p&gt;&lt;strong&gt;1. JavaClass 생성&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;일단 시작 화면을 따로 생성하기 위하여 자바 클래스(java 파일)를 먼저 생성한다. 클래스 이름은 IntroActivity 하였다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;일단 시작 화면을 따로 생성하기 위하여 &lt;code&gt;자바 클래스(java 파일)&lt;/code&gt; 를 먼저 생성한다. 클래스 이름은 IntroActivity 하였다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35026602-63874880-fb8f-11e7-8f5b-bd84f28caab5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -353,7 +441,7 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
   &lt;p&gt;&lt;strong&gt;3. vaules/styles.xml 파일 수정&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;br /&gt;아래의 코드를 res -&amp;gt; values -&amp;gt; styles.xml 파일에 스타일을 추가해준다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;아래의 코드를 &lt;strong&gt;res -&amp;gt; values -&amp;gt; styles.xml&lt;/strong&gt; 파일에 스타일을 추가해준다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;intro&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;IntroTheme&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Theme.AppCompat.NoActionBar&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -366,8 +454,8 @@ res -&amp;gt; values -&amp;gt;strings.xml 파일에 가보면 로그인 폼에�
   &lt;p&gt;&lt;strong&gt;4. AndroidManifest.xml 파일 수정&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;br /&gt; 시작 화면이 현재 MainActivity로 되어 있는데 이를 IntroActivity로 조정하기 위한 작업이다. manifests -&amp;gt; AndroidManifest.xml 파일에 가서 아래와 같이 코드를 수정한다.
-Intro Theme을 따로 설정 해주는것을 까먹으면 안된다! &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt; 시작 화면이 현재 MainActivity로 되어 있는데 이를 IntroActivity로 조정하기 위한 작업이다. manifests -&amp;gt; &lt;strong&gt;&lt;code&gt;AndroidManifest.xml&lt;/code&gt;&lt;/strong&gt; 파일에 가서 아래와 같이 코드를 수정한다.
+&lt;strong&gt;Intro Theme을 따로 설정 해주는것&lt;/strong&gt; 을 까먹으면 안된다! &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027514-7d7e91b2-fb94-11e7-9cad-d67434bdf743.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -397,14 +485,14 @@ Intro Theme을 따로 설정 해주는것을 까먹으면 안된다! &lt;br /&gt
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;구글에서 제공하는 머터리얼 가이드를 사용하면 이미지 파일을 포토샵으로 소스를 만들어 추출 할 필요 없이 안드로이드 디자인 서포트 라이브러리를 연결함으로써 가이드된 UI를 사용 할 수 있다. 여백이나 사이즈 등 수치만 잡아주면 되므로 매우 심플하고 편리하게 어플리케이션을 개발 할 수 있다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;구글에서 제공하는 &lt;strong&gt;&lt;code&gt;Material Guide&lt;/code&gt;&lt;/strong&gt; 를 사용하면 이미지 파일을 포토샵으로 소스를 만들어 추출 할 필요 없이 안드로이드 디자인 서포트 라이브러리를 연결함으로써 가이드된 UI를 사용 할 수 있다. 여백이나 사이즈 등 수치만 잡아주면 되므로 매우 심플하고 편리하게 어플리케이션을 개발 할 수 있다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Material Design은 안드로이드 API 21(롤리팝) 이상에서만 사용할 수 있다. 안드로이드 스튜디오에서 API 21 이상을 선택하게 되면 테마는 자동으로 머티리얼 테마가 적용이 된다. 머티리얼 테마가 적용이 된것을 확인하려면 res -&amp;gt; values -&amp;gt; sytle.xml 에서 아래의 사진과 같다면 적용이 된 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Material Design&lt;/code&gt;&lt;/strong&gt; 은 안드로이드 &lt;strong&gt;API 21(롤리팝) 이상&lt;/strong&gt; 에서만 사용할 수 있다. 안드로이드 스튜디오에서 API 21 이상을 선택하게 되면 테마는 자동으로 머티리얼 테마가 적용이 된다. 머티리얼 테마가 적용이 된것을 확인하려면 res -&amp;gt; values -&amp;gt; sytle.xml 에서 아래의 사진과 같다면 적용이 된 것이다.&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34932998-88cc050e-fa18-11e7-9e8c-f0e155a72b6f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;머티리얼 테마는 style.xml에서 다음과 같이 적용 될 수 있다.&lt;/p&gt;
+&lt;p&gt;머티리얼 테마는 &lt;strong&gt;&lt;code&gt;style.xml&lt;/code&gt;&lt;/strong&gt; 에서 다음과 같이 적용 될 수 있다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;android:style/Theme.Material (어두운 버전)&lt;/li&gt;
@@ -412,7 +500,7 @@ Intro Theme을 따로 설정 해주는것을 까먹으면 안된다! &lt;br /&gt
   &lt;li&gt;android:style/Theme.Material.Light.DarkActionBar&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;사용가능 한 머리티얼 스타일 목록은 &lt;a href=&quot;https://developer.android.com/reference/android/R.style.html?hl=ko&quot;&gt;R.style&lt;/a&gt;에서 확인 할 수 있다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;사용가능 한 머리티얼 스타일 목록은 &lt;strong&gt;&lt;a href=&quot;https://developer.android.com/reference/android/R.style.html?hl=ko&quot;&gt;R.style&lt;/a&gt;&lt;/strong&gt; 에서 확인 할 수 있다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34936901-4921d452-fa26-11e7-8bb1-3f10d382aea9.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -421,18 +509,18 @@ Intro Theme을 따로 설정 해주는것을 까먹으면 안된다! &lt;br /&gt
   &lt;p&gt;&lt;strong&gt;2. Theme Color 지정하기&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;머티리얼 테마에서 상속 시 테마의 기본 색상을 변경 할 수 있다. 사용자 지정 색상을 사용할 수 있다. 먼저 사용자 색상을 설정하기 위한 요소들은 다음 아래의 그림과 같다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Material Theme&lt;/code&gt;&lt;/strong&gt; 를 상속 시 테마의 기본 색상을 변경 할 수 있다. 사용자 지정 색상을 사용할 수 있다. 먼저 사용자 색상을 설정하기 위한 요소들은 다음 아래의 그림과 같다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35023450-0d370328-fb7e-11e7-8a33-99e169c79288.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;color 값은 res -&amp;gt; values -&amp;gt; colors.xml에서 지정 할 수 있다. 디자이너 없이 좋은 컬러값을 추출해 내는 것이 어려운데 &lt;strong&gt;&lt;a href=&quot;https://www.materialpalette.com/&quot;&gt;Material Palette&lt;/a&gt;&lt;/strong&gt; 를 사용하면 쉽게 컬러 값을 추출 할 수 있다. 각 색상값을 더블클릭하면 웹 컬러값을 자동으로 클립보드에 복사해주기 때문에 ctrl + v하여 사용하거나 palettes 탭에서 주요 테마 색상 2가지를 선택하면 자동으로 테마 뷰를 보여준다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;color 값은 &lt;strong&gt;res -&amp;gt; values -&amp;gt; colors.xml&lt;/strong&gt; 에서 지정 할 수 있다. 디자이너 없이 좋은 컬러값을 추출해 내는 것이 어려운데 &lt;strong&gt;&lt;a href=&quot;https://www.materialpalette.com/&quot;&gt;Material Palette&lt;/a&gt;&lt;/strong&gt; 를 사용하면 쉽게 컬러 값을 추출 할 수 있다. 각 색상값을 더블클릭하면 웹 컬러값을 자동으로 클립보드에 복사해주기 때문에 ctrl + v하여 사용하거나 palettes 탭에서 주요 테마 색상 2가지를 선택하면 자동으로 테마 뷰를 보여준다.&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35024129-2ff28cf4-fb81-11e7-8e70-ca5692551705.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35023623-d682a25a-fb7e-11e7-92cf-05e3ea6a8e85.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;color 값 정보는 res -&amp;gt; values -&amp;gt; color.xml 파일에 기재하고 컬러값 설정은 res -&amp;gt; values -&amp;gt; styles.xml에서 설정한다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;color 값 정보는 &lt;strong&gt;res -&amp;gt; values -&amp;gt; color.xml&lt;/strong&gt; 파일에 기재하고 컬러값 설정은 &lt;strong&gt;res -&amp;gt; values -&amp;gt; styles.xml&lt;/strong&gt; 에서 설정한다. &lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;res -&amp;gt; values -&amp;gt; colors.xml&lt;/li&gt;
