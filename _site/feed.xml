@@ -5,12 +5,144 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Mon, 30 Apr 2018 21:07:36 +0900</pubDate>
+    <pubDate>Mon, 30 Apr 2018 22:43:20 +0900</pubDate>
+    
+      <item>
+        <title>텐서플로우(Tensorflow) GPU 버전 설치하기 - Windows 10 pro</title>
+        <link>/2018/04/30/12.html</link>
+        <guid isPermaLink="true">/2018/04/30/12.html</guid>
+        <description>&lt;p&gt;연구실 내 컴퓨터에 드디어 GPU가..!! 로컬에서 Tensorflow GPU를 사용하기 위해 험난했던 GPU 버전 설치 방법을 남긴다…&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tensorflow 공식 홈페이지 : https://www.tensorflow.org/
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;1. CUDA Toolkit 설치&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;텐서플로우 홈페이지에가서 install 버튼을 눌러보면 친절하게 NVIDIA CUDA xx 설치하세요 라고 나와있다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39426642-9610c13c-4cbb-11e8-872b-f3bbfa89ee5b.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;나는 여기에 맞춰서 &lt;strong&gt;CUDA 9.0&lt;/strong&gt; 버전을 설치하였다. 현재는 배포하는 버전은 9.1 버전이여서 &lt;a href=&quot;https://developer.nvidia.com/cuda-toolkit-archive&quot;&gt;CUDA Toolkit Archive&lt;/a&gt;에 가서 CUDA 9.0을 받았다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;NVIDIA Cuda Toolkit 설치 : https://developer.nvidia.com/cuda-toolkit-archive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39426815-3cd9bb18-4cbc-11e8-9c45-f3342ae3a0d9.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;설치가 완료 되고 재부팅한다음에 &lt;strong&gt;환경변수&lt;/strong&gt; 가 제대로 설치 되었나 확인해야한다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;시스템 환경변수 편집 -&amp;gt; 고급 -&amp;gt; 환경변수 클릭&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39426945-c9fb33fa-4cbc-11e8-9fd5-c414a6fca79e.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+위와 같이 &lt;strong&gt;CUDA_PATH&lt;/strong&gt; 가 추가되어있으면 OK이다!&lt;br /&gt;
+만약에 CUDA버전을 여러개 설치한다면 CUDA_PATH_V9_0과 같이 구분되며 최근 설치한 버전이 CUDA_PATH로 들어간다고 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;2. cuDNN 다운로드&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이것도 역시 텐서플로우 홈페이지에 명시되어 있다. &lt;strong&gt;cuDNN은 7.0.x버전&lt;/strong&gt; 으로 다운로드 받았다. cuDNN을 받으려면 DEVELOPER 홈페이지에 가입이 필요하다. 먼저 가입을 하고 다운로드 받는다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;cuDNN 다운로드 : https://developer.nvidia.com/rdp/cudnn-archive
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CUDA 버전에 유념해서 다운로드 받아야한다. 나는 &lt;strong&gt;cuDNN v7.0.5 for CUDA 9.0&lt;/strong&gt; 을 받았다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39427302-40264032-4cbe-11e8-8a4c-5260fe748cdc.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;압축파일을 압축 해제후 &lt;strong&gt;cuda 폴더&lt;/strong&gt; 에 들어가보면 다음과 같은 &lt;strong&gt;3개&lt;/strong&gt; 의 파일이 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39428641-17dc22ae-4cc3-11e8-845d-7bc6c224fe20.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+이 세개 파일을 모두 CUDA_PATH 경로의 폴더에 추가해준다. CUDA_PATH 경로는 시스템 환경변수에 가면 확인 할 수 있다. 나는 아래와 같다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Program&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Files&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;NVIDIA&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;GPU&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Computing&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Toolkit&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CUDA&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;즉, &lt;strong&gt;cuda 폴더 안의 내용을 CUDA_PATH 경로에 ctrl+c / ctrl+v 해서 복사&lt;/strong&gt; 하면 완료!&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;3. Anaconda를 이용해 Tensorflow 설치&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;나는 아나콘다(Anaconda)가 이미 설치되어 있는 상태이기 때문에 아나콘다를 이용하여 설치하였다.&lt;br /&gt; 아나콘다가 없다면 아나콘다를 설치하거나 python3.5버전을 설치하면된다.&lt;br /&gt;
+일단 현재 버전의 아나콘다는 python3.6을 기준으로하기 때문에 python3.5 버전을 가진 새로운 아나콘다 환경을 만들어 주어야 한다.&lt;br /&gt;
+아직 python 3.6은 지원하지 않는 것으로 보이므로 &lt;strong&gt;반드시!! python3.5 버전&lt;/strong&gt; 으로 환경설정을 해주어야 한다.&lt;br /&gt;
+일단 윈도우 검색창에 Anaconda를 검색하여 &lt;strong&gt;Anaconda Prompt&lt;/strong&gt; 를 켠다. 나는 환경이름을 cuda로 설정했다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;환경활성화는 Windows Powershell에서는 안되고 conda prompt에서만 가능하다!&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.5&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*환경 만들기(python 3.5) -&amp;gt; y/n 나오면 y 누를것.*/&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/*환경 활성화*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39428040-f36eec96-4cc0-11e8-9705-c8c9e9ca368a.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 변경되어야 한다. 다음 아래의 명령어를 실행하여 &lt;strong&gt;Tensorflow GPU 버전&lt;/strong&gt; 을 설치한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*일단 pip 를 업그레이드 시켜준다.*/&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ignore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;installed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gpu&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*텐서플로우 GPU 버전 설치*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tesorflow CPU 버전&lt;/strong&gt; 은 아래와 같은 명령어로 설치하면 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ignore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;installed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;설치가 끝나면 jupyter notebook도 설치하고 jupyter notebook을 켜서 코드가 잘 돌아가는지 확인한다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39429658-851e5f1e-4cc6-11e8-993e-d2f1905a39f0.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39429707-b09162b8-4cc6-11e8-94b7-be1836953fab.png&quot; width=&quot;120%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위에 처럼 예시 코드가 잘 돌아가면 GPU 버전 설치 완료!! &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래의 명령어들은 참고 명령어 사항이다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;info&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;envs&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*아나콘다 환경 확인하기*/&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;삭제하려는환경이름&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*아나콘다 환경 삭제하기*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39428118-37314c26-4cc1-11e8-9307-414b5af90864.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+위와 같이 모든 아나콘다 환경이 표시가 된다. 내가 현재 사용하고 있는 환경은 &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; 로 표시된다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아나콘다 환경 활성화/비활성화는 아래와 같은 명령어로 실행 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*cuda라는 이름을 가진 아나콘다 환경 활성화*/&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;deactivate&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*cuda라는 이름을 가진 아나콘다 환경 비 활성화*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;https://www.tensorflow.org/install/install_windows&lt;/li&gt;
+    &lt;li&gt;http://solarisailab.com/archives/1581&lt;/li&gt;
+    &lt;li&gt;http://hiuaa.tistory.com/39&lt;/li&gt;
+    &lt;li&gt;http://dwfox.tistory.com/85&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Apr 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>윈도우(Windows)에 지킬(Jekyll)설치하기</title>
-        <link>/2018/04/13/11.html</link>
-        <guid isPermaLink="true">/2018/04/13/11.html</guid>
+        <link>/2018/04/30/11.html</link>
+        <guid isPermaLink="true">/2018/04/30/11.html</guid>
         <description>&lt;p&gt;요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;연구실 컴퓨터는 &lt;strong&gt;Windows 10 pro&lt;/strong&gt; 버전이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -89,7 +221,7 @@
 &lt;p&gt;포스팅을을 다 작성하고 커밋 명령어를 작성하였는데 커밋(commit)이 되지 않는다면 위와 같이 &lt;strong&gt;git유저 정보를 추가&lt;/strong&gt; 해주면 된다.이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 13 Apr 2018 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 30 Apr 2018 00:00:00 +0900</pubDate>
       </item>
     
       <item>
