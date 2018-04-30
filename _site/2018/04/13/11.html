@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>윈도우(Windows)에 지킬(Jekyll)설치하기 | devYurim</title>
-	<meta name="description" content="요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다!연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다!약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ">
+	<meta name="description" content="요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -120,74 +120,89 @@
       
     </p>
   </header>
-  <section class="post-content"><p>
-요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다!<br />
-연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다!<br />
-약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ<br /><br />
+  <section class="post-content"><p>요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ<br /><br /></p>
 
-연구실 컴퓨터는 Windows 10 pro 버전이다.<br /><br />
+<p>연구실 컴퓨터는 <strong>Windows 10 pro</strong> 버전이다.<br /><br /></p>
 
-<p>
-&gt; **1. 루비(ruby) 설치**
+<blockquote>
+  <p><strong>1. 루비(ruby) 설치</strong></p>
+</blockquote>
 
-윈도우 컴퓨터에는 맥 OS 같이 루비가 깔려있지 않으므로 루비를 설치해주어야 한다! 다운로드는 아래의 사이트에서 할 수 있다.<br />
-ruby 다운로드 : https://rubyinstaller.org/downloads/ <br /><br />
+<p><br />
+윈도우 컴퓨터에는 맥 OS 같이 루비가 깔려있지 않으므로 루비를 설치해주어야 한다! 다운로드는 아래의 사이트에서 할 수 있다.<br /></p>
+<ul>
+  <li>ruby 다운로드 : https://rubyinstaller.org/downloads/ <br /><br /></li>
+</ul>
 
 <center><img src="https://user-images.githubusercontent.com/20412850/39422682-5b1cd442-4ca9-11e8-8131-919bc6762898.png" width="60%" /></center>
-<br /><br />
+<p><br /><br /></p>
 
-Devkit 을 같이 설치한다! 나는 안정 버전이라고 표시된 2.4.4-1 version을 설치하였다.<br /><br />
+<p>Devkit 을 같이 설치한다! 나는 안정 버전이라고 표시된 2.4.4-1 version을 설치하였다.<br /><br /></p>
 
-** 만약 Git 이 설치되어 있지 않으면 설치해야한다! **
-git 다운로드 : https://git-scm.com/downloads <br /><br />
+<p>** 만약 Git 이 설치되어 있지 않으면 설치해야한다! **</p>
+<ul>
+  <li>git 다운로드 : https://git-scm.com/downloads <br /><br /></li>
+</ul>
 
+<blockquote>
+  <p><strong>2. 지킬(jekyll) 설치</strong></p>
+</blockquote>
 
-&gt; **2. 지킬(jekyll) 설치**
-
-<br /><br />
-<center><img src="https://user-images.githubusercontent.com/20412850/39422813-ec8efcac-4ca9-11e8-860e-2d866eb5ba70.png" width="60%" /></center><br />
-설치가 끝나면 윈도우 검색창에 ruby를 치면 **'Start Command Prompt with Ruby'** 라는 Command 창을 킨다. 다음의 명령어를 통해 지킬을 설치한다.<br />
-
+<p><br /><br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/39422813-ec8efcac-4ca9-11e8-860e-2d866eb5ba70.png" width="60%" /></center>
+<p><br />
+설치가 끝나면 윈도우 검색창에 ruby를 치면 <strong>‘Start Command Prompt with Ruby’</strong> 라는 Command 창을 킨다. 다음의 명령어를 통해 지킬을 설치한다.<br /></p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span></code></pre></figure>
 
-<br /><br />
+<p><br /><br /></p>
 
-&gt; **3. 블로그 페이지에 bunlde 설치하기**
+<blockquote>
+  <p><strong>3. 블로그 페이지에 bunlde 설치하기</strong></p>
+</blockquote>
 
-<br /><br />
+<p><br /><br />
 이 경우는 블로그 페이지가 이미 있는 경우에 한하여 재 설치 할 수 있는 방법이다!<br />
-만약, 블로그 페이지가 없는 새로운 사용자라면 새로운 저장소(repository)를 만들고 맘에드는 블로그를 clone하여 사용해야 한다.<br />
-자세한 사항은 **[이곳](https://devyurim.github.io/2018/01/01/1.html)** 을 참조 하는 것이 좋을 것 같다.<br /><br />
+만약, 블로그 페이지가 없는 새로운 사용자라면 새로운 저장소(repository)를 만들고 맘에드는 블로그를 clone하여 사용해야 한다.자세한 사항은 <strong><a href="https://devyurim.github.io/2018/01/01/1.html">이곳</a></strong> 을 참조 하는 것이 좋을 것 같다.<br /><br /></p>
 
-나는 블로그를 Dropbox를 통하여 관리하기 때문에 Dropbox 폴더안에 Git에 올려놓은 로컬 파일들이 모두 존재한다.<br />
-내 블로그 파일 들이 있는 로컬 경로로 변경하여 접속한다.(C:\\내 로컬파일 경로)<br />
-폴더 내에 있는 Gemfile을 이용해서 bundle 설치를 한다.<br />
-
+<p>나는 블로그를 Dropbox를 통하여 관리하기 때문에 Dropbox 폴더안에 Git에 올려놓은 로컬 파일들이 모두 존재한다.</p>
+<ul>
+  <li>내 블로그 파일 들이 있는 로컬 경로로 변경하여 접속한다.(C:\내 로컬파일 경로)<br /></li>
+  <li>폴더 내에 있는 Gemfile을 이용해서 bundle 설치를 한다.<br /></li>
+</ul>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">bundle</span> <span class="nx">install</span></code></pre></figure>
 
-<br /><br />
+<p><br /></p>
 
-jekyll이 되는지 확인하기 위해서 build하고 로컬 실행해 본다.<br />
+<ul>
+  <li>jekyll이 되는지 확인하기 위해서 build하고 로컬 실행해 본다.<br /></li>
+</ul>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">jekyll</span> <span class="nx">build</span>
 <span class="nx">jekyll</span> <span class="nx">serve</span></code></pre></figure>
 
-<br /><br />
+<p><br /></p>
 
-http://localhost:4000 으로 접속하여 실행이 제대로 되면 윈도우 셋업은 끝이다.<br /><br />
+<ul>
+  <li>http://localhost:4000 으로 접속하여 실행이 제대로 되면 윈도우 셋업은 끝이다.<br /><br /></li>
+</ul>
 
+<p>만약 블로그를 포스팅하고 최초로 git을 실행하는 것이라면 아래와 같이 <strong>git을 셋팅</strong> 해준다.<br /></p>
 
-이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ
-<br /><br /><br /><br /><br />
-</p></p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">git</span> <span class="nx">config</span> <span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="err">계정이름</span>
+<span class="nx">git</span> <span class="nx">config</span> <span class="nx">user</span><span class="p">.</span><span class="nx">email</span> <span class="err">계정이메일</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>포스팅을을 다 작성하고 커밋 명령어를 작성하였는데 커밋(commit)이 되지 않는다면 위와 같이 <strong>git유저 정보를 추가</strong> 해주면 된다.이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ
+<br /><br /><br /><br /><br /></p>
 </section>
   
 <footer>
   <div class="tags">
     
-    <a class="tag" href="/tags#Github-blog">#Github-blog</a>
+    <a class="tag" href="/tags#Github Blog">#Github Blog</a>
     
   </div>
 </footer>
