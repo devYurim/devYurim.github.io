@@ -5,7 +5,77 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Fri, 13 Apr 2018 01:15:31 +0900</pubDate>
+    <pubDate>Mon, 30 Apr 2018 20:44:44 +0900</pubDate>
+    
+      <item>
+        <title>윈도우(Windows)에 지킬(Jekyll)설치하기</title>
+        <link>/2018/04/13/11.html</link>
+        <guid isPermaLink="true">/2018/04/13/11.html</guid>
+        <description>&lt;p&gt;
+요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다!&lt;br /&gt;
+연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다!&lt;br /&gt;
+약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ&lt;br /&gt;&lt;br /&gt;
+
+연구실 컴퓨터는 Windows 10 pro 버전이다.&lt;br /&gt;&lt;br /&gt;
+
+&lt;p&gt;
+&amp;gt; **1. 루비(ruby) 설치**
+
+윈도우 컴퓨터에는 맥 OS 같이 루비가 깔려있지 않으므로 루비를 설치해주어야 한다! 다운로드는 아래의 사이트에서 할 수 있다.&lt;br /&gt;
+ruby 다운로드 : https://rubyinstaller.org/downloads/ &lt;br /&gt;&lt;br /&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39422682-5b1cd442-4ca9-11e8-8131-919bc6762898.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;br /&gt;&lt;br /&gt;
+
+Devkit 을 같이 설치한다! 나는 안정 버전이라고 표시된 2.4.4-1 version을 설치하였다.&lt;br /&gt;&lt;br /&gt;
+
+** 만약 Git 이 설치되어 있지 않으면 설치해야한다! **
+git 다운로드 : https://git-scm.com/downloads &lt;br /&gt;&lt;br /&gt;
+
+
+&amp;gt; **2. 지킬(jekyll) 설치**
+
+&lt;br /&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39422813-ec8efcac-4ca9-11e8-860e-2d866eb5ba70.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;
+설치가 끝나면 윈도우 검색창에 ruby를 치면 **'Start Command Prompt with Ruby'** 라는 Command 창을 킨다. 다음의 명령어를 통해 지킬을 설치한다.&lt;br /&gt;
+
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+
+&amp;gt; **3. 블로그 페이지에 bunlde 설치하기**
+
+&lt;br /&gt;&lt;br /&gt;
+이 경우는 블로그 페이지가 이미 있는 경우에 한하여 재 설치 할 수 있는 방법이다!&lt;br /&gt;
+만약, 블로그 페이지가 없는 새로운 사용자라면 새로운 저장소(repository)를 만들고 맘에드는 블로그를 clone하여 사용해야 한다.&lt;br /&gt;
+자세한 사항은 **[이곳](https://devyurim.github.io/2018/01/01/1.html)** 을 참조 하는 것이 좋을 것 같다.&lt;br /&gt;&lt;br /&gt;
+
+나는 블로그를 Dropbox를 통하여 관리하기 때문에 Dropbox 폴더안에 Git에 올려놓은 로컬 파일들이 모두 존재한다.&lt;br /&gt;
+내 블로그 파일 들이 있는 로컬 경로로 변경하여 접속한다.(C:\\내 로컬파일 경로)&lt;br /&gt;
+폴더 내에 있는 Gemfile을 이용해서 bundle 설치를 한다.&lt;br /&gt;
+
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+
+jekyll이 되는지 확인하기 위해서 build하고 로컬 실행해 본다.&lt;br /&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;br /&gt;&lt;br /&gt;
+
+http://localhost:4000 으로 접속하여 실행이 제대로 되면 윈도우 셋업은 끝이다.&lt;br /&gt;&lt;br /&gt;
+
+
+이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Machine Learning(머신러닝) 시작하기</title>
@@ -65,7 +135,7 @@
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/38689534-e4b8f894-3eb6-11e8-8d35-2195060dac9a.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt; https://www.mailman.columbia.edu/research/population-health-methods/cluster-analysis-using-k-means&lt;/center&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
@@ -79,7 +149,7 @@
   &lt;li&gt;http://mangkyu.tistory.com/32&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2018 00:00:00 +0900</pubDate>
       </item>
@@ -165,9 +235,8 @@
 
 &lt;p&gt;이제 키보드가 올라와도 양식이 자동으로 위로 밀려서 버튼이 겹치지 않는다!&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35140310-10397dea-fd3a-11e7-838d-0b0869039986.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -448,7 +517,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
 추후 웹 서버 연동과 db연동을 한 후 로그인 확인기능과 추가 핸들러 기능을 구현할 예정이다.위의 예제 코드로 왠만한 기본적인 안드로이드 페이지를 응용하여 만들수 있다.(회원가입 폼, 기본 메뉴 화면 등) 어플리케이션에 필요한 화면들을 다 만든 뒤 추가 기능을 추가해야겠다.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -538,8 +607,8 @@
 
 &lt;p&gt;시작 액티비티를 수정하고 반드시 그다음에 실행할 액티비티를 아래에 추가해 주어야 한다. 아래 이미지는 시작 화면 적용한 화면이다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027638-2e6a8b66-fb95-11e7-977d-a10abcdbd6e5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027638-2e6a8b66-fb95-11e7-977d-a10abcdbd6e5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -638,7 +707,7 @@
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35025918-6ed049ac-fb8b-11e7-8275-9fcf1107a037.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;refernece&lt;/strong&gt;&lt;/p&gt;
@@ -646,9 +715,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;https://developer.android.com/training/material/get-started.html?hl=ko&lt;/li&gt;
-  &lt;li&gt;http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles
-*&lt;/li&gt;
+  &lt;li&gt;http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -715,9 +785,9 @@ res -&amp;gt; layout -&amp;gt; activity_main.xml 을 클릭하면 어플 화면�
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514806-6d47e740-f0b2-11e7-83a0-7f6ca9944dce.png&quot; width=&quot;30%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;
-이렇게 화면에 잘 뜬다면 잘 만든 것이다! &lt;br /&gt;&lt;/p&gt;
+이렇게 화면에 잘 뜬다면 잘 만든 것이다!&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -808,7 +878,9 @@ res -&amp;gt; layout -&amp;gt; activity_main.xml 을 클릭하면 어플 화면�
 
 &lt;p&gt;이클립스는 안드로이드 스튜디오보다는 가벼운 편이다. 자바를 개발하면서 이클립스 단축키나 사용법에 익숙한 사람들은 이클립스를 사용한다고 들었다. 자신에게 편한 IDE를 사용하면 된다. 둘중에 하나 자신이 원하는 통합개발환경을 설치하면 된다.&lt;/p&gt;
 
-&lt;p&gt;나는 &lt;code&gt;Jetbrain&lt;/code&gt; 회사의 프로그램들을 무료 학생계정으로 자주 사용하여 안드로이드 스튜디오를 쓰기로 결정하였다. 개발환경은 MAC OS X Android Studio로 공부를 진행 할 예정이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;나는 &lt;code&gt;Jetbrain&lt;/code&gt; 회사의 프로그램들을 무료 학생계정으로 자주 사용하여 안드로이드 스튜디오를 쓰기로 결정하였다. 개발환경은 MAC OS X Android Studio로 공부를 진행 할 예정이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Jan 2018 00:00:00 +0900</pubDate>
       </item>
@@ -1102,7 +1174,7 @@ Left          | Center        | Right
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x) = \int \frac{2x^2+4x+6}{x-2}&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate>
       </item>
