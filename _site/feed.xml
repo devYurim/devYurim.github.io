@@ -5,13 +5,13 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Wed, 02 May 2018 11:07:06 +0900</pubDate>
+    <pubDate>Wed, 02 May 2018 11:11:56 +0900</pubDate>
     
       <item>
         <title>Java JDK 설치하기(Windows/MAC OS)</title>
         <link>/2018/04/30/13.html</link>
         <guid isPermaLink="true">/2018/04/30/13.html</guid>
-        <description>&lt;p&gt;간단하게 JAVA JDK 설치 방법을 글로 남기려고 작성하였다.&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;간단하게 JAVA JDK 설치와 환경변수 편집에 관련한 내용을 글로 남기려고 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;1. JDK 다운로드 받기&lt;/strong&gt;&lt;/p&gt;
@@ -29,13 +29,13 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/39500479-bed118a8-4def-11e8-9af7-2679358041ae.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Accept License Agreement의 오디오 박스에 체크를 하고 자신의 OS에 맞는 것을 다운로드 하고 설치를 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Accept License Agreement&lt;/strong&gt; 의 오디오 박스에 체크를 하고 자신의 OS에 맞는 것을 다운로드 하고 설치를 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;2. JDK 환경변수 설정&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;1) Windows에서 JDK 환경 변수 설정 &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) Windows에서 JDK 환경 변수 설정&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;윈도우 검색 창에 시스템 환경변수 편집 검색 -&amp;gt; 시스템 속성 -&amp;gt; 고급 -&amp;gt; 환경변수 &lt;br /&gt;&lt;/li&gt;
@@ -65,9 +65,9 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt; &lt;span class=&quot;nx&quot;&gt;$java&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;2) MAC OS 에서 JDK 환경 변수 설정 &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) MAC OS 에서 JDK 환경 변수 설정&lt;/strong&gt; &lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;JAVA 디렉토리로 이동&lt;br /&gt;&lt;/li&gt;
