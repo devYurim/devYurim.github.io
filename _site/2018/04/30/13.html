@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Java JDK 설치하기(Windows/MAC OS) | devYurim</title>
+	<meta name="description" content="간단하게 JAVA JDK 설치 방법을 글로 남기려고 작성하였다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2018/04/30/13.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+            
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+    
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Java JDK 설치하기(Windows/MAC OS)</h1>
+    
+    <p class="meta">
+      April 30, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>간단하게 JAVA JDK 설치 방법을 글로 남기려고 작성하였다.<br /></p>
+
+<blockquote>
+  <p><strong>1. JDK 다운로드 받기</strong></p>
+</blockquote>
+
+<p>Java 프로그래밍을 하려면 <strong>JDK(Java Development Kit, 자바 개발 키트)와 JRE(Java Runtime Environment, 자바 실행 환경)</strong> 라는 것이 있어야 한다.
+JRE는 JVM(Java Virtual Machine, 자바 가상 머신)위에서 자파 프로그램을 실행시키기 위해서 필요한 라이브러리들을 가지고 있으며, JDK는 JRE를 포함하고 개발을 위해 필요한 도구(javac, java)등을 포함하고 있다. <strong>JDK를 설치하면 JRE는 같이 설치되기 때문에 따로 JRE를 받을 필요는 없다.</strong> JDK는 오라클(Oracle) 사이트에서 받을 수 있다.<br /></p>
+
+<ul>
+  <li>JDK 다운로드<br />
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnpt
+<br /><br /></li>
+</ul>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/39500479-bed118a8-4def-11e8-9af7-2679358041ae.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<p>Accept License Agreement의 오디오 박스에 체크를 하고 자신의 OS에 맞는 것을 다운로드 하고 설치를 진행하면 된다.<br /><br /></p>
+
+<blockquote>
+  <p><strong>2. JDK 환경변수 설정</strong></p>
+</blockquote>
+
+<p>1) Windows에서 JDK 환경 변수 설정 <br /></p>
+
+<ul>
+  <li>윈도우 검색 창에 시스템 환경변수 편집 검색 -&gt; 시스템 속성 -&gt; 고급 -&gt; 환경변수 <br /></li>
+  <li>환경변수 창에서 시스템변수 새로만들기 클릭 <br /></li>
+</ul>
+<center><img src="https://user-images.githubusercontent.com/20412850/39500973-378c2956-4df3-11e8-89e4-bf6ed292e588.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<ul>
+  <li>JAVA_HOME 변수 추가 : 변수값에는 jdk를 설치한 경로를 입력하면 된다.<br /></li>
+</ul>
+<center><img src="https://user-images.githubusercontent.com/20412850/39501017-732f6180-4df3-11e8-8f08-015a81b72ef9.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<ul>
+  <li>시스템변수 path 선택 -&gt; 편집 -&gt; 새로만들기 -&gt; JAVA_HOME 경로 추가 <br /></li>
+</ul>
+<center><img src="https://user-images.githubusercontent.com/20412850/39501355-585b0006-4df5-11e8-9559-5e4b9adcf0fe.png" width="60%" /></center>
+<p><br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/39501401-8f5603d0-4df5-11e8-9497-0b6562b6cecc.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<ul>
+  <li>모두 확인 눌러서 나오기 <br /></li>
+  <li>Windows Powershell에서 JAVA 버전 확인 <br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="nx">$java</span> <span class="o">-</span><span class="nx">version</span> </code></pre></figure>
+
+<p><br /></p>
+
+<p>2) MAC OS 에서 JDK 환경 변수 설정 <br /></p>
+
+<ul>
+  <li>JAVA 디렉토리로 이동<br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="nx">$cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span> </code></pre></figure>
+
+<p><br /></p>
+
+<ul>
+  <li>ls를 이용하여 JDK 버전 확인<br /></li>
+  <li>home 파일로 접속<br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="nx">$cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="err">버전</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span> </code></pre></figure>
+
+<p><br /></p>
+
+<ul>
+  <li>vim 에디터 이용하여 bash_profile 접근 <br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="nx">$vi</span> <span class="o">~</span><span class="sr">/.bash_profile </span></code></pre></figure>
+
+<p><br /></p>
+
+<ul>
+  <li>수정모드에서 경로 추가 <br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="k">export</span> <span class="nx">JAVA_HOME</span><span class="o">=</span><span class="sr">/Library/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="err">버전</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span> </code></pre></figure>
+
+<p><br /></p>
+
+<ul>
+  <li>esc 누른 후, :wq로 저장하고 수정모드를 빠져나온다. <br /></li>
+  <li>터미널에서 JAVA 버전 확인 <br /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"> <span class="nx">$java</span> <span class="o">-</span><span class="nx">version</span> </code></pre></figure>
+
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <p><strong>reference</strong></p>
+</blockquote>
+
+<ul>
+  <li>https://wikidocs.net/257</li>
+  <li>http://prolite.tistory.com/975</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Java">#Java</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/2018/04/30/13.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/04/30/12.html">
+        텐서플로우(Tensorflow) GPU 버전 설치하기 - Windows 10 pro
+      </a>
+  </div>
+  
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
