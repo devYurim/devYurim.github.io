@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://localhost:4000/2018/05/25/17.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/2018/05/25/16.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/2018/05/24/15.html</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/2018/05/02/14.html</loc>
     </url>
     
@@ -117,6 +129,14 @@
     
     <url>
         <loc>http://localhost:4000/blog/page3/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page4/</loc>
     </url>
     
     
