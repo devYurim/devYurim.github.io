@@ -23,7 +23,6 @@
 
 	<!-- Google Fonts -->
 	
-	<link href= "http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet" type="test/css">
 	
 
@@ -125,15 +124,19 @@
   </header>
   <section class="post-content"><p>간단하게 웹폰트 수정하는 법을 정리하고자 포스팅을 하였다.<br /></p>
 
-<p><br /><point>구글</point> 에서 무료로 웹폰트를 제공하는데 이를 github 블로그에서 적용할 수 있다. 적용가능한 폰트 리스트는 <a href="http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/"><point>링크된 사이트</point></a>를 참조하면 좋을 것 같다. 나는 블로그의 header 부분은 제주 고딕, 본문 부분은 나눔 고딕으로 변경하였다. 변경 기준은 현재 블로그에 사용하고 있는 Type Theme을 기준으로 작성하였다.<br /><br /></p>
+<p><br /><point>구글</point> 에서 무료로 웹폰트를 제공하는데 이를 github 블로그에서 적용할 수 있다. 적용가능한 폰트 리스트는 <a href="http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/"><point>링크된 사이트</point></a>를 참조하면 좋을 것 같다. 나는 블로그의 폰트를 <point>나눔 고딕</point>으로 변경하였다. 변경 기준은 현재 블로그에 사용하고 있는 Type Theme을 기준으로 작성하였다.<br /><br /></p>
+
+<p>구글 font 사이트에서 나눔고딕 웹폰트 설정하는 법을 찾아보았다. 다음과 같이 셋팅해주면 된다고 한다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40586003-1d7d4524-61f6-11e8-95fd-125b0db5e167.png" width="60%" /></center>
+<p><br /><br /></p>
 
 <blockquote>
-  <subtitle>1. CSS 링크 삽입
+  <subtitle>1. _config.yml 파일 변경
 </subtitle>
 </blockquote>
 
-<p><br /><point>_includes -&gt; head.html</point> 파일에서 구글 폰트가 적용된 부분에 다음과 같은 css 웹 경로를 추가해주었다.<br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/40584444-aac3cab8-61db-11e8-8ea4-e506a6044dd5.png" width="80%" /></center>
+<p><br /><point>_config.yml</point> 파일에서 google_fonts의 값을 아래와 같이 변경 하였다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40586016-30066766-61f6-11e8-8342-30ec0c94d5f1.png" width="50%" /></center>
 <p><br /><br /></p>
 
 <blockquote>
@@ -142,7 +145,7 @@
 </blockquote>
 
 <p><br /><point>_sass -&gt; base -&gt; _variables.scss</point> 파일에서 font-family를 다음과 같이 변경한다. font-family-main은 <strong>본문의 font</strong> 설정이고, font-family-headings는 <strong>타이틀의 font</strong> 설정이다.<br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/40584466-053dd56a-61dc-11e8-8aec-8acfa51c92e5.png" width="50%" /></center>
+<center><img src="https://user-images.githubusercontent.com/20412850/40586041-86eaacfe-61f6-11e8-9698-68efe5e7fb50.png" width="50%" /></center>
 <p><br /></p>
 
 <p>이렇게 두가지만 적용하고 각 파일을 저장해서 다시 github에 push하면 적용 완료이다!<br /><br /><br /></p>
@@ -153,7 +156,7 @@
 
 <ul>
   <li>http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/</li>
-  <li>http://enshahar.com/%EB%B8%94%EB%A1%9C%EA%B7%B8/jekyll/pixyll/2017/11/14/blog-transferring/</li>
+  <li>https://fonts.google.com/specimen/Nanum+Gothic?selection.family=Nanum+Gothic:400,700</li>
 </ul>
 
 <p><br /><br /><br /><br /><br /></p>
