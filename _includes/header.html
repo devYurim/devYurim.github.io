@@ -13,7 +13,7 @@
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 		</h1>
 	</div>
-	<nav class="site-nav">
+	<nav class="site-nav"  style:"font-weight:600">
 		<ul>
 			{% for page in site.pages %}
 			{% if page.title and page.hide != true %}
@@ -24,7 +24,7 @@
 			</li>
 			{% endif %}
 			{% endfor %}
-            
+
             <!-- Search bar -->
             {% if site.theme_settings.search %}
             <li>
@@ -38,5 +38,5 @@
             {% endif %}
 		</ul>
 	</nav>
-    
+
 </header>

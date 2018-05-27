@@ -14,7 +14,7 @@ theme_settings:
   # Header and footer text
   header_text: >
      <p>Intelligent System Lab Researcher</p>
-     
+
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
@@ -66,8 +66,8 @@ theme_settings:
 
   # Post navigation
   post_navigation: true
-  
-  
+
+
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"

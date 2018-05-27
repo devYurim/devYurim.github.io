@@ -33,7 +33,8 @@
   width: 100%;
   background-color:$header-desc-background-color;
   background-size: cover;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 700;
   text-align: center;
   color: $header-desc-text-color;
 }
@@ -64,10 +65,12 @@
     border-bottom: 1px solid $border-color;
     p a {
       @extend .body-link;
+
     }
   }
   .excerpt {
-    margin-top: 1em;
+    font-weight: 700;
+    margin-top: 0.5em;
   }
 }
 // Pagination

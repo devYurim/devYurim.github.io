@@ -23,7 +23,8 @@
 
 	<!-- Google Fonts -->
 	
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	<link href= "http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
+	<link href= "http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
 	
 
 	<!-- KaTeX -->
@@ -58,7 +59,7 @@
 			<a href="/">devYurim</a>
 		</h1>
 	</div>
-	<nav class="site-nav">
+	<nav class="site-nav"  style:"font-weight:600">
 		<ul>
 			
 			
@@ -95,7 +96,7 @@
 			
 			
 			
-            
+
             <!-- Search bar -->
             
             <li>
@@ -109,7 +110,7 @@
             
 		</ul>
 	</nav>
-    
+
 </header>
 
     <div class="content">
@@ -122,24 +123,29 @@
       
     </p>
   </header>
-  <section class="post-content"><p>서버 사양은 Ubuntu 16.04 / titan XP 이다.<br /><br /></p>
+  <section class="post-content"><p>서버 사양은 <point>Ubuntu 16.04 / titan XP</point> 이다.<br /><br /></p>
 
 <blockquote>
-  <p><strong>1.우분투 패키지 업데이트</strong></p>
+  <subtitle> 1.우분투 패키지 업데이트
+</subtitle>
 </blockquote>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">update</span>
-<span class="nx">$sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">upgrade</span></code></pre></figure>
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get upgrade</code></pre></figure>
 
 <p><br /><br /></p>
 
 <blockquote>
-  <p><strong>2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인</strong></p>
+  <subtitle> 2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인
+</subtitle>
 </blockquote>
 
-<p>다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.<br /><br /></p>
+<p><br />
+다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.<br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$cat</span> <span class="o">/</span><span class="nx">proc</span><span class="o">/</span><span class="nx">driver</span><span class="o">/</span><span class="nx">nvidia</span><span class="o">/</span><span class="nx">version</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /proc/driver/nvidia/version</code></pre></figure>
 
 <p><br /><br /></p>
 
@@ -150,34 +156,36 @@
 
 <p>그다음 언어 설정이 되지 않았을 경우 설치에 필요한 언어셋등의 기본패키지를 설치해준다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">update</span> <span class="o">&amp;&amp;</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">y</span> <span class="nx">dialog</span> <span class="nx">language</span><span class="o">-</span><span class="nx">pack</span><span class="o">-</span><span class="nx">en</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> dialog language-pack-en
 
-<span class="nx">$</span> <span class="k">export</span> <span class="nx">LANGUAGE</span><span class="o">=</span><span class="nx">en_US</span>
-<span class="nx">$</span> <span class="k">export</span> <span class="nx">LANG</span><span class="o">=</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF</span><span class="o">-</span><span class="mi">8</span>
-<span class="nx">$</span> <span class="k">export</span> <span class="nx">LC_ALL</span><span class="o">=</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF</span><span class="o">-</span><span class="mi">8</span>
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LANGUAGE</span><span class="o">=</span>en_US
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
 
-<span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">update</span><span class="o">-</span><span class="nx">locale</span></code></pre></figure>
+<span class="nv">$ </span><span class="nb">sudo </span>update-locale</code></pre></figure>
 
 <p><br /><br /></p>
 
 <p>그 다음 아래의 내용을 /etc/default/locale에 추가해준다.(nano 에디터 사용, ctrl + o -&gt; enter로 저장)<br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">nano</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="k">default</span><span class="sr">/local</span><span class="err">e
-</span>
-<span class="err">#</span> <span class="err">아래의</span> <span class="err">정보</span> <span class="err">추가</span>
-<span class="nx">LANG</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
-<span class="nx">LANGUAGE</span><span class="o">=</span><span class="s2">"en_US:en"</span>
-<span class="nx">LC_ALL</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>nano /etc/default/locale
+
+<span class="c"># 아래의 정보 추가</span>
+<span class="nv">LANG</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
+<span class="nv">LANGUAGE</span><span class="o">=</span><span class="s2">"en_US:en"</span>
+<span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span></code></pre></figure>
 
 <p><br /><br /></p>
 
 <blockquote>
-  <p><strong>3.Ubuntu NIVIDA Repository 업데이트</strong></p>
+  <subtitle> 3.Ubuntu NIVIDA Repository 업데이트
+</subtitle>
 </blockquote>
 
-<p>NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. <br /></p>
+<p><br />
+NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. <br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$cat</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">issue</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /etc/issue</code></pre></figure>
 
 <p><br /><br /></p>
 
@@ -186,54 +194,63 @@
 
 <p>우분투 16.04는 NVIDIA Repository가 지원이 되므로 아래의 명령어를 통해 최신 NVIDIA 패키지 리스트를 추가한다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="nx">key</span> <span class="nx">adv</span> <span class="o">--</span><span class="nx">fetch</span><span class="o">-</span><span class="nx">keys</span> <span class="nx">http</span><span class="p">:</span><span class="c1">//developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub</span>
-<span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">sh</span> <span class="o">-</span><span class="nx">c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
-<span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">sh</span> <span class="o">-</span><span class="nx">c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
-<span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">update</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-key adv <span class="nt">--fetch-keys</span> http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+<span class="nv">$ </span><span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
+<span class="nv">$ </span><span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update</code></pre></figure>
 
 <p><br /><br /></p>
 
 <blockquote>
-  <p><strong>4.NVIDIA 그래픽카드 드라이버 설치</strong></p>
+  <subtitle> 4.NVIDIA 그래픽카드 드라이버 설치
+</subtitle>
 </blockquote>
 
-<p>아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.<br /></p>
+<p><br />
+아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.<br /></p>
 <ul>
-  <li>http://www.nvidia.com/Download/Find.aspx?lang=en-us
-<br /><br /></li>
+  <li>http://www.nvidia.com/Download/Find.aspx?lang=en-us</li>
 </ul>
+
+<p><br /><br /></p>
 <center><img src="https://user-images.githubusercontent.com/20412850/40528867-516a05cc-602d-11e8-8f64-11ec523f2a49.png" width="60%" /><br />본인의 사양에 맞게 설정하고 Search 클릭하여 확인한다.</center>
 <p><br /><br /></p>
 
 <p>아래의 명령어를 통하여 설치가능한 드라이버 버전을 확인한다. nvidia-xxx로 나타나는 패키지 이름 중에서 설치 가능한 버전을 확인하면 된다.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">apt</span><span class="o">-</span><span class="nx">cache</span> <span class="nx">search</span> <span class="nx">nvidia</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>apt-cache search nvidia</code></pre></figure>
 
-<p><br />
-위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.<br /></p>
+<p><br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">sudo</span> <span class="nx">apt</span><span class="o">-</span><span class="kd">get</span> <span class="nx">install</span> <span class="nx">nvidia</span><span class="o">-</span><span class="mi">384</span></code></pre></figure>
+<p>위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>nvidia-384</code></pre></figure>
 
 <p><br /></p>
 
 <p>설치후 드라이버가 적용 될 수 있도록 reboot 한다.<br /><br /></p>
 
 <blockquote>
-  <p><strong>5.확인</strong></p>
+  <subtitle> 5.확인
+</subtitle>
 </blockquote>
 
 <p>설치가 성공적으로 되었는지 확인하기 위해서 아래의 명령어를 실행한다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">lspci</span> <span class="o">-</span><span class="nx">k</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>lspci <span class="nt">-k</span></code></pre></figure>
 
 <center><img src="https://user-images.githubusercontent.com/20412850/40530507-0e50e916-6034-11e8-8bf5-09200668d793.png" width="80%" /></center>
 <p><br /><br /></p>
 
 <p>아래의 명령어를 이용하면 드라이버 버전을 확인 할 수 있다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">cat</span> <span class="o">/</span><span class="nx">proc</span><span class="o">/</span><span class="nx">driver</span><span class="o">/</span><span class="nx">nvidia</span><span class="o">/</span><span class="nx">version</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /proc/driver/nvidia/version</code></pre></figure>
 
 <p>아래의 명령어를 이용하면 그래픽 카드 정보를 확인 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nvidia-smi</code></pre></figure>
+
+<p><br /><br /></p>
 <center><img src="https://user-images.githubusercontent.com/20412850/40530684-b2b150a4-6034-11e8-9375-ed2ba24c8927.png" width="80%" /></center>
 <p><br /><br /><br /></p>
 

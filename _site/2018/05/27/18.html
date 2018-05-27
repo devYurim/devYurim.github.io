@@ -2,8 +2,8 @@
 <html class="no-js">
   <head>
 	<meta charset="utf-8">
-	<title>우분투(Ubuntu) USB 부팅디스크 만들기 - Windows 10 | devYurim</title>
-	<meta name="description" content="  1. 우분투(Ubuntu) 다운로드">
+	<title>지킬(Jekyll) 블로그에 구글 웹폰트 적용하기 | devYurim</title>
+	<meta name="description" content="간단하게 웹폰트 수정하는 법을 정리하고자 포스팅을 하였다.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/2018/05/02/14.html">
+	<link rel="canonical" href="/2018/05/27/18.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
@@ -116,58 +116,44 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">우분투(Ubuntu) USB 부팅디스크 만들기 - Windows 10</h1>
+    <h1 class="title">지킬(Jekyll) 블로그에 구글 웹폰트 적용하기</h1>
     
     <p class="meta">
-      May 2, 2018
+      May 27, 2018
       
     </p>
   </header>
-  <section class="post-content"><blockquote>
-  <subtitle>1. 우분투(Ubuntu) 다운로드
+  <section class="post-content"><p>간단하게 웹폰트 수정하는 법을 정리하고자 포스팅을 하였다.<br /></p>
+
+<p><br /><point>구글</point> 에서 무료로 웹폰트를 제공하는데 이를 github 블로그에서 적용할 수 있다. 적용가능한 폰트 리스트는 <a href="http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/"><point>링크된 사이트</point></a>를 참조하면 좋을 것 같다. 나는 블로그의 header 부분은 제주 고딕, 본문 부분은 나눔 고딕으로 변경하였다. 변경 기준은 현재 블로그에 사용하고 있는 Type Theme을 기준으로 작성하였다.<br /><br /></p>
+
+<blockquote>
+  <subtitle>1. CSS 링크 삽입
 </subtitle>
 </blockquote>
 
+<p><br /><point>_includes -&gt; head.html</point> 파일에서 구글 폰트가 적용된 부분에 다음과 같은 css 웹 경로를 추가해주었다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40584444-aac3cab8-61db-11e8-8ea4-e506a6044dd5.png" width="80%" /></center>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>2. font-family 이름 변경
+</subtitle>
+</blockquote>
+
+<p><br /><point>_sass -&gt; base -&gt; _variables.scss</point> 파일에서 font-family를 다음과 같이 변경한다. font-family-main은 <strong>본문의 font</strong> 설정이고, font-family-headings는 <strong>타이틀의 font</strong> 설정이다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40584466-053dd56a-61dc-11e8-8aec-8acfa51c92e5.png" width="50%" /></center>
 <p><br /></p>
 
-<p>먼저 우분투(Ubuntu) 홈페이지에 가서 Ubuntu iso 파일을 다운로드 한다.<br /></p>
-<ul>
-  <li>우분투(Ubuntu) 다운로드 : https://www.ubuntu.com/download/desktop
-<br /><br /><br /></li>
-</ul>
+<p>이렇게 두가지만 적용하고 각 파일을 저장해서 다시 github에 push하면 적용 완료이다!<br /><br /><br /></p>
 
 <blockquote>
-  <subtitle>2. Universal USB Installer 다운로드
-</subtitle>
-</blockquote>
-
-<p><br />
-USB 부팅 디스크를 만들려면 <code>Universal USB Installer</code>라는 프로그램이 필요하다. 아래의 사이트에서 다운로드 받아 준다.<br /></p>
-<ul>
-  <li>Universal USB Installer : https://universal-usb-installer.kr.uptodown.com/windows
-<br /><br /></li>
-</ul>
-
-<p>프로그램을 다운로드 받고 실행한다.<br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/39509743-54402a1e-4e22-11e8-8f7f-a41f858be899.png" width="60%" /><br />I Agree를 클릭한다</center>
-<p><br /><br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/39512796-2683cc1a-4e2d-11e8-947a-22da26d9bc67.png" width="60%" /><br />Step1에서 Ubuntu를 선택한다<br /><br />Step2에서 browse 버튼을 클릭해 다운로드 받은 Ubuntu iso 파일의 경로를 설정한다.<br /><br />포맷된 USB를 컴퓨터에 연결하고 Step3에서 부팅디스크를 만들 USB를 선택한다.<br /><br />Step1,2,3을 다 설정했으면 Create 버튼을 누른다.</center>
-<p><br /><br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/39512939-9882a61a-4e2d-11e8-91bb-b82c71f8be6d.png" width="60%" /><br />다음 창이 나오면 예(Y) 버튼을 눌러 부팅디스크를 만든다.</center>
-<p><br /><br /></p>
-
-<p>Universal USB Installer를 이용하여 윈도우에서 간단하게 Ubuntu 부팅 디스크를 만들 수 있다.<br /><br /><br /></p>
-
-<blockquote>
-  <subtitle> reference
-</subtitle>
+  <p><strong>reference</strong></p>
 </blockquote>
 
 <ul>
-  <li>https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu?_ga=2.66069614.1720290893.1525243898-1690874967.1525243898#0</li>
-  <li>http://physics2.mju.ac.kr/juhapruwp/?p=1135</li>
+  <li>http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/</li>
+  <li>http://enshahar.com/%EB%B8%94%EB%A1%9C%EA%B7%B8/jekyll/pixyll/2017/11/14/blog-transferring/</li>
 </ul>
 
 <p><br /><br /><br /><br /><br /></p>
@@ -176,7 +162,7 @@ USB 부팅 디스크를 만들려면 <code>Universal USB Installer</code>라는 
 <footer>
   <div class="tags">
     
-    <a class="tag" href="/tags#Ubuntu">#Ubuntu</a>
+    <a class="tag" href="/tags#Github Blog">#Github Blog</a>
     
   </div>
 </footer>
@@ -184,7 +170,7 @@ USB 부팅 디스크를 만들려면 <code>Universal USB Installer</code>라는 
 
 </article>
 <!-- Disqus -->
-<a href="https://devYurim.github.io/2018/05/02/14.html#disqus_thread"></a>
+<a href="https://devYurim.github.io/2018/05/27/18.html#disqus_thread"></a>
 
 <div class="comments">
   
@@ -219,18 +205,11 @@ s.setAttribute('data-timestamp', +new Date());
   
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
-      <a href="/2018/05/02/13.html">
-        Java JDK 설치하기(Windows/MAC OS)
+      <a href="/2018/05/25/17.html">
+        도커(Docker)를 이용하여 텐서플로우(Tensorflow) GPU 버전 설치하기 - Ubuntu 16.04 / Titan XP
       </a>
   </div>
   
-  
-  <div id="next-post" class="post-nav-post">
-      <p>Next post</p>
-      <a href="/2018/05/24/15.html">
-        서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 / Titan XP 서버
-      </a>
-  </div>
   
 </div>
 

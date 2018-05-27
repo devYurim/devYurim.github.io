@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>마크다운(Markdown) 문법 정리 | devYurim</title>
-	<meta name="description" content="이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -23,7 +23,8 @@
 
 	<!-- Google Fonts -->
 	
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	<link href= "http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
+	<link href= "http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
 	
 
 	<!-- KaTeX -->
@@ -58,7 +59,7 @@
 			<a href="/">devYurim</a>
 		</h1>
 	</div>
-	<nav class="site-nav">
+	<nav class="site-nav"  style:"font-weight:600">
 		<ul>
 			
 			
@@ -95,7 +96,7 @@
 			
 			
 			
-            
+
             <!-- Search bar -->
             
             <li>
@@ -109,7 +110,7 @@
             
 		</ul>
 	</nav>
-    
+
 </header>
 
     <div class="content">
@@ -122,13 +123,16 @@
       
     </p>
   </header>
-  <section class="post-content"><p>이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.<br /><br /></p>
+  <section class="post-content"><p><br /><br /></p>
+
+<p>이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.<br /><br /></p>
 
 <blockquote>
-  <p><strong>1. 헤더(Header)</strong></p>
+  <subtitle>1. 헤더(Header)</subtitle>
 </blockquote>
 
-<p>헤더 크기는 1~6까지 지원한다.<br /></p>
+<p><br />
+헤더 크기는 1~6까지 지원한다.<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is H1        
 ## This is H2
 ### This is H3
@@ -144,13 +148,14 @@
 <h5 id="this-is-h5">This is H5</h5>
 <h6 id="this-is-h6">This is H6</h6>
 
-<p><br /></p>
+<p><br /><br /></p>
 
 <blockquote>
-  <p><strong>2. 인용구</strong>*</p>
+  <subtitle>2. 인용구</subtitle>
 </blockquote>
 
-<p>인용구는 <code class="highlighter-rouge">&gt;</code>를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.<br /></p>
+<p><br />
+인용구는 <code class="highlighter-rouge">&gt;</code>를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.<br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 안녕
 &gt; &gt; 안녕
 &gt; &gt; * 안녕
@@ -172,12 +177,13 @@
   </blockquote>
 </blockquote>
 
-<p><br /></p>
+<p><br /><br /></p>
 
 <blockquote>
-  <p><strong>3. 목록</strong></p>
+  <subtitle>3. 목록</subtitle>
 </blockquote>
 
+<p><br /></p>
 <ul>
   <li>순서가 있는 목록<br /></li>
 </ul>
@@ -236,11 +242,14 @@
   </li>
 </ul>
 
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>4. 코드</strong></p>
+  <subtitle>4. 코드</subtitle>
 </blockquote>
 
-<p>&lt; pre &gt; &lt; code &gt; 에 감싸서 사용한다.<br /></p>
+<p><br />
+&lt; pre &gt; &lt; code &gt; 에 감싸서 사용한다.<br /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;Github&lt;/code&gt;
 </code></pre></div></div>
@@ -258,17 +267,20 @@
 </code></pre>
 
 <p><br /><br />
-ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)<br /></p>
+ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마) js 대신에 원하는 언어를 넣을 수 있다. <a href="http://rouge.jneen.net/">Rouge</a> 하이라이터가 적용 되었다. <br /></p>
 
 <p><img src="https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png" width="30%" /></p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
-  <span class="nx">print</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 5. 수평선 </subtitle>
+</blockquote>
 
 <p><br /></p>
-<blockquote>
-  <p><strong>5. 수평선</strong></p>
-</blockquote>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>------
 ************
@@ -277,11 +289,13 @@ ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)<b
 <hr />
 <hr />
 
-<p><br /></p>
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>6. 링크</strong></p>
+  <subtitle> 6. 링크 </subtitle>
 </blockquote>
 
+<p><br /></p>
 <ul>
   <li>인라인 링크</li>
 </ul>
@@ -299,12 +313,14 @@ ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)<b
 </code></pre></div></div>
 <p><a href="http://google.com">http://google.com</a></p>
 
-<p><br /></p>
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>8. 강조</strong></p>
+  <subtitle>8. 강조</subtitle>
 </blockquote>
 
-<p>진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.</p>
+<p><br />
+진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*single asterisks*
 _single underscores_
@@ -319,29 +335,35 @@ __double underscores__
 <strong>double underscores</strong><br />
 <del>cancelline</del><br /></p>
 
-<p><br /></p>
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>9. 이미지</strong></p>
+  <subtitle>9. 이미지</subtitle>
 </blockquote>
+
+<p><br /></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.
 ![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
 </code></pre></div></div>
 <p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" alt="Image name" /></p>
 
-<p>ps. 사이즈 조정</p>
+<p><br /><br />
+  ps. 사이즈 조정</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img src="이미지 url" width="원하는 크기"&gt;
 &lt;img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%"&gt;
 </code></pre></div></div>
 <p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%" /></p>
 
-<p><br /></p>
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>10. 표 그리기</strong></p>
+  <subtitle>10. 표 그리기</subtitle>
 </blockquote>
 
-<p>표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.</p>
+<p><br />
+표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.</p>
 
 <ul>
   <li>표 generate 사이트 : https://www.tablesgenerator.com/markdown_tables<br /></li>
@@ -398,11 +420,13 @@ Left          | Center        | Right
   </tbody>
 </table>
 
-<p><br /></p>
+<p><br /><br /></p>
+
 <blockquote>
-  <p><strong>11. 수식(테마에서 지원)</strong></p>
+  <subtitle>11. 수식(테마에서 지원)</subtitle>
 </blockquote>
 
+<p><br /></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
 </code></pre></div></div>
 <p><script type="math/tex">f(x) = \int \frac{2x^2+4x+6}{x-2}</script></p>

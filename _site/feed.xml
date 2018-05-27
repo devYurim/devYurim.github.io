@@ -5,32 +5,76 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Sun, 27 May 2018 17:25:33 +0900</pubDate>
+    <pubDate>Sun, 27 May 2018 20:55:28 +0900</pubDate>
+    
+      <item>
+        <title>지킬(Jekyll) 블로그에 구글 웹폰트 적용하기</title>
+        <link>/2018/05/27/18.html</link>
+        <guid isPermaLink="true">/2018/05/27/18.html</guid>
+        <description>&lt;p&gt;간단하게 웹폰트 수정하는 법을 정리하고자 포스팅을 하였다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;point&gt;구글&lt;/point&gt; 에서 무료로 웹폰트를 제공하는데 이를 github 블로그에서 적용할 수 있다. 적용가능한 폰트 리스트는 &lt;a href=&quot;http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/&quot;&gt;&lt;point&gt;링크된 사이트&lt;/point&gt;&lt;/a&gt;를 참조하면 좋을 것 같다. 나는 블로그의 header 부분은 제주 고딕, 본문 부분은 나눔 고딕으로 변경하였다. 변경 기준은 현재 블로그에 사용하고 있는 Type Theme을 기준으로 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. CSS 링크 삽입
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;point&gt;_includes -&amp;gt; head.html&lt;/point&gt; 파일에서 구글 폰트가 적용된 부분에 다음과 같은 css 웹 경로를 추가해주었다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40584444-aac3cab8-61db-11e8-8ea4-e506a6044dd5.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. font-family 이름 변경
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;point&gt;_sass -&amp;gt; base -&amp;gt; _variables.scss&lt;/point&gt; 파일에서 font-family를 다음과 같이 변경한다. font-family-main은 &lt;strong&gt;본문의 font&lt;/strong&gt; 설정이고, font-family-headings는 &lt;strong&gt;타이틀의 font&lt;/strong&gt; 설정이다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40584466-053dd56a-61dc-11e8-8aec-8acfa51c92e5.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 두가지만 적용하고 각 파일을 저장해서 다시 github에 push하면 적용 완료이다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;reference&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/&lt;/li&gt;
+  &lt;li&gt;http://enshahar.com/%EB%B8%94%EB%A1%9C%EA%B7%B8/jekyll/pixyll/2017/11/14/blog-transferring/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 May 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>도커(Docker)를 이용하여 텐서플로우(Tensorflow) GPU 버전 설치하기 - Ubuntu 16.04 / Titan XP</title>
         <link>/2018/05/25/17.html</link>
         <guid isPermaLink="true">/2018/05/25/17.html</guid>
-        <description>&lt;p&gt;나의 험난했던… 연구실 서버 셋팅기를 글로 남겨보려고 한다..! 연구실 서버의 사양은 Ubuntu 16.04 / Titan XP 이다. 여러명이서 같이 써야하기 때문에 docker로 텐서플로우 GPU 버전을 사용할 수 있는 환경을 구성하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;나의 험난했던… 연구실 서버 셋팅기를 글로 남겨보려고 한다..! 연구실 서버의 사양은 &lt;point&gt;Ubuntu 16.04 / Titan XP&lt;/point&gt; 이다. 여러명이서 같이 써야하기 때문에 &lt;point&gt;docker로 텐서플로우 GPU 버전&lt;/point&gt;을 사용할 수 있는 환경을 구성하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. Docker 설치 및 셋팅&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 1. Docker 설치 및 셋팅
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;도커(Docker) 설치 : 서버 운영체제는 우분투 16.04를 사용하고 있고 아래의 명령어를 이용하여 자동 스크립트로 도커를 설치 하였다.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;도커(Docker)&lt;/strong&gt; 설치 : 서버 운영체제는 &lt;strong&gt;우분투 16.04&lt;/strong&gt; 를 사용하고 있고 아래의 명령어를 이용하여 자동 스크립트로 도커를 설치 하였다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;$ curl -fsSL https://get.docker.com/ | sudo sh
-&lt;/code&gt;&lt;/pre&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://get.docker.com/ | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;sudo 없이 사용하기 : docker는 기본적으로 root권한이 필요한데, root가 아닌 사용자가 sudo없이 사용하려면 사용자를 docker 그룹에 추가해 주면 된다.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;sudo 없이 사용하기 : docker는 기본적으로 root권한이 필요한데, root가 아닌 사용자가 sudo없이 사용하려면 &lt;point&gt;사용자를 docker 그룹에 추가&lt;/point&gt;해 주면 된다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;usermod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;aG&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$USER&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;현재&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;접속중인&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;사용자에게&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;권한주기&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;usermod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;aG&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ailab&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ailab'&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;사용자에게&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;권한주기&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; docker &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;           // 현재 접속중인 사용자에게 권한주기
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; docker ailab           // &lt;span class=&quot;s1&quot;&gt;'ailab'&lt;/span&gt; 사용자에게 권한주기&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -38,15 +82,17 @@
   &lt;li&gt;도커(Docker) 버전 확인 : 버전을 확인하여 설치가 되었는지 확인한다.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. NVIDIA-docker 설치&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 2. NVIDIA-docker 설치
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;도커 컨테이너가 NVIDIA GPU를 support하려면 이미지를 실행할 때 &lt;strong&gt;nvidia-docker로 반드시 실행&lt;/strong&gt; 을 해야한다. 설치방법은 아래의 github에 자세히 명시되어 있다. 현재는 nvidia-docker가 2.0 버전이지만, 2.0 버전을 설치하고 실행했을때 명령어를 실행할 수 없어서 1.0으로 설치하였다.. 2.0이 설치가 안되는지는 나도 모르겠다 ㅠ.ㅠ..&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+도커 컨테이너가 NVIDIA GPU를 support하려면 이미지를 실행할 때 &lt;point&gt;nvidia-docker로 반드시 실행&lt;/point&gt;을 해야한다. 설치방법은 아래의 github에 자세히 명시되어 있다. 현재는 nvidia-docker가 2.0 버전이지만, 2.0 버전을 설치하고 실행했을때 명령어를 실행할 수 없어서 &lt;strong&gt;1.0으로 설치&lt;/strong&gt; 하였다.. 2.0으로 설치했을때 docker 실행이 왜 안되는지는 나도 모르겠다 ㅠ.ㅠ..&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;nvidia-docker : https://github.com/NVIDIA/nvidia-docker&lt;/li&gt;
@@ -54,127 +100,138 @@
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;다음의 명령어로 nvidia-docker 1.0을 설치해준다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;다음의 명령어로 &lt;strong&gt;nvidia-docker 1.0&lt;/strong&gt; 을 설치해준다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-docker&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;다음의 명령어로 nvidia-docker 명령어가 제대로 실행되는지 확인해준다.(자동으로 CUDA 이미지가 다운로드 받아지는데 나중에 지워도 무방하다.)&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;runtime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;smi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--runtime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;nvidia &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; nvidia/cuda nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;아래의 이미지와 같이 GPU 정보가 뜨면 설치 완료이다!&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;아래의 이미지와 같이 &lt;point&gt;GPU 정보&lt;/point&gt;가 뜨면 설치 완료이다!&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40543756-c12653a6-6060-11e8-9e6b-a76d55ce6407.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. NVIDIA 드라이브, CUDA, cuDNN 설치 확인&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 2. NVIDIA 드라이브, CUDA, cuDNN 설치 확인
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Tensorflow GPU 버전을 설치하려면 반드시 CUDA와 cuDNN이 설치되어 있어야 한다. 또한, CUDA를 설치하기 위해서는 NVIDIA 드라이버가 설치되어 있어야한다. 자세한 설치 내용은 아래의 블로그 포스팅을 참조하길 바란다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+Tensorflow GPU 버전을 설치하려면 반드시 &lt;point&gt;CUDA와 cuDNN&lt;/point&gt;이 설치되어 있어야 한다. 또한, CUDA를 설치하기 위해서는 &lt;point&gt;NVIDIA 드라이버&lt;/point&gt;가 설치되어 있어야한다. 자세한 설치 내용은 아래의 블로그 포스팅을 참조하길 바란다.&lt;br /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;NVIDIA 드라이버 설치 :&lt;/li&gt;
-  &lt;li&gt;CUDA 9.0, cuDNN 7.0 설치 :&lt;/li&gt;
+  &lt;li&gt;NVIDIA 드라이버 설치 : https://devyurim.github.io/2018/05/24/15.html&lt;/li&gt;
+  &lt;li&gt;CUDA 9.0, cuDNN 7.0 설치 : https://devyurim.github.io/2018/05/25/16.html&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;     &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;설치&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;확인&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cudnn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;     &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuDNN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;설치&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;확인&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/local/cuda/version.txt                                                   // cuda 설치 확인
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/include/cudnn.h | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;     // cuDNN 설치 확인&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3. Tensorflow Docker 설치&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 3. Tensorflow Docker 설치
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;도커(Docker)는 이미지(image)파일을 이용하여 개발 환경을 운영할 수 있다. 텐서플로우에서 공식적으로 제공하는 텐서플로우 도커를 다운로드 받을 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+도커(Docker)는 &lt;point&gt;이미지(image)파일&lt;/point&gt;을 이용하여 개발 환경을 운영할 수 있다. 텐서플로우에서 공식적으로 제공하는 &lt;point&gt;텐서플로우 도커&lt;/point&gt;를 다운로드 받을 수 있다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;우선 공식 무료 배포 이미지들을 다운로드 받으려면 docker hub 홈페이지에 가입이 필요하다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;우선 공식 무료 배포 이미지들을 다운로드 받으려면 &lt;a href=&quot;https://hub.docker.com/&quot;&gt;&lt;point&gt;docker hub&lt;/point&gt;&lt;/a&gt; 홈페이지에 가입이 필요하다.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;DockerHub : https://hub.docker.com/
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;그리고 터미널에서 아래의 명령어를 이용하여 docker hub에 로그인해준다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;그리고 터미널에서 아래의 명령어를 이용하여 docker hub에 &lt;point&gt;로그인&lt;/point&gt;해준다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;login&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker login&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;아이디와 비밀번호를 입력하고 엔터를 누르면 Login Succeeded가 뜨면 docker hub에 접속할 수 있는 권한을 얻은 것이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;docker hub에서 tensorflow 이미지 검색
-docker 허브에서 tensorflow로 검색하여 tag버튼을 누르면 아래와 같이 다운로드 받을 수 있는 태그 목록을 확인 할 수 있다.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;docker hub에서 &lt;point&gt;tensorflow 이미지 검색&lt;/point&gt;
+docker hub에서 &lt;strong&gt;tensorflow&lt;/strong&gt; 로 검색하여 &lt;strong&gt;tag버튼&lt;/strong&gt; 을 누르면 아래와 같이 다운로드 받을 수 있는 &lt;point&gt;태그 목록&lt;/point&gt;을 확인 할 수 있다.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40583308-0302621c-61c7-11e8-91a3-8ebecae5cc42.png&quot; width=&quot;60%&quot; /&gt; &lt;br /&gt;tensorflow docker image 파일 태그 예시&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;나는 텐서플로우 1.8.0 gpu버전 python3을 사용하길 원하기 때문에 아래의 명령어를 이용하여 텐서플로우 이미지를 다운로드 받았다. 자세한 사항은 아래의 사이트 참고&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;나는 &lt;point&gt;Tensorflow 1.8.0 gpu버전 python3&lt;/point&gt;을 사용하길 원하기 때문에 아래의 명령어를 이용하여 &lt;point&gt;텐서플로우 이미지를 다운로드&lt;/point&gt; 받았다. 자세한 사항은 아래의 사이트 참고&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;tensorflow docker hub : https://hub.docker.com/r/tensorflow/tensorflow/
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pull&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;py3&lt;/span&gt;     &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;태그명이&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;py3&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;인&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;텐서플로우&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이미지&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;다운로드&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;images&lt;/span&gt;           &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이미지&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;확인&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;명령어&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull tensorflow/tensorflow:1.8.0-gpu-py3       // 태그명이 1.8.0-gpu-py3인 텐서플로우 이미지 다운로드
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker images                                         // 도커 내 이미지 확인 명령어&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;이미지를 다운 로드 받았으면 nvidia-docker를 이용하여 컨테이너를 생성하면된다. nvidia-docker를 이용하여 생성한다. docker에서 컨테이너를 생성하는 명령어는 run이다. 내가 사용한 옵션은 다음과 같다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;이미지를 다운 로드 받았으면 &lt;point&gt;nvidia-docker&lt;/point&gt;를 이용하여 컨테이너를 생성하면된다. docker에서 컨테이너를 생성하는 명령어는 &lt;point&gt;run&lt;/point&gt;이다. 내가 사용한 옵션은 다음과 같다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8891&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8888&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6006&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6006&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ailab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;yurim&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ailab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;docker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ailab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;yurim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;notebooks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0000&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;restart&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tensorflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;py3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8891:8888 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 6006:6006
+&lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; ailab-yurim
+&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/ailab/docker/ailab-yurim:/notebooks &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0000&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+tensorflow/tensorflow:1.8.0-gpu-py3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;옵션 추가 설명&lt;/strong&gt; &lt;br /&gt;&lt;br /&gt;
 -p : 포트 번호 입력 (호스트 포트번호 : 컨테이너 포트번호) &lt;br /&gt;
-   옵션에서 포트번호를 2개를 해준 이유는 8888은 주피터 노트북 연결 포트이고 6006은 텐서보드 연결 포트이다. &lt;br /&gt;
-   6006을 연결 안해주면 텐서보드가 실행이 안되므로 포트를 꼭 맵핑해주어야 한다!!&lt;br /&gt;
+   옵션에서 포트번호를 2개를 해준 이유는 8888은 &lt;point&gt;Jupyter notebook&lt;/point&gt; 연결 포트이고 6006은 &lt;point&gt;Tensorboard&lt;/point&gt; 연결 포트이다. &lt;br /&gt;
+   &lt;strong&gt;6006을 연결 안해주면&lt;/strong&gt; Tensorboard가 실행이 안되므로 포트를 꼭 맵핑해주어야 한다!!&lt;br /&gt;
 –name : 생성할 컨테이너 이름 &lt;br /&gt;
--v : 컨테이너와 맵핑할 폴더의 경로 + jupyter notebook 설정 &lt;br /&gt;
+-v : 컨테이너와 맵핑할 폴더의 경로 + Jupyter notebook 설정 &lt;br /&gt;
 -e : 컨테이너 접속 비밀번호 &lt;br /&gt;
 –restart always : 도커 데몬이 실행됬을때 컨테이너 자동으로 실행(run) &lt;br /&gt;
-tensorflow:1.8.0-gpu-py3 : 실행할 이미지를 ‘이미지명:태그명’ 으로 입력 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+tensorflow:1.8.0-gpu-py3 : 실행할 이미지를 &lt;point&gt;'이미지명:태그명'&lt;/point&gt; 으로 입력 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;주피터 노트북 접속시 localhost라면 http://localhost:8888 로 접속하면 되고, 따로 ip주소가 설정되있다면 http://ip주소:호스트포트번호 로 접속하면 된다. 텐서보드도 마찬가지 이다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Jupyter notebook 접속시 localhost라면 &lt;point&gt;http://localhost:8888&lt;/point&gt; 로 접속하면 되고, 따로 ip주소가 설정되있다면 &lt;point&gt;http://ip주소:호스트포트번호&lt;/point&gt; 로 접속하면 된다. Tensorboard도 마찬가지 이다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;!! 우분투 도커 데몬 실행 안될때&lt;/p&gt;
+  &lt;point&gt;[!!!] 우분투 도커 데몬 실행 안될때&lt;/point&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;컴퓨터를 재부팅하고 docker를 재부팅 하였을때 아래와 같은 이미지의 오류와 docker deamon을 실행할 수 없다는 오류가 발생하였다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;컴퓨터를 재부팅하고 docker를 재부팅 하였을때 아래와 같은 이미지의 오류와 &lt;point&gt;docker deamon을 실행할 수 없다는 오류&lt;/point&gt;가 발생하였다. &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40583676-56f2afb0-61ce-11e8-81f7-5dfaa1de1515.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;이 문제는 nvidia-docker로 컨테이너를 생성하였을 때 발생하는 nvidia-container-runtime 문제로 docker engine에 nvidia-runtime을 등록해주어야 한다고 한다. github 홈페이지를 보고 아래의 명령어를 터미널에 붙여 넣어 docker engine을 다시 설정하여 문제를 해결하였다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;이 문제는 nvidia-docker로 컨테이너를 생성하였을 때 발생하는 &lt;point&gt;nvidia-container-runtime 문제&lt;/point&gt;로 docker engine에 nvidia-runtime을 등록해주어야 한다고 한다. github 홈페이지를 보고 아래의 명령어를 터미널에 붙여 넣어 docker engine을 다시 설정하여 문제를 해결하였다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;nvidia-container-runtime : https://github.com/NVIDIA/nvidia-container-runtime
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;nvidia-container-runtime : https://github.com/NVIDIA/nvidia-container-runtime&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo tee /etc/systemd/system/docker.service.d/override.conf &amp;lt;&amp;lt; EOF
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /etc/systemd/system/docker.service.d
+&lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/systemd/system/docker.service.d/override.conf &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
  [서비스]
 ExecStart =
 ExecStart = / usr / bin / dockerd --host = fd : // --add-runtime = nvidia = / usr / bin / nvidia-container-runtime
-EOF
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl daemon-reload
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl restart docker&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;conference&lt;/p&gt;
+  &lt;subtitle&gt; conference
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -192,70 +249,83 @@ sudo systemctl restart docker
         <title>텐서플로우(Tensorflow) 설치를 위한 CUDA / cuDNN 설치 - Ubuntu 16.04 서버, Titan XP</title>
         <link>/2018/05/25/16.html</link>
         <guid isPermaLink="true">/2018/05/25/16.html</guid>
-        <description>&lt;p&gt;서버 사양은 Ubuntu 16.04 / titan XP 이고, 설치할 버전은 CUDA 9.0 / cuDNN 7.0 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;서버 사양은 &lt;point&gt; Ubuntu 16.04 / titan XP &lt;/point&gt; 이고, 설치할 버전은 &lt;point&gt; CUDA 9.0 / cuDNN 7.0 &lt;/point&gt; 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. NVIDIA 드라이버 설치 확인 및 Compute Capability 확인&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 1. NVIDIA 드라이버 설치 확인 및 Compute Capability 확인
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;아래의 명령어를 통해 드라이버 설치와 그래픽카드를 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;smi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40532078-44b5b16c-6039-11e8-923b-b94512544107.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;CUDA 설치 이전에 GPU의 Compute Capability를 지원하는 지 확인하여야 한다. Compute Capability에 따라 설치 할 수 있는 CUDA 버전은 NVIDIA 홈페이지에서 확인이 가능하다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;CUDA 설치 이전에 GPU의 &lt;point&gt;Compute Capability&lt;/point&gt;를 지원하는 지 확인하여야 한다. Compute Capability에 따라 설치 할 수 있는 CUDA 버전은 NVIDIA 홈페이지에서 확인이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;NVIDIA 홈페이지 : https://developer.nvidia.com/cuda-gpus
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40532263-d5c04a14-6039-11e8-9e01-0666d5468c77.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;NVIDIA 홈페이지  - CUDA-Enabled GeForce Products 발췌&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40532263-d5c04a14-6039-11e8-9e01-0666d5468c77.png&quot; width=&quot;30%&quot; /&gt;&lt;br /&gt;NVIDIA 홈페이지  - CUDA-Enabled GeForce Products 발췌&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;CUDA 9.0 버전은 Compute capability 3.0~7.x까지 지원한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;CUDA 9.0 버전은 &lt;strong&gt;Compute capability 3.0~7.x&lt;/strong&gt; 까지 지원한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. 패키지 리스트 추가&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 2. 패키지 리스트 추가
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;아래의 명령어로 패키지 소스 리스트를 추가하고 업데이트 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gnupg&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;아래의 CUDA와 cuDNN의 버전은 텐서플로우 홈페이지를 참고하여 설치하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;아래의 명령어로 패키지 소스 리스트를 추가하고 업데이트 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install sudo &lt;/span&gt;gnupg
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key adv &lt;span class=&quot;nt&quot;&gt;--fetch-keys&lt;/span&gt; http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/apt/sources.list.d/cuda.list
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래의 CUDA와 cuDNN의 버전은 &lt;a href=&quot;https://www.tensorflow.org/install/install_linux#InstallingAnaconda&quot;&gt;텐서플로우 홈페이지&lt;/a&gt;를 참고하여 설치하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3. CUDA 9.0 설치&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 3. CUDA 9.0 설치
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;아래의 명령어를 이용하여 CUDA 9.0을 설치한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+아래의 명령어를 이용하여 &lt;point&gt;CUDA 9.0&lt;/point&gt;을 설치한다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cuda-9-0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;4. cuDNN 7.0 설치&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 4. cuDNN 7.0 설치
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;아래의 명령어를 이용하여 cuDNN 7.0을 설치한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+아래의 명령어를 이용하여 &lt;point&gt;cuDNN 7.0&lt;/point&gt;을 설치한다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;libcudnn7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dev&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libcudnn7-dev&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;5. 버전 확인&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 5. 버전 확인
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -263,25 +333,29 @@ sudo systemctl restart docker
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/local/cuda/version.txt&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;cuDNN 설치 확인
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cudnn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/include/cudnn.h | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;refernece&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; refernece
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;https://hiseon.me/2018/03/11/cuda-install/&lt;/li&gt;
   &lt;li&gt;https://developer.nvidia.com/cuda-gpus&lt;/li&gt;
-  &lt;li&gt;https://www.tensorflow.org/install/install_linux#InstallingAnaconda&lt;/li&gt;
+  &lt;li&gt;https://www.tensorflow.org/install/install_linux#InstallingAnaconda
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 25 May 2018 00:00:00 +0900</pubDate>
@@ -291,24 +365,29 @@ sudo systemctl restart docker
         <title>서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 / Titan XP 서버</title>
         <link>/2018/05/24/15.html</link>
         <guid isPermaLink="true">/2018/05/24/15.html</guid>
-        <description>&lt;p&gt;서버 사양은 Ubuntu 16.04 / titan XP 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;서버 사양은 &lt;point&gt;Ubuntu 16.04 / titan XP&lt;/point&gt; 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1.우분투 패키지 업데이트&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 1.우분투 패키지 업데이트
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /proc/driver/nvidia/version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -319,34 +398,36 @@ sudo systemctl restart docker
 
 &lt;p&gt;그다음 언어 설정이 되지 않았을 경우 설치에 필요한 언어셋등의 기본패키지를 설치해준다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dialog&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;en&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; dialog language-pack-en
 
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;en_US&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;en_US&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;UTF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;en_US&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;UTF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US.UTF-8
 
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;locale&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-locale&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;그 다음 아래의 내용을 /etc/default/locale에 추가해준다.(nano 에디터 사용, ctrl + o -&amp;gt; enter로 저장)&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nano&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/local&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;e
-&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;아래의&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;정보&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;추가&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US:en&quot;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/default/locale
+
+&lt;span class=&quot;c&quot;&gt;# 아래의 정보 추가&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US:en&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3.Ubuntu NIVIDA Repository 업데이트&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 3.Ubuntu NIVIDA Repository 업데이트
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. &lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;issue&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/issue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -355,54 +436,63 @@ sudo systemctl restart docker
 
 &lt;p&gt;우분투 16.04는 NVIDIA Repository가 지원이 되므로 아래의 명령어를 통해 최신 NVIDIA 패키지 리스트를 추가한다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key adv &lt;span class=&quot;nt&quot;&gt;--fetch-keys&lt;/span&gt; http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;4.NVIDIA 그래픽카드 드라이버 설치&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 4.NVIDIA 그래픽카드 드라이버 설치
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;http://www.nvidia.com/Download/Find.aspx?lang=en-us
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;http://www.nvidia.com/Download/Find.aspx?lang=en-us&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40528867-516a05cc-602d-11e8-8f64-11ec523f2a49.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;본인의 사양에 맞게 설정하고 Search 클릭하여 확인한다.&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;아래의 명령어를 통하여 설치가능한 드라이버 버전을 확인한다. nvidia-xxx로 나타나는 패키지 이름 중에서 설치 가능한 버전을 확인하면 된다.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-cache search nvidia&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;br /&gt;
-위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;384&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-384&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;설치후 드라이버가 적용 될 수 있도록 reboot 한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;5.확인&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; 5.확인
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;설치가 성공적으로 되었는지 확인하기 위해서 아래의 명령어를 실행한다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lspci&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;k&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lspci &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40530507-0e50e916-6034-11e8-8bf5-09200668d793.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;아래의 명령어를 이용하면 드라이버 버전을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nvidia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /proc/driver/nvidia/version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;아래의 명령어를 이용하면 그래픽 카드 정보를 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40530684-b2b150a4-6034-11e8-9375-ed2ba24c8927.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -424,8 +514,11 @@ sudo systemctl restart docker
         <link>/2018/05/02/14.html</link>
         <guid isPermaLink="true">/2018/05/02/14.html</guid>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. 우분투(Ubuntu) 다운로드&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt;1. 우분투(Ubuntu) 다운로드
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;먼저 우분투(Ubuntu) 홈페이지에 가서 Ubuntu iso 파일을 다운로드 한다.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -434,10 +527,12 @@ sudo systemctl restart docker
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. Universal USB Installer 다운로드&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt;2. Universal USB Installer 다운로드
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;USB 부팅 디스크를 만들려면 Universal USB Installer라는 프로그램이 필요하다. 아래의 사이트에서 다운로드 받아 준다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+USB 부팅 디스크를 만들려면 &lt;code&gt;Universal USB Installer&lt;/code&gt;라는 프로그램이 필요하다. 아래의 사이트에서 다운로드 받아 준다.&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Universal USB Installer : https://universal-usb-installer.kr.uptodown.com/windows
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
@@ -456,14 +551,16 @@ sudo systemctl restart docker
 &lt;p&gt;Universal USB Installer를 이용하여 윈도우에서 간단하게 Ubuntu 부팅 디스크를 만들 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;reference&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; reference
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu?_ga=2.66069614.1720290893.1525243898-1690874967.1525243898#0&lt;/li&gt;
-  &lt;li&gt;http://physics2.mju.ac.kr/juhapruwp/?p=1135
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;http://physics2.mju.ac.kr/juhapruwp/?p=1135&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 May 2018 00:00:00 +0900</pubDate>
       </item>
@@ -809,8 +906,7 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
         <title>Machine Learning(머신러닝) 시작하기</title>
         <link>/2018/04/13/10.html</link>
         <guid isPermaLink="true">/2018/04/13/10.html</guid>
-        <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;Machine Learning(머신러닝) 시작하기&lt;/h2&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;이번 학기를 끝으로 학부생은 끝나고 다음학기 부터 석사를 시작할 예정이다.&lt;br /&gt;
 연구실에 일한지 어느덧 2년정도 되어 몇몇 알고리즘을 사용도 해보고 실제 서비스에 적용도 해보았지만, 아직도 머신러닝의 개념이 명확하지 않은 느낌이 들었다.
@@ -819,12 +915,13 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 &lt;p&gt;석사로 입학하여 연구를 시작하기에 앞서 머신러닝의 베이직한 개념부터 다양한 머신러닝 알고리즘을 앞으로 꾸준히 정리해 나갈 예정이다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. Supervised Learning(지도 학습)&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt;1. Supervised Learning(지도 학습)
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;지도 학습(Supervised Learning)&lt;/code&gt;&lt;/strong&gt; 은 학습할 때 데이터에 대한 &lt;strong&gt;정답 라벨(Label)&lt;/strong&gt; 을 이용하여 정답 값을 구하기 위한 &lt;strong&gt;함수&lt;/strong&gt; 를 유추하는 학습방법이다.
+&lt;p&gt;지도학습(Supervised Learning)은 학습할 때 데이터에 대한 &lt;strong&gt;정답 라벨(Label)&lt;/strong&gt; 을 이용하여 정답 값을 구하기 위한 &lt;strong&gt;함수&lt;/strong&gt; 를 유추하는 학습방법이다.
   지도 학습시 데이터를 &lt;strong&gt;트레이닝을 위한 데이터셋(training data-set)&lt;/strong&gt; 과 테스트를 위한 &lt;strong&gt;테스트 데이터셋(test data-set)&lt;/strong&gt; 으로 나누어 진행을 하여야한다.
-  머신러닝 알고리즘을 학습할 때는 &lt;strong&gt;트레이닝 데이터 셋(training data-set)&lt;/strong&gt; 을 이용하여 &lt;strong&gt;학습&lt;/strong&gt; 을 하고 &lt;strong&gt;테스트 데이터 셋(test data-set)&lt;/strong&gt; 으로 &lt;strong&gt;성능을 측정&lt;/strong&gt; 한다.&lt;br /&gt;&lt;br /&gt;
+  머신러닝 알고리즘을 학습할 때는 &lt;strong&gt;트레이닝 데이터 셋(training data-set)&lt;/strong&gt; 을 이용하여 &lt;point&gt;학습&lt;/point&gt; 을 하고 &lt;strong&gt;테스트 데이터 셋(test data-set)&lt;/strong&gt; 으로 &lt;point&gt;성능을 측정&lt;/point&gt; 한다.&lt;br /&gt;&lt;br /&gt;
   지도 학습(Supervised Learning)은 데이터가 많으면 많을수록 정답 데이터를 만드는데 시간과 비용이 많이 소모된다는 단점이 있지만,
   쉽게 머신러닝 알고리즘에 적용이 가능하고 성능 측정 방법이 쉽다는 장점이 있다.&lt;br /&gt;&lt;/p&gt;
 
@@ -832,7 +929,7 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 
 &lt;p&gt;&lt;strong&gt;1) 분류(Classification)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;데이터와 카테고리 간의 관계를 학습하여 데이터의 카테고리를 판별하는 방법이다. 카테고리는 &lt;strong&gt;클래스(class)&lt;/strong&gt; 라고 불린다.&lt;br /&gt;
+&lt;p&gt;데이터와 카테고리 간의 관계를 학습하여 데이터의 카테고리를 판별하는 방법이다. 카테고리는 &lt;point&gt;클래스(class)&lt;/point&gt; 라고 불린다.&lt;br /&gt;
   예측 하려는 값이 이산 값(discrete value)일 때 사용하는 방법이다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;ex) 이미지의 카테고리 예측하기, 스팸 / 비스팸 이메일 구분하기 등&lt;br /&gt;&lt;/p&gt;
@@ -842,10 +939,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 
 &lt;p&gt;&lt;strong&gt;2) 회귀(Regression)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;위의 &lt;code&gt;분류(Classification)&lt;/code&gt; 가 데이터 셋트에 대하여 어떠한 특정 클래스를 찾는 문제였다면, &lt;br /&gt;
-  &lt;strong&gt;&lt;code&gt;회귀(Regression)&lt;/code&gt;&lt;/strong&gt; 는 어떤 &lt;strong&gt;X값&lt;/strong&gt; 에 대하여 &lt;strong&gt;Y값&lt;/strong&gt; 의 정답을 만족할 수 있는 &lt;strong&gt;최선의 방정식(equation)&lt;/strong&gt; 을 찾는 것이다.&lt;br /&gt;
-  예측하려는 값이 연속된 값(continuous value)일 때 사용하는 방법이다.
-  이때 성능 측정은 내가 예측한 y’ 값과 정답 y 값의 차이를 비교하는 방법으로 &lt;strong&gt;RMSE(평균 제곱근 오차, Root Mean Square Error)&lt;/strong&gt; 를 낮추는 것을 목표로 한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;위의 분류(Classification) 가 데이터 셋트에 대하여 어떠한 특정 클래스를 찾는 문제였다면, &lt;strong&gt;회귀(Regression)&lt;/strong&gt; 는 어떤 &lt;strong&gt;X값&lt;/strong&gt; 에 대하여 &lt;strong&gt;Y값&lt;/strong&gt; 의 정답을 만족할 수 있는 &lt;point&gt;최선의 방정식(equation)&lt;/point&gt; 을 찾는 것이다. 예측하려는 값이 연속된 값(continuous value)일 때 사용하는 방법이다.&lt;br /&gt;
+  이때 성능 측정은 내가 예측한 y’ 값과 정답 y 값의 차이를 비교하는 방법으로 &lt;point&gt;RMSE(평균 제곱근 오차, Root Mean Square Error)를 낮추는 것을 목표&lt;/point&gt;로 한다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;ex) 학생의 점수 분포를 이용하여 예상 점수 예측하기, 부동산 가격 예측, 주가 예측 등 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/38686742-063b775a-3eb0-11e8-85eb-cafb1ee585af.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
@@ -853,11 +948,11 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. Unsupervised Learning(비 지도 학습)&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt;2. Unsupervised Learning(비 지도 학습)
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;비지도 학습(Unsupervised Learning)&lt;/code&gt;&lt;/strong&gt; 은 데이터만 보고 분석하여 특징이 비슷한 데이터끼리 그룹을 지어 주는 것이다. 이것을 &lt;strong&gt;군집화(Clustering, 클러스터링)&lt;/strong&gt; 라고 한다.
-  비지도 학습은 데이터의 &lt;strong&gt;숨겨진 특징(Feature)&lt;/strong&gt; 이나 분포, 구조를 밝혀내는데 사용된다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;비지도 학습(Unsupervised Learning)은 데이터만 보고 분석하여 특징이 비슷한 데이터끼리 그룹을 지어 주는 것이다. 이것을 &lt;point&gt;군집화(Clustering, 클러스터링)&lt;/point&gt; 라고 한다. 비지도 학습은 데이터의 &lt;strong&gt;숨겨진 특징(Feature)&lt;/strong&gt; 이나 분포, 구조를 밝혀내는데 사용된다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;비지도 학습은 정답 라벨(Label)이 주어지지 않기 때문에, &lt;strong&gt;예측한 값이 정답에 가까운지 아닌지 확인 할 수 없다.&lt;/strong&gt; 따라서, 비지도 학습을 사용하는 경우는 유사한 사용자끼리 군집화(Clustering) 할 때 또는 비슷한 특징을 가지는 기사들을 군집화(Clustering) 할 때 등에 사용 될 수 있다.&lt;br /&gt;&lt;/p&gt;
 
@@ -866,7 +961,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+  &lt;subtitle&gt; Reference
+&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -1611,300 +1707,6 @@ res -&amp;gt; layout -&amp;gt; activity_main.xml 을 클릭하면 어플 화면�
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Jan 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>마크다운(Markdown) 문법 정리</title>
-        <link>/2018/01/01/3.html</link>
-        <guid isPermaLink="true">/2018/01/01/3.html</guid>
-        <description>&lt;p&gt;이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. 헤더(Header)&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;헤더 크기는 1~6까지 지원한다.&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is H1        
-## This is H2
-### This is H3
-#### This is H4
-##### This is H5
-###### This is H6
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;this-is-h1&quot;&gt;This is H1&lt;/h1&gt;
-&lt;h2 id=&quot;this-is-h2&quot;&gt;This is H2&lt;/h2&gt;
-&lt;h3 id=&quot;this-is-h3&quot;&gt;This is H3&lt;/h3&gt;
-&lt;h4 id=&quot;this-is-h4&quot;&gt;This is H4&lt;/h4&gt;
-&lt;h5 id=&quot;this-is-h5&quot;&gt;This is H5&lt;/h5&gt;
-&lt;h6 id=&quot;this-is-h6&quot;&gt;This is H6&lt;/h6&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. 인용구&lt;/strong&gt;*&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;인용구는 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; 안녕
-&amp;gt; &amp;gt; 안녕
-&amp;gt; &amp;gt; * 안녕
-&amp;gt; &amp;gt; &amp;gt; * 안녕
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;안녕&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;안녕&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;안녕
-        &lt;blockquote&gt;
-          &lt;ul&gt;
-            &lt;li&gt;안녕&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3. 목록&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;순서가 있는 목록&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. 일번
-  2. 이번
-  3. 삼번
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;일번&lt;/li&gt;
-  &lt;li&gt;이번&lt;/li&gt;
-  &lt;li&gt;삼번&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;순서가 없는 목록&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 일번
-  * 이번
-    * 삼번
-+ 일번
-  + 이번
-    + 삼번
-- 일번
-  - 이번
-    - 삼번
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;일번
-    &lt;ul&gt;
-      &lt;li&gt;이번
-        &lt;ul&gt;
-          &lt;li&gt;삼번&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;일번
-    &lt;ul&gt;
-      &lt;li&gt;이번
-        &lt;ul&gt;
-          &lt;li&gt;삼번&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;일번
-    &lt;ul&gt;
-      &lt;li&gt;이번
-        &lt;ul&gt;
-          &lt;li&gt;삼번&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;4. 코드&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;lt; pre &amp;gt; &amp;lt; code &amp;gt; 에 감싸서 사용한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;code&amp;gt;Github&amp;lt;/code&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code&gt;Github&lt;/code&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;
-  for i in range(1,2):
-    print(i)
-  &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;for i in range(1,2):
-  print(i)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마)&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;5. 수평선&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;------
-************
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;6. 링크&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;인라인 링크&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [Google](http://google.com)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;자동 연결 링크&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://google.com&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;http://google.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;8. 강조&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;single underscores&lt;/em&gt;&lt;br /&gt;
-&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;double underscores&lt;/strong&gt;&lt;br /&gt;
-&lt;del&gt;cancelline&lt;/del&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;9. 이미지&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.
-![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; alt=&quot;Image name&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ps. 사이즈 조정&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;img src=&quot;이미지 url&quot; width=&quot;원하는 크기&quot;&amp;gt;
-&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;10. 표 그리기&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;표 generate 사이트 : https://www.tablesgenerator.com/markdown_tables&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;First Header&lt;/th&gt;
-      &lt;th&gt;Second Header&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;내용 정렬은 아래와 같이 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header | Third Header
-:------------ | :-----------: | -----------:
-Left          | Center        | Right
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;First Header&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Second Header&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Third Header&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Left&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Center&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Right&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;11. 수식(테마에서 지원)&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x) = \int \frac{2x^2+4x+6}{x-2}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate>
       </item>
     
   </channel>
