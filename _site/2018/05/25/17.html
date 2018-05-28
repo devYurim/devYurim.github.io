@@ -177,7 +177,7 @@
 
 <p>다음의 명령어로 nvidia-docker 명령어가 제대로 실행되는지 확인해준다.(자동으로 CUDA 이미지가 다운로드 받아지는데 나중에 지워도 무방하다.)<br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>docker run <span class="nt">--runtime</span><span class="o">=</span>nvidia <span class="nt">--rm</span> nvidia/cuda nvidia-smi</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nvidia-docker run <span class="nt">--rm</span> nvidia/cuda nvidia-smi</code></pre></figure>
 
 <p><br /><br /></p>
 
