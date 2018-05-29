@@ -129,6 +129,17 @@
 <script>
   window.store = {
     
+      "2018-05-29-20-html": {
+        "title": "Windows와 Ubuntu간의 공유 폴더(Samba) 생성",
+        "tags": "Ubuntu",
+        "date": "May 29, 2018",
+        "author": "",
+        "category": "",
+        "content": "연구실 개인 컴퓨터는 Windows이고 서버는 Ubuntu여서 외장하드를 이용해서 파일을 직접 옮기거나 Jupyter notebook을 이용해서 파일을 우분투로 옮기는 점이 불편해서 공유폴더(samba)를 하나 만들었다.   1. Samba 서버 설치일단 다음의 명령어로 samba를 설치한다.$ sudo apt-get install samba그 다음 아래의 명령어로 samba 계정을 추가하고 패스워드를 지정해준다. $ sudo smbpasswd -a ailab   2. samba 폴더 생성 및 config 수정samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 samba 폴더를 생성한다.$ mkdir samba/etc/samba/smb.conf 를 열어 다음과 같이 편집한다.$ sudo nano /etc/samba/smb.conf# 파일을 열고 아래쪽으로 이동하여 [profiles] 밑에 다음과 같이 작성[ailab]                            # 네트워크에 보여질 공유 이름  comment = ailab share directory  # 디렉토리 설명  path = /home/ailab/samba         # 공유 디렉토리 절대 경로  valid users = ailab              # 접속을 허용할 계정  writeable = yes  create mask = 0664  directory mask = 0775ctrl + o, 엔터를 차례로 누른후 저장하고 ctrl+x 로 나온 다음 아래의 명령어로 samba 서버를 재시작 한다.$ sudo /etc/init.d/smbd restart     # samba server 재시작추가적으로 samba 서버 관련한 명령어는 다음과 같다.$ sudo service smbd start           # samba server 시작$ sudo service smbd stop            # samba server 멈춤$ sudo service smbd restart         # samba server 재시작(단, 권한 입력 필요)그리고 반드시!! 윈도우 탐색기에서 samba 서버에 접속하기 위해서 방화벽 139, 445 포트를 반드시 열어두어야 한다.$ sudo ufw allow 139      # 139 포트 개방$ sudo ufw allow 445      # 445 포트 개방   3. 윈도우 탐색기 연결하기제어판 -&gt; 사용자 계정 -&gt; 자격증명관리 -&gt; windows 자격 증명을 클릭한다.중간부분의 Windows 자격 증명 추가를 누른다.서버의 ip주소, 위에서 지정한 계정이름, 암호를 차례로 입력한다.[네트워크] 창에서 \\\\ip주소 를 입력하여 접속한다. 폴더를 바로가기에 등록해 두면 ip주소를 입력하지 않아도 접속 할 수 있다.   reference  http://w3devlabs.net/wp/?p=19940  https://blog.xianchoi.kr/145  https://m.blog.naver.com/PostView.nhn?blogId=kimmingul&amp;logNo=220639741333&amp;proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F",
+        "url": "//2018/05/29/20.html"
+      }
+      ,
+    
       "2018-05-28-19-html": {
         "title": "Multi-GPU 설치를 위한 NVIDIA 드라이버 재설치(업그레이드) - Ubuntu 16.04 / Titan XP, Titan X",
         "tags": "Ubuntu",

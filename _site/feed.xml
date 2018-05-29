@@ -5,7 +5,112 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Mon, 28 May 2018 18:16:25 +0900</pubDate>
+    <pubDate>Tue, 29 May 2018 16:07:09 +0900</pubDate>
+    
+      <item>
+        <title>Windows와 Ubuntu간의 공유 폴더(Samba) 생성</title>
+        <link>/2018/05/29/20.html</link>
+        <guid isPermaLink="true">/2018/05/29/20.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;연구실 개인 컴퓨터는 Windows이고 서버는 Ubuntu여서 외장하드를 이용해서 파일을 직접 옮기거나 Jupyter notebook을 이용해서 파일을 우분투로 옮기는 점이 불편해서 &lt;point&gt;공유폴더(samba)&lt;/point&gt;를 하나 만들었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. Samba 서버 설치
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;일단 다음의 명령어로 &lt;point&gt;samba&lt;/point&gt;를 설치한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;samba&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그 다음 아래의 명령어로 samba &lt;point&gt;계정을 추가하고 패스워드를 지정&lt;/point&gt;해준다. &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;smbpasswd &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; ailab&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. samba 폴더 생성 및 config 수정
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 &lt;point&gt;samba 폴더를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;samba&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;point&gt;/etc/samba/smb.conf&lt;/point&gt; 를 열어 다음과 같이 편집한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/samba/smb.conf
+
+&lt;span class=&quot;c&quot;&gt;# 파일을 열고 아래쪽으로 이동하여 [profiles] 밑에 다음과 같이 작성&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ailab]                            &lt;span class=&quot;c&quot;&gt;# 네트워크에 보여질 공유 이름&lt;/span&gt;
+  comment &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ailab share directory  &lt;span class=&quot;c&quot;&gt;# 디렉토리 설명&lt;/span&gt;
+  path &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /home/ailab/samba         &lt;span class=&quot;c&quot;&gt;# 공유 디렉토리 절대 경로&lt;/span&gt;
+  valid &lt;span class=&quot;nb&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ailab              &lt;span class=&quot;c&quot;&gt;# 접속을 허용할 계정&lt;/span&gt;
+  writeable &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yes
+  &lt;/span&gt;create mask &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0664
+  directory mask &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0775&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;ctrl + o, 엔터를 차례로 누른후 저장하고 ctrl+x 로 나온 다음 아래의 명령어로 &lt;point&gt;samba 서버를 재시작&lt;/point&gt; 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; /etc/init.d/smbd restart     &lt;span class=&quot;c&quot;&gt;# samba server 재시작&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;추가적으로 samba 서버 관련한 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd start           &lt;span class=&quot;c&quot;&gt;# samba server 시작&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd stop            &lt;span class=&quot;c&quot;&gt;# samba server 멈춤&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd restart         &lt;span class=&quot;c&quot;&gt;# samba server 재시작(단, 권한 입력 필요)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그리고 반드시!! 윈도우 탐색기에서 samba 서버에 접속하기 위해서 &lt;point&gt;방화벽 139, 445 포트&lt;/point&gt;를 &lt;strong&gt;반드시 열어두어야 한다&lt;/strong&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw allow 139      &lt;span class=&quot;c&quot;&gt;# 139 포트 개방&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw allow 445      &lt;span class=&quot;c&quot;&gt;# 445 포트 개방&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 윈도우 탐색기 연결하기
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;point&gt;제어판 -&amp;gt; 사용자 계정 -&amp;gt; 자격증명관리 -&amp;gt; windows 자격 증명&lt;/point&gt;을 클릭한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40640146-bd3fd9b4-634f-11e8-963b-5a93ddaea589.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;중간부분의 &lt;point&gt;Windows 자격 증명 추가&lt;/point&gt;를 누른다.&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40640251-30b05626-6350-11e8-870f-4ac6a3854d85.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;서버의 ip주소, 위에서 지정한 계정이름, 암호를 차례로 입력한다.&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[네트워크]&lt;/strong&gt; 창에서 &lt;point&gt;\\ip주소&lt;/point&gt; 를 입력하여 접속한다. 폴더를 바로가기에 등록해 두면 ip주소를 입력하지 않아도 접속 할 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; reference
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://w3devlabs.net/wp/?p=19940&lt;/li&gt;
+  &lt;li&gt;https://blog.xianchoi.kr/145&lt;/li&gt;
+  &lt;li&gt;https://m.blog.naver.com/PostView.nhn?blogId=kimmingul&amp;amp;logNo=220639741333&amp;amp;proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 May 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Multi-GPU 설치를 위한 NVIDIA 드라이버 재설치(업그레이드) - Ubuntu 16.04 / Titan XP, Titan X</title>
@@ -28,7 +133,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;지워보니 역시 &lt;strong&gt;드라이버가 충돌&lt;/strong&gt; 했던것 같다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40604178-3baca9a6-6299-11e8-8ab8-cb45d2dc9be7.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40604178-3baca9a6-6299-11e8-8ab8-cb45d2dc9be7.png&quot; width=&quot;100%&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1735,75 +1840,6 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>안드로이드 프로그래밍(Android Programming) - 프로젝트 생성하기(hello project!)</title>
-        <link>/2018/01/03/5.html</link>
-        <guid isPermaLink="true">/2018/01/03/5.html</guid>
-        <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 프로젝트 생성하기(hello project!)&lt;/h2&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34511550-cc699236-f09f-11e7-9b2a-194abd6f40b5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-안드로이드 어플을 제작하기 위해서는 프로젝트를 생성해야한다. Start a new Android Studio Project를 클릭하여 프로젝트를 생성한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34511554-dc05a234-f09f-11e7-8d07-8db74b312638.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Application name은 어플의 이름을 지정하는 부분이다. 기기에 설치 및 실행되는 앱의 이름으로 사용이 된다.&lt;br /&gt;
-Company Domain은 개발자를 식별할 수 있는 이름을 도메인 형식으로 입력하는 곳이다.&lt;br /&gt;
-Project location은 프로젝트를 설치할 경로(저장 될 경로)를 입력하는 곳이다. […] 버튼을 눌러서 경로를 변경할 수 있다. 간단한 설정을 하고 Next 버튼을 클릭한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34511839-b238df28-f0a1-11e7-98ee-92228920c759.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;
-어플이 실행될 API 버전을 결정한다. API 버전은 어플이 실행될 최소의 안드로이드 버전을 말한다. 버전이 낮을 수록 많은 기기에서 호환이 가능하다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34511893-0caef4d8-f0a2-11e7-895d-f859065cd695.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;
-왼쪽의 그래프를 보면 안드로버전 대비 몇프로 정도 지원이 되는지 가이드라인이 있다. 버전이 낮을 수록 모든 기기에서 지원되지만 고려해야할 사항이 많아진다고 한다. 나는 KiKat(4.4)로 결정하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34512001-af49b3f4-f0a2-11e7-9bee-c8ff68032b7f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그다음은 액티비티(Activity) 종류를 결정하는 단계이다. &lt;strong&gt;&lt;code&gt;액티비티(Activity)&lt;/code&gt;&lt;/strong&gt; 는 일종의 어플리케이션 구성요소로서 사용자가 전화걸기, 사진찍기, 이메일 보내기 또는 지도 보기 등의 일을 하기 위해서 상호작용할 수 있는 화면을 제공하는 곳이다. 하나의 어플리케이션은 여러개의 액티비티가 느슨하게 서로 묶여 있는 형태로 구성이 된다. 한 어플리케이션 내에서 하나의 액티비티가 주요 액티비티로 지정되며, 사용자가 이 어플리케이션을 처음 실행 할 때 엑티비티가 사용자에게 표시된다.&lt;/p&gt;
-
-&lt;p&gt;원하는 액티비티(Activity)의 형식을 고르고 Next버튼을 클릭한다. 나는 Emtpy Activity를 선택하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514203-9127180a-f0af-11e7-8f1e-f4abdb09c72b.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-그 다음 화면은 Activity name과 Layout name을 결정하는 화면이다. Activity name으로 이루어진 java파일이 생성되고 Layout name 으로 이루어진 Layout 리소스들, 레이아웃 구조 등이 담긴 xml 파일이 생성된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;또한, 하단에 보면 Backwards Compatibility(AppCompat) 라는 옵션이 있는데 이 옵션은 액티비티를 AppCompactActivity로 만들겠다는 의미이다. &lt;strong&gt;AppCompactActivity는 안드로이드 하위버전을 지원하는 액티비티이다.&lt;/strong&gt; Activity API level을 확인하면 API level 11(안드로이드 3.0)이라고 적혀있다. &lt;br /&gt;
-즉, 어플을 몇버전부터 지원할지 결정한다음에 AppCompactActivity 옵션을 결정하면 된다. 나는 KiKat(4.4) 부터 지원할 거기 때문에 그냥 옵션체크를 해제하였다. 이름을 결정하고 Finish 버튼을 클릭한다.&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514482-ff082426-f0b0-11e7-9195-d07c00e54081.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-java 폴더에보면 액티비티 이름으로 생성된 자바파일이 생성된 것을 볼 수 있다. res는 어플의 레이아웃, 이미지 리소스 등 어플리케이션에 사용되는 리소스들을 집어넣는 곳이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514564-5b0b6ab2-f0b1-11e7-93dc-c75665a2593f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-res -&amp;gt; layout -&amp;gt; activity_main.xml 을 클릭하면 어플 화면의 레이아웃을 쉽게 변경할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514641-af77eaa8-f0b1-11e7-8ab6-f61cbb1d6a3d.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;일단 어플리케이션을 build &amp;amp; run 하기 위해서 상단의 플레이 표시를 클릭하여 실행한다. 실행하게 되면 에뮬레이터를 실행할 수 있는 화면이 나온다. 만약 에뮬레이터를 설치하지 않았다면 Create New Virtual Device 버튼을 클릭하여 에뮬레이터를 만든 후 실행하면 된다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514711-0e1a28f0-f0b2-11e7-902e-94543c074046.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;에뮬레이터 설치시 원하는 사이즈의 기종을 선택하여 테스트용으로 설치하면 된다. 에뮬레이터를 다 설치하였다면 에뮬레이터를 선택하고 ok버튼을 눌러 실행을 계속 진행하면 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34514806-6d47e740-f0b2-11e7-83a0-7f6ca9944dce.png&quot; width=&quot;30%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-이렇게 화면에 잘 뜬다면 잘 만든 것이다!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 Jan 2018 00:00:00 +0900</pubDate>
       </item>
     
   </channel>

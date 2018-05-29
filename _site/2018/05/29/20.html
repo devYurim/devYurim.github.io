@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Windows와 Ubuntu간의 공유 폴더(Samba) 생성 | devYurim</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2018/05/29/20.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Windows와 Ubuntu간의 공유 폴더(Samba) 생성</h1>
+    
+    <p class="meta">
+      May 29, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br /></p>
+
+<p>연구실 개인 컴퓨터는 Windows이고 서버는 Ubuntu여서 외장하드를 이용해서 파일을 직접 옮기거나 Jupyter notebook을 이용해서 파일을 우분투로 옮기는 점이 불편해서 <point>공유폴더(samba)</point>를 하나 만들었다.<br /><br /></p>
+
+<blockquote>
+  <subtitle> 1. Samba 서버 설치
+</subtitle>
+</blockquote>
+
+<p>일단 다음의 명령어로 <point>samba</point>를 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>samba</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>그 다음 아래의 명령어로 samba <point>계정을 추가하고 패스워드를 지정</point>해준다. <br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>smbpasswd <span class="nt">-a</span> ailab</code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 2. samba 폴더 생성 및 config 수정
+</subtitle>
+</blockquote>
+
+<p><br />
+samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 <point>samba 폴더를 생성</point>한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">mkdir </span>samba</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p><br /><point>/etc/samba/smb.conf</point> 를 열어 다음과 같이 편집한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>nano /etc/samba/smb.conf
+
+<span class="c"># 파일을 열고 아래쪽으로 이동하여 [profiles] 밑에 다음과 같이 작성</span>
+
+<span class="o">[</span>ailab]                            <span class="c"># 네트워크에 보여질 공유 이름</span>
+  comment <span class="o">=</span> ailab share directory  <span class="c"># 디렉토리 설명</span>
+  path <span class="o">=</span> /home/ailab/samba         <span class="c"># 공유 디렉토리 절대 경로</span>
+  valid <span class="nb">users</span> <span class="o">=</span> ailab              <span class="c"># 접속을 허용할 계정</span>
+  writeable <span class="o">=</span> <span class="nb">yes
+  </span>create mask <span class="o">=</span> 0664
+  directory mask <span class="o">=</span> 0775</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>ctrl + o, 엔터를 차례로 누른후 저장하고 ctrl+x 로 나온 다음 아래의 명령어로 <point>samba 서버를 재시작</point> 한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo</span> /etc/init.d/smbd restart     <span class="c"># samba server 재시작</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>추가적으로 samba 서버 관련한 명령어는 다음과 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>service smbd start           <span class="c"># samba server 시작</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service smbd stop            <span class="c"># samba server 멈춤</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service smbd restart         <span class="c"># samba server 재시작(단, 권한 입력 필요)</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>그리고 반드시!! 윈도우 탐색기에서 samba 서버에 접속하기 위해서 <point>방화벽 139, 445 포트</point>를 <strong>반드시 열어두어야 한다</strong>.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>ufw allow 139      <span class="c"># 139 포트 개방</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ufw allow 445      <span class="c"># 445 포트 개방</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 3. 윈도우 탐색기 연결하기
+</subtitle>
+</blockquote>
+
+<p><br /><point>제어판 -&gt; 사용자 계정 -&gt; 자격증명관리 -&gt; windows 자격 증명</point>을 클릭한다.<br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/40640146-bd3fd9b4-634f-11e8-963b-5a93ddaea589.png" width="60%" /><br />중간부분의 <point>Windows 자격 증명 추가</point>를 누른다.</center>
+<p><br /><br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/40640251-30b05626-6350-11e8-870f-4ac6a3854d85.png" width="60%" /><br />서버의 ip주소, 위에서 지정한 계정이름, 암호를 차례로 입력한다.</center>
+<p><br /><br /></p>
+
+<p><strong>[네트워크]</strong> 창에서 <point>\\ip주소</point> 를 입력하여 접속한다. 폴더를 바로가기에 등록해 두면 ip주소를 입력하지 않아도 접속 할 수 있다.<br /><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle> reference
+</subtitle>
+</blockquote>
+
+<ul>
+  <li>http://w3devlabs.net/wp/?p=19940</li>
+  <li>https://blog.xianchoi.kr/145</li>
+  <li>https://m.blog.naver.com/PostView.nhn?blogId=kimmingul&amp;logNo=220639741333&amp;proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Ubuntu">#Ubuntu</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/2018/05/29/20.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2018/05/28/19.html">
+        Multi-GPU 설치를 위한 NVIDIA 드라이버 재설치(업그레이드) - Ubuntu 16.04 / Titan XP, Titan X
+      </a>
+  </div>
+  
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
