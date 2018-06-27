@@ -95,6 +95,8 @@
 			
 			
 			
+			
+			
 
             <!-- Search bar -->
             
@@ -128,6 +130,17 @@
 
 <script>
   window.store = {
+    
+      "2018-06-27-21-html": {
+        "title": "Ubuntu 서버에 Docker를 이용하여 GitLab 설치하기",
+        "tags": "Ubuntu",
+        "date": "June 27, 2018",
+        "author": "",
+        "category": "",
+        "content": "이제 연구실 서버 외부 접속이 가능해져서 코드 버전 관리를 위해 GitLab을 설치했다! 연구실 서버 환경은 우분투 16.04 LTS에 Docker를 사용하고 있다.GitLab 도커 이미지는 CE(Community Edition)과 EE(Enterprise Edition) 버전이 있는데 나는 CE 버전으로 설치하였다.      GitLab Docker 이미지 다운로드  다음의 Docker 명령어를 통해서 gitlab 이미지를 Docker Hub에서 다운로드 받을 수 있다.latest의 태그명이 붙은 이미지를 다운로드 받았다.$ docker pull install gitlab/gitlab-ce:latest      gitlab 설치  다음의 Docker 명령어로 GitLab 컨테이너를 생성한다.$ sudo docker run --detach \\    --hostname gitlab.ailab.com \\    --publish 8897:80 --publish 6015:22 \\    --name gitlab \\    --restart always \\    --volume /srv/gitlab/config:/home/ailab/GitLab \\    --volume /srv/gitlab/logs:/home/ailab/GitLab/log \\    --volume /srv/gitlab/data:/home/ailab/GitLab/data \\    gitlab/gitlab-ce:latest80번 포트는 http용 포트, 22번 포트는 ssh deamon용 포트이다. 도커 포트 맵핑은 호스트포트:컨테이너포트로 이루어지며나의 경우 publish 옵션을 보면 80번 컨테이너 포트는 호스트 포트 8897로, 22번 컨테이너 포트는 호스트 포트 6015 로 맵핑을 시켜두었다.즉, 웹에서 접근시 서버 주소:8897 로 접속할 수 있고 SSH로 GitLab 접속시 서버 주소와 ssh 6015 포트로 접속할 수 있다.데이터 저장 맵핑 설명은 다음을 참고하였다.참고로, 노출 host 포트는 다음과 같다고 문서에 적혀있다.  80 (http)  443 (if you configure HTTPS)  8080 (used by Unicorn)  22 (used by the SSH deamon)      Gitlab Configuration 수정  외부에서 접속할 수 있도록 하기 위해서는 한가지 셋팅이 더 필요하다.먼저 아래의 Docker 명령어로 gitlab 이름의 컨테이너로 접속한다.$ docker exec -it gitlab /bin/bash다음 아래의 경로로 접속하여 nano 에디터로 gitlab.rb 파일을 수정한다.$ cd /etc/gitlab$ nano gitlab.rb파일에 들어가보면 화면 중간부분에 GitLab URL부분에 extenal_url 옵션의 주석을 해제하고 외부에서 접속 할 url을 입력해 준다.## GitLab URL##! URL on which GitLab will be reachable.##! For more details on configuring external_url see:##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlabexternal_url 'http://gitlab.ailab.com:8897'조금 내리다 보면 GitLab Shell setting for GitLab 부분에서 gitlab_rails['gitlab_shell_ssh_port'] 부분의 주석을 풀고 포트 부분을 수정해준다.### GitLab Shell settings for GitLabgitlab_rails['gitlab_shell_ssh_port'] = 6015# gitlab_rails['gitlab_shell_git_timeout'] = 800ctrl+o로 저장하고 enter를 누른후 ctrl+x로 나노 에디터를 빠져나온다.서버 주소:포트번호(xxx.xxx.xxx.xxx:8897)로 사이트를 접속하면 정상적으로 접속이 되는 것을 확인할 수 있다.root 계정이 사용할 비밀번호를 입력하고 id는 root 비밀번호는 방금 설정한 비밀번호로 sign in 하면 로그인이 되는 것을 확인 할 수 있다.또한 root 계정 이외에 개인 계정을 만들고 싶다면 register 부분에서 생성하면 사용할 수 있다이렇게 나의 소스코드를 안전하게 관리할 수 있는 개인 계정 서버가 생성되었다!  reference  https://docs.gitlab.com/omnibus/docker/",
+        "url": "//2018/06/27/21.html"
+      }
+      ,
     
       "2018-05-29-20-html": {
         "title": "Windows와 Ubuntu간의 공유 폴더(Samba) 생성",

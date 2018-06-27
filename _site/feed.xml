@@ -5,7 +5,132 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Tue, 29 May 2018 16:07:09 +0900</pubDate>
+    <pubDate>Wed, 27 Jun 2018 20:55:41 +0900</pubDate>
+    
+      <item>
+        <title>Ubuntu 서버에 Docker를 이용하여 GitLab 설치하기</title>
+        <link>/2018/06/27/21.html</link>
+        <guid isPermaLink="true">/2018/06/27/21.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+이제 연구실 서버 외부 접속이 가능해져서 코드 버전 관리를 위해 &lt;point&gt;GitLab&lt;/point&gt;을 설치했다! 연구실 서버 환경은 우분투 16.04 LTS에 Docker를 사용하고 있다.&lt;br /&gt;
+GitLab 도커 이미지는 CE(Community Edition)과 EE(Enterprise Edition) 버전이 있는데 나는 &lt;point&gt;CE 버전&lt;/point&gt;으로 설치하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;GitLab Docker 이미지 다운로드&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음의 Docker 명령어를 통해서 gitlab 이미지를 Docker Hub에서 다운로드 받을 수 있다.&lt;br /&gt;
+latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gitlab/gitlab-ce:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;gitlab 설치&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음의 Docker 명령어로 &lt;point&gt;GitLab 컨테이너를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--detach&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--hostname&lt;/span&gt; gitlab.ailab.com &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 8897:80 &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 6015:22 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gitlab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/config:/home/ailab/GitLab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/logs:/home/ailab/GitLab/log &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/data:/home/ailab/GitLab/data &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    gitlab/gitlab-ce:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+80번 포트는 http용 포트, 22번 포트는 ssh deamon용 포트이다. 도커 포트 맵핑은 &lt;point&gt;호스트포트:컨테이너포트&lt;/point&gt;로 이루어지며
+나의 경우 publish 옵션을 보면 80번 컨테이너 포트는 호스트 포트 8897로, 22번 컨테이너 포트는 호스트 포트 6015 로 맵핑을 시켜두었다.&lt;br /&gt;
+즉, 웹에서 접근시 &lt;point&gt;서버 주소:8897&lt;/point&gt; 로 접속할 수 있고 SSH로 GitLab 접속시 &lt;point&gt;서버 주소와 ssh 6015 포트&lt;/point&gt;로 접속할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41970003-37695cc8-7a44-11e8-8089-ee473171e63c.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;데이터 저장 맵핑 설명은 다음을 참고하였다.&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;참고로, &lt;point&gt;노출 host 포트&lt;/point&gt;는 다음과 같다고 문서에 적혀있다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;80 (http)&lt;/li&gt;
+  &lt;li&gt;443 (if you configure HTTPS)&lt;/li&gt;
+  &lt;li&gt;8080 (used by Unicorn)&lt;/li&gt;
+  &lt;li&gt;22 (used by the SSH deamon)
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Gitlab Configuration 수정&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;point&gt;외부에서 접속할 수 있도록 하기 위해서는 한가지 셋팅이 더 필요하다.&lt;/point&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+먼저 아래의 Docker 명령어로 gitlab 이름의 컨테이너로 접속한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; gitlab /bin/bash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;다음 아래의 경로로 접속하여 nano 에디터로 &lt;point&gt;gitlab.rb&lt;/point&gt; 파일을 수정한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/gitlab
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nano gitlab.rb&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;파일에 들어가보면 화면 중간부분에 GitLab URL부분에 &lt;point&gt;extenal_url 옵션&lt;/point&gt;의 주석을 해제하고 외부에서 접속 할 url을 입력해 준다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;## GitLab URL&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! URL on which GitLab will be reachable.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! For more details on configuring external_url see:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab&lt;/span&gt;
+external_url &lt;span class=&quot;s1&quot;&gt;'http://gitlab.ailab.com:8897'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;조금 내리다 보면 GitLab Shell setting for GitLab 부분에서 &lt;point&gt;gitlab_rails['gitlab_shell_ssh_port']&lt;/point&gt; 부분의 주석을 풀고 포트 부분을 수정해준다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;### GitLab Shell settings for GitLab&lt;/span&gt;
+gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 6015
+&lt;span class=&quot;c&quot;&gt;# gitlab_rails['gitlab_shell_git_timeout'] = 800&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;ctrl+o로 저장하고 enter를 누른후 ctrl+x로 나노 에디터를 빠져나온다.&lt;br /&gt;
+서버 주소:포트번호(xxx.xxx.xxx.xxx:8897)로 사이트를 접속하면 정상적으로 접속이 되는 것을 확인할 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971445-6e0bd990-7a49-11e8-91c9-ca415231c5fb.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;root 계정이 사용할 비밀번호를 입력하고 id는 root 비밀번호는 방금 설정한 비밀번호로 sign in 하면 로그인이 되는 것을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971750-78972b02-7a4a-11e8-99f5-4b9bd8af1acd.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한 root 계정 이외에 &lt;point&gt;개인 계정&lt;/point&gt;을 만들고 싶다면 register 부분에서 생성하면 사용할 수 있다&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41972266-503a48d6-7a4c-11e8-8cc9-359bcee7372c.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971844-c1fe2c50-7a4a-11e8-9721-1dc24bf195ea.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 나의 소스코드를 안전하게 관리할 수 있는 개인 계정 서버가 생성되었다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;reference&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://docs.gitlab.com/omnibus/docker/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Jun 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Windows와 Ubuntu간의 공유 폴더(Samba) 생성</title>
@@ -1728,116 +1853,6 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 
 &lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027638-2e6a8b66-fb95-11e7-977d-a10abcdbd6e5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>안드로이드 프로그래밍(Android Programming) - 디자이너 없이 앱디자인 하는 법</title>
-        <link>/2018/01/17/6.html</link>
-        <guid isPermaLink="true">/2018/01/17/6.html</guid>
-        <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 디자이너 없이 앱 디자인 하는 법&lt;/h2&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. Material Design&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;디자이너가 없는 개발 환경에서 어플을 디자인 할 수 있는 가이드 라인이 존재 한다. 구글에서 제공하는 &lt;strong&gt;&lt;a href=&quot;https://developer.android.com/training/material/get-started.html?hl=ko&quot;&gt;Material Guide&lt;/a&gt;&lt;/strong&gt; 를 사용하면 된다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;material guide blog : http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;구글에서 제공하는 &lt;strong&gt;&lt;code&gt;Material Guide&lt;/code&gt;&lt;/strong&gt; 를 사용하면 이미지 파일을 포토샵으로 소스를 만들어 추출 할 필요 없이 안드로이드 디자인 서포트 라이브러리를 연결함으로써 가이드된 UI를 사용 할 수 있다. 여백이나 사이즈 등 수치만 잡아주면 되므로 매우 심플하고 편리하게 어플리케이션을 개발 할 수 있다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;Material Design&lt;/code&gt;&lt;/strong&gt; 은 안드로이드 &lt;strong&gt;API 21(롤리팝) 이상&lt;/strong&gt; 에서만 사용할 수 있다. 안드로이드 스튜디오에서 API 21 이상을 선택하게 되면 테마는 자동으로 머티리얼 테마가 적용이 된다. 머티리얼 테마가 적용이 된것을 확인하려면 res -&amp;gt; values -&amp;gt; sytle.xml 에서 아래의 사진과 같다면 적용이 된 것이다.&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34932998-88cc050e-fa18-11e7-9e8c-f0e155a72b6f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;머티리얼 테마는 &lt;strong&gt;&lt;code&gt;style.xml&lt;/code&gt;&lt;/strong&gt; 에서 다음과 같이 적용 될 수 있다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;android:style/Theme.Material (어두운 버전)&lt;/li&gt;
-  &lt;li&gt;android:style/Theme.Material.Light (밝은 버전)&lt;/li&gt;
-  &lt;li&gt;android:style/Theme.Material.Light.DarkActionBar&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;사용가능 한 머리티얼 스타일 목록은 &lt;strong&gt;&lt;a href=&quot;https://developer.android.com/reference/android/R.style.html?hl=ko&quot;&gt;R.style&lt;/a&gt;&lt;/strong&gt; 에서 확인 할 수 있다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34936901-4921d452-fa26-11e7-8bb1-3f10d382aea9.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. Theme Color 지정하기&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;Material Theme&lt;/code&gt;&lt;/strong&gt; 를 상속 시 테마의 기본 색상을 변경 할 수 있다. 사용자 지정 색상을 사용할 수 있다. 먼저 사용자 색상을 설정하기 위한 요소들은 다음 아래의 그림과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35023450-0d370328-fb7e-11e7-8a33-99e169c79288.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;color 값은 &lt;strong&gt;res -&amp;gt; values -&amp;gt; colors.xml&lt;/strong&gt; 에서 지정 할 수 있다. 디자이너 없이 좋은 컬러값을 추출해 내는 것이 어려운데 &lt;strong&gt;&lt;a href=&quot;https://www.materialpalette.com/&quot;&gt;Material Palette&lt;/a&gt;&lt;/strong&gt; 를 사용하면 쉽게 컬러 값을 추출 할 수 있다. 각 색상값을 더블클릭하면 웹 컬러값을 자동으로 클립보드에 복사해주기 때문에 ctrl + v하여 사용하거나 palettes 탭에서 주요 테마 색상 2가지를 선택하면 자동으로 테마 뷰를 보여준다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35024129-2ff28cf4-fb81-11e7-8e70-ca5692551705.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35023623-d682a25a-fb7e-11e7-92cf-05e3ea6a8e85.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;color 값 정보는 &lt;strong&gt;res -&amp;gt; values -&amp;gt; color.xml&lt;/strong&gt; 파일에 기재하고 컬러값 설정은 &lt;strong&gt;res -&amp;gt; values -&amp;gt; styles.xml&lt;/strong&gt; 에서 설정한다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;res -&amp;gt; values -&amp;gt; colors.xml&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;colorPrimary&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;FF9800&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;colorPrimaryDark&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;F57C00&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;windowBackground&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ffffff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textColorPrimary&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ffffff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textColor&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;212121&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;colorAccent&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;FF5722&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/resources&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;res -&amp;gt; values -&amp;gt; styles.xml&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Base&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AppTheme&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:Theme.Material.Light&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Customize&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;here&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:colorPrimary&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/colorPrimary&amp;lt;/i&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:colorPrimaryDark&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/colorPrimaryDark&amp;lt;/i&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:textColorPrimary&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/textColorPrimary&amp;lt;/i&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:colorAccent&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/colorAccent&amp;lt;/i&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/style&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/resources&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3. Material Icon 사용하기&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;아이콘은 구글이 공개한 저작권 없는 &lt;strong&gt;&lt;a href=&quot;https://material.io/icons/&quot;&gt;Material Icon&lt;/a&gt;&lt;/strong&gt; 을 사용하면 된다. Meterial Icon 홈페이지에 접속하면 아이콘을 선택하여 dp별로 SVG(벡터파일)이나 PNG 파일로 다운 받을 수 있다.&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35025918-6ed049ac-fb8b-11e7-8275-9fcf1107a037.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;refernece&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://developer.android.com/training/material/get-started.html?hl=ko&lt;/li&gt;
-  &lt;li&gt;http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
       </item>
