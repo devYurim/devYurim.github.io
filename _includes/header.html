@@ -17,13 +17,13 @@
 	<nav class="site-nav">
 		<ul>
 			{% for page in site.pages %}
-			{% if (page.title == 'About' or page.title =='tags') and page.hide != true %}
-			<li>
-				<a class="page-link" href="{{ page.url | relative_url }}">
-					{{ page.title }}
-				</a>
-			</li>
-			{% endif %}
+				{% if (page.title == 'About' or page.title =='tags') and page.hide != true %}
+					<li>
+						<a class="page-link" href="{{ page.url | relative_url }}">
+							{{ page.title }}
+						</a>
+					</li>
+				{% endif %}
 			{% endfor %}
 
             <!-- Search bar -->
@@ -42,9 +42,9 @@
 </header>
 
 <header class="site-category">
-	<nav><ul>
-	{% for category in site.categories %}
-	<li><a href="{{ site.url }}/category/{{ category | first | url_encode }}/index.html">{{ category | first }}</a></li>
-	{% endfor %}
-</ul></nav>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ site.baseurl }}/category/{{ category | first | url_encode }}/index.html">{{ category | first }}</a></li>
+  {% endfor %}
+</ul>
 </header>
