@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 {% if page.paginator %}
 
@@ -8,9 +8,6 @@ layout: default
 
   <section>
     <!-- Show post excerpts for the current page -->
-    <div class="posts">
-      <h2 class="post-title">{{page.title}}</h2>
-
       {% for post in paginator.posts %}
       <div class="post-teaser">
           <h2>
@@ -21,7 +18,6 @@ layout: default
           <p class="meta">
             {{ post.date | date: "%B %-d, %Y" }}
           </p>
-      </div>
       {% endfor %}
 
   </section>
