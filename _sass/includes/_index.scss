@@ -4,9 +4,11 @@
   border-top: 1px solid $border-color;
   clear: both;
   width: 100%;
+  ul{
   list-style: none;
   line-height: 1.5;
   text-align: center;
+  }
   li {
     display:inline;
     border-left:1px solid #999;
