@@ -68,13 +68,13 @@ theme_settings:
   post_navigation: true
 
 
-# Configure the plugin here
-category_path: "category" # <- default value
-category_layout: "index.html" # <- default value
-
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
+
+# Configure the plugin here
+category_path: "category" # <- default value
+category_layout: "index.html" # <- default value
 
 animation: true
 

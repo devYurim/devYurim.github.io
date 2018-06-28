@@ -3,7 +3,7 @@ PATH
   specs:
     jekyll-theme-type (1.1)
       jekyll (~> 3.4)
-      jekyll-category-pages (~> 1.0)
+      jekyll-category-pages (~> 1.0.0)
       jekyll-paginate (~> 1.1)
 
 GEM
