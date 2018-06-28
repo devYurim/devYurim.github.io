@@ -5,7 +5,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Thu, 28 Jun 2018 23:57:07 +0900</pubDate>
+    <pubDate>Fri, 29 Jun 2018 00:25:47 +0900</pubDate>
     
       <item>
         <title>지킬(Jekyll) 블로그 카테고리(category) 만들기</title>
