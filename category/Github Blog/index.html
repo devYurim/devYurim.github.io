@@ -2,3 +2,10 @@
 layout: page
 title: category
 ---
+<article>
+  <ul class="site-category">
+    {% for category in site.categories %}
+      <li><a href="{{ site.baseurl }}/category/{{ category | first | url_encode }}/index.html">{{ category | first }}</a></li>
+    {% endfor %}
+  </ul>
+</article>
