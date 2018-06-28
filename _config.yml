@@ -68,6 +68,10 @@ theme_settings:
   post_navigation: true
 
 
+# Configure the plugin here
+#category_path: "category" # <- default value
+category_layout: "category_index.html" # <- default value
+
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
@@ -80,7 +84,9 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-category-pages
 gem:
     - jekyll-sitemap
 theme: jekyll-theme-type

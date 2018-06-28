@@ -5,20 +5,29 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Wed, 27 Jun 2018 20:55:41 +0900</pubDate>
+    <pubDate>Thu, 28 Jun 2018 22:01:31 +0900</pubDate>
+    
+      <item>
+        <title>지킬(Jekyll) 블로그 카테고리(category) 만들기</title>
+        <link>/github%20blog/2018/06/28/blog-6.html</link>
+        <guid isPermaLink="true">/github%20blog/2018/06/28/blog-6.html</guid>
+        <description>&lt;p&gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt; 작성중입니다.. &amp;gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Jun 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Ubuntu 서버에 Docker를 이용하여 GitLab 설치하기</title>
-        <link>/2018/06/27/21.html</link>
-        <guid isPermaLink="true">/2018/06/27/21.html</guid>
+        <link>/ubuntu/docker/2018/06/27/ubuntu-docker-5.html</link>
+        <guid isPermaLink="true">/ubuntu/docker/2018/06/27/ubuntu-docker-5.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
 이제 연구실 서버 외부 접속이 가능해져서 코드 버전 관리를 위해 &lt;point&gt;GitLab&lt;/point&gt;을 설치했다! 연구실 서버 환경은 우분투 16.04 LTS에 Docker를 사용하고 있다.&lt;br /&gt;
 GitLab 도커 이미지는 CE(Community Edition)과 EE(Enterprise Edition) 버전이 있는데 나는 &lt;point&gt;CE 버전&lt;/point&gt;으로 설치하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;GitLab Docker 이미지 다운로드&lt;/li&gt;
-  &lt;/ol&gt;
+  &lt;subtitle&gt;1. GitLab Docker 이미지 다운로드&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;다음의 Docker 명령어를 통해서 gitlab 이미지를 Docker Hub에서 다운로드 받을 수 있다.&lt;br /&gt;
@@ -29,9 +38,7 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&l
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;gitlab 설치&lt;/li&gt;
-  &lt;/ol&gt;
+  &lt;subtitle&gt;2. gitlab 설치&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;다음의 Docker 명령어로 &lt;point&gt;GitLab 컨테이너를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
@@ -64,9 +71,7 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&l
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Gitlab Configuration 수정&lt;/li&gt;
-  &lt;/ol&gt;
+  &lt;subtitle&gt;3. Gitlab Configuration 수정&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;point&gt;외부에서 접속할 수 있도록 하기 위해서는 한가지 셋팅이 더 필요하다.&lt;/point&gt;
@@ -120,7 +125,7 @@ gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&g
 &lt;p&gt;이렇게 나의 소스코드를 안전하게 관리할 수 있는 개인 계정 서버가 생성되었다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;reference&lt;/p&gt;
+  &lt;subtitle&gt;reference&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -134,8 +139,8 @@ gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&g
     
       <item>
         <title>Windows와 Ubuntu간의 공유 폴더(Samba) 생성</title>
-        <link>/2018/05/29/20.html</link>
-        <guid isPermaLink="true">/2018/05/29/20.html</guid>
+        <link>/ubuntu/2018/05/29/ubuntu-4.html</link>
+        <guid isPermaLink="true">/ubuntu/2018/05/29/ubuntu-4.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;연구실 개인 컴퓨터는 Windows이고 서버는 Ubuntu여서 외장하드를 이용해서 파일을 직접 옮기거나 Jupyter notebook을 이용해서 파일을 우분투로 옮기는 점이 불편해서 &lt;point&gt;공유폴더(samba)&lt;/point&gt;를 하나 만들었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -239,8 +244,8 @@ samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 &lt;poi
     
       <item>
         <title>Multi-GPU 설치를 위한 NVIDIA 드라이버 재설치(업그레이드) - Ubuntu 16.04 / Titan XP, Titan X</title>
-        <link>/2018/05/28/19.html</link>
-        <guid isPermaLink="true">/2018/05/28/19.html</guid>
+        <link>/ubuntu/2018/05/28/ubuntu-3.html</link>
+        <guid isPermaLink="true">/ubuntu/2018/05/28/ubuntu-3.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;원래 연구실에 서버가 2대였는데 큰 서버가 하나 생겨서 원래 서버에서 쓰던 GPU를 옮겨 장착하게 되었다. 옮겨 장작했더니 Tensorflow를 실행할 때 오류가 발생하여 프로그램이 터져버렸다..ㅎㅎ 검색해보니 이러한 경우에는 &lt;point&gt;GPU들의 드라이버 버전이 안맞아서&lt;/point&gt; 생기는 경우인것 같아 &lt;point&gt;NVIDIA 드라이버를 재설치&lt;/point&gt; 하기로 하였다. 기존에 있던 GPU는 Titan Xp였고 새로 끼운 GPU는 GTX Titan X이다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -425,8 +430,8 @@ samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 &lt;poi
     
       <item>
         <title>지킬(Jekyll) 블로그에 구글 웹폰트 적용하기</title>
-        <link>/2018/05/27/18.html</link>
-        <guid isPermaLink="true">/2018/05/27/18.html</guid>
+        <link>/github%20blog/2018/05/27/blog-5.html</link>
+        <guid isPermaLink="true">/github%20blog/2018/05/27/blog-5.html</guid>
         <description>&lt;p&gt;간단하게 웹폰트 수정하는 법을 정리하고자 포스팅을 하였다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;point&gt;구글&lt;/point&gt; 에서 무료로 웹폰트를 제공하는데 이를 github 블로그에서 적용할 수 있다. 적용가능한 폰트 리스트는 &lt;a href=&quot;http://makebct.net/%EA%B5%AC%EA%B8%80%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/?cat=148/&quot;&gt;&lt;point&gt;링크된 사이트&lt;/point&gt;&lt;/a&gt;를 참조하면 좋을 것 같다. 나는 블로그의 폰트를 &lt;point&gt;나눔 고딕&lt;/point&gt;으로 변경하였다. 변경 기준은 현재 블로그에 사용하고 있는 Type Theme을 기준으로 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -471,8 +476,8 @@ samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 &lt;poi
     
       <item>
         <title>도커(Docker)를 이용하여 텐서플로우(Tensorflow) GPU 버전 설치하기 - Ubuntu 16.04 / Titan XP</title>
-        <link>/2018/05/25/17.html</link>
-        <guid isPermaLink="true">/2018/05/25/17.html</guid>
+        <link>/tensorflow/docker/2018/05/25/tensorflow-docker-3.html</link>
+        <guid isPermaLink="true">/tensorflow/docker/2018/05/25/tensorflow-docker-3.html</guid>
         <description>&lt;p&gt;나의 험난했던… 연구실 서버 셋팅기를 글로 남겨보려고 한다..! 연구실 서버의 사양은 &lt;point&gt;Ubuntu 16.04 / Titan XP&lt;/point&gt; 이다. 여러명이서 같이 써야하기 때문에 &lt;point&gt;docker로 텐서플로우 GPU 버전&lt;/point&gt;을 사용할 수 있는 환경을 구성하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -667,8 +672,8 @@ ExecStart = / usr / bin / dockerd --host = fd : // --add-runtime = nvidia = / us
     
       <item>
         <title>텐서플로우(Tensorflow) 설치를 위한 CUDA / cuDNN 설치 - Ubuntu 16.04 서버, Titan XP</title>
-        <link>/2018/05/25/16.html</link>
-        <guid isPermaLink="true">/2018/05/25/16.html</guid>
+        <link>/tensorflow/2018/05/25/tensorflow-2.html</link>
+        <guid isPermaLink="true">/tensorflow/2018/05/25/tensorflow-2.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;서버 사양은 &lt;point&gt; Ubuntu 16.04 / titan XP &lt;/point&gt; 이고, 설치할 버전은 &lt;point&gt; CUDA 9.0 / cuDNN 7.0 &lt;/point&gt; 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -783,8 +788,8 @@ ExecStart = / usr / bin / dockerd --host = fd : // --add-runtime = nvidia = / us
     
       <item>
         <title>서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 / Titan XP 서버</title>
-        <link>/2018/05/24/15.html</link>
-        <guid isPermaLink="true">/2018/05/24/15.html</guid>
+        <link>/ubuntu/2018/05/24/ubuntu-2.html</link>
+        <guid isPermaLink="true">/ubuntu/2018/05/24/ubuntu-2.html</guid>
         <description>&lt;p&gt;서버 사양은 &lt;point&gt;Ubuntu 16.04 / titan XP&lt;/point&gt; 이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -931,8 +936,8 @@ NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한�
     
       <item>
         <title>우분투(Ubuntu) USB 부팅디스크 만들기 - Windows 10</title>
-        <link>/2018/05/02/14.html</link>
-        <guid isPermaLink="true">/2018/05/02/14.html</guid>
+        <link>/ubuntu/2018/05/02/ubuntu-1.html</link>
+        <guid isPermaLink="true">/ubuntu/2018/05/02/ubuntu-1.html</guid>
         <description>&lt;blockquote&gt;
   &lt;subtitle&gt;1. 우분투(Ubuntu) 다운로드
 &lt;/subtitle&gt;
@@ -987,8 +992,8 @@ USB 부팅 디스크를 만들려면 &lt;code&gt;Universal USB Installer&lt;/cod
     
       <item>
         <title>Java JDK 설치하기(Windows/MAC OS)</title>
-        <link>/2018/05/02/13.html</link>
-        <guid isPermaLink="true">/2018/05/02/13.html</guid>
+        <link>/java/2018/05/02/java-1.html</link>
+        <guid isPermaLink="true">/java/2018/05/02/java-1.html</guid>
         <description>&lt;p&gt;간단하게 JAVA JDK 설치와 환경변수 편집에 관련한 내용을 글로 남기려고 작성하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1105,8 +1110,8 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
     
       <item>
         <title>텐서플로우(Tensorflow) GPU 버전 설치하기 - Windows 10 pro</title>
-        <link>/2018/04/30/12.html</link>
-        <guid isPermaLink="true">/2018/04/30/12.html</guid>
+        <link>/tensorflow/2018/04/30/tensorflow-1.html</link>
+        <guid isPermaLink="true">/tensorflow/2018/04/30/tensorflow-1.html</guid>
         <description>&lt;p&gt;연구실 내 컴퓨터에 드디어 GPU가..!! 로컬에서 Tensorflow GPU를 사용하기 위해 험난했던 GPU 버전 설치 방법을 남긴다…&lt;br /&gt;
 &lt;strong&gt;반드시 tensorflow 공식 문서를 확인해야한다!!!&lt;/strong&gt; 추천 cuda버전, cudnn버전, anaconda일때 파이썬 몇 버전 써야하는지, native pip 일때 파이썬 몇 버전을 써야하는지 적혀있다. 자신의 환경에 맞춰서 공식문서를 보고 파이썬 버전을 잘 선택해야한다. 또한, 선택하는 운영체제에 따라서도 버전이 다르다. &lt;br /&gt;&lt;br /&gt;
 나는 &lt;strong&gt;Windows 10 / Anaconda&lt;/strong&gt; 를 사용하여 설치할 예정이다.&lt;br /&gt;&lt;/p&gt;
@@ -1239,8 +1244,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
     
       <item>
         <title>윈도우(Windows)에 지킬(Jekyll)설치하기</title>
-        <link>/2018/04/30/11.html</link>
-        <guid isPermaLink="true">/2018/04/30/11.html</guid>
+        <link>/github%20blog/2018/04/30/blog-4.html</link>
+        <guid isPermaLink="true">/github%20blog/2018/04/30/blog-4.html</guid>
         <description>&lt;p&gt;요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;연구실 컴퓨터는 &lt;strong&gt;Windows 10 pro&lt;/strong&gt; 버전이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1324,8 +1329,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
     
       <item>
         <title>Machine Learning(머신러닝) 시작하기</title>
-        <link>/2018/04/13/10.html</link>
-        <guid isPermaLink="true">/2018/04/13/10.html</guid>
+        <link>/ml/2018/04/13/ml-1.html</link>
+        <guid isPermaLink="true">/ml/2018/04/13/ml-1.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;이번 학기를 끝으로 학부생은 끝나고 다음학기 부터 석사를 시작할 예정이다.&lt;br /&gt;
@@ -1400,8 +1405,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
     
       <item>
         <title>안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼에 스크롤 뷰 적용</title>
-        <link>/2018/01/19/9.html</link>
-        <guid isPermaLink="true">/2018/01/19/9.html</guid>
+        <link>/android/2018/01/19/android-6.html</link>
+        <guid isPermaLink="true">/android/2018/01/19/android-6.html</guid>
         <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼에 스크롤 뷰 적용&lt;/h2&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1487,8 +1492,8 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
     
       <item>
         <title>안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼 만들기</title>
-        <link>/2018/01/17/8.html</link>
-        <guid isPermaLink="true">/2018/01/17/8.html</guid>
+        <link>/android/2018/01/17/android-5.html</link>
+        <guid isPermaLink="true">/android/2018/01/17/android-5.html</guid>
         <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼 만들기&lt;/h2&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1762,97 +1767,6 @@ activate 하였을 때 다음과 같이 &lt;strong&gt;(cuda)&lt;/strong&gt; 로 
 추후 웹 서버 연동과 db연동을 한 후 로그인 확인기능과 추가 핸들러 기능을 구현할 예정이다.위의 예제 코드로 왠만한 기본적인 안드로이드 페이지를 응용하여 만들수 있다.(회원가입 폼, 기본 메뉴 화면 등) 어플리케이션에 필요한 화면들을 다 만든 뒤 추가 기능을 추가해야겠다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>안드로이드 프로그래밍(Android Programming) - 시작(Intro) 화면 만들기</title>
-        <link>/2018/01/17/7.html</link>
-        <guid isPermaLink="true">/2018/01/17/7.html</guid>
-        <description>&lt;center&gt;&lt;h2 color=&quot;#DF0174&quot;&gt;안드로이드 프로그래밍(Android Programming) - 시작(Intro) 화면 만들기&lt;/h2&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;1. JavaClass 생성&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;일단 시작 화면을 따로 생성하기 위하여 &lt;code&gt;자바 클래스(java 파일)&lt;/code&gt; 를 먼저 생성한다. 클래스 이름은 IntroActivity 하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35026602-63874880-fb8f-11e7-8f5b-bd84f28caab5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Activity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bundle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IntroActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Activity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kr&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 4초 인트로 화면 보여주기&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;InterruptedException&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// next Activity 기재.&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;startActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MainActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;finish&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;2. drawable 폴더에 background_intro.xml 파일 생성&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35026602-63874880-fb8f-11e7-8f5b-bd84f28caab5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;layer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xmlns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://schemas.android.com/apk/res/android&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Background&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drawable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;@color/windowBackground&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;logo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bitmap&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gravity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;center&quot;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;@mipmap/ic_launcher&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/item&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/layer-list&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;3. vaules/styles.xml 파일 수정&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;아래의 코드를 &lt;strong&gt;res -&amp;gt; values -&amp;gt; styles.xml&lt;/strong&gt; 파일에 스타일을 추가해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;intro&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;IntroTheme&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Theme.AppCompat.NoActionBar&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;android:windowBackground&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;drawable&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/background_intro&amp;lt;/i&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/style&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027154-73c2e008-fb92-11e7-9f67-5e610279660c.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;4. AndroidManifest.xml 파일 수정&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt; 시작 화면이 현재 MainActivity로 되어 있는데 이를 IntroActivity로 조정하기 위한 작업이다. manifests -&amp;gt; &lt;strong&gt;&lt;code&gt;AndroidManifest.xml&lt;/code&gt;&lt;/strong&gt; 파일에 가서 아래와 같이 코드를 수정한다.
-&lt;strong&gt;Intro Theme을 따로 설정 해주는것&lt;/strong&gt; 을 까먹으면 안된다! &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027514-7d7e91b2-fb94-11e7-9cad-d67434bdf743.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;시작 액티비티를 수정하고 반드시 그다음에 실행할 액티비티를 아래에 추가해 주어야 한다. 아래 이미지는 시작 화면 적용한 화면이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/35027638-2e6a8b66-fb95-11e7-977d-a10abcdbd6e5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Jan 2018 00:00:00 +0900</pubDate>
       </item>

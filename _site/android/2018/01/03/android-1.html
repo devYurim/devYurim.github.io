@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>안드로이드 프로그래밍(Android Programming) 시작하기 | devYurim</title>
+	<meta name="description" content="연구실에서 이번년도 산학연 과제로 하드웨어-안드로이드어플-서버구축 부분을 개발하게 되었다. 일단 첫 공부로 안드로이드 프로그래밍부터 공부하기로 결정하였다! 일단 이번 방학까지 구현해야 하는 어플에 대해서 1차적인 개발은 마칠 예정이다. 서버 부분은 나 혼자 하는 작업은 아니지만 다...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/android/2018/01/03/android-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+	</div>
+
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+</header>
+
+<header class="site-category">
+	<nav><ul>
+	
+	<li><a href="http://localhost:4000/category/Github+Blog">Github Blog</a></li>
+	
+	<li><a href="http://localhost:4000/category/Android">Android</a></li>
+	
+	<li><a href="http://localhost:4000/category/ML">ML</a></li>
+	
+	<li><a href="http://localhost:4000/category/Tensorflow">Tensorflow</a></li>
+	
+	<li><a href="http://localhost:4000/category/Java">Java</a></li>
+	
+	<li><a href="http://localhost:4000/category/Ubuntu">Ubuntu</a></li>
+	
+	<li><a href="http://localhost:4000/category/Docker">Docker</a></li>
+	
+
+</ul></nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">안드로이드 프로그래밍(Android Programming) 시작하기</h1>
+    
+    <p class="meta">
+      January 3, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>연구실에서 이번년도 산학연 과제로 하드웨어-안드로이드어플-서버구축 부분을 개발하게 되었다. 일단 첫 공부로 안드로이드 프로그래밍부터 공부하기로 결정하였다! 일단 이번 방학까지 구현해야 하는 어플에 대해서 1차적인 개발은 마칠 예정이다. 서버 부분은 나 혼자 하는 작업은 아니지만 다른 사람들과의 협업을 위해 일단 조금씩 골고루 공부해 두는것으로…!<br /><br /></p>
+
+<p>안드로이드 프로그래밍은 3학년 1학기 때 경진대회에 참가하면서 약간 다뤄본 경험이 있다. 그때 스크랩한 내용들이랑 새로 스크랩한 내용들을 정리해서 포스팅을 작성할 예정이다. 안드로이드 프로그래밍에 대한 자료들은 구글에도 아주 방대하게 있고 MOOC강의나 책을 사면 무료 공개되는 강의들이 많으니 골고루 참고할 예정이다.<br /><br /></p>
+
+<blockquote>
+  <p><strong>1. JAVA JDK 설치</strong></p>
+</blockquote>
+
+<p>일단 안드로이드 프로그래밍 개발은 자바(Java)언어를 기반으로 이루어진다. 안드로이드 프로그래밍을 하기 위해서는 우선 <strong><code>JAVA JDK(Java Development Kit)</code></strong> 가 반드시 설치 되어 있어야 한다. 아래의 링크를 타고 들어가서 운영체제에 맞는 JDK를 설치하면 된다.<br /></p>
+<ul>
+  <li>Java JDK : http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html</li>
+</ul>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/34510278-e7bf4738-f095-11e7-928f-517645aeb3b2.png" width="60%" /></center>
+
+<blockquote>
+  <p>1-1. 윈도우(Windows) 설정</p>
+</blockquote>
+
+<p>JDK를 설치하고 난 후 자바 환경변수(JAVA_HOME, PATH)를 설정해 주어야 JDK를 사용할 수 있다. 윈도우는 <strong>환경변수</strong> 설정에 가서 두가지 작업을 해야한다.</p>
+
+<ol>
+  <li>사용자 변수 새로 만들기
+    <ul>
+      <li>변수 이름 : JAVA_HOME</li>
+      <li>변수 값 : jdk가 설치 된 경로 (ex. “C:\Program Files\Java\jdk.1.8.0_25”)
+<br /></li>
+    </ul>
+  </li>
+  <li>변수 PATH에 경로 추가
+    <ul>
+      <li>변수값 맨 뒤에 jdk 경로를 추가해준다.(ex. C:\Program Files\Java\jdk.1.8.0_25;)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>cmd 창을 켜고 java-version 을 쳐서 버전이 올바르게 나오면 제대로 경로가 설정이 된것이다.<br /></p>
+
+<blockquote>
+  <p>1-2. 맥 OS(Mac OS), 리눅스(Linux) 설정</p>
+</blockquote>
+
+<p>맥은 명령어로 자바 환경변수 설정이 가능하다.</p>
+
+<p>1) JAVA 디렉토리로 이동<br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span></code></pre></figure>
+
+<p>2) ls 명령어를 이용하여 jdk 버전 확인 -&gt; <strong>메모 해둔다!</strong><br /></p>
+
+<p>3) home 파일로 접속<br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*위에서 메모한 jdk버전 사용*/</span>
+<span class="nx">$</span> <span class="nx">cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="p">.</span><span class="mf">1.8</span><span class="p">.</span><span class="mi">0</span><span class="nx">_25</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span></code></pre></figure>
+
+<p>4) vim 에디터를 이용하여 bash_profile 접근<br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">vi</span> <span class="o">~</span><span class="sr">/.bash_profile</span></code></pre></figure>
+
+<p>5) 수정모드에서 경로 추가<br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*위에서 메모한 jdk버전 사용*/</span>
+<span class="k">export</span> <span class="nx">JAVA_HOME</span><span class="o">=</span><span class="sr">/Library/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="p">.</span><span class="mf">1.8</span><span class="p">.</span><span class="mi">0</span><span class="nx">_25</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span></code></pre></figure>
+
+<p>esc 누른 후, :wq로 저장하고 모드를 빠져나온다.<br /></p>
+
+<p>6) 터미널에서 자바 버전 확인<br /></p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">java</span><span class="o">-</span><span class="nx">version</span></code></pre></figure>
+
+<p>이렇게 셋팅을 완료하면 자바를 사용하기 위한 환경 설정은 완료된다. <br /><br /></p>
+
+<blockquote>
+  <p><strong>2. 통합개발환경(IDE) 설치</strong></p>
+</blockquote>
+
+<p>이제 본격적으로 안드로이드 프로그래밍을 하기 위한 IDE를 설치할 차례이다. 통합개발환경(IDE)으로는 <strong><a href="https://developer.android.com/studio/index.html?hl=ko">안드로이드 스튜디오(Android Studio)</a></strong> 또는 <strong><a href="https://www.eclipse.org/downloads/">이클립스(Eclipse)</a></strong> 를 이용하여 개발을 할 수 있다.<br /></p>
+
+<p>안드로이드 스튜디오는 Jetbrain 회사의 Intellij와 거의 비슷하다. 또한, 에뮬레이터를 지원한다. 에뮬레이터는 간단하게 말하면 만든 소스의 기능을 테스트 할 수 있는 가상 기기이다. 굳이 안드로이드 휴대폰에 어플을 집어넣지 않아도 테스트가 가능하다는 장점이 있다. 다만, 에뮬레이터 기능 때문에 프로그램이 조금 무겁다고 느껴진다. 맥북 프로에서 안드로이드 스튜디오를 돌렸을 때 메모리가 16기가인데 에뮬레이터 돌릴때 약간 무겁다는 느낌이 많이 들었다.</p>
+
+<p>이클립스는 안드로이드 스튜디오보다는 가벼운 편이다. 자바를 개발하면서 이클립스 단축키나 사용법에 익숙한 사람들은 이클립스를 사용한다고 들었다. 자신에게 편한 IDE를 사용하면 된다. 둘중에 하나 자신이 원하는 통합개발환경을 설치하면 된다.</p>
+
+<p>나는 <code>Jetbrain</code> 회사의 프로그램들을 무료 학생계정으로 자주 사용하여 안드로이드 스튜디오를 쓰기로 결정하였다. 개발환경은 MAC OS X Android Studio로 공부를 진행 할 예정이다.</p>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Android">#Android</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/android/2018/01/03/android-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/github%20blog/2018/01/01/blog-3.html">
+        마크다운(Markdown) 문법 정리
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/android/2018/01/03/android-2.html">
+        안드로이드 프로그래밍(Android Programming) - 프로젝트 생성하기(hello project!)
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

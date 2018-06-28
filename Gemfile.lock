@@ -3,6 +3,7 @@ PATH
   specs:
     jekyll-theme-type (1.1)
       jekyll (~> 3.4)
+      jekyll-category-pages (~> 1.0)
       jekyll-paginate (~> 1.1)
 
 GEM
@@ -34,6 +35,9 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-category-pages (1.0.0)
+      jekyll (~> 3.5)
+      jekyll-paginate (~> 1.1, >= 1.0.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)

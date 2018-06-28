@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% if page.paginator %}
+
+  <!-- Pagination is active -->
+  {% assign paginator = page.paginator %}
+
+  <section>
+    <!-- Show post excerpts for the current page -->
+    <div class="posts">
+      <h2 class="post-title">{{page.title}}</h2>
+
+      {% for post in paginator.posts %}
+      <div class="post-teaser">
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h2>
+          <p class="meta">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </p>
+      </div>
+      {% endfor %}
+
+  </section>
+
+  <!-- Show navigation next/previous page links if applicable -->
+  <nav><p>
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path}}" class="button" >
+        <i class="fa fa-chevron-left"></i>
+        {{ site.theme_settings.str_previous_page }}
+      </a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path}}" class="button" >
+        {{ site.theme_settings.str_next_page }}
+        <i class="fa fa-chevron-right"></i>
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </p></nav>
+
+{% endif %}

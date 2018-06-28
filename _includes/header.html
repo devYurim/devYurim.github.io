@@ -13,10 +13,11 @@
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 		</h1>
 	</div>
+
 	<nav class="site-nav">
 		<ul>
 			{% for page in site.pages %}
-			{% if page.title and page.hide != true %}
+			{% if (page.title == 'About' or page.title =='tags') and page.hide != true %}
 			<li>
 				<a class="page-link" href="{{ page.url | relative_url }}">
 					{{ page.title }}
@@ -38,5 +39,13 @@
             {% endif %}
 		</ul>
 	</nav>
+</header>
 
+<header class="site-category">
+	<nav><ul>
+	{% for category in site.categories %}
+	<li><a href="{{ site.url }}/category/{{ category | first | url_encode }}">{{ category | first }}</a></li>
+	{% endfor %}
+
+</ul></nav>
 </header>

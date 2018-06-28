@@ -2,87 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/2018/06/27/21.html</loc>
+        <loc>http://localhost:4000/github%20blog/2018/06/28/blog-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/29/20.html</loc>
+        <loc>http://localhost:4000/ubuntu/docker/2018/06/27/ubuntu-docker-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/28/19.html</loc>
+        <loc>http://localhost:4000/ubuntu/2018/05/29/ubuntu-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/27/18.html</loc>
+        <loc>http://localhost:4000/ubuntu/2018/05/28/ubuntu-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/25/17.html</loc>
+        <loc>http://localhost:4000/github%20blog/2018/05/27/blog-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/25/16.html</loc>
+        <loc>http://localhost:4000/tensorflow/docker/2018/05/25/tensorflow-docker-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/24/15.html</loc>
+        <loc>http://localhost:4000/tensorflow/2018/05/25/tensorflow-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/02/14.html</loc>
+        <loc>http://localhost:4000/ubuntu/2018/05/24/ubuntu-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/05/02/13.html</loc>
+        <loc>http://localhost:4000/ubuntu/2018/05/02/ubuntu-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/04/30/12.html</loc>
+        <loc>http://localhost:4000/java/2018/05/02/java-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/04/30/11.html</loc>
+        <loc>http://localhost:4000/tensorflow/2018/04/30/tensorflow-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/04/13/10.html</loc>
+        <loc>http://localhost:4000/github%20blog/2018/04/30/blog-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/19/9.html</loc>
+        <loc>http://localhost:4000/ml/2018/04/13/ml-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/17/8.html</loc>
+        <loc>http://localhost:4000/android/2018/01/19/android-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/17/7.html</loc>
+        <loc>http://localhost:4000/android/2018/01/17/android-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/17/6.html</loc>
+        <loc>http://localhost:4000/android/2018/01/17/android-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/03/5.html</loc>
+        <loc>http://localhost:4000/android/2018/01/17/android-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/03/4.html</loc>
+        <loc>http://localhost:4000/android/2018/01/03/android-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/01/3.html</loc>
+        <loc>http://localhost:4000/android/2018/01/03/android-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/01/2.html</loc>
+        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/2018/01/01/1.html</loc>
+        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-1.html</loc>
     </url>
     
 
@@ -129,6 +133,78 @@
     
     <url>
         <loc>http://localhost:4000/tags.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Android/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Android/page2.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Docker/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Github+Blog/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Github+Blog/page2.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Java/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/ML/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Tensorflow/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Ubuntu/</loc>
     </url>
     
     
