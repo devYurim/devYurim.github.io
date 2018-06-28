@@ -35,10 +35,10 @@ layout: default
           {{ post.date | date: "%B %-d, %Y" }}
         </p>
         <div class="excerpt">
-          <!--{{ post.excerpt }}-->
-          <a class="button" href="{{ post.url | relative_url }}">
+          {{ post.excerpt }}
+          <!--<a class="button" href="{{ post.url | relative_url }}">
             {{ site.theme_settings.str_continue_reading }}
-          </a>
+          </a>-->
         </div>
       </header>
     </div>

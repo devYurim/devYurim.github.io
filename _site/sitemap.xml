@@ -102,23 +102,15 @@
     
     
     <url>
+        <loc>http://localhost:4000/category/Github%20Blog.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://localhost:4000/about/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/category/Github%20Blog/category.html</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/category/Android/category.html</loc>
     </url>
     
     
@@ -129,14 +121,6 @@
     
     <url>
         <loc>http://localhost:4000/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/category/Android/</loc>
     </url>
     
     

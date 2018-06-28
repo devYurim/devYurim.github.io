@@ -1,11 +1,12 @@
 .tag-title {
   color: $tags-color;
-  margin-bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 .tagged-post {
   .title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     font-weight: bold;
     color:#b0b0b0;
   }

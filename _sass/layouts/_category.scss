@@ -1,43 +1,11 @@
 // Post listing
-.posts {
-  .post-title{
-  	@extend %padding-small;
-  	display: inline-block;
-  	width: 100%;
-  	background-color:$header-desc-background-color;
-  	background-size: cover;
-  	font-size: 1em;
-  	text-align: center;
-  	color: $header-desc-text-color;
-  }
-  .post-teaser {
-    @extend %padding-small;
-    width: 100%;
-    margin-bottom: 0;
-    display: inline-block;
-    background-size: $feature-image-size;
-    border-bottom: 1px solid $border-color;
-    p a {
-      @extend .body-link;
+.posts-list {
+  @extend %padding-regular;
+  list-style: none;
+  li{
+    a{
+      font-weight: bold;
 
     }
-  }
-  .excerpt {
-    font-weight: 700;
-    margin-top: 0.5em;
-  }
-}
-// Pagination
-.pagination .button {
-  margin: 0 1em;
-  i {
-    vertical-align: middle;
-  }
-}
-.pagination {
-  padding: $padding-small $padding-large 0 $padding-large;
-  text-align: center;
-  @media (max-width: 600px) {
-    padding: $padding-small;
   }
 }

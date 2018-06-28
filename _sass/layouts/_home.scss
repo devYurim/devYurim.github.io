@@ -1,12 +1,12 @@
 // Header text feature
 .selfie{
-  padding-top:100px;
+  padding-top:200px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 .selfie a img{
-  width: 100px; height: 100px;
+  width: 150px; height: 150px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -24,7 +24,7 @@
 .social li i {
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   color: #000000;
 }
 .call-out {
@@ -47,7 +47,6 @@
 // Post listing
 .posts {
   .post-title{
-  	@extend %padding-small;
   	display: inline-block;
   	width: 100%;
   	background-color:$header-desc-background-color;
@@ -59,29 +58,17 @@
   .post-teaser {
     @extend %padding-regular;
     width: 100%;
-    margin-bottom: 0;
     display: inline-block;
-    background-size: $feature-image-size;
     border-bottom: 1px solid $border-color;
-    p a {
-      @extend .body-link;
-
-    }
-  }
-  .excerpt {
-    font-weight: 700;
-    margin-top: 0.5em;
   }
 }
 // Pagination
 .pagination .button {
-  margin: 0 1em;
   i {
     vertical-align: middle;
   }
 }
 .pagination {
-  padding: $padding-small $padding-large 0 $padding-large;
   text-align: center;
   @media (max-width: 600px) {
     padding: $padding-small;

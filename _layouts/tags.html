@@ -19,11 +19,10 @@ layout: page
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
               {{ post.title }}
-            </a>
+            </a><small>
+              {{ post.date | date: "%B %-d, %Y" }}
+            </small>
           </h3>
-          <div class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </div>
         </div>
       {% endif %}
     {% endfor %}
