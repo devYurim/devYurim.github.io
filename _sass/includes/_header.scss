@@ -93,16 +93,19 @@
   border-bottom: 1px solid $border-color;
   clear: both;
   width: 100%;
-  text-align: center;
-
-  nav ul li {
+  ul {
+    list-style: none;
+    line-height: 1.5;
+    text-align: center;
+  }
+  li {
     display:inline;
     border-left:1px solid #999;
     padding:0 10px;}
 
-  nav ul li:first-child{border-left:none;}
+  li:first-child{border-left:none;}
 
-  nav ul li a {
+  a {
   color: $header-link-color;
   font-weight:800;
   }
