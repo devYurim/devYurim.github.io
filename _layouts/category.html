@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% unless page.content == '' %}
+  {{ content }}
+{% endunless %}
 
 <!-- Pagination is active -->
 {% assign paginator = page.paginator %}
