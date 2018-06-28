@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl:
+baseurl: "https://devYurim.github.io"
 url: "https://devYurim.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
