@@ -1,0 +1,12 @@
+---
+title: category
+layout: default
+---
+
+<header class="site-category">
+	<nav><ul>
+	{% for category in site.categories %}
+	<li><a href="{{ site.url }}/category/{{ category | first | url_encode }}/index.html">{{ category | first }}</a></li>
+	{% endfor %}
+</ul></nav>
+</header>
