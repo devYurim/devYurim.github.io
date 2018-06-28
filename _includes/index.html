@@ -1,7 +1,7 @@
-<div class="site-category">
+<header class="site-category">
 <ul>
   {% for category in site.categories %}
     <li><a href="{{ site.baseurl }}/category/{{ category | first | url_encode }}/index.html">{{ category | first }}</a></li>
   {% endfor %}
 </ul>
-</div>
+</header>
