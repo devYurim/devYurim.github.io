@@ -70,7 +70,7 @@ theme_settings:
 
 # Configure the plugin here
 category_path: "category" # <- default value
-category_layout: "category_index.html" # <- default value
+category_layout: "index.html" # <- default value
 
 # PAGINATION
 paginate: 5
