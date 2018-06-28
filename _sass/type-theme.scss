@@ -9,12 +9,14 @@
 
 // Posts
 @import 'layouts/posts';
-@import 'layouts/index';
+@import 'layouts/home';
 @import 'layouts/tags';
 @import 'layouts/search';
+@import 'layouts/category';
 
 // Partials
-@import 'includes/header';
 @import 'includes/footer';
 @import 'includes/tag_list';
 @import 'includes/post_nav';
+@import 'includes/index';
+@import 'includes/header';
