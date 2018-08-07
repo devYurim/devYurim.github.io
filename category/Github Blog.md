@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Java
+title: Github Blog
 ---
 
 Another sample category page.
