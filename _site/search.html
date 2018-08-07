@@ -225,6 +225,14 @@
       
     
       
+    
+      
+    
+      
+    
+      
+    
+      
         
       
     
@@ -258,14 +266,6 @@
     
       
         
-      
-    
-      
-    
-      
-    
-      
-    
       
     
 </ul>
@@ -288,14 +288,14 @@
 <script>
   window.store = {
     
-      "github-20blog-2018-06-28-blog-6-html": {
+      "github-20blog-2018-08-07-blog-6-html": {
         "title": "지킬(Jekyll) 블로그 카테고리(category) 만들기",
         "tags": "Github Blog",
-        "date": "June 28, 2018",
+        "date": "August 7, 2018",
         "author": "",
         "category": "",
-        "content": "포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt; 작성중입니다.. &gt;",
-        "url": "//github%20blog/2018/06/28/blog-6.html"
+        "content": "포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.   1. _layouts 폴더에 category.html 파일 생성 먼저 _layouts 폴더에 category.html 파일을 생성해준다.category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.// category.html---layout: default---&lt;ul class=\"posts-list\"&gt;    &lt;/ul&gt;   2. _includes 폴더의 index.html 파일 수정아래의 내용과 같이 수정한다.&lt;header class=\"site-category\"&gt;  &lt;ul&gt;                                                        &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Android.html\"&gt;Android&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Docker.html\"&gt;Docker&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Github%20Blog2.html\"&gt;Java&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Java.html\"&gt;Github Blog&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/ML.html\"&gt;ML&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Tensorflow.html\"&gt;Tensorflow&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Ubuntu.html\"&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;                                                                                                                                                                                                                                                                                                                                                                                                  &lt;/ul&gt;&lt;/header&gt;  3. category 폴더 생성 (맨 바깥의 디렉토리) 계정명.github.io 폴더 안에 category 폴더를 만들어준다음 원하는 카테고리명의 markdown 파일을 추가해준다. 마크다운 파일 내용은 아래와 같다.---layout: categorytitle: 여기에 카테고리 이름 입력!---예를들어, docker 카테고리를 만들고 싶다면 category 폴더의 docker.md의 내용은 다음과 같다.  4. 블로그 포스트에 category 추가하기위의 세가지 셋팅을 하고 나면 포스트를 작성할때 카테고리 항목만 추가하여 주면 카테고리 지정이 된다.위의 이미지처럼 categories 항목을 추가해주고 원하는 카테고리 이름을 작성해주면 된다. (복수 카테고리도 가능하다.)주의 해야 할 점은 반드시! category 폴더에 원하는 category를 만들어주고 포스트에 같은 카테고리 명을 입력해야 한다.",
+        "url": "//github%20blog/2018/08/07/blog-6.html"
       }
       ,
     
@@ -415,7 +415,7 @@
         "date": "April 30, 2018",
         "author": "",
         "category": "",
-        "content": "요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ연구실 컴퓨터는 Windows 10 pro 버전이다.  1. 루비(ruby) 설치윈도우 컴퓨터에는 맥 OS 같이 루비가 깔려있지 않으므로 루비를 설치해주어야 한다! 다운로드는 아래의 사이트에서 할 수 있다.  ruby 다운로드 : https://rubyinstaller.org/downloads/ Devkit 을 같이 설치한다! 나는 안정 버전이라고 표시된 2.4.4-1 version을 설치하였다.** 만약 Git 이 설치되어 있지 않으면 설치해야한다! **  git 다운로드 : https://git-scm.com/downloads   2. 지킬(jekyll) 설치설치가 끝나면 윈도우 검색창에 ruby를 치면 ‘Start Command Prompt with Ruby’ 라는 Command 창을 킨다. 다음의 명령어를 통해 지킬을 설치한다.gem install jekyll  3. 블로그 페이지에 bunlde 설치하기이 경우는 블로그 페이지가 이미 있는 경우에 한하여 재 설치 할 수 있는 방법이다!만약, 블로그 페이지가 없는 새로운 사용자라면 새로운 저장소(repository)를 만들고 맘에드는 블로그를 clone하여 사용해야 한다.자세한 사항은 이곳 을 참조 하는 것이 좋을 것 같다.나는 블로그를 Dropbox를 통하여 관리하기 때문에 Dropbox 폴더안에 Git에 올려놓은 로컬 파일들이 모두 존재한다.  내 블로그 파일 들이 있는 로컬 경로로 변경하여 접속한다.(C:\\내 로컬파일 경로)  폴더 내에 있는 Gemfile을 이용해서 bundle 설치를 한다.bundle install  jekyll이 되는지 확인하기 위해서 build하고 로컬 실행해 본다.jekyll buildjekyll serve  http://localhost:4000 으로 접속하여 실행이 제대로 되면 윈도우 셋업은 끝이다.만약 블로그를 포스팅하고 최초로 git을 실행하는 것이라면 아래와 같이 git을 셋팅 해준다.git config user.name 계정이름git config user.email 계정이메일포스팅을을 다 작성하고 커밋 명령어를 작성하였는데 커밋(commit)이 되지 않는다면 위와 같이 git유저 정보를 추가 해주면 된다.이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ",
+        "content": "요즘 노트북은 잘 안쓰고 연구실 컴퓨터로 거의 작업을 하고 있다! 연구실 컴퓨터에는 지킬(jekyll)이 깔려있지 않으니 뭔가 포스팅을 안하는 느낌이여서 시험도 끝났겠다 지킬을 설치하였다! 약간의 삽질이 있었으므로 설치 방법을 글로 남기려고 한다ㅠ.ㅠ연구실 컴퓨터는 Windows 10 pro 버전이다.   1. 루비(ruby) 설치 윈도우 컴퓨터에는 맥 OS 같이 루비가 깔려있지 않으므로 루비를 설치해주어야 한다! 다운로드는 아래의 사이트에서 할 수 있다.  ruby 다운로드 : https://rubyinstaller.org/downloads/ Devkit 을 같이 설치한다! 나는 안정 버전이라고 표시된 2.4.4-1 version을 설치하였다.** 만약 Git 이 설치되어 있지 않으면 설치해야한다! **  git 다운로드 : https://git-scm.com/downloads    2. 지킬(jekyll) 설치 설치가 끝나면 윈도우 검색창에 ruby를 치면 ‘Start Command Prompt with Ruby’ 라는 Command 창을 킨다. 다음의 명령어를 통해 지킬을 설치한다.gem install jekyll   3. 블로그 페이지에 bunlde 설치하기 이 경우는 블로그 페이지가 이미 있는 경우에 한하여 재 설치 할 수 있는 방법이다!만약, 블로그 페이지가 없는 새로운 사용자라면 새로운 저장소(repository)를 만들고 맘에드는 블로그를 clone하여 사용해야 한다.자세한 사항은 이곳 을 참조 하는 것이 좋을 것 같다.나는 블로그를 Dropbox를 통하여 관리하기 때문에 Dropbox 폴더안에 Git에 올려놓은 로컬 파일들이 모두 존재한다.  내 블로그 파일 들이 있는 로컬 경로로 변경하여 접속한다.(C:\\내 로컬파일 경로)  폴더 내에 있는 Gemfile을 이용해서 bundle 설치를 한다.bundle install  jekyll이 되는지 확인하기 위해서 build하고 로컬 실행해 본다.jekyll buildjekyll serve  http://localhost:4000 으로 접속하여 실행이 제대로 되면 윈도우 셋업은 끝이다.만약 블로그를 포스팅하고 최초로 git을 실행하는 것이라면 아래와 같이 git을 셋팅 해준다.git config user.name 계정이름git config user.email 계정이메일포스팅을을 다 작성하고 커밋 명령어를 작성하였는데 커밋(commit)이 되지 않는다면 위와 같이 git유저 정보를 추가 해주면 된다.이렇게 해서 연구실 컴퓨터에도 지킬 설정 끝! 이제 열심히 포스팅 할 일만 남았다 ㅎㅎ",
         "url": "//github%20blog/2018/04/30/blog-4.html"
       }
       ,
