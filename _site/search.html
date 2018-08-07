@@ -157,50 +157,57 @@
     
       
         
-          <li><a class="category-link "
-          href="/category/Android.html">Android</a></li>
+          <li><a class="category-link " href="/category/Android.html">
+            Android
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Docker.html">Docker</a></li>
+          <li><a class="category-link " href="/category/Docker.html">
+            Docker
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Github%20Blog2.html">Java</a></li>
+          <li><a class="category-link " href="/category/Github%20Blog.html">
+            Github Blog
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Java.html">Github Blog</a></li>
+          <li><a class="category-link " href="/category/Java.html">
+            Java
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/ML.html">ML</a></li>
+          <li><a class="category-link " href="/category/ML.html">
+            ML
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Tensorflow.html">Tensorflow</a></li>
+          <li><a class="category-link " href="/category/Tensorflow.html">
+            Tensorflow
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Ubuntu.html">Ubuntu</a></li>
+          <li><a class="category-link " href="/category/Ubuntu.html">
+            Ubuntu
+          </a></li>
         
       
     
@@ -294,7 +301,7 @@
         "date": "August 7, 2018",
         "author": "",
         "category": "",
-        "content": "포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.   1. _layouts 폴더에 category.html 파일 생성 먼저 _layouts 폴더에 category.html 파일을 생성해준다.category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.// category.html---layout: default---&lt;ul class=\"posts-list\"&gt;    &lt;/ul&gt;   2. _includes 폴더의 index.html 파일 수정아래의 내용과 같이 수정한다.&lt;header class=\"site-category\"&gt;  &lt;ul&gt;                                                        &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Android.html\"&gt;Android&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Docker.html\"&gt;Docker&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Github%20Blog2.html\"&gt;Java&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Java.html\"&gt;Github Blog&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/ML.html\"&gt;ML&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Tensorflow.html\"&gt;Tensorflow&lt;/a&gt;&lt;/li&gt;                                          &lt;li&gt;&lt;a class=\"category-link \"          href=\"/category/Ubuntu.html\"&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;                                                                                                                                                                                                                                                                                                                                                                                                  &lt;/ul&gt;&lt;/header&gt;  3. category 폴더 생성 (맨 바깥의 디렉토리) 계정명.github.io 폴더 안에 category 폴더를 만들어준다음 원하는 카테고리명의 markdown 파일을 추가해준다. 마크다운 파일 내용은 아래와 같다.---layout: categorytitle: 여기에 카테고리 이름 입력!---예를들어, docker 카테고리를 만들고 싶다면 category 폴더의 docker.md의 내용은 다음과 같다.  4. 블로그 포스트에 category 추가하기위의 세가지 셋팅을 하고 나면 포스트를 작성할때 카테고리 항목만 추가하여 주면 카테고리 지정이 된다.위의 이미지처럼 categories 항목을 추가해주고 원하는 카테고리 이름을 작성해주면 된다. (복수 카테고리도 가능하다.)주의 해야 할 점은 반드시! category 폴더에 원하는 category를 만들어주고 포스트에 같은 카테고리 명을 입력해야 한다.",
+        "content": "포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.   1. _layouts 폴더에 category.html 파일 생성 먼저 _layouts 폴더에 category.html 파일을 생성해준다.category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.---layout: default---&lt;ul class=\"posts-list\"&gt;    {% assign category = page.category | default: page.title %}  {% for post in site.categories[category] %}    &lt;li&gt;      &lt;h3&gt;        &lt;a href=\"{{ site.baseurl }}{{ post.url }}\"&gt;          {{ post.title }}        &lt;/a&gt;        &lt;small&gt;{{ post.date | date_to_string }}&lt;/small&gt;      &lt;/h3&gt;    &lt;/li&gt;  {% endfor %}  &lt;/ul&gt;   2. _includes 폴더의 index.html 파일 수정아래의 내용과 같이 수정한다.&lt;header class=\"site-category\"&gt;  &lt;ul&gt;        {% assign pages_list = site.pages %}    {% for node in pages_list %}      {% if node.title != null %}        {% if node.layout == \"category\" %}          &lt;li&gt;&lt;a class=\"category-link {% if page.url == node.url %} active{% endif %}\"          href=\"{{ site.baseurl }}{{ node.url }}\"&gt;{{ node.title }}&lt;/a&gt;&lt;/li&gt;        {% endif %}      {% endif %}    {% endfor %}    &lt;/ul&gt;&lt;/header&gt;  3. category 폴더 생성 (맨 바깥의 디렉토리) 계정명.github.io 폴더 안에 category 폴더를 만들어준다음 원하는 카테고리명의 markdown 파일을 추가해준다. 마크다운 파일 내용은 아래와 같다.---layout: categorytitle: 여기에 카테고리 이름 입력!---예를들어, docker 카테고리를 만들고 싶다면 category 폴더의 docker.md의 내용은 다음과 같다.  4. 블로그 포스트에 category 추가하기위의 세가지 셋팅을 하고 나면 포스트를 작성할때 카테고리 항목만 추가하여 주면 카테고리 지정이 된다.위의 이미지처럼 categories 항목을 추가해주고 원하는 카테고리 이름을 작성해주면 된다. (복수 카테고리도 가능하다.)주의 해야 할 점은 반드시! category 폴더에 원하는 category를 만들어주고 포스트에 같은 카테고리 명을 입력해야 한다.",
         "url": "//github%20blog/2018/08/07/blog-6.html"
       }
       ,

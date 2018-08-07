@@ -157,50 +157,57 @@
     
       
         
-          <li><a class="category-link "
-          href="/category/Android.html">Android</a></li>
+          <li><a class="category-link " href="/category/Android.html">
+            Android
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Docker.html">Docker</a></li>
+          <li><a class="category-link " href="/category/Docker.html">
+            Docker
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Github%20Blog2.html">Java</a></li>
+          <li><a class="category-link " href="/category/Github%20Blog.html">
+            Github Blog
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Java.html">Github Blog</a></li>
+          <li><a class="category-link " href="/category/Java.html">
+            Java
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/ML.html">ML</a></li>
+          <li><a class="category-link " href="/category/ML.html">
+            ML
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Tensorflow.html">Tensorflow</a></li>
+          <li><a class="category-link " href="/category/Tensorflow.html">
+            Tensorflow
+          </a></li>
         
       
     
       
         
-          <li><a class="category-link "
-          href="/category/Ubuntu.html">Ubuntu</a></li>
+          <li><a class="category-link " href="/category/Ubuntu.html">
+            Ubuntu
+          </a></li>
         
       
     
@@ -380,12 +387,22 @@
 
 <p>category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">// category.html
----
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
 layout: default
 ---
 <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"posts-list"</span><span class="nt">&gt;</span>
   
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}{{ post.url }}"</span><span class="nt">&gt;</span>
+          {{ post.title }}
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;small&gt;</span>{{ post.date | date_to_string }}<span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  {% endfor %}
   
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
@@ -401,123 +418,15 @@ layout: default
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"site-category"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul&gt;</span>
     
-    
-      
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Android.html"</span><span class="nt">&gt;</span>Android<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Docker.html"</span><span class="nt">&gt;</span>Docker<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Github%20Blog2.html"</span><span class="nt">&gt;</span>Java<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Java.html"</span><span class="nt">&gt;</span>Github Blog<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/ML.html"</span><span class="nt">&gt;</span>ML<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Tensorflow.html"</span><span class="nt">&gt;</span>Tensorflow<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link "</span>
-          <span class="na">href=</span><span class="s">"/category/Ubuntu.html"</span><span class="nt">&gt;</span>Ubuntu<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        
-      
-    
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link {% if page.url == node.url %} active{% endif %}"</span>
+          <span class="na">href=</span><span class="s">"{{ site.baseurl }}{{ node.url }}"</span><span class="nt">&gt;</span>{{ node.title }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
     
 <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/header&gt;</span></code></pre></figure>
