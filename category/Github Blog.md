@@ -1,6 +1,7 @@
 ---
 layout: category
-title: Github Blog
+title: Development Environment/Github Blog
+permalink: '/DE/Github Blog'
 ---
 
 Another sample category page.

@@ -12,31 +12,67 @@
 		<h1 class="site-title">
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 		</h1>
+		<nav class="site-nav">
+				<ul>
+					{% for page in site.pages %}
+						{% if (page.title == 'About' or page.title =='tags') and page.hide != true %}
+							<li>
+								<a class="page-link" href="{{ page.url | relative_url }}">
+									{{ page.title }}
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+
+					<!-- Search bar -->
+					{% if site.theme_settings.search %}
+					<li>
+					<form action="{{ site.baseurl }}/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					{% endif %}
+				</ul>
+		</nav>
 	</div>
 
-	<nav class="site-nav">
-		<ul>
-			{% for page in site.pages %}
-				{% if (page.title == 'About' or page.title =='tags') and page.hide != true %}
-					<li>
-						<a class="page-link" href="{{ page.url | relative_url }}">
-							{{ page.title }}
-						</a>
-					</li>
-				{% endif %}
-			{% endfor %}
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
 
-            <!-- Search bar -->
-            {% if site.theme_settings.search %}
-            <li>
-            <form action="{{ site.baseurl }}/search.html" method="get">
-                <input type="text" id="search-box" name="query" placeholder="Search" class="">
-                <button type="submit" class="">
-                    <i class="fa fa-fw fa-search"></i>
-                </button>
-            </form>
-            </li>
-            {% endif %}
-		</ul>
-	</nav>
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
 </header>

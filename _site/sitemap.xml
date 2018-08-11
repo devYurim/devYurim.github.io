@@ -2,91 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/08/07/blog-6.html</loc>
+        <loc>http://localhost:4000/python/crawler/2018/08/11/python-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ubuntu/docker/2018/06/27/ubuntu-docker-5.html</loc>
+        <loc>http://localhost:4000/python/crawler/2018/08/11/python-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ubuntu/2018/05/29/ubuntu-4.html</loc>
+        <loc>http://localhost:4000/python/crawler/2018/08/11/python-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ubuntu/2018/05/28/ubuntu-3.html</loc>
+        <loc>http://localhost:4000/python/django/development%20environment/docker/2018/08/09/django-docker-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/05/27/blog-5.html</loc>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/09/blog-8.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/tensorflow/docker/2018/05/25/tensorflow-docker-3.html</loc>
+        <loc>http://localhost:4000/development%20environment/docker/2018/08/09/docker-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/tensorflow/2018/05/25/tensorflow-2.html</loc>
+        <loc>http://localhost:4000/development%20environment/git/2018/08/08/git-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ubuntu/2018/05/24/ubuntu-2.html</loc>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/07/blog-7.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ubuntu/2018/05/02/ubuntu-1.html</loc>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/07/blog-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/java/2018/05/02/java-1.html</loc>
+        <loc>http://localhost:4000/development%20environment/docker/2018/06/27/docker-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/tensorflow/2018/04/30/tensorflow-1.html</loc>
+        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/29/ubuntu-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/04/30/blog-4.html</loc>
+        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/28/ubuntu-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/ml/2018/04/13/ml-1.html</loc>
+        <loc>http://localhost:4000/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/19/android-6.html</loc>
+        <loc>http://localhost:4000/python/tensorflow/2018/05/25/tensorflow-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/17/android-5.html</loc>
+        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/24/ubuntu-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/17/android-4.html</loc>
+        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/02/ubuntu-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/17/android-3.html</loc>
+        <loc>http://localhost:4000/development%20environment/java/2018/05/02/java-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/03/android-2.html</loc>
+        <loc>http://localhost:4000/python/tensorflow/2018/04/30/tensorflow-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/2018/01/03/android-1.html</loc>
+        <loc>http://localhost:4000/data%20science/machine%20learning/2018/04/13/ml-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-3.html</loc>
+        <loc>http://localhost:4000/android/android/2018/01/19/android-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-2.html</loc>
+        <loc>http://localhost:4000/android/android/2018/01/17/android-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/github%20blog/2018/01/01/blog-1.html</loc>
+        <loc>http://localhost:4000/android/android/2018/01/17/android-4.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/android/android/2018/01/17/android-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/android/android/2018/01/03/android-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/android/android/2018/01/03/android-1.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-5.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-4.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-1.html</loc>
     </url>
     
 
@@ -102,7 +134,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Android.html</loc>
+        <loc>http://localhost:4000/Android/Android</loc>
     </url>
     
     
@@ -110,7 +142,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Docker.html</loc>
+        <loc>http://localhost:4000/Python/Crawler</loc>
     </url>
     
     
@@ -118,7 +150,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Github%20Blog.html</loc>
+        <loc>http://localhost:4000/Python/Django</loc>
     </url>
     
     
@@ -126,7 +158,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Java.html</loc>
+        <loc>http://localhost:4000/DE/Docker</loc>
     </url>
     
     
@@ -134,7 +166,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/ML.html</loc>
+        <loc>http://localhost:4000/DE/Git</loc>
     </url>
     
     
@@ -142,7 +174,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Tensorflow.html</loc>
+        <loc>http://localhost:4000/DE/Github Blog</loc>
     </url>
     
     
@@ -150,7 +182,31 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Ubuntu.html</loc>
+        <loc>http://localhost:4000/DE/Java</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/DS/ML</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/Python/Tensorflow</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/DE/Ubuntu</loc>
     </url>
     
     
@@ -228,7 +284,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Android/</loc>
+        <loc>http://localhost:4000/blog/page6/</loc>
     </url>
     
     
@@ -236,7 +292,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Android/page2.html</loc>
+        <loc>http://localhost:4000/category/Android%252FAndroid/</loc>
     </url>
     
     
@@ -244,7 +300,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Docker/</loc>
+        <loc>http://localhost:4000/category/Android%252FAndroid/page2.html</loc>
     </url>
     
     
@@ -252,7 +308,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Github+Blog/</loc>
+        <loc>http://localhost:4000/category/Data+Science%252FMachine+Learning/</loc>
     </url>
     
     
@@ -260,7 +316,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Github+Blog/page2.html</loc>
+        <loc>http://localhost:4000/category/Development+Enviroment%252FDocker/</loc>
     </url>
     
     
@@ -268,7 +324,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Java/</loc>
+        <loc>http://localhost:4000/category/Development+Environment%252FDocker/</loc>
     </url>
     
     
@@ -276,7 +332,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/ML/</loc>
+        <loc>http://localhost:4000/category/Development+Environment%252FGit/</loc>
     </url>
     
     
@@ -284,7 +340,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Tensorflow/</loc>
+        <loc>http://localhost:4000/category/Development+Environment%252FGithub+Blog/</loc>
     </url>
     
     
@@ -292,7 +348,47 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Ubuntu/</loc>
+        <loc>http://localhost:4000/category/Development+Environment%252FGithub+Blog/page2.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Development+Environment%252FJava/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Development+Environment%252FUbuntu/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Python%252FCrawler/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Python%252FDjango/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Python%252FTensorflow/</loc>
     </url>
     
     

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>지킬(Jekyll) 블로그 카테고리(category) 만들기 | devYurim</title>
+	<meta name="description" content="&lt;p&gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt;/p&gt;   1. _layouts 폴더에 category.html 파일 생성 먼저 _layouts 폴더에 category.html 파일을 생성해준다...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/development%20environment/github%20blog/2018/08/07/blog-6.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">지킬(Jekyll) 블로그 카테고리(category) 만들기</h1>
+    
+    <p class="meta">
+      August 7, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br />&lt;p&gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt;/p&gt;<br /><br /></p>
+
+<blockquote>
+  <subtitle> 1. _layouts 폴더에 category.html 파일 생성 </subtitle>
+</blockquote>
+
+<p>먼저 _layouts 폴더에 <point>category.html</point> 파일을 생성해준다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43759600-a57e6fc4-9a5a-11e8-8de3-b9fd7d4691cf.png" width="80%" /></center>
+<p><br /><br /></p>
+
+<p>category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: default
+---
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"posts-list"</span><span class="nt">&gt;</span>
+  
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}{{ post.url }}"</span><span class="nt">&gt;</span>
+          {{ post.title }}
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;small&gt;</span>{{ post.date | date_to_string }}<span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  {% endfor %}
+  
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 2. _includes 폴더의 index.html 파일 수정</subtitle>
+</blockquote>
+
+<p><br />
+아래의 내용과 같이 수정한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"site-category"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"category-link {% if page.url == node.url %} active{% endif %}"</span>
+          <span class="na">href=</span><span class="s">"{{ site.baseurl }}{{ node.url }}"</span><span class="nt">&gt;</span>{{ node.title }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/header&gt;</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>3. category 폴더 생성 </subtitle>
+</blockquote>
+
+<p><br />
+(맨 바깥의 디렉토리) 계정명.github.io 폴더 안에 <point>category</point> 폴더를 만들어준 다음 원하는 카테고리 명의 markdown 파일을 추가해준다. <br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43759845-6fee187c-9a5b-11e8-9f09-9be929a5b3a6.png" width="40%" /></center>
+<p><br /><br /></p>
+
+<p>마크다운 파일 내용은 아래와 같다.<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="s">---</span><span class="err">
+</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">category</span><span class="err">
+</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">여기에 카테고리 이름 입력!</span><span class="err">
+</span>
+<span class="nn">---</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>예를들어, docker 카테고리를 만들고 싶다면 category 폴더의 docker.md의 내용은 다음과 같다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43760274-88df8d92-9a5c-11e8-8860-22ecf8097bd5.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>4. 블로그 포스트에 category 추가하기</subtitle>
+</blockquote>
+
+<p><br />
+위의 세가지 셋팅 후 포스트를 작성 시 <point>카테고리 항목만 추가</point>하여 주면 카테고리 지정이 된다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43760664-bc1e00f2-9a5d-11e8-8c2f-0f8c7ac335d6.png" width="60%" /></center>
+<p><br /><br />
+위의 이미지처럼 categories 항목을 추가해주고 원하는 카테고리 이름을 작성해주면 된다. (복수 카테고리도 가능하다.)<br /><br /></p>
+
+<p>주의 해야 할 점은 반드시! <point>category 폴더에 원하는 category</point>를 만들어주고 포스트에 같은 카테고리 명을 입력해야 한다.<br /><br /></p>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Github Blog">#Github Blog</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/development%20environment/docker/2018/06/27/docker-1.html">
+        Docker를 이용하여 GitLab 설치하기 - Ubuntu 16.04 LTS (Server)
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/development%20environment/github%20blog/2018/08/07/blog-7.html">
+        Jekyll build 오류 해결 방법 - Windows 10
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

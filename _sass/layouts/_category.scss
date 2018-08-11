@@ -1,6 +1,13 @@
 // Post listing
+.category-title {
+  clear:left;
+  padding-top: $padding-small*1.5;
+  text-align:center;
+}
 .posts-list {
   @extend %padding-regular;
+  clear:left;
+  padding-top: $padding-small;
   list-style: none;
   li{
     a{

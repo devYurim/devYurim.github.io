@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Git 설치와 초기 설정 for Mac OS X | devYurim</title>
+	<meta name="description" content="  1. Homebrew 이용하여 Git 설치Homebrew를 이용하여 git을 간단하게 설치 할 수 있다. 명령어는 아래와 같다. $ brew install git또는 직접 홈페이지에 가서 다운을 받아 설치하여도 된다.  Git 설치 : https://git-scm.com   2...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/development%20environment/git/2018/08/08/git-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Git 설치와 초기 설정 for Mac OS X</h1>
+    
+    <p class="meta">
+      August 8, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><blockquote>
+  <subtitle>1. Homebrew 이용하여 Git 설치</subtitle>
+</blockquote>
+
+<p><br /><point>Homebrew</point>를 이용하여 git을 간단하게 설치 할 수 있다. 명령어는 아래와 같다. <br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>brew <span class="nb">install </span>git</code></pre></figure>
+
+<p>또는 직접 홈페이지에 가서 다운을 받아 설치하여도 된다.<br /></p>
+<ul>
+  <li>Git 설치 : https://git-scm.com <br /><br /></li>
+</ul>
+
+<blockquote>
+  <subtitle>2. Git 계정 설정</subtitle>
+</blockquote>
+
+<p>로컬 디렉토리에서 git 저장소로 변경 push 하려면 github 계정명과 패스워드를 계속 입력해야하는 번거로움이 있다. <br />
+초기에 계정 설정을 한번만 해주면 (초기화 하지 않는 이상) 계속 유지되기 때문에 계정 설정을 해주는 것이 편리하다. <br /></p>
+
+<p>계정설정은 <point>git config</point> 라는 명령어로 실행할 수 있다. 명령어는 아래와 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git config <span class="nt">--global</span> user.name <span class="s2">"abcd"</span> // git user name
+<span class="nv">$ </span>git config <span class="nt">--global</span> user.email abcd@abcd // git user email</code></pre></figure>
+
+<p>프로젝트마다 다른 email을 사용하고 싶으면 <point>--global</point> 옵션을 제거하면 된다.<br /></p>
+
+<p>git config 설정확인 명령어는 아래와 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git config <span class="nt">--list</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>3. git에 SSH 공개키 등록 </subtitle>
+</blockquote>
+
+<p>계정 정보를 입력하고 난 후 인증은 <point>SSH 공개키</point>로 인증해야 한다. 먼저 공개키가 있는지 확인한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> ~/.ssh/id_rsa.pub</code></pre></figure>
+
+<p><br /></p>
+
+<p>디렉터리가 없다고 뜨면 아래의 명령어로 공개키를 생성한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>ssh-keygen</code></pre></figure>
+
+<p><br />
+엔터 세번을 눌러 공개키를 만든다.(패스프레이즈 설정하지 않을 경우)<br />
+다시 아래의 명령어로 공개키를 확인한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> ~/.ssh/id_rsa.pub</code></pre></figure>
+
+<p><br /><br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/43790783-9ade549a-9aae-11e8-994d-c4f1eac714a0.png" width="80%" /></center>
+<p><br />
+나온 공개키를 github의 settings -&gt; <point>SSH and GPG keys</point> 카테고리를 클릭하고 오른쪽 부분의 new SSH key 버튼을 클릭하여 생성한 공개키를 등록한다.<br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/43791012-4655461c-9aaf-11e8-8411-0457e2b94bb4.png" width="80%" /></center>
+<p><br />
+위의 이미지처럼 등록되면 성공!<br /></p>
+
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>reference</subtitle>
+</blockquote>
+
+<p><br /></p>
+<ul>
+  <li>https://git-scm.com/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0</li>
+  <li>https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0</li>
+  <li>https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Git">#Git</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/development%20environment/git/2018/08/08/git-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/development%20environment/github%20blog/2018/08/07/blog-7.html">
+        Jekyll build 오류 해결 방법 - Windows 10
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/development%20environment/docker/2018/08/09/docker-2.html">
+        Docker 컨테이너 연결하기(Mariadb - Django/Python) - Ubuntu 16.04 LTS (Server)
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

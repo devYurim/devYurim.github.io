@@ -88,6 +88,7 @@ plugins:
   - jekyll-category-pages
 gem:
     - jekyll-sitemap
+    - jekyll-feed
 theme: jekyll-theme-type
 exclude:
   - Gemfile

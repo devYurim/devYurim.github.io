@@ -1,6 +1,7 @@
 ---
 layout: category
-title: Android
+title: Android/Android
+permalink: '/Android/Android'
 ---
 
 Another sample category page.

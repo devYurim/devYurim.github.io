@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 LTS Server(Titan XP) | devYurim</title>
+	<meta name="description" content="서버 사양은 Ubuntu 16.04 LTS/ titan XP 이다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/development%20environment/ubuntu/2018/05/24/ubuntu-2.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 LTS Server(Titan XP)</h1>
+    
+    <p class="meta">
+      May 24, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br /></p>
+<p>서버 사양은 <point>Ubuntu 16.04 LTS/ titan XP</point> 이다.</p>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 1.우분투 패키지 업데이트
+</subtitle>
+</blockquote>
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get upgrade</code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인
+</subtitle>
+</blockquote>
+
+<p><br />
+다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /proc/driver/nvidia/version</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>다음과 같이 디렉토리가 없다고 뜨면 드라이버가 설치되지 않은 것이다.<br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/40527347-d646022a-6026-11e8-9586-ebd4ef36f88b.png" width="80%" /></center>
+<p><br /><br /></p>
+
+<p>그다음 언어 설정이 되지 않았을 경우 설치에 필요한 언어셋등의 기본패키지를 설치해준다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> dialog language-pack-en
+
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LANGUAGE</span><span class="o">=</span>en_US
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
+
+<span class="nv">$ </span><span class="nb">sudo </span>update-locale</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>그 다음 아래의 내용을 /etc/default/locale에 추가해준다.(nano 에디터 사용, ctrl + o -&gt; enter로 저장)<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>nano /etc/default/locale
+
+<span class="c"># 아래의 정보 추가</span>
+<span class="nv">LANG</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
+<span class="nv">LANGUAGE</span><span class="o">=</span><span class="s2">"en_US:en"</span>
+<span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 3.Ubuntu NIVIDA Repository 업데이트
+</subtitle>
+</blockquote>
+
+<p><br />
+NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. <br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /etc/issue</code></pre></figure>
+
+<p><br /><br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/40527476-b1d33ac4-6027-11e8-98fc-0d098ac2db2c.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<p>우분투 16.04는 NVIDIA Repository가 지원이 되므로 아래의 명령어를 통해 최신 NVIDIA 패키지 리스트를 추가한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-key adv <span class="nt">--fetch-keys</span> http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+<span class="nv">$ </span><span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
+<span class="nv">$ </span><span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" &gt;&gt; /etc/apt/sources.list.d/cuda.list'</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update</code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 4.NVIDIA 그래픽카드 드라이버 설치
+</subtitle>
+</blockquote>
+
+<p><br />
+아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.<br /></p>
+<ul>
+  <li>http://www.nvidia.com/Download/Find.aspx?lang=en-us</li>
+</ul>
+
+<p><br /><br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40528867-516a05cc-602d-11e8-8f64-11ec523f2a49.png" width="60%" /><br />본인의 사양에 맞게 설정하고 Search 클릭하여 확인한다.</center>
+<p><br /><br /></p>
+
+<p>아래의 명령어를 통하여 설치가능한 드라이버 버전을 확인한다. nvidia-xxx로 나타나는 패키지 이름 중에서 설치 가능한 버전을 확인하면 된다.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>apt-cache search nvidia</code></pre></figure>
+
+<p><br /></p>
+
+<p>위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>nvidia-384</code></pre></figure>
+
+<p><br /></p>
+
+<p>설치후 드라이버가 적용 될 수 있도록 reboot 한다.<br /><br /></p>
+
+<blockquote>
+  <subtitle> 5.확인
+</subtitle>
+</blockquote>
+
+<p>설치가 성공적으로 되었는지 확인하기 위해서 아래의 명령어를 실행한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>lspci <span class="nt">-k</span></code></pre></figure>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/40530507-0e50e916-6034-11e8-8bf5-09200668d793.png" width="80%" /></center>
+<p><br /><br /></p>
+
+<p>아래의 명령어를 이용하면 드라이버 버전을 확인 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">cat</span> /proc/driver/nvidia/version</code></pre></figure>
+
+<p>아래의 명령어를 이용하면 그래픽 카드 정보를 확인 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nvidia-smi</code></pre></figure>
+
+<p><br /><br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/40530684-b2b150a4-6034-11e8-9375-ed2ba24c8927.png" width="80%" /></center>
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <p><strong>reference</strong></p>
+</blockquote>
+
+<ul>
+  <li>https://hiseon.me/2018/02/17/install_nvidia_driver/</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Ubuntu">#Ubuntu</a>
+    
+    <a class="tag" href="/tags#NVIDIA">#NVIDIA</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/development%20environment/ubuntu/2018/05/24/ubuntu-2.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/development%20environment/ubuntu/2018/05/02/ubuntu-1.html">
+        우분투(Ubuntu) USB 부팅디스크 만들기 - Windows 10
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/python/tensorflow/2018/05/25/tensorflow-2.html">
+        텐서플로우(Tensorflow) 설치를 위한 CUDA / cuDNN 설치 - Ubuntu 16.04 LTS Server(Titan XP)
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

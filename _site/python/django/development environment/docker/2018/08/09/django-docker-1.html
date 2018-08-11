@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Docker를 이용하여 Django 웹 데이터베이스 서버 셋팅 | devYurim</title>
+	<meta name="description" content="docker 컨테이너 연결을 하고 난 뒤 django 서버 셋팅하는 방법을 정리하였다. 데이터베이스 컨테이너와 웹서버 컨테이너를 연결하는 방법은 아래의 포스팅을 참고하면 될 것 같다.* 도커 컨테이너 연결 : https://devyurim.github.io/ubuntu/docker...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/python/django/development%20environment/docker/2018/08/09/django-docker-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Docker를 이용하여 Django 웹 데이터베이스 서버 셋팅</h1>
+    
+    <p class="meta">
+      August 9, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br /></p>
+<p>docker 컨테이너 연결을 하고 난 뒤 django 서버 셋팅하는 방법을 정리하였다. 데이터베이스 컨테이너와 웹서버 컨테이너를 연결하는 방법은 아래의 포스팅을 참고하면 될 것 같다.<br />
+* 도커 컨테이너 연결 : https://devyurim.github.io/ubuntu/docker/2018/06/27/ubuntu-docker-6.html
+<br /><br />
+
+도커 컨테이너 내에서 장고 서버를 구동하기 위한 셋팅 방법을 정리하였다. 장고 걸스 튜토리얼이 많은 도움이 되었다.</p>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>1. django 프로젝트 생성 </subtitle>
+</blockquote>
+
+<p>장고 컨테이너 내부로 접속하여 장고 웹서버가 작동되는지 확인이 필요하다. 먼저 아래의 명령어를 실행하여 장고 프로젝트를 생성한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>django-admin startproject mysite .</code></pre></figure>
+
+<p>위의 명령어를 실행하여 생성되는 디렉터리 구조는 다음과 같다.<br />
+                        ├──manage.py <br />
+                        └──mysite <br />
+        ├── <strong>init</strong>.py <br />
+        ├── settings.py <br />
+        ├── urls.py <br />
+        └── wsgi.py <br /></p>
+
+<p>간단하게 역할들을 살펴보면 아래의 설명과 같다.<br /><br /></p>
+
+<ul>
+  <li>manage.py : 스크립트, 사이트 관리를 도와주는 역할, 스크립트 실행으로 웹서버를 실행할 수 있다.<br /></li>
+  <li>mysite/settings.py : 웹사이트 설정 파일<br /></li>
+  <li>mysite/urls.py : Django 로 작성된 사이트의 “목차”라고 할 수 있다. <br /></li>
+  <li>mysite/wsgi.py : nginx나 apache를 연동하기 위한 interface<br /><br /></li>
+</ul>
+
+<blockquote>
+  <subtitle>2. mysite/settings.py 파일 수정 </subtitle>
+</blockquote>
+
+<p><br />
+그 다음 mysite/settings.py 파일을 수정해야한다. 에디터로 다음의 내용을 수정한다.<br /><br /></p>
+
+<p>먼저 시간, 호스트 접근권한을 변경하여 준다. <br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">TIME_ZONE</span><span class="o">=</span><span class="s">'Asia/Seoul'</span>
+<span class="n">ALLOWED_HOSTS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'xxx.xxx.xxx.xxx(서버ip)'</span><span class="p">,</span><span class="s">'127.0.0.1'</span><span class="p">,</span> <span class="s">'.pythonanywhere.com'</span><span class="p">]</span>  <span class="c">#만약에 서버가 있다면 서버의 ip 주소도 추가해준다.</span>
+<span class="n">LANGUAGE_CODE</span> <span class="o">=</span> <span class="s">'en-us'</span>       <span class="c"># 한국어로 바꾸고 싶다면 'ko-kr'로 변경 해주면 된다.</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>그 다음 STATIC_URL밑에 STATIC_ROOT를 추가한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">STATIC_URL</span> <span class="o">=</span> <span class="s">'/static/'</span>
+<span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s">'static'</span><span class="p">)</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>이렇게 수정한다음 저장하고 아래의 명령어로 migrate를 해준다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py migrate</code></pre></figure>
+
+<p><br /></p>
+
+<p>그 다음 장고 서버를 실행 한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py runserver 0.0.0.0:8000</code></pre></figure>
+
+<p><br /></p>
+
+<p>다음과 같은 화면이 나오면 성공이다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43830179-b0c7ed74-9b3b-11e8-9e31-d563e2432ea8.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>3. 데이터베이스 설정 변경 </subtitle>
+</blockquote>
+
+<p>장고 서버에서 셋팅하기전 데이터 베이스 컨테이너와 link가 잘 되었는지 확인한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>mysql <span class="nt">-h</span> mariadb <span class="nt">-u</span> root <span class="nt">-p0000</span></code></pre></figure>
+
+<p>잘 접속이 되면 이제 장고 컨테이너에 링크된 mariadb를 셋팅하면 된다. 장고 서버는 기본 데이터베이스가 sqlite3으로 설정되어 있다.<br />
+나는 mariadb를 사용하길 원하므로 mysite/settings.py 에서 다음과 같이 장고 서버의 셋팅을 변경한다.<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'default'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">'ENGINE'</span><span class="p">:</span> <span class="s">'django.db.backends.mysql'</span><span class="p">,</span>
+        <span class="s">'NAME'</span><span class="p">:</span> <span class="s">'impactfactor'</span><span class="p">,</span>               <span class="c"># default로 사용하려는 데이터베이스 명</span>
+        <span class="s">'USER'</span><span class="p">:</span><span class="s">'root'</span><span class="p">,</span>                        <span class="c"># 유저 명</span>
+        <span class="s">'PASSWORD'</span><span class="p">:</span><span class="s">'0000'</span><span class="p">,</span>                    <span class="c"># 비밀번호</span>
+        <span class="s">'HOST'</span><span class="p">:</span><span class="s">'mariadb'</span><span class="p">,</span>                     <span class="c"># 호스트 명</span>
+        <span class="s">'PORT'</span><span class="p">:</span><span class="s">''</span><span class="p">,</span>                            <span class="c"># 포트 번호 (default 3306)</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>migrate가 성공하고 난 뒤 다시 서버를 실행하면 정상적으로 실행되는 것을 확인 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py migrate
+<span class="nv">$ </span>python manage.py runserver 0.0.0.0:8000</code></pre></figure>
+
+<p><br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43830179-b0c7ed74-9b3b-11e8-9e31-d563e2432ea8.png" width="60%" /></center>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>4. django 어플리케이션 생성 </subtitle>
+</blockquote>
+
+<p>데이터 베이스 화면을 보고싶다면 어플리케이션을 작성(데이터베이스 관련)하고 관리자 계정을 생성하여야 한다. 먼저 관리자 계정을 생성하려면 프로젝트 내부에 어플리케이션이 있어야 한다. manage.py가 있는 경로에서 다음의 명령어로 어플리케이션 폴더를 생성한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py startapp show      <span class="c"># startapp 다음에 어플리케이션 이름을 입력한다.</span></code></pre></figure>
+
+<p><br />
+그럼 현재 디렉터리가 다음과 같을 것이다.<br /></p>
+
+<p>├──manage.py <br />
+├──mysite <br />
+ |        ├── <strong>init</strong>.py <br />
+ |        ├── settings.py <br />
+ |        ├── urls.py <br />
+ |        ├── wsgi.py <br />
+└── show <br />
+         ├── migrations <br />
+          |           └── <strong>init</strong>.py <br />
+         ├── <strong>init</strong>.py <br />
+         ├── admin.py <br />
+         ├── models.py <br />
+         ├── tests.py <br />
+         └── views.py <br /></p>
+
+<p>mysite/settings.py를 열고 다음의 항목에 어플리케이션(show)을 추가해준다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">'django.contrib.admin'</span><span class="p">,</span>
+    <span class="s">'django.contrib.auth'</span><span class="p">,</span>
+    <span class="s">'django.contrib.contenttypes'</span><span class="p">,</span>
+    <span class="s">'django.contrib.sessions'</span><span class="p">,</span>
+    <span class="s">'django.contrib.messages'</span><span class="p">,</span>
+    <span class="s">'django.contrib.staticfiles'</span><span class="p">,</span>
+    <span class="s">'show'</span><span class="p">,</span>
+<span class="p">]</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>데이터베이스 테이블을 만들기 위해서 show/models.py 파일을 아래와 같이 수정한다.<br />
+테이블명이 클래스명이 되며 클래스의 변수는 테이블의 각 컬럼이 된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+
+<span class="k">class</span> <span class="nc">Journal</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">isbn</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BigIntegerField</span><span class="p">(</span><span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>그 다음 show/admin.py 파일을 수정하여 관리자 페이지에 테이블이 나타나도록 수정한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">show.models</span> <span class="kn">import</span> <span class="n">Journal</span>
+
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Journal</span><span class="p">)</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>그 다음 변경사항을 반영하기 위해 아래의 명령어를 실행한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py makemigrations
+<span class="nv">$ </span>python manage.py migrate</code></pre></figure>
+
+<p><br /></p>
+
+<p>migrate를 하면 데이터베이스에 테이블이 만들어지면서 동기화가 된다. mysql 데이터베이스를 확인해보면 다음과 같다. 아래의 데이터베이스는 추가적으로 여러개의 모델을 생성하여 테이블을 여러개 생성한 결과이다. <br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43893594-6fde0030-9c0a-11e8-8349-d6e4f3e9dfc1.png" width="40%" /></center>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>5. django 관리자 계정 생성 </subtitle>
+</blockquote>
+
+<p>이제 데이터 베이스에 관련된 셋팅은 다 되었고 최종적으로 확인하기 위하여 관리자 계정을 생성해야한다. 서버를 켜둔 상태로 다른 프롬프트 창을 열어 컨테이너에 재접속하여 아래의 명령어로 관리자 계정을 생성한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>python manage.py createsuperuser
+Username <span class="o">(</span>leave blank to use <span class="s1">'root'</span><span class="o">)</span>: <span class="c"># 관리자 계정명</span>
+Email address: <span class="c"># 이메일</span>
+Password: <span class="c"># 패스워드 입력</span>
+Password <span class="o">(</span>again<span class="o">)</span>: <span class="c"># 패스워드 확인</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>호스트주소:포트/admin(ex. 127.0.0.1:8888/admin) 으로 접속하면 관리자 계정 로그인창이 뜬다. 방금 생성한 관리자 계정으로 로그인하면 접속이 되고 models.py에서 만들었던 테이블이 생성되 있는 것을 볼 수 있다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/43833454-b5d5b3be-9b45-11e8-8a4a-b1afd1e02201.png" width="60%" /></center>
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>reference</subtitle>
+</blockquote>
+
+<ul>
+  <li>https://tutorial.djangogirls.org/ko</li>
+  <li>http://blog.daum.net/_blog/BlogTypeView.do?blogid=0QtKg&amp;articleno=28&amp;categoryId=0&amp;totalcnt=30</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Docker">#Docker</a>
+    
+    <a class="tag" href="/tags#Django">#Django</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/python/django/development%20environment/docker/2018/08/09/django-docker-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/development%20environment/github%20blog/2018/08/09/blog-8.html">
+        Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/python/crawler/2018/08/11/python-1.html">
+        Python Selenium(셀레니움) 시작하기
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

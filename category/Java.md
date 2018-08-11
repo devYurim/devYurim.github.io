@@ -1,6 +1,7 @@
 ---
 layout: category
-title: Java
+title: Development Environment/Java
+permalink: '/DE/Java'
 ---
 
 Another sample category page.

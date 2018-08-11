@@ -1,14 +1,17 @@
 .site-header {
   //@extend %padding-small;
-  padding-top: $padding-small*1.5;
-  padding-left: $padding-small*1.5;
-  padding-right: $padding-small*1.5;
   background: $brand-color;
   border-bottom: 1px solid $border-color;
   display: inline-block;
   float: left;
   width: 100%;
 
+  .branding{
+    padding-top: $padding-small*1.5;
+    padding-left: $padding-small*1.5;
+    padding-right: $padding-small*1.5;
+    padding-bottom: $padding-small*2;
+  }
   .avatar {
     height: 2em;
     width: 2em;
@@ -54,41 +57,132 @@
       }
     }
   }
+  /* --- Search form --- */
+  form {
+    border: 0;
+    border-bottom: 2px solid $search-color;
+    outline: 0;
 
-    /* --- Search form --- */
-    form {
-        border: 0;
-        border-bottom: 2px solid $search-color;
-        outline: 0;
+    *:focus {
+        outline: none;
+    }
 
-        *:focus {
-            outline: none;
+    input{
+        &[type=text] {
+            box-sizing: border-box;
+            border: 0;
+            outline: 0;
+            color: $search-color;
         }
 
-        input{
-            &[type=text] {
-                box-sizing: border-box;
-                border: 0;
-                outline: 0;
-                color: $search-color;
-            }
-
-            &::-moz-placeholder {
-                color: $search-color;
-                opacity: 1;
-            }
-
-            &:-ms-input-placeholder, &::-webkit-input-placeholder {
-                color: $search-color;
-            }
+        &::-moz-placeholder {
+            color: $search-color;
+            opacity: 1;
         }
 
-        button {
-           border: none;
-           font-size: 0.9em;
-           background-color: $brand-color;
-           color: $search-color;
+        &:-ms-input-placeholder, &::-webkit-input-placeholder {
+            color: $search-color;
         }
     }
+
+    button {
+       border: none;
+       font-size: 0.9em;
+       background-color: $brand-color;
+       color: $search-color;
+    }
+}
+
+  .site-category{
+    background: $brand-color;
+    border-top: 1px solid $border-color;
+    margin:auto;
+    padding:0;
+    font-size:14px;
+    text-align: center;
+    clear:left;
+    }
+
+    .site-category ul{
+    //background: rgb(109,109,109);
+    height:50px;
+    list-style:none;
+    line-height: 1.5;
+    margin:0 auto;
+    padding:0;
+    display:inline-block;
+    }
+
+    .site-category li{
+    float: left;
+    display:inline;
+
+    }
+
+    .site-category li a{
+    background: $brand-color;
+    display:block;
+    font-weight:normal;
+    line-height:50px;
+    margin:0px;
+    padding:0px 25px;
+    text-align:center;
+    text-decoration:none;
+    }
+
+    .site-category li a:hover{
+    background: rgb(71,71,71);
+    color:#FFFFFF;
+    text-decoration:none;
+    }
+
+    .site-category li ul{
+    background: rgb(109,109,109);
+    display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:200px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+    }
+
+    .site-category li:hover ul{
+    display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+    }
+
+    .site-category li li {
+    background: $brand-color;
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+    }
+
+    .site-category li:hover li a{
+    background:none;
+    }
+
+    .site-category li ul a{
+    display:block;
+    height:50px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+    }
+
+    .site-category li ul a:hover, .menubar li ul li:hover a{
+    background: rgb(71,71,71);
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+    }
+
 
 }
