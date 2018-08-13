@@ -299,16 +299,46 @@
   <li>텐서플로우 이미지 사용(주피터 노트북, 텐서플로우, 파이썬) / 8888 : 주피터 노트북 포트 , 8000 : 장고 포트, 3306 : 마리아 데이터베이스 포트) <br /></li>
 </ul>
 
-<p><br />
-| 옵션          | 기능                                         |
-|:————–:|:——————————————–:|
-| NV_GPU       | GPU 번호 지정                                  |
-| –name      | 컨테이너 이름                                  |
-| –link      | 연결할 컨테이너 이름(여기서는 mariadb 컨테이너)  |
-| -v          | 데이터 볼륨 맵핑(경로)                          |
-| -p          | 포트 맵핑(호스트포트:서비스포트)                  |
-| -e PASSWORD | host url로 접속시 패스워드 설정                  |
-| -d          | 사용하려는 이미지(이미지이름:태그명)              |</p>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">옵션</th>
+      <th style="text-align: center">기능</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">NV_GPU</td>
+      <td style="text-align: center">GPU 번호 지정</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">–name</td>
+      <td style="text-align: center">컨테이너 이름</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">–link</td>
+      <td style="text-align: center">연결할 컨테이너 이름(여기서는 mariadb 컨테이너)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-v</td>
+      <td style="text-align: center">데이터 볼륨 맵핑(경로)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-p</td>
+      <td style="text-align: center">포트 맵핑(호스트포트:서비스포트)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-e PASSWORD</td>
+      <td style="text-align: center">host url로 접속시 패스워드 설정</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-d</td>
+      <td style="text-align: center">사용하려는 이미지(이미지이름:태그명)</td>
+    </tr>
+  </tbody>
+</table>
 
 <p><br /><br /></p>
 
@@ -425,8 +455,8 @@ s.setAttribute('data-timestamp', +new Date());
   
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
-      <a href="/development%20environment/github%20blog/2018/08/09/blog-8.html">
-        Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용
+      <a href="/python/django/development%20environment/docker/2018/08/09/django-docker-1.html">
+        Docker를 이용하여 Django 웹 데이터베이스 서버 셋팅
       </a>
   </div>
   
