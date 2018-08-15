@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Python Selenium(셀레니움) 크롬창 활성 탭 변경하기 | devYurim</title>
+	<meta name="description" content="JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/python/crawler/2018/08/13/crawler-3.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Python Selenium(셀레니움) 크롬창 활성 탭 변경하기</h1>
+    
+    <p class="meta">
+      August 13, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br /></p>
+<p>JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.</p>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 1. 검색 자동화 </subtitle>
+</blockquote>
+<center><img src="https://user-images.githubusercontent.com/20412850/44016757-113aa434-9f11-11e8-9005-630516a5e57f.png" width="60%" /></center>
+<p><br /></p>
+
+<p>먼저 위의 이미지와 같은 검색 창에서 검색 할 수 있도록 프로그램을 작성한다. <br /></p>
+<ol>
+  <li>검색창에 검색 어 입력</li>
+  <li>검색어 입력시 하단에 나오는 버튼 클릭
+<br /></li>
+</ol>
+
+<p>이전 코드에 이어서 아래에 추가한 코드는 다음과 같다. <br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 키워드 검색</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="s">'Peer-to-Peer Networking and Applications'</span>
+
+<span class="c"># 검색창에 키워드 입력후 검색</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'search-inputEl'</span><span class="p">)</span>
+<span class="n">search</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
+
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">'//*[@id="boundlist-1029-listEl"]/ul/li'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c"># 로딩 기다리기</span></code></pre></figure>
+
+<blockquote>
+  <subtitle>2. 활성 탭 전환하기</subtitle>
+</blockquote>
+
+<p>위의 코드를 이용하여 검색창에 검색어를 입력하여 검색은 가능하다. 검색 결과가 새창에 나타나므로 새로 활성화 된 창으로 화면을 변경하여야 한다. 아래의 코드를 추가함 으로써 탭 전환이 가능하다.<br /><br /></p>
+
+<p>먼저 아래의 명령어는 탭 목록들을 보여준다. 새로운 탭을 열고 로딩을 기다린뒤 윈도우 목록을 확인해보면 리스트에 두개의 항목이 들어있는 것을 볼 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>결과 : [‘CDwindow-5869F32E71D5DF1303F64200A76D021F’, ‘CDwindow-19FEAEAE68751A47C2CD0D9008B6BF4E’]</li>
+</ul>
+
+<p><br /><br />
+새롭게 열린 탭으로 변경하는 코드는 다음을 하단에 추가하면 된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 최근 열린 탭으로 전환</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">switch_to</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c"># 로딩 기다리기</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>만약에 새로 옮긴 탭을 닫고 다시 원래 창으로 돌아가고 싶다면 아래의 코드를 입력하면 된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 현재 탭 닫기</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c"># 맨 처음 탭으로 변경(0번 탭)</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">switch_to</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c"># 로딩 기다리기</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>수정한 전체 내용은 아래와 같다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 키워드 검색</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="s">'Peer-to-Peer Networking and Applications'</span>
+
+<span class="c"># 검색창에 키워드 입력후 검색 버튼 클릭</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'search-inputEl'</span><span class="p">)</span>
+<span class="n">search</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
+
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">'//*[@id="boundlist-1029-listEl"]/ul/li'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">)</span>
+
+<span class="c"># 새로 열린 탭으로 활성 탭 변경</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">switch_to</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></figure>
+
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>reference</subtitle>
+</blockquote>
+
+<ul>
+  <li>https://kiddwannabe.blog.me/221288079822</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Selenium">#Selenium</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/python/crawler/2018/08/13/crawler-3.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/data%20base/mysql/2018/08/13/mysql-1.html">
+        Homebrew를 이용하여 MYSQL 설치 - MAC
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/python/crawler/2018/08/13/crawler-4.html">
+        Selenium으로 로딩한 브라우저의 html 파싱하기 - BeautifulSoup 이용
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>안드로이드 프로그래밍(Android Programming) - 시작(Intro) 화면 만들기 | devYurim</title>
-	<meta name="description" content="  1. JavaClass 생성일단 시작 화면을 따로 생성하기 위하여 자바 클래스(java 파일) 를 먼저 생성한다. 클래스 이름은 IntroActivity 하였다.import android.app.Activity;import android.content.Intent;import ...">
+	<meta name="description" content="  1. JavaClass 생성">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -227,14 +241,12 @@
         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
 
         <span class="k">try</span> <span class="o">{</span>
-            <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">4000</span><span class="o">);</span> <span class="c1">// 4초 인트로 화면 보여주기
-</span>
+            <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">4000</span><span class="o">);</span> <span class="c1">// 4초 인트로 화면 보여주기</span>
         <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
             <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
         <span class="o">}</span>
 
-        <span class="c1">// next Activity 기재.
-</span>
+        <span class="c1">// next Activity 기재.</span>
         <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
         <span class="n">finish</span><span class="o">();</span>
     <span class="o">}</span>

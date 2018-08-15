@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>지킬(Jekyll) 블로그 카테고리(category) 만들기 | devYurim</title>
-	<meta name="description" content="&lt;p&gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt;/p&gt;   1. _layouts 폴더에 category.html 파일 생성 먼저 _layouts 폴더에 category.html 파일을 생성해준다...">
+	<meta name="description" content="&lt;p&gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&lt;/p&gt;">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -277,12 +291,9 @@ layout: default
 
 <p>마크다운 파일 내용은 아래와 같다.<br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="s">---</span><span class="err">
-</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">category</span><span class="err">
-</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s">여기에 카테고리 이름 입력!</span><span class="err">
-</span>
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">category</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">여기에 카테고리 이름 입력!</span>
 <span class="nn">---</span></code></pre></figure>
 
 <p><br /><br /></p>

@@ -2,19 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-1.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/python/crawler/2018/08/13/crawler-4.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/python/crawler/2018/08/13/crawler-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/data%20base/mysql/2018/08/13/mysql-1.html</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/12/blog-8.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/11/python-3.html</loc>
+        <loc>http://localhost:4000/python/crawler/2018/08/11/crawler-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/11/python-2.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/11/python-1.html</loc>
+        <loc>http://localhost:4000/python/crawler/2018/08/11/crawler-1.html</loc>
     </url>
     
     <url>
@@ -198,6 +218,22 @@
     
     
     <url>
+        <loc>http://localhost:4000/DB/MYSQL</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/DS/Statistics</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://localhost:4000/Python/Tensorflow</loc>
     </url>
     
@@ -231,8 +267,6 @@
     
     
     
-    
-    
     <url>
         <loc>http://localhost:4000/search.html</loc>
     </url>
@@ -245,46 +279,6 @@
     
     <url>
         <loc>http://localhost:4000/tags.html</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/blog/page2/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/blog/page3/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/blog/page4/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/blog/page5/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/blog/page6/</loc>
     </url>
     
     
@@ -308,7 +302,23 @@
     
     
     <url>
+        <loc>http://localhost:4000/category/Data+Base%252FMYSQL/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://localhost:4000/category/Data+Science%252FMachine+Learning/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/category/Data+Science%252FStatistics/</loc>
     </url>
     
     
@@ -389,6 +399,54 @@
     
     <url>
         <loc>http://localhost:4000/category/Python%252FTensorflow/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page2/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page3/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page4/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page5/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page6/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/blog/page7/</loc>
     </url>
     
     

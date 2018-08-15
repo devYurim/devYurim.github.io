@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -287,294 +301,21 @@
     <div class="post-teaser">
       <header>
         <h2>
-          <a class="post-link" href="/android/android/2018/01/17/android-5.html">
-            안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼 만들기
+          <a class="post-link" href="/development%20environment/ubuntu/2018/05/02/ubuntu-1.html">
+            우분투(Ubuntu) USB 부팅디스크 만들기 - Windows 10
           </a>
         </h2>
         <p class="meta">
-          January 17, 2018
+          May 2, 2018
         </p>
         <div class="excerpt">
           <!--<blockquote>
-  <subtitle>1. 로그인 액티비티 생성</subtitle>
+  <subtitle>1. 우분투(Ubuntu) 다운로드
+</subtitle>
 </blockquote>
 
-<p><br />
-안드로이드에서 기본적으로 로그인 폼을 지원한다. Activity 추가시 <point>Login Activity</point> 를 생성한다.<br /></p>
 
-<center><img src="https://user-images.githubusercontent.com/20412850/35030642-29e29b2a-fba3-11e7-95a2-0be7e1f2fcb0.png" width="60%" /></center>
-<p><br /></p>
-
-<p>Activity Name과 레이아웃 xml 파일 이름, 타이틀 이름을 입력하고 Finish 버튼을 눌러서 생성한다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35030740-7d1c257c-fba3-11e7-8a9a-be88caf366d4.png" width="60%" /></center>
-<p><br /></p>
-
-<blockquote>
-  <subtitle>2. 레이아웃 구조 수정</subtitle>
-</blockquote>
-
-<p><br /><point>res-&gt; layout -&gt; activity_login.xml<point> 파일을 보면 현재 페이지의 레이아웃이 어떻게 구성되어지는지 볼 수 있다. 여기서 필요한 요소를 추가하거나 삭제할 수 있다. <point>Component Tree</point> 탭을 활용하면 현재 레이아웃 계층이 어떻게 구성되어 있는지 한눈에 알아 볼 수 있다. <br /></point></point></p>
-
-<p>로그인 폼이 어떻게 만들어 졌는지 살펴 보면 Linear Layout(Horizontal) -&gt; Scroll View -&gt; Linear Layout(Vertical) 안에 EditText, Button 등이 차례로 들어가져 있는 모습을 볼 수 있다. Scroll View는 필요 없을 것 같아 삭제하고 구조를 Linear Layout(Horizontal) -&gt; LinearLayout(Vertical) -&gt; EditText, EditText, Button, Button 구조로 수정하였다.</p>
-
-<p><br /> 안드로이드 어플리케이션의 화면을 구성할 때 버튼이나 텍스트 뷰, 텍스트입력, 버튼 등 각 요소를 넣으려면 <point>Layout 안에 넣어줘야 어느 화면에서나 구조적으로 배치가 될 수 있다.</point> 여기서는 LinearLayout이 Layout 컴포넌트에 해당이 된다. Layout 구조는 아래의 그림과 같이 다양하게 구성되어 있다. 구현시 원하는 기능대로 레이아웃을 추가하여 레이아웃 안에 컴포넌트를 추가하면 된다.
-<br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/35031668-42697a98-fba7-11e7-82bd-e8fcccbfbfc7.png" width="60%" /></center>
-<p><br /></p>
-
-<p><br /><point>res-&gt; layout -&gt; activity_login.xml</point> 파일을 보면 레이아웃 구조를 Text로 변경해서 보면 각 요소별로 설정을 할 수 있다. id는 해당 컴포넌트를 구별하기 위하여 이름을 지어두는 곳이고, <point>layout_width, layout_height</point> 는 해당 컴포넌트의 가로, 세로 길이를 결정한다. <br /></p>
-
-<p><br /><point>match_parent</point> 는 쉽게 말하면 부모 컴포넌트의 가로나 세로 길이에 맞춰서 해당 컴포넌트의 길이를 설정하라는 뜻이다. 레이아웃 뷰에서 Linear Layout의 가로 길이를 화면의 가로 길이만큼(match_parent)으로 설정 했기 때문에 button의 width(가로)를 match_parent로 설정했을때 가로 길이가 화면에 꽉차게 보이는 것이다.<br /></p>
-
-<p><br /><point>wrap_content</point> 는 해당 뷰에 들어있는 내용물의 크기에 따라 뷰의 크기가 결정되도록 조정한다. 즉, 컴포넌트에 텍스트가 존재하면 텍스트의 크기 만큼 컴포넌트의 크기가 결정되는 것이다. <br /></p>
-
-<p><br /><point>margin</point> 은 컴포넌트와 컴포넌트 사이의 간격(바깥 여백)을 지정하는 것이고, <point>padding</point> 은 컴포넌트에 할당된 뷰 내부(안쪽 여백)에서 크기를 조절 할 때 사용한다. <br /></p>
-
-<p>아래의 로그인과 회원가입 버튼처럼 버튼을 한 행에 배치 할 때는 LinearLayout(horizontal)을 추가한 뒤 버튼 2개를 레이아웃 안에 추가해주면된다. 버튼의 길이를 결정할 때 임의의 값을 지정해주게 되면 화면 크기에 따라서 다르게 보이기때문에 <point>weight</point> 라는 속성을 이용하여 지정하였다. 로그인 버튼과 회원가입 버튼의 weight를 1 로 지정했기 때문에 한 행에서 동일한 길이의 버튼이 생성되었다.<br /> 만약, 로그인 버튼의 weight를 2, 회원가입 버튼의 weight를 1로 지정하였다면 로그인의 버튼이 회원가입 버튼보다 상대적으로 길이가 길 것이다. (weight 2는 전체 길이의 2/3, weight 1은 전체 길이의 1/3)</p>
-
-<ul>
-  <li>weight가 1:1 인 경우</li>
-</ul>
-<center><img src="https://user-images.githubusercontent.com/20412850/35039879-8b16da5e-fbc2-11e7-9170-4d7740ca6ffb.png" width="30%" /></center>
-<p><br /></p>
-
-<ul>
-  <li>weight가 2:1 인 경우</li>
-</ul>
-<center><img src="https://user-images.githubusercontent.com/20412850/35039825-615003bc-fbc2-11e7-8293-3309032a11ca.png" width="30%" /></center>
-<p><br /></p>
-
-<p>수정한 폼과 코드는 아래와 같다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35039490-63b458de-fbc1-11e7-8380-2c40a29d9a83.png" width="60%" /></center>
-<p><br /></p>
-
-<ul>
-  <li>activity_login.xml</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
-    <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
-    <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
-    <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
-    <span class="na">android:gravity=</span><span class="s">"center_horizontal"</span>
-    <span class="na">android:paddingBottom=</span><span class="s">"@dimen/activity_vertical_margin"</span>
-    <span class="na">android:paddingLeft=</span><span class="s">"@dimen/activity_horizontal_margin"</span>
-    <span class="na">android:paddingRight=</span><span class="s">"@dimen/activity_horizontal_margin"</span>
-    <span class="na">android:paddingTop=</span><span class="s">"@dimen/activity_vertical_margin"</span>
-    <span class="na">tools:context=</span><span class="s">"com.example.devyurim.orangeaid.LoginActivity"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;LinearLayout</span>
-        <span class="na">android:id=</span><span class="s">"@+id/email_login_form"</span>
-        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
-        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
-        <span class="na">android:gravity=</span><span class="s">"center"</span>
-        <span class="na">android:orientation=</span><span class="s">"vertical"</span><span class="nt">&gt;</span>
-
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:id=</span><span class="s">"@+id/email"</span>
-            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
-            <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
-            <span class="na">android:hint=</span><span class="s">"@string/prompt_email"</span>
-            <span class="na">android:inputType=</span><span class="s">"textEmailAddress"</span>
-            <span class="na">android:maxLines=</span><span class="s">"1"</span>
-            <span class="na">android:singleLine=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:id=</span><span class="s">"@+id/password"</span>
-            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
-            <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
-            <span class="na">android:hint=</span><span class="s">"@string/prompt_password"</span>
-            <span class="na">android:imeActionId=</span><span class="s">"6"</span>
-            <span class="na">android:imeActionLabel=</span><span class="s">"@string/action_sign_in"</span>
-            <span class="na">android:imeOptions=</span><span class="s">"actionUnspecified"</span>
-            <span class="na">android:inputType=</span><span class="s">"textPassword"</span>
-            <span class="na">android:maxLines=</span><span class="s">"1"</span>
-            <span class="na">android:singleLine=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-
-        <span class="nt">&lt;LinearLayout</span>
-            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
-            <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
-            <span class="na">android:orientation=</span><span class="s">"horizontal"</span><span class="nt">&gt;</span>
-
-            <span class="nt">&lt;Button</span>
-                <span class="na">android:id=</span><span class="s">"@+id/email_sign_in_button"</span>
-                <span class="na">style=</span><span class="s">"?android:textAppearanceSmall"</span>
-                <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
-                <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
-                <span class="na">android:layout_marginTop=</span><span class="s">"16dp"</span>
-                <span class="na">android:layout_weight=</span><span class="s">"1"</span>
-                <span class="na">android:text=</span><span class="s">"@string/action_sign_in"</span>
-                <span class="na">android:textStyle=</span><span class="s">"bold"</span> <span class="nt">/&gt;</span>
-
-            <span class="nt">&lt;Button</span>
-                <span class="na">android:id=</span><span class="s">"@+id/email_sign_up_button"</span>
-                <span class="na">style=</span><span class="s">"?android:textAppearanceSmall"</span>
-                <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
-                <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
-                <span class="na">android:layout_marginTop=</span><span class="s">"16dp"</span>
-                <span class="na">android:layout_weight=</span><span class="s">"1"</span>
-                <span class="na">android:text=</span><span class="s">"@string/action_sign_up"</span>
-                <span class="na">android:textStyle=</span><span class="s">"bold"</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;/LinearLayout&gt;</span>
-
-    <span class="nt">&lt;/LinearLayout&gt;</span>
-<span class="nt">&lt;/LinearLayout&gt;</span></code></pre></figure>
-
-<p><br /></p>
-
-<blockquote>
-  <subtitle>3. 컴포넌트 텍스트 수정</subtitle>
-</blockquote>
-
-<p><br /><point>res -&gt; values -&gt;strings.xml</point> 파일에 가보면 로그인 폼에서 사용되는 string 변수들이 자동으로 생성되어 있다. 여기서 원하는 텍스트로 수정해주면 된다.<br />
-(text view 글자, hint 글자, button 글자, page title 등)<br />
-추가 문구가 필요하면 생성하고 컴포넌트에 매칭시켜주면 된다. 필요한 사항만 남기고 나머지는 모두 지웠다. 필요 할때마다 추가하여 사용한다.<br /></p>
-
-<p>layout_login.xml에 가보면 text 요소에 “@string/action_sign_in”라고 기재되어 있다. 이 코드의 의미는 strings.xml의 name이 action_sign_in인 문구를 사용하라는 뜻이다. 통일성을 위해서 나는 strings.xml 파일을 사용하여 텍스트 값을 변경하였다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35036587-29595b34-fbb8-11e7-9c97-64bd10124eab.png" width="60%" /></center>
-<p><br /></p>
-
-<p>추가적으로 화면의 타이틀을 변경하고 싶으면 <point>AndroidManifest.xml</point> 파일에서 해당 액티비티의 label 값을 수정해주면 된다. <br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35041667-df12b046-fbc8-11e7-8e81-572c33db322b.png" width="60%" /></center>
-<p><br />
-<br /></p>
-
-<blockquote>
-  <subtitle>4. LonginActivity.java 수정</subtitle>
-</blockquote>
-
-<p><br />
-로그인 액티비티를 생성하면 로그인 기능에 사용되는 기본적인 함수들이 자동으로 생성이 되므로 나중에 기능을 추가할 때 문서를 보고 함수를 수정하면 된다. 아직 서버가 완성되지 않았으므로 <point>일단은 onCreate 함수 빼고 모두 지워 주었다. 필요한 기능이 생길때 마다 그때 함수를 추가하는 방식으로 작성할 예정이다.</point>
-또한, EditText나 Button에서 각각 이벤트 핸들러를 적용할 수 있도록 이벤트 핸들러 함수를 추가하였다. <br /></p>
-
-<p>또한, 이메일 입력 자동완성기능은 DB와 연동이 필요하기 때문에 AutocompleteTextView에서 textedit로 컴포넌트를 변경해 주었다.<br /></p>
-
-<p>수정한 코드는 아래와 같다.</p>
-
-<ul>
-  <li>LoginActivity.java</li>
-</ul>
-
-<p><br /></p>
-
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.view.KeyEvent</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.view.View.OnClickListener</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.view.inputmethod.EditorInfo</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.widget.Button</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.widget.EditText</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.widget.TextView</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
-
-    <span class="c1">// UI references.
-</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">mEmailView</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">mPasswordView</span><span class="o">;</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_login</span><span class="o">);</span>
-
-        <span class="c1">// Set up the login form.
-</span>
-        <span class="n">mEmailView</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email</span><span class="o">);</span>
-        <span class="n">mPasswordView</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">password</span><span class="o">);</span>
-
-        <span class="c1">// event handler
-</span>
-        <span class="n">mEmailView</span><span class="o">.</span><span class="na">setOnEditorActionListener</span><span class="o">(</span><span class="k">new</span> <span class="n">TextView</span><span class="o">.</span><span class="na">OnEditorActionListener</span><span class="o">()</span>
-        <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onEditorAction</span><span class="o">(</span><span class="n">TextView</span> <span class="n">textView</span><span class="o">,</span> <span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_ACTION_DONE</span> <span class="o">||</span> <span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_NULL</span><span class="o">){</span>
-                   <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
-                <span class="o">}</span>
-                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
-            <span class="o">}</span>
-
-        <span class="o">});</span>
-        <span class="n">mPasswordView</span><span class="o">.</span><span class="na">setOnEditorActionListener</span><span class="o">(</span><span class="k">new</span> <span class="n">TextView</span><span class="o">.</span><span class="na">OnEditorActionListener</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onEditorAction</span><span class="o">(</span><span class="n">TextView</span> <span class="n">textView</span><span class="o">,</span> <span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">if</span> <span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_ACTION_DONE</span> <span class="o">||</span> <span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_NULL</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="c1">//attemptLogin();
-</span>
-                    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
-                <span class="o">}</span>
-                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
-            <span class="o">}</span>
-        <span class="o">});</span>
-
-        <span class="c1">// Button
-</span>
-        <span class="n">Button</span> <span class="n">mEmailSignInButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_in_button</span><span class="o">);</span> <span class="c1">// sign in button
-</span>
-        <span class="n">Button</span> <span class="n">mEmailSignUpButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_up_button</span><span class="o">);</span> <span class="c1">// sign up button
-</span>
-
-        <span class="c1">// event handler
-</span>
-        <span class="n">mEmailSignInButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-
-            <span class="o">}</span>
-        <span class="o">});</span>
-
-        <span class="n">mEmailSignUpButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">(){</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-
-            <span class="o">}</span>
-        <span class="o">});</span>
-
-    <span class="o">}</span>
-
-<span class="o">}</span></code></pre></figure>
-
-<p><br /><br /></p>
-
-<p>아직 서버가 연동되지 않았으므로 <point>각 버튼을 눌렀을 시 다른 액티비티로 넘어가도록 구현</point> 하였다. 로그인 버튼을 눌렀을 때 <point>MainActivity</point> 로 넘어가고 회원가입 버튼을 눌렀을때 <point>RegisterActivity</point> 로 넘어가도록 핸들러를 구현하였다. <br /></p>
-
-<p>일단 RegisterActivity를 Empty Activity로 추가 해준다음 다음과 같이 코드를 수정하였다.</p>
-
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// sign-in button event handler
-</span>
-        <span class="n">mEmailSignInButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span> <span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-                <span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
-                <span class="n">finish</span><span class="o">();</span>
-
-            <span class="o">}</span>
-        <span class="o">});</span>
-
-        <span class="c1">// sign-up button event handler
-</span>
-        <span class="n">mEmailSignUpButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">(){</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span> <span class="n">RegisterActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-                <span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
-                <span class="n">finish</span><span class="o">();</span>
-            <span class="o">}</span>
-        <span class="o">});</span></code></pre></figure>
-
-<p><br /><br />
-추후 웹 서버 연동과 db연동을 한 후 로그인 확인기능과 추가 핸들러 기능을 구현할 예정이다.위의 예제 코드로 왠만한 기본적인 안드로이드 페이지를 응용하여 만들수 있다.(회원가입 폼, 기본 메뉴 화면 등) 어플리케이션에 필요한 화면들을 다 만든 뒤 추가 기능을 추가해야겠다.</p>
-
-<p><br /><br /><br /><br /><br /></p>
-
-          <a class="button" href="/android/android/2018/01/17/android-5.html">
+          <a class="button" href="/development%20environment/ubuntu/2018/05/02/ubuntu-1.html">
             Continue reading
           </a>-->
         </div>
@@ -584,223 +325,20 @@
     <div class="post-teaser">
       <header>
         <h2>
-          <a class="post-link" href="/android/android/2018/01/17/android-4.html">
-            안드로이드 프로그래밍(Android Programming) - 시작(Intro) 화면 만들기
+          <a class="post-link" href="/development%20environment/java/2018/05/02/java-1.html">
+            Java JDK 설치하기 - Windows 10 / MAC OS
           </a>
         </h2>
         <p class="meta">
-          January 17, 2018
-        </p>
-        <div class="excerpt">
-          <!--<blockquote>
-  <subtitle>1. JavaClass 생성</subtitle>
-</blockquote>
-
-<p>일단 시작 화면을 따로 생성하기 위하여 <point>자바 클래스(java 파일)</point> 를 먼저 생성한다. 클래스 이름은 IntroActivity 하였다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35026602-63874880-fb8f-11e7-8f5b-bd84f28caab5.png" width="60%" /></center>
-<p><br /></p>
-
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">android.app.Activity</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.content.Intent</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">IntroActivity</span> <span class="kd">extends</span> <span class="n">Activity</span><span class="o">{</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-
-        <span class="k">try</span> <span class="o">{</span>
-            <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">4000</span><span class="o">);</span> <span class="c1">// 4초 인트로 화면 보여주기
-</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-        <span class="o">}</span>
-
-        <span class="c1">// next Activity 기재.
-</span>
-        <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
-        <span class="n">finish</span><span class="o">();</span>
-    <span class="o">}</span>
-<span class="o">}</span></code></pre></figure>
-
-<p><br /><br /></p>
-
-<blockquote>
-  <subtitle>2. drawable 폴더에 background_intro.xml 파일 생성</subtitle>
-</blockquote>
-
-<p><br /><center><img src="https://user-images.githubusercontent.com/20412850/35026602-63874880-fb8f-11e7-8f5b-bd84f28caab5.png" width="60%" /></center><br /></p>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span class="nt">&lt;layer-list</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span><span class="nt">&gt;</span>
-
-    <span class="c">&lt;!-- Background color --&gt;</span>
-    <span class="nt">&lt;item</span> <span class="na">android:drawable=</span><span class="s">"@color/windowBackground"</span><span class="nt">/&gt;</span>
-
-    <span class="c">&lt;!-- logo --&gt;</span>
-    <span class="nt">&lt;item&gt;</span>
-        <span class="nt">&lt;bitmap</span>
-            <span class="na">android:gravity=</span><span class="s">"center"</span>
-            <span class="na">android:src=</span><span class="s">"@mipmap/ic_launcher"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/item&gt;</span>
-<span class="nt">&lt;/layer-list&gt;</span></code></pre></figure>
-
-<p><br /><br /></p>
-
-<blockquote>
-  <subtitle>3. vaules/styles.xml 파일 수정</subtitle>
-</blockquote>
-
-<p><br />아래의 코드를 <point>res -&gt; values -&gt; styles.xml</point> 파일에 스타일을 추가해준다.<br /></p>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- intro theme. --&gt;</span>
-    <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">"IntroTheme"</span> <span class="na">parent=</span><span class="s">"Theme.AppCompat.NoActionBar"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"android:windowBackground"</span><span class="nt">&gt;</span>@drawable/background_intro<span class="nt">&lt;/item&gt;</span>
-    <span class="nt">&lt;/style&gt;</span></code></pre></figure>
-
-<p><br /><center><img src="https://user-images.githubusercontent.com/20412850/35027154-73c2e008-fb92-11e7-9f67-5e610279660c.png" width="60%" /></center><br /></p>
-
-<blockquote>
-  <subtitle>4. AndroidManifest.xml 파일 수정</subtitle>
-</blockquote>
-
-<p><br /> 시작 화면이 현재 MainActivity로 되어 있는데 이를 IntroActivity로 조정하기 위한 작업이다. manifests -&gt; <point>AndroidManifest.xml</point> 파일에 가서 아래와 같이 코드를 수정한다.</p>
-<point>Intro Theme을 따로 설정 해주는 것</point>
-<p>을 까먹으면 안된다! <br /></p>
-
-<p><br /><center><img src="https://user-images.githubusercontent.com/20412850/35027514-7d7e91b2-fb94-11e7-9cad-d67434bdf743.png" width="60%" /></center><br /></p>
-
-<p>시작 액티비티를 수정하고 반드시 그다음에 실행할 액티비티를 아래에 추가해 주어야 한다. 아래 이미지는 시작 화면 적용한 화면이다.<br /></p>
-
-<p><br /><center><img src="https://user-images.githubusercontent.com/20412850/35027638-2e6a8b66-fb95-11e7-977d-a10abcdbd6e5.png" width="60%" /></center>
-<br /><br /><br /><br /><br /></p>
-
-          <a class="button" href="/android/android/2018/01/17/android-4.html">
-            Continue reading
-          </a>-->
-        </div>
-      </header>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h2>
-          <a class="post-link" href="/android/android/2018/01/17/android-3.html">
-            안드로이드 프로그래밍(Android Programming) - 디자이너 없이 앱디자인 하는 법
-          </a>
-        </h2>
-        <p class="meta">
-          January 17, 2018
+          May 2, 2018
         </p>
         <div class="excerpt">
           <!--<p><br /><br /></p>
-<p>나는 디자이너가 아니라 개발자 이기 때문에 적당한 UI를 디자인 할 수 있는 방법을 리서치 해 보았다. 리서치 해보니 다양한 가이드라인들이 존재하였고 쉽게 적용할 수 있는 몇 가지 방법을 정리해 보았다.</p>
+<p>간단하게 JAVA JDK 설치와 환경변수 편집에 관련한 내용을 글로 남기려고 작성하였다.</p>
 <p><br /><br /></p>
 
-<blockquote>
-  <subtitle>1. Material Design</subtitle>
-</blockquote>
 
-<p>디자이너가 없는 개발 환경에서 어플을 디자인 할 수 있는 가이드 라인이 존재 한다. 구글에서 제공하는 <point>[Material Guide](https://developer.android.com/training/material/get-started.html?hl=ko)</point> 를 사용하면 된다. <br /></p>
-
-<ul>
-  <li>material guide blog : http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles
-<br /></li>
-</ul>
-
-<p>구글에서 제공하는 <point>Material Guide</point> 를 사용하면 이미지 파일을 포토샵으로 소스를 만들어 추출 할 필요 없이 안드로이드 디자인 서포트 라이브러리를 연결함으로써 가이드된 UI를 사용 할 수 있다. 여백이나 사이즈 등 수치만 잡아주면 되므로 매우 심플하고 편리하게 어플리케이션을 개발 할 수 있다. <br /></p>
-
-<point>Material Design</point>
-<p>은 안드로이드 <point>API 21(롤리팝) 이상</point> 에서만 사용할 수 있다. 안드로이드 스튜디오에서 API 21 이상을 선택하게 되면 테마는 자동으로 머티리얼 테마가 적용이 된다. 머티리얼 테마가 적용이 된것을 확인하려면 res -&gt; values -&gt; sytle.xml 에서 아래의 사진과 같다면 적용이 된 것이다.</p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34932998-88cc050e-fa18-11e7-9e8c-f0e155a72b6f.png" width="60%" /></center>
-<p><br /></p>
-
-<p>머티리얼 테마는 <point>style.xml</point> 에서 다음과 같이 적용 될 수 있다.</p>
-
-<ul>
-  <li>android:style/Theme.Material (어두운 버전)</li>
-  <li>android:style/Theme.Material.Light (밝은 버전)</li>
-  <li>android:style/Theme.Material.Light.DarkActionBar</li>
-</ul>
-
-<p>사용가능 한 머리티얼 스타일 목록은 <point>[R.style](https://developer.android.com/reference/android/R.style.html?hl=ko)</point> 에서 확인 할 수 있다. <br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34936901-4921d452-fa26-11e7-8bb1-3f10d382aea9.png" width="60%" /></center>
-<p><br /><br /></p>
-
-<blockquote>
-  <subtitle> 2. Theme Color 지정하기</subtitle>
-</blockquote>
-
-<point>Material Theme</point>
-<p>를 상속 시 테마의 기본 색상을 변경 할 수 있다. 사용자 지정 색상을 사용할 수 있다. 먼저 사용자 색상을 설정하기 위한 요소들은 다음 아래의 그림과 같다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35023450-0d370328-fb7e-11e7-8a33-99e169c79288.png" width="40%" /></center>
-<p><br /></p>
-
-<p>color 값은 <point>res -&gt; values -&gt; colors.xml</point> 에서 지정 할 수 있다. 디자이너 없이 좋은 컬러값을 추출해 내는 것이 어려운데 <point>[Material Palette](https://www.materialpalette.com/)</point> 를 사용하면 쉽게 컬러 값을 추출 할 수 있다. 각 색상값을 더블클릭하면 웹 컬러값을 자동으로 클립보드에 복사해주기 때문에 ctrl + v하여 사용하거나 palettes 탭에서 주요 테마 색상 2가지를 선택하면 자동으로 테마 뷰를 보여준다.<br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/35024129-2ff28cf4-fb81-11e7-8e70-ca5692551705.png" width="60%" /></center>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35023623-d682a25a-fb7e-11e7-92cf-05e3ea6a8e85.png" width="60%" /></center>
-<p><br /></p>
-
-<p>color 값 정보는 <point>res -&gt; values -&gt; color.xml</point> 파일에 기재하고 컬러값 설정은 <point>res -&gt; values -&gt; styles.xml</point> 에서 설정한다. <br /></p>
-
-<ul>
-  <li>res -&gt; values -&gt; colors.xml</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;resources&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"colorPrimary"</span><span class="nt">&gt;</span>#FF9800<span class="nt">&lt;/color&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"colorPrimaryDark"</span><span class="nt">&gt;</span>#F57C00<span class="nt">&lt;/color&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"windowBackground"</span><span class="nt">&gt;</span>#ffffff<span class="nt">&lt;/color&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"textColorPrimary"</span><span class="nt">&gt;</span>#ffffff<span class="nt">&lt;/color&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"textColor"</span><span class="nt">&gt;</span>#212121<span class="nt">&lt;/color&gt;</span>
-    <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"colorAccent"</span><span class="nt">&gt;</span>#FF5722<span class="nt">&lt;/color&gt;</span>
-<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
-
-<ul>
-  <li>res -&gt; values -&gt; styles.xml</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;resources&gt;</span>
-    <span class="c">&lt;!-- Base application theme. --&gt;</span>
-    <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">"AppTheme"</span> <span class="na">parent=</span><span class="s">"android:Theme.Material.Light"</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- Customize your theme here. --&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"android:colorPrimary"</span><span class="nt">&gt;</span>@color/colorPrimary<span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"android:colorPrimaryDark"</span><span class="nt">&gt;</span>@color/colorPrimaryDark<span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"android:textColorPrimary"</span><span class="nt">&gt;</span>@color/textColorPrimary<span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"android:colorAccent"</span><span class="nt">&gt;</span>@color/colorAccent<span class="nt">&lt;/item&gt;</span>
-    <span class="nt">&lt;/style&gt;</span>
-<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
-
-<p><br /><br /></p>
-
-<blockquote>
-  <subtitle>3. Material Icon 사용하기</subtitle>
-</blockquote>
-
-<p>아이콘은 구글이 공개한 저작권 없는 <point>[Material Icon](https://material.io/icons/)</point> 을 사용하면 된다. Meterial Icon 홈페이지에 접속하면 아이콘을 선택하여 dp별로 SVG(벡터파일)이나 PNG 파일로 다운 받을 수 있다.</p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/35025918-6ed049ac-fb8b-11e7-8275-9fcf1107a037.png" width="60%" /></center>
-<p><br /></p>
-
-<p><br /><br /><br /><br /><br /></p>
-
-<blockquote>
-  <subtitle>refernece</subtitle>
-</blockquote>
-
-<ul>
-  <li>https://developer.android.com/training/material/get-started.html?hl=ko</li>
-  <li>http://davidhyk.github.io/google-design-ko/material-design/introduction.html#introduction-principles</li>
-</ul>
-
-<p><br /><br /><br /><br /><br /></p>
-
-          <a class="button" href="/android/android/2018/01/17/android-3.html">
+          <a class="button" href="/development%20environment/java/2018/05/02/java-1.html">
             Continue reading
           </a>-->
         </div>
@@ -810,74 +348,22 @@
     <div class="post-teaser">
       <header>
         <h2>
-          <a class="post-link" href="/android/android/2018/01/03/android-2.html">
-            안드로이드 프로그래밍(Android Programming) - 프로젝트 생성하기(hello project!)
+          <a class="post-link" href="/python/tensorflow/2018/04/30/tensorflow-1.html">
+            텐서플로우(Tensorflow) GPU 버전 설치하기 - Windows 10
           </a>
         </h2>
         <p class="meta">
-          January 3, 2018
+          April 30, 2018
         </p>
         <div class="excerpt">
-          <!--<p><br /></p>
-<center><img src="https://user-images.githubusercontent.com/20412850/34511550-cc699236-f09f-11e7-9b2a-194abd6f40b5.png" width="60%" /></center>
-<p><br />
-안드로이드 어플을 제작하기 위해서는 프로젝트를 생성해야한다. Start a new Android Studio Project를 클릭하여 프로젝트를 생성한다.<br /><br /></p>
+          <!--<p><br /><br /></p>
+<p>연구실 내 컴퓨터에 드디어 GPU가..!! 로컬에서 Tensorflow GPU를 사용하기 위해 험난했던 GPU 버전 설치 방법을 남긴다...<br />
+**반드시 tensorflow 공식 문서를 확인해야한다!!!** 추천 cuda버전, cudnn버전, anaconda일때 파이썬 몇 버전 써야하는지, native pip 일때 파이썬 몇 버전을 써야하는지 적혀있다. 자신의 환경에 맞춰서 공식문서를 보고 파이썬 버전을 잘 선택해야한다. 또한, 선택하는 운영체제에 따라서도 버전이 다르다. <br /><br />
+나는 **Windows 10 / Anaconda** 를 사용하여 설치할 예정이다.</p>
+<p><br /><br /></p>
 
-<center><img src="https://user-images.githubusercontent.com/20412850/34511554-dc05a234-f09f-11e7-8d07-8db74b312638.png" width="60%" /></center>
 
-<p><br />
-Application name은 어플의 이름을 지정하는 부분이다. 기기에 설치 및 실행되는 앱의 이름으로 사용이 된다.<br />
-Company Domain은 개발자를 식별할 수 있는 이름을 도메인 형식으로 입력하는 곳이다.<br />
-Project location은 프로젝트를 설치할 경로(저장 될 경로)를 입력하는 곳이다. […] 버튼을 눌러서 경로를 변경할 수 있다. 간단한 설정을 하고 Next 버튼을 클릭한다.<br /><br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34511839-b238df28-f0a1-11e7-98ee-92228920c759.png" width="60%" /></center>
-
-<p><br />
-어플이 실행될 API 버전을 결정한다. API 버전은 어플이 실행될 최소의 안드로이드 버전을 말한다. 버전이 낮을 수록 많은 기기에서 호환이 가능하다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34511893-0caef4d8-f0a2-11e7-895d-f859065cd695.png" width="60%" /></center>
-
-<p><br />
-왼쪽의 그래프를 보면 안드로버전 대비 몇프로 정도 지원이 되는지 가이드라인이 있다. 버전이 낮을 수록 모든 기기에서 지원되지만 고려해야할 사항이 많아진다고 한다. 나는 KiKat(4.4)로 결정하였다.<br /><br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34512001-af49b3f4-f0a2-11e7-9bee-c8ff68032b7f.png" width="60%" /></center>
-
-<p><br /></p>
-
-<p>그다음은 액티비티(Activity) 종류를 결정하는 단계이다. <strong><code>액티비티(Activity)</code></strong> 는 일종의 어플리케이션 구성요소로서 사용자가 전화걸기, 사진찍기, 이메일 보내기 또는 지도 보기 등의 일을 하기 위해서 상호작용할 수 있는 화면을 제공하는 곳이다. 하나의 어플리케이션은 여러개의 액티비티가 느슨하게 서로 묶여 있는 형태로 구성이 된다. 한 어플리케이션 내에서 하나의 액티비티가 주요 액티비티로 지정되며, 사용자가 이 어플리케이션을 처음 실행 할 때 엑티비티가 사용자에게 표시된다.</p>
-
-<p>원하는 액티비티(Activity)의 형식을 고르고 Next버튼을 클릭한다. 나는 Emtpy Activity를 선택하였다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514203-9127180a-f0af-11e7-8f1e-f4abdb09c72b.png" width="60%" /></center>
-<p><br />
-그 다음 화면은 Activity name과 Layout name을 결정하는 화면이다. Activity name으로 이루어진 java파일이 생성되고 Layout name 으로 이루어진 Layout 리소스들, 레이아웃 구조 등이 담긴 xml 파일이 생성된다.<br /></p>
-
-<p>또한, 하단에 보면 Backwards Compatibility(AppCompat) 라는 옵션이 있는데 이 옵션은 액티비티를 AppCompactActivity로 만들겠다는 의미이다. <strong>AppCompactActivity는 안드로이드 하위버전을 지원하는 액티비티이다.</strong> Activity API level을 확인하면 API level 11(안드로이드 3.0)이라고 적혀있다. <br />
-즉, 어플을 몇버전부터 지원할지 결정한다음에 AppCompactActivity 옵션을 결정하면 된다. 나는 KiKat(4.4) 부터 지원할 거기 때문에 그냥 옵션체크를 해제하였다. 이름을 결정하고 Finish 버튼을 클릭한다.</p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514482-ff082426-f0b0-11e7-9195-d07c00e54081.png" width="60%" /></center>
-<p><br />
-java 폴더에보면 액티비티 이름으로 생성된 자바파일이 생성된 것을 볼 수 있다. res는 어플의 레이아웃, 이미지 리소스 등 어플리케이션에 사용되는 리소스들을 집어넣는 곳이다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514564-5b0b6ab2-f0b1-11e7-93dc-c75665a2593f.png" width="60%" /></center>
-<p><br />
-res -&gt; layout -&gt; activity_main.xml 을 클릭하면 어플 화면의 레이아웃을 쉽게 변경할 수 있다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514641-af77eaa8-f0b1-11e7-8ab6-f61cbb1d6a3d.png" width="60%" /></center>
-<p>일단 어플리케이션을 build &amp; run 하기 위해서 상단의 플레이 표시를 클릭하여 실행한다. 실행하게 되면 에뮬레이터를 실행할 수 있는 화면이 나온다. 만약 에뮬레이터를 설치하지 않았다면 Create New Virtual Device 버튼을 클릭하여 에뮬레이터를 만든 후 실행하면 된다. <br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514711-0e1a28f0-f0b2-11e7-902e-94543c074046.png" width="60%" /></center>
-<p><br /></p>
-
-<p>에뮬레이터 설치시 원하는 사이즈의 기종을 선택하여 테스트용으로 설치하면 된다. 에뮬레이터를 다 설치하였다면 에뮬레이터를 선택하고 ok버튼을 눌러 실행을 계속 진행하면 된다.<br /></p>
-
-<center><img src="https://user-images.githubusercontent.com/20412850/34514806-6d47e740-f0b2-11e7-83a0-7f6ca9944dce.png" width="30%" /></center>
-<p><br />
-이렇게 화면에 잘 뜬다면 잘 만든 것이다!</p>
-
-<p><br /><br /><br /><br /><br /></p>
-
-          <a class="button" href="/android/android/2018/01/03/android-2.html">
+          <a class="button" href="/python/tensorflow/2018/04/30/tensorflow-1.html">
             Continue reading
           </a>-->
         </div>
@@ -887,101 +373,41 @@ res -&gt; layout -&gt; activity_main.xml 을 클릭하면 어플 화면의 레�
     <div class="post-teaser">
       <header>
         <h2>
-          <a class="post-link" href="/android/android/2018/01/03/android-1.html">
-            안드로이드 프로그래밍(Android Programming) 시작하기
+          <a class="post-link" href="/data%20science/machine%20learning/2018/04/13/ml-1.html">
+            Machine Learning(머신러닝) 시작하기
           </a>
         </h2>
         <p class="meta">
-          January 3, 2018
+          April 13, 2018
         </p>
         <div class="excerpt">
-          <!--<p><br /><br />&lt;p&gt;연구실에서 이번년도 산학연 과제로 하드웨어-안드로이드어플-서버구축 부분을 개발하게 되었다. 일단 첫 공부로 안드로이드 프로그래밍부터 공부하기로 결정하였다! 일단 이번 방학까지 구현해야 하는 어플에 대해서 1차적인 개발은 마칠 예정이다. 서버 부분은 나 혼자 하는 작업은 아니지만 다른 사람들과의 협업을 위해 일단 조금씩 골고루 공부해 두는것으로…!&lt;/p&gt;<br /><br /></p>
+          <!--<p><br /><br /></p>
 
-<p>안드로이드 프로그래밍은 3학년 1학기 때 경진대회에 참가하면서 약간 다뤄본 경험이 있다. 그때 스크랩한 내용들이랑 새로 스크랩한 내용들을 정리해서 포스팅을 작성할 예정이다. 안드로이드 프로그래밍에 대한 자료들은 구글에도 아주 방대하게 있고 MOOC강의나 책을 사면 무료 공개되는 강의들이 많으니 골고루 참고할 예정이다.<br /><br /></p>
 
-<blockquote>
-  <subtitle>1. JAVA JDK 설치</subtitle>
-</blockquote>
+          <a class="button" href="/data%20science/machine%20learning/2018/04/13/ml-1.html">
+            Continue reading
+          </a>-->
+        </div>
+      </header>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h2>
+          <a class="post-link" href="/android/android/2018/01/19/android-6.html">
+            안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼에 스크롤 뷰 적용
+          </a>
+        </h2>
+        <p class="meta">
+          January 19, 2018
+        </p>
+        <div class="excerpt">
+          <!--<p><br /><br /></p>
+<p>기존에 작성한 [로그인폼 만들기](https://devyurim.github.io/2018/01/17/8.html) 에서는 입력을 위해 키보드를 띄웠을때 버튼이 가려지는 단점이 있었다. 따라서 ScrollView를 적용하여 이런 단점을 보완하였다.</p>
+<p><br /><br /></p>
 
-<p>일단 안드로이드 프로그래밍 개발은 자바(Java)언어를 기반으로 이루어진다. 안드로이드 프로그래밍을 하기 위해서는 우선 <point>JAVA JDK(Java Development Kit)</point> 가 반드시 설치 되어 있어야 한다. 아래의 링크를 타고 들어가서 운영체제에 맞는 JDK를 설치하면 된다.<br /></p>
-<ul>
-  <li>Java JDK : http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html</li>
-</ul>
 
-<center><img src="https://user-images.githubusercontent.com/20412850/34510278-e7bf4738-f095-11e7-928f-517645aeb3b2.png" width="60%" /></center>
-
-<blockquote>
-  <p>1-1. 윈도우(Windows) 설정</p>
-</blockquote>
-
-<p>JDK를 설치하고 난 후 자바 환경변수(JAVA_HOME, PATH)를 설정해 주어야 JDK를 사용할 수 있다. 윈도우는 <point>환경변수</point> 설정에 가서 두가지 작업을 해야한다.</p>
-
-<ol>
-  <li>사용자 변수 새로 만들기
-    <ul>
-      <li>변수 이름 : JAVA_HOME</li>
-      <li>변수 값 : jdk가 설치 된 경로 (ex. “C:\Program Files\Java\jdk.1.8.0_25”)
-<br /></li>
-    </ul>
-  </li>
-  <li>변수 PATH에 경로 추가
-    <ul>
-      <li>변수값 맨 뒤에 jdk 경로를 추가해준다.(ex. C:\Program Files\Java\jdk.1.8.0_25;)</li>
-    </ul>
-  </li>
-</ol>
-
-<p>cmd 창을 켜고 java-version 을 쳐서 버전이 올바르게 나오면 제대로 경로가 설정이 된것이다.<br /><br /><br /></p>
-
-<blockquote>
-  <p>1-2. 맥 OS(Mac OS), 리눅스(Linux) 설정</p>
-</blockquote>
-
-<p>맥은 명령어로 자바 환경변수 설정이 가능하다.</p>
-
-<p>1) JAVA 디렉토리로 이동<br /></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span></code></pre></figure>
-
-<p>2) ls 명령어를 이용하여 jdk 버전 확인 -&gt; <point>메모 해둔다!</point><br /></p>
-
-<p>3) home 파일로 접속<br /></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*위에서 메모한 jdk버전 사용*/</span>
-<span class="nx">$</span> <span class="nx">cd</span> <span class="o">/</span><span class="nx">Library</span><span class="o">/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="p">.</span><span class="mf">1.8</span><span class="p">.</span><span class="mi">0</span><span class="nx">_25</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span></code></pre></figure>
-
-<p>4) vim 에디터를 이용하여 bash_profile 접근<br /></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">vi</span> <span class="o">~</span><span class="sr">/.bash_profile</span></code></pre></figure>
-
-<p>5) 수정모드에서 경로 추가<br /></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*위에서 메모한 jdk버전 사용*/</span>
-<span class="k">export</span> <span class="nx">JAVA_HOME</span><span class="o">=</span><span class="sr">/Library/</span><span class="nx">Java</span><span class="o">/</span><span class="nx">JavaVirtualMachines</span><span class="o">/</span><span class="nx">jdk</span><span class="p">.</span><span class="mf">1.8</span><span class="p">.</span><span class="mi">0</span><span class="nx">_25</span><span class="p">.</span><span class="nx">jdk</span><span class="o">/</span><span class="nx">Contents</span><span class="o">/</span><span class="nx">Home</span></code></pre></figure>
-
-<p>esc 누른 후, :wq로 저장하고 모드를 빠져나온다.<br /></p>
-
-<p>6) 터미널에서 자바 버전 확인<br /></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span> <span class="nx">java</span><span class="o">-</span><span class="nx">version</span></code></pre></figure>
-
-<p>이렇게 셋팅을 완료하면 자바를 사용하기 위한 환경 설정은 완료된다. <br /><br /></p>
-
-<blockquote>
-  <subtitle>2. 통합개발환경(IDE) 설치</subtitle>
-</blockquote>
-
-<p>이제 본격적으로 안드로이드 프로그래밍을 하기 위한 IDE를 설치할 차례이다. 통합개발환경(IDE)으로는 <a href="https://developer.android.com/studio/index.html?hl=ko"><point>안드로이드 스튜디오(Android Studio)</point></a> 또는 <a href="https://www.eclipse.org/downloads/"><point>이클립스(Eclipse)</point></a> 를 이용하여 개발을 할 수 있다.<br /></p>
-
-<p>안드로이드 스튜디오는 Jetbrain 회사의 Intellij와 거의 비슷하다. 또한, 에뮬레이터를 지원한다. 에뮬레이터는 간단하게 말하면 만든 소스의 기능을 테스트 할 수 있는 가상 기기이다. 굳이 안드로이드 휴대폰에 어플을 집어넣지 않아도 테스트가 가능하다는 장점이 있다. 다만, 에뮬레이터 기능 때문에 프로그램이 조금 무겁다고 느껴진다. 맥북 프로에서 안드로이드 스튜디오를 돌렸을 때 메모리가 16기가인데 에뮬레이터 돌릴때 약간 무겁다는 느낌이 많이 들었다.</p>
-
-<p>이클립스는 안드로이드 스튜디오보다는 가벼운 편이다. 자바를 개발하면서 이클립스 단축키나 사용법에 익숙한 사람들은 이클립스를 사용한다고 들었다. 자신에게 편한 IDE를 사용하면 된다. 둘중에 하나 자신이 원하는 통합개발환경을 설치하면 된다.</p>
-
-<p>나는 <point>Jetbrain</point> 회사의 프로그램들을 무료 학생계정으로 자주 사용하여 안드로이드 스튜디오를 쓰기로 결정하였다. 개발환경은 MAC OS X Android Studio로 공부를 진행 할 예정이다.</p>
-
-<p><br /><br /><br /><br /><br /></p>
-
-          <a class="button" href="/android/android/2018/01/03/android-1.html">
+          <a class="button" href="/android/android/2018/01/19/android-6.html">
             Continue reading
           </a>-->
         </div>

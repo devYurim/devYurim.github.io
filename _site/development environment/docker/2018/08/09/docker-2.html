@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -262,12 +276,9 @@
 
 <p><br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>docker run <span class="nt">--name</span> mariadb <span class="se">\
-</span>
-<span class="nt">-v</span> /my/own/datadir:/home/ailab/DB <span class="se">\
-</span>
-<span class="nt">-e</span> <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span><span class="s1">'0000'</span> <span class="se">\
-</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>docker run <span class="nt">--name</span> mariadb <span class="se">\</span>
+<span class="nt">-v</span> /my/own/datadir:/home/ailab/DB <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span><span class="s1">'0000'</span> <span class="se">\</span>
 <span class="nt">-d</span> mariadb:latest</code></pre></figure>
 
 <p><br /><br /></p>
@@ -342,18 +353,12 @@
 
 <p><br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ NV_GPU</span><span class="o">=</span>1 nvidia-docker run <span class="nt">-it</span> <span class="se">\
-</span>
-<span class="nt">--name</span> crawler-journal <span class="se">\
-</span>
-<span class="nt">--link</span> mariadb <span class="se">\
-</span>
-<span class="nt">-v</span> /home/ailab/docker/crawler-journal:/notebooks <span class="se">\
-</span>
-<span class="nt">-p</span> 8894:8888 <span class="nt">-p</span> 81:8000 <span class="nt">-p</span> 6012:3306  <span class="se">\
-</span>
-<span class="nt">-e</span> <span class="nv">PASSWORD</span><span class="o">=</span><span class="s2">""</span> <span class="se">\
-</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ NV_GPU</span><span class="o">=</span>1 nvidia-docker run <span class="nt">-it</span> <span class="se">\</span>
+<span class="nt">--name</span> crawler-journal <span class="se">\</span>
+<span class="nt">--link</span> mariadb <span class="se">\</span>
+<span class="nt">-v</span> /home/ailab/docker/crawler-journal:/notebooks <span class="se">\</span>
+<span class="nt">-p</span> 8894:8888 <span class="nt">-p</span> 81:8000 <span class="nt">-p</span> 6012:3306  <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">PASSWORD</span><span class="o">=</span><span class="s2">""</span> <span class="se">\</span>
 <span class="nt">-d</span> crawler-journal:08.08</code></pre></figure>
 
 <p><br /><br /></p>

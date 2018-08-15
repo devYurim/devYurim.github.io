@@ -5,7 +5,447 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Mon, 13 Aug 2018 15:34:53 +0900</pubDate>
+    <pubDate>Tue, 14 Aug 2018 19:00:52 +0900</pubDate>
+    
+      <item>
+        <title>Basic Statistics - 표와 그래프</title>
+        <link>/data%20science/statistics/2018/08/14/statistics-3.html</link>
+        <guid isPermaLink="true">/data%20science/statistics/2018/08/14/statistics-3.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt; 이번에는 각 자료들의 종류에 따라서 표현할 수 있는 그래프를 정리하였다. &amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://www.kmooc.kr/courses/course-v1:PNUk+RS_C01+2017_KM_009/info&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>Basic Statistics - 모집단(Population)과 표본(Sample)</title>
+        <link>/data%20science/statistics/2018/08/14/statistics-2.html</link>
+        <guid isPermaLink="true">/data%20science/statistics/2018/08/14/statistics-2.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt; 통계학은 용어가 조금 어렵고 많은 것 같다. 용어 위주로 정리하였으며 통계학의 아주 기초적인 모집단과 표본에 대하여 정리 하였다. &amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. 모집단(Population)과 표본(Sample) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44082602-a9c4c2ee-9fec-11e8-97ba-7e4068de84a6.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;모집단(Population) : 분석하고자하는 전체 대상&lt;/li&gt;
+  &lt;li&gt;표본(sample) : 모집단에서 표본 추출(sampling)한 집단&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;표본을 사용하는 이유 : 모집단의 크기가 크면 많은 시간과 비용이 들기 때문이다.&lt;/li&gt;
+  &lt;li&gt;표본 추출의 이점 : 일부 추출한 표본을 분석하여 모집단의 특성을 추론할 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. 표본 추출(sampling) 방법 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+크게 확률적 추출(probability sampling)과 비확률적 추출(nonprobability sampling)으로 나뉜다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;1) 확률적 추출(probability sampling)&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;단순 무작위 추출(simple random sampling) : 표본으로 선택될 확률은 모두 n/N으로 동일하다.&lt;/li&gt;
+  &lt;li&gt;계통 추출(systematic sampling) : 일정 간격으로 표본을 선택한다.&lt;/li&gt;
+  &lt;li&gt;층화 추출(stratified sampling) : 모집단을 성격에 따라 몇개의 집단 또는 층(strata)으로 나누고 집단 내에서 원하는 크기의 표본을 무작위로 추출한다.&lt;/li&gt;
+  &lt;li&gt;군집 추출(cluster sampling) : 모집단을 특성에 따라 여러개의 집단(cluster)으로 나누고 몇개의 집단을 선택한 후 선택된 집단 내에서 필요한 만큼의 표본을 무작위로 추출한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+2) 비확률적 추출(nonprobability sampling)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;판단 추출(judgement sampling) : 연구자가 자신의 판단에 따라 표본을 선택한다.&lt;/li&gt;
+  &lt;li&gt;할당 추출(quota sampling) : 모집단을 여러 집단으로 나눈 후 연구자가 자신에 판단에 따라서 집단에서 필요한 표본의 개수를 선택해 추출한다.&lt;/li&gt;
+  &lt;li&gt;편의 추출(convenience sampling) : 연구자가 쉽게 접근할 수 잇는 표본을 선택한다.
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;3. 자료의 종류&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data : Datum(자료, 정보)의 복수형, 통계학은 자료(재료)를 이용해서 정보(요리)를 만들어 내는 것이다.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44083785-eb341902-9fef-11e8-92d4-bc275725bb14.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;자료는 크게 양적 자료와 질적 자료로 나눌 수 있으며 양적자료는 연속형 자료, 이산형 자료로로 나눌 수 있꼬 질적 자료에는 명목형 자료, 순서형 자료로 나눌 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44084534-ecbd40c6-9ff1-11e8-9139-50e4c196f217.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://www.kmooc.kr/courses/course-v1:PNUk+RS_C01+2017_KM_009/info&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>Basic Statistics - 통계학(Statistics)과 데이터(Data)</title>
+        <link>/data%20science/statistics/2018/08/14/statistics-1.html</link>
+        <guid isPermaLink="true">/data%20science/statistics/2018/08/14/statistics-1.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt; 이번 방학이 끝나기 전에 자격증을 하나 따보자! 해서 신청한게 ADsP(데이터 분석 준전문가) 시험이다. 데이터 분석에 관한 자격증이 뭐가 있나 봤더니 이게 있었다! 실제로 통계학과 분들은 이 자격증을 많이 따기도 하고 따는 사람을 본적도 있다. 취업시 많은 혜택이 있는 자격증은 아니지만 어느정도 가산점이 있고 기초를 자세히 정리하기에 좋을 것 같아서 신청하고 시험 준비중이다! 나는 통계학과 학생은 아니지만… 어느정도 머신러닝 프로그래밍을 하면서 약간의 지식은 가지고 있고 통계학만.. 잘 다루면 되지 않을까해서 일단 도전! 해보는 것이다. 이 자격증과 관련된 네이버 카페도 있는데 한 3주정도면 다들 취득할 수 있다고들 한다. 원래 저번주에 신청했지만… 갑자기 연구실 일이 폭풍같이 밀려들어서… 사실 지금 시작하는거와 다름없다. 8월 25일이 시험인데 걱정된다 ㅠ.ㅠ 학부때 통계학개론 교양 수업을 들었지만… c+이라는 아픈 기억이 있으므로 통계학 개론 기초 수업을 찾아서 들었다. 강의 이름은 K-MOOC R을 활용한 통계학개론 이라는 강의이다. 간단 명료하게 강의내용이 딱딱 정리되어 있는 스타일이라서 좋았다. 이 수업의 통계학 개론 내용과 ADsP에서 필요한 통계학 내용과 결합하여 정리할 예정이다.
+&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. 통계학이란? &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;통계학(Statistics)이란 Status(국가)와 ics(학문)라는 접미어를 합쳐서 만든 단어로 국가의 경영 또는 통치에 필요한 학문이라는 뜻이다. &lt;br /&gt;
+과거의 통계학은 경제 관련자료에 대한 기록을 주로 다뤘다면 현재의 통계학은 수학을 바탕으로 더 과학적이고 논리적 체계를 갖춘 학문으로 발전하였다. 통계학은 자료가 발생될 수 있는 모든 분야에서 활용이 가능하며 특히 빅데이터에 통계학적인 지식을 많이 접목하여 활용하고 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. 빅 데이터(Big Data)란? &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;빅 데이터의 특징은 3V로 표현 될 수 있다. 3V는 Velocity(데이터의 발생 속도), Volume(데이터의 크기), Variety(데이터의 다양성)을 가리킨다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Velocity(데이터의 발생 속도) : Velocity 관점에서 두가지로 해석 될 수 있다. 데이터가 빠른 속도로 발생한다, 사용자가 원하는 시간에 데이터 분석 결과를 제공한다.&lt;/li&gt;
+  &lt;li&gt;Volumn(데이터의 크기) : 데이터의 양이 방대하다.&lt;/li&gt;
+  &lt;li&gt;Variety(데이터의 다양성) : 정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석대상으로 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;3. 인공지능(AI, Artificial Intelligence)과 데이터(Data)&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;인공지능은 입력은 반드시 데이터의 형태를 가지며 입력된 자료를 분석하여 최적의 분류(classification)을 할 수 있는 기계(machine)을 가리킨다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44081513-d20ead8a-9fe9-11e8-8305-e2cd5f7f392d.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;훈련자료를 기계(machine)에 input으로 넣어 기계가 자료를 분석하여 학습한 기계를 인공지능이라고 하며 기계가 자료를 분석하여 분류할 수 있도록 학습하는 과정을 머신러닝(machine learning)이라고 한다.
+머신러닝의 종류에는 단순 학습(shallow learning)과 심화 학습(deep learning)이 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;단순학습(shallow learning)은 어떠한 filter를 이용해 단순히 예측값을 도출하는 반면 심화 학습(deep learning)은 인간의 신경망을 본뜬 알고리즘으로 기계 스스로 학습하며 정답값이 주어지면 hidden layers를 통해 기계 스스로 학습하며 어떠한 이유로 그렇게 학습되는지 명확하게 규명할 수 없다. 또한, 도출된 예측값을 다시 input data로 활용하여 여러번 반복하여 학습하므로 shallow learning 보다는 더욱 복잡한 예측이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;인공지능의 핵심기술은 크게 음성인식(Voice Recognition)과 형상인식(Pattern Recognition)으로 나뉠 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://www.kmooc.kr/courses/course-v1:PNUk+RS_C01+2017_KM_009/info&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>Selenium으로 로딩한 브라우저의 html 파싱하기 - BeautifulSoup 이용</title>
+        <link>/python/crawler/2018/08/13/crawler-4.html</link>
+        <guid isPermaLink="true">/python/crawler/2018/08/13/crawler-4.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 브라우저의 html을 파싱하는 방법을 정리하였다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. Beautifulsoup 설치&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 html을 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. HTML 파싱하기 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 페이지 소스 가져오기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_source&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# soup에 넣어주기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44024356-072d0d1c-9f28-11e8-971b-33aa7e06eaa4.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;나는 위의 이미지에서 보이는 impactfactor 표에서 년도, impactfactor 값만 수집하려고 한다. html 구조를 살펴보면 표의 각 행(row)의 클래스 명은&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;subtitle&gt;reference&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>Python Selenium(셀레니움) 크롬창 활성 탭 변경하기</title>
+        <link>/python/crawler/2018/08/13/crawler-3.html</link>
+        <guid isPermaLink="true">/python/crawler/2018/08/13/crawler-3.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 검색 자동화 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44016757-113aa434-9f11-11e8-9005-630516a5e57f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;먼저 위의 이미지와 같은 검색 창에서 검색 할 수 있도록 프로그램을 작성한다. &lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;검색창에 검색 어 입력&lt;/li&gt;
+  &lt;li&gt;검색어 입력시 하단에 나오는 버튼 클릭
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이전 코드에 이어서 아래에 추가한 코드는 다음과 같다. &lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 키워드 검색&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Peer-to-Peer Networking and Applications'&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 검색창에 키워드 입력후 검색&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'search-inputEl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'//*[@id=&quot;boundlist-1029-listEl&quot;]/ul/li'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. 활성 탭 전환하기&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;위의 코드를 이용하여 검색창에 검색어를 입력하여 검색은 가능하다. 검색 결과가 새창에 나타나므로 새로 활성화 된 창으로 화면을 변경하여야 한다. 아래의 코드를 추가함 으로써 탭 전환이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;먼저 아래의 명령어는 탭 목록들을 보여준다. 새로운 탭을 열고 로딩을 기다린뒤 윈도우 목록을 확인해보면 리스트에 두개의 항목이 들어있는 것을 볼 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;결과 : [‘CDwindow-5869F32E71D5DF1303F64200A76D021F’, ‘CDwindow-19FEAEAE68751A47C2CD0D9008B6BF4E’]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+새롭게 열린 탭으로 변경하는 코드는 다음을 하단에 추가하면 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 최근 열린 탭으로 전환&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;만약에 새로 옮긴 탭을 닫고 다시 원래 창으로 돌아가고 싶다면 아래의 코드를 입력하면 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 현재 탭 닫기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 맨 처음 탭으로 변경(0번 탭)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;수정한 전체 내용은 아래와 같다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 키워드 검색&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Peer-to-Peer Networking and Applications'&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 검색창에 키워드 입력후 검색 버튼 클릭&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'search-inputEl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'//*[@id=&quot;boundlist-1029-listEl&quot;]/ul/li'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 새로 열린 탭으로 활성 탭 변경&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;reference&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>Homebrew를 이용하여 MYSQL 설치 - MAC</title>
+        <link>/data%20base/mysql/2018/08/13/mysql-1.html</link>
+        <guid isPermaLink="true">/data%20base/mysql/2018/08/13/mysql-1.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;나는 노트북을 맥을 사용하는데 맥에서는 homebrew 라는 패키지 관리자를 설치하여 사용할 수 있다. 프로그램 설치시 유용하게 활용하고 있다. 개발 환경을 조금 더 편리하게 구성할 수 있어 편리하였다. MYSQL도 homebrew를 이용하여 편리하게 설치할 수 있다. &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. Homebrew 설치 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;아래의 사이트를 참고하여 homebrew를 설치할 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;homebrew : https://brew.sh/index_ko&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;맥에는 루비가 설치되어 있으므로 다음의 루비 명령어를 통해서 homebrew를 설치할 수 있다. 명령어를 실행하면 homebrew가 자동으로 설치 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/usr/bin/ruby &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. mysql server 설치 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;일단 mysql을 사용하려면 mysql server와 mysql 데이터베이스를 GUI로 확인가능한 mysqlworkbench를 homebrew를 이용하여 설치한다. 우선 brew 명령어를 통해서 mysql에 관련된 프로그램들을 검색할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew doctor
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew search mysql&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44032947-ba290d56-9f43-11e8-8e72-4e15dc2e7e21.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 이미지에서 formulae 의 mysql과 mysql-client casks의 mysqlworkbench를 설치한다. mysql-client는 커맨드라인에서 mysql 서버 접속시 사용된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql-client
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysqlworkbench&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;이렇게 해서 mysql 서버와 mysqlworkbench 설치가 완료되었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;3. mysql 실행 확인&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;아래의 명령어를 실행하면 mysql 커맨드라인으로 접속이 가능하도록 설정 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew services start mysql
+
+&lt;span class=&quot;o&quot;&gt;==&amp;gt;&lt;/span&gt; Tapping homebrew/services
+Cloning into &lt;span class=&quot;s1&quot;&gt;'/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'&lt;/span&gt;...
+remote: Counting objects: 14, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;10/10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Total 14 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 0
+Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14/14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Tapped 1 &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;43 files, 55.2KB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;==&amp;gt;&lt;/span&gt; Successfully started &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;mysql&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;label: homebrew.mxcl.mysql&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;그 다음 커맨드라인 명령어로 접속하면 root 계정으로 접속이 되는 것을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-uroot&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;root 계정에 비밀번호를 설정하고 싶다면 아래의 명령어를 실행하면된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql_secure_installation
+......
+Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No: no
+Please &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;the password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;root here.
+
+New password:패스워드 입력
+
+Re-enter new password: 패스워드 확인
+.....
+
+Remove anonymous &lt;span class=&quot;nb&quot;&gt;users&lt;/span&gt;? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
+Success.
+
+Disallow root login remotely? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
+Success.
+
+Remove &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database and access to it? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
+ - Dropping &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database...
+Success.
+
+ - Removing privileges on &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database...
+Success.
+.....
+
+Reload privilege tables now? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
+Success.
+
+All &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;4. mysqlworkbench로 mysql 접속하기&lt;/subtitle&gt;
+  &lt;p&gt;이제 mysqlworkbench로 접속하기 위하여 한가지 권한 셋팅을 해야한다. 권한 셋팅을 하지 않으면 아래의 오류가 발생한다. MYSQL 8.0 오류라고 한다.&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Authentication plugin &lt;span class=&quot;s1&quot;&gt;'caching_sha2_password'&lt;/span&gt; cannot be loaded: dlopen&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/local/mysql/lib/plugin/caching_sha2_password.so, 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: image not found&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;먼저 mysql을 커맨드 라인으로 접속한다.(root계정 패스워드 0000)&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-uroot&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p0000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;그 다음 아래의 쿼리를 날려 권한 수정을 해준다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;mysql&amp;gt; ALTER USER &lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;@&lt;span class=&quot;s1&quot;&gt;'localhost'&lt;/span&gt; IDENTIFIED WITH mysql_native_password BY &lt;span class=&quot;s1&quot;&gt;'0000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;권한 설정을 해준뒤 워크벤치로 접속하면 접속이 되는 것을 확인할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44036952-11f6570a-9f4e-11e8-8e43-152615370866.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;reference&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://github.com/helloheesu/SecretlyGreatly/wiki/%EB%A7%A5%EC%97%90%EC%84%9C-mysql-%EC%84%A4%EC%B9%98-%ED%9B%84-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&lt;/li&gt;
+  &lt;li&gt;https://github.com/appkr/l5code/issues/4&lt;/li&gt;
+  &lt;li&gt;https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용</title>
@@ -198,24 +638,9 @@
       </item>
     
       <item>
-        <title>Python Selenium(셀레니움) 크롬창 활성 탭 변경하기</title>
-        <link>/python/crawler/2018/08/11/python-3.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/11/python-3.html</guid>
-        <description>&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;*&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 11 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
         <title>Python Selenium(셀레니움)으로 홈페이지 로그인하기</title>
-        <link>/python/crawler/2018/08/11/python-2.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/11/python-2.html</guid>
+        <link>/python/crawler/2018/08/11/crawler-2.html</link>
+        <guid isPermaLink="true">/python/crawler/2018/08/11/crawler-2.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;논문 Impact factor를 수집할 때 JCR 이라는 사이트에서 확인 할 수 있는데 로그인을 해야 JCR 사이트를 이용할 수 있었다. 따라서, 셀레니움 프로그램 내에서 자동으로 로그인을 하여 수집하는 방향으로 진행하였다. JCR 사이트를 이용하기 위해서는 계정이 필요하므로 미리 계정을 생성하여 준다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -229,6 +654,7 @@
   &lt;li&gt;JCR 로그인 페이지 접속&lt;/li&gt;
   &lt;li&gt;아이디 입력 폼에 아이디 입력&lt;/li&gt;
   &lt;li&gt;비밀번호 입력 폼에 비밀번호 입력&lt;/li&gt;
+  &lt;li&gt;Stay signed in 체크박스 체크&lt;/li&gt;
   &lt;li&gt;로그인 버튼 눌러서 로그인하기&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -260,6 +686,8 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 &lt;p&gt;정리하면 아이디 input 폼의 이름은 username 이고 xpath의 값은 ‘//*[@id=”username”]’ 이다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;비밀번호 input 폼도 동일한 방법으로 확인하면 이름은 password 이고 xpath의 값은 ‘//*[@id=”password”]’ 이다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Stay signed in 체크박스 input 폼의 이름은 rememberme 이고 xpath의 값은 ‘//*[@id=”rememberme”]’ 이다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;로그인 버튼인 Sign in 버튼은 이름은 존재하지 않고 xpath의 값은 ‘/html/body/div/div[1]/div[3]/div[1]/div/div/div/form[1]/button’ 이다.&lt;br /&gt;&lt;/p&gt;
 
@@ -293,6 +721,9 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'아이디 입력'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'password'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'비밀번호 입력'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
+&lt;span class=&quot;c&quot;&gt;# stay signed in 체크박스 채우기(클릭)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'rememberme'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
 &lt;span class=&quot;c&quot;&gt;# 로그인 버튼을 누르기&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/html/body/div/div[1]/div[3]/div[1]/div/div/div/form/button'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
@@ -320,8 +751,8 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
     
       <item>
         <title>Python Selenium(셀레니움) 시작하기</title>
-        <link>/python/crawler/2018/08/11/python-1.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/11/python-1.html</guid>
+        <link>/python/crawler/2018/08/11/crawler-1.html</link>
+        <guid isPermaLink="true">/python/crawler/2018/08/11/crawler-1.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;연구실에서 갑자기 SCI 논문에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러로 아주 기본적인 패키지는 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 보내도 작동이 안되는 페이지들이 있기 때문에 어려움이 살짝 있다. 일종의 무적 크롤러라고 불리는 selenium을 공부해보게 되었다! 맨 처음으로 셀레니움을 작동시키기 위한 셋팅 방법을 정리하였다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -690,12 +1121,9 @@ Password &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;again&lt;span class=&quot
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /my/own/datadir:/home/ailab/DB &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'0000'&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /my/own/datadir:/home/ailab/DB &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'0000'&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; mariadb:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -770,18 +1198,12 @@ Password &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;again&lt;span class=&quot
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ NV_GPU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 nvidia-docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; crawler-journal &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--link&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/ailab/docker/crawler-journal:/notebooks &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8894:8888 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 81:8000 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 6012:3306  &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ NV_GPU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 nvidia-docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; crawler-journal &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;--link&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/ailab/docker/crawler-journal:/notebooks &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8894:8888 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 81:8000 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 6012:3306  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; crawler-journal:08.08&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1050,12 +1472,9 @@ layout: default
 
 &lt;p&gt;마크다운 파일 내용은 아래와 같다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;s&quot;&gt;---&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;여기에 카테고리 이름 입력!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;category&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;여기에 카테고리 이름 입력!&lt;/span&gt;
 &lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1107,22 +1526,14 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&l
 
 &lt;p&gt;다음의 Docker 명령어로 &lt;point&gt;GitLab 컨테이너를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--detach&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--hostname&lt;/span&gt; gitlab.ailab.com &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 8897:80 &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 6015:22 &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gitlab &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/config:/home/ailab/GitLab &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/logs:/home/ailab/GitLab/log &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/data:/home/ailab/GitLab/data &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--detach&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--hostname&lt;/span&gt; gitlab.ailab.com &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 8897:80 &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 6015:22 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gitlab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/config:/home/ailab/GitLab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/logs:/home/ailab/GitLab/log &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/data:/home/ailab/GitLab/data &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
     gitlab/gitlab-ce:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
@@ -1163,22 +1574,17 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&l
 
 &lt;p&gt;파일에 들어가보면 화면 중간부분에 GitLab URL부분에 &lt;point&gt;extenal_url 옵션&lt;/point&gt;의 주석을 해제하고 외부에서 접속 할 url을 입력해 준다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;## GitLab URL
-&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! URL on which GitLab will be reachable.
-&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! For more details on configuring external_url see:
-&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;## GitLab URL&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! URL on which GitLab will be reachable.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! For more details on configuring external_url see:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab&lt;/span&gt;
 external_url &lt;span class=&quot;s1&quot;&gt;'http://gitlab.ailab.com:8897'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;조금 내리다 보면 GitLab Shell setting for GitLab 부분에서 &lt;point&gt;gitlab_rails['gitlab_shell_ssh_port']&lt;/point&gt; 부분의 주석을 풀고 포트 부분을 수정해준다.&lt;br /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;### GitLab Shell settings for GitLab
-&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;### GitLab Shell settings for GitLab&lt;/span&gt;
 gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 6015
 &lt;span class=&quot;c&quot;&gt;# gitlab_rails['gitlab_shell_git_timeout'] = 800&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -1212,763 +1618,6 @@ gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&g
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jun 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Windows와 Ubuntu간의 공유 폴더(Samba) 생성</title>
-        <link>/development%20environment/ubuntu/2018/05/29/ubuntu-4.html</link>
-        <guid isPermaLink="true">/development%20environment/ubuntu/2018/05/29/ubuntu-4.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;연구실 개인 컴퓨터는 Windows이고 서버는 Ubuntu여서 외장하드를 이용해서 파일을 직접 옮기거나 Jupyter notebook을 이용해서 파일을 우분투로 옮기는 점이 불편해서 &lt;point&gt;공유폴더(samba)&lt;/point&gt;를 하나 만들었다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. Samba 서버 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;일단 다음의 명령어로 &lt;point&gt;samba&lt;/point&gt;를 설치한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;samba&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 아래의 명령어로 samba &lt;point&gt;계정을 추가하고 패스워드를 지정&lt;/point&gt;해준다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;smbpasswd &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; ailab&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. samba 폴더 생성 및 config 수정
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-samba 폴더를 만들 디렉터리로 이동 후 다음의 명령어로 &lt;point&gt;samba 폴더를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;samba&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;point&gt;/etc/samba/smb.conf&lt;/point&gt; 를 열어 다음과 같이 편집한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/samba/smb.conf
-
-&lt;span class=&quot;c&quot;&gt;# 파일을 열고 아래쪽으로 이동하여 [profiles] 밑에 다음과 같이 작성&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ailab]                            &lt;span class=&quot;c&quot;&gt;# 네트워크에 보여질 공유 이름&lt;/span&gt;
-  comment &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ailab share directory  &lt;span class=&quot;c&quot;&gt;# 디렉토리 설명&lt;/span&gt;
-  path &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; /home/ailab/samba         &lt;span class=&quot;c&quot;&gt;# 공유 디렉토리 절대 경로&lt;/span&gt;
-  valid &lt;span class=&quot;nb&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ailab              &lt;span class=&quot;c&quot;&gt;# 접속을 허용할 계정&lt;/span&gt;
-  writeable &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;yes
-  &lt;/span&gt;create mask &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0664
-  directory mask &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0775&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;ctrl + o, 엔터를 차례로 누른후 저장하고 ctrl+x 로 나온 다음 아래의 명령어로 &lt;point&gt;samba 서버를 재시작&lt;/point&gt; 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; /etc/init.d/smbd restart     &lt;span class=&quot;c&quot;&gt;# samba server 재시작&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;추가적으로 samba 서버 관련한 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd start           &lt;span class=&quot;c&quot;&gt;# samba server 시작&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd stop            &lt;span class=&quot;c&quot;&gt;# samba server 멈춤&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service smbd restart         &lt;span class=&quot;c&quot;&gt;# samba server 재시작(단, 권한 입력 필요)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그리고 반드시!! 윈도우 탐색기에서 samba 서버에 접속하기 위해서 &lt;point&gt;방화벽 139, 445 포트&lt;/point&gt;를 &lt;strong&gt;반드시 열어두어야 한다&lt;/strong&gt;.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw allow 139      &lt;span class=&quot;c&quot;&gt;# 139 포트 개방&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw allow 445      &lt;span class=&quot;c&quot;&gt;# 445 포트 개방&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. 윈도우 탐색기 연결하기
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;point&gt;제어판 -&amp;gt; 사용자 계정 -&amp;gt; 자격증명관리 -&amp;gt; windows 자격 증명&lt;/point&gt;을 클릭한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40640146-bd3fd9b4-634f-11e8-963b-5a93ddaea589.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;중간부분의 &lt;point&gt;Windows 자격 증명 추가&lt;/point&gt;를 누른다.&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40640251-30b05626-6350-11e8-870f-4ac6a3854d85.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;서버의 ip주소, 위에서 지정한 계정이름, 암호를 차례로 입력한다.&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;[네트워크]&lt;/strong&gt; 창에서 &lt;point&gt;\\ip주소&lt;/point&gt; 를 입력하여 접속한다. 폴더를 바로가기에 등록해 두면 ip주소를 입력하지 않아도 접속 할 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; reference
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;http://w3devlabs.net/wp/?p=19940&lt;/li&gt;
-  &lt;li&gt;https://blog.xianchoi.kr/145&lt;/li&gt;
-  &lt;li&gt;https://m.blog.naver.com/PostView.nhn?blogId=kimmingul&amp;amp;logNo=220639741333&amp;amp;proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 29 May 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Multi-GPU 설치를 위한 NVIDIA 드라이버 재설치(업그레이드) - Ubuntu 16.04 LTS Server(Titan XP, Titan X)</title>
-        <link>/development%20environment/ubuntu/2018/05/28/ubuntu-3.html</link>
-        <guid isPermaLink="true">/development%20environment/ubuntu/2018/05/28/ubuntu-3.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;원래 연구실에 서버가 2대였는데 큰 서버가 하나 생겨서 원래 서버에서 쓰던 GPU를 옮겨 장착하게 되었다. 옮겨 장작했더니 Tensorflow를 실행할 때 오류가 발생하여 프로그램이 터져버렸다..ㅎㅎ 검색해보니 이러한 경우에는 &lt;point&gt;GPU들의 드라이버 버전이 안맞아서&lt;/point&gt; 생기는 경우인것 같아 &lt;point&gt;NVIDIA 드라이버를 재설치&lt;/point&gt; 하기로 하였다. 기존에 있던 GPU는 Titan Xp였고 새로 끼운 GPU는 GTX Titan X이다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. NVIDIA 드라이버 제거
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-맨 처음 새로운 드라이버를 설치하기 위해 아래의 명령어로 설치되있던 &lt;point&gt;NVIDIA 드라이버를 제거&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get remove &lt;span class=&quot;nt&quot;&gt;--purge&lt;/span&gt; nvidia-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;지워보니 역시 &lt;strong&gt;드라이버가 충돌&lt;/strong&gt; 했던것 같다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40604178-3baca9a6-6299-11e8-8ab8-cb45d2dc9be7.png&quot; width=&quot;100%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. NVIDIA 패키지 업데이트
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key adv &lt;span class=&quot;nt&quot;&gt;--fetch-keys&lt;/span&gt; http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. 설치 할 NVIDIA 드라이버 버전 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-맨 처음 설치 법과 동일하게 아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;http://www.nvidia.com/Download/Find.aspx?lang=en-us&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;아래의 명령어를 통하여 설치 가능한 드라이버 버전을 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-cache search nvidia&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;396은 베타버전이라서 390으로 설치하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-390&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;설치후 드라이버가 적용 될 수 있도록 &lt;point&gt;재부팅&lt;/point&gt; 해준다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 4. 드라이버 설치 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-아래의 명령어로 GPU 정보와 드라이버 설치를 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래와 같이 정보가 잘 뜨면 드라이버 설치 완료이다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40604714-f51e1a5e-629a-11e8-8031-a9b875603068.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; ** 확인 후 재설치 **  5. cuda, cudnn, nvidia-docker 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-일단 &lt;point&gt;cuda, cudnn, nvidia-docker&lt;/point&gt; 존재 여부를 확인해본다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/local/cuda/version.txt                                                   // cuda 설치 확인
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/include/cudnn.h | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;     // cuDNN 설치 확인
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; nvidia/cuda nvidia-smi                                     // nvidia-docker 설치 확인&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40604842-5a238eb6-629b-11e8-949b-c9dfc5c99873.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;일단 결과를 보니 &lt;point&gt;nvidia-docker&lt;/point&gt;만 같이 지워진것 같다. nvidia-docker를 다시 설치 해 준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-docker                          //nvidia-docker 재설치&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;재부팅을 하고 아래의 명령어로 nvidia-docker 실행 여부를 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; nvidia/cuda nvidia-smi                //nvidia-docker 설치 확인&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40605562-b835ba68-629d-11e8-81bc-3749a82b429e.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;point&gt;[!!]&lt;/point&gt; 혹시 deamon 관련하여 오류가 났다면 아래의 링크의 포스팅에서 맨 밑에 해결방법을 적어 두었다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://devyurim.github.io/2018/05/25/17.html&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;예시 코드를 실행해보니 &lt;point&gt;AttributeError&lt;/point&gt;가 발생하였다. 기존의 컨테이너를 삭제하고 기존에 백업해두었던 이미지로 &lt;point&gt;컨테이너를 재 생성해&lt;/point&gt;주니 잘 실행되었다.(nvidia-docker로 컨테이너 재생성) 나만의 문제일 수도 있다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 6. Tensorflow test code 실행
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.tensorflow.org/programmers_guide/using_gpu&quot;&gt;Tensorflow 공식 문서&lt;/a&gt;를 참고하여 테스트를 진행하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Creates a graph.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Creates a session with log_device_placement set to True.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConfigProto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_device_placement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Runs the op.&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40606697-179f1474-62a1-11e8-8ec8-a051a257cd60.png&quot; width=&quot;100%&quot; /&gt;&lt;br /&gt;gpu를 모두 인식하고 잘 계산이 되었다!&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 multi-gpu버전 코드를 이용하여 gpu를 지정하여 계산을 실행해 보았다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Creates a graph.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/device:GPU:0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/device:GPU:1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/cpu:0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Creates a session with log_device_placement set to True.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConfigProto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_device_placement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Runs the op.&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40606976-11e1884a-62a2-11e8-935a-8343ff4a8c30.png&quot; width=&quot;100%&quot; /&gt;&lt;br /&gt;짠! 성공적이다!&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; reference
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://devyurim.github.io/2018/05/25/17.html&lt;/li&gt;
-  &lt;li&gt;https://devyurim.github.io/2018/05/24/15.html&lt;/li&gt;
-  &lt;li&gt;http://limit0.tistory.com/entry/Ubuntu-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Nvidia-GPU-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95%EC%99%84%EA%B2%B0&lt;/li&gt;
-  &lt;li&gt;https://www.tensorflow.org/programmers_guide/using_gpu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 28 May 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>도커(Docker)를 이용하여 텐서플로우(Tensorflow) GPU 버전 설치하기 - Ubuntu 16.04(Titan XP)</title>
-        <link>/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html</link>
-        <guid isPermaLink="true">/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;나의 험난했던... 연구실 서버 셋팅기를 글로 남겨보려고 한다..! 연구실 서버의 사양은 &lt;point&gt;Ubuntu 16.04 / Titan XP&lt;/point&gt; 이다. 여러명이서 같이 써야하기 때문에 &lt;point&gt;docker로 텐서플로우 GPU 버전&lt;/point&gt;을 사용할 수 있는 환경을 구성하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. Docker 설치 및 셋팅
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;도커(Docker)&lt;/strong&gt; 설치 : 서버 운영체제는 &lt;strong&gt;우분투 16.04&lt;/strong&gt; 를 사용하고 있고 아래의 명령어를 이용하여 자동 스크립트로 도커를 설치 하였다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://get.docker.com/ | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sudo 없이 사용하기 : docker는 기본적으로 root권한이 필요한데, root가 아닌 사용자가 sudo없이 사용하려면 &lt;point&gt;사용자를 docker 그룹에 추가&lt;/point&gt;해 주면 된다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; docker &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;           // 현재 접속중인 사용자에게 권한주기
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; docker ailab           // &lt;span class=&quot;s1&quot;&gt;'ailab'&lt;/span&gt; 사용자에게 권한주기&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;도커(Docker) 버전 확인 : 버전을 확인하여 설치가 되었는지 확인한다.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. NVIDIA-docker 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-도커 컨테이너가 NVIDIA GPU를 support하려면 이미지를 실행할 때 &lt;point&gt;nvidia-docker로 반드시 실행&lt;/point&gt;을 해야한다. 설치방법은 아래의 github에 자세히 명시되어 있다. 현재는 nvidia-docker가 2.0 버전이지만, 2.0 버전을 설치하고 실행했을때 명령어를 실행할 수 없어서 &lt;strong&gt;1.0으로 설치&lt;/strong&gt; 하였다.. 2.0으로 설치했을때 docker 실행이 왜 안되는지는 나도 모르겠다 ㅠ.ㅠ..&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nvidia-docker : https://github.com/NVIDIA/nvidia-docker&lt;/li&gt;
-  &lt;li&gt;nvidia-docker 1.0 설치 공식문서 : https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-1.0)
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;다음의 명령어로 &lt;strong&gt;nvidia-docker 1.0&lt;/strong&gt; 을 설치해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-docker&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;다음의 명령어로 nvidia-docker 명령어가 제대로 실행되는지 확인해준다.(자동으로 CUDA 이미지가 다운로드 받아지는데 나중에 지워도 무방하다.)&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; nvidia/cuda nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 이미지와 같이 &lt;point&gt;GPU 정보&lt;/point&gt;가 뜨면 설치 완료이다!&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40543756-c12653a6-6060-11e8-9e6b-a76d55ce6407.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. NVIDIA 드라이브, CUDA, cuDNN 설치 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Tensorflow GPU 버전을 설치하려면 반드시 &lt;point&gt;CUDA와 cuDNN&lt;/point&gt;이 설치되어 있어야 한다. 또한, CUDA를 설치하기 위해서는 &lt;point&gt;NVIDIA 드라이버&lt;/point&gt;가 설치되어 있어야한다. 자세한 설치 내용은 아래의 블로그 포스팅을 참조하길 바란다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;NVIDIA 드라이버 설치 : https://devyurim.github.io/2018/05/24/15.html&lt;/li&gt;
-  &lt;li&gt;CUDA 9.0, cuDNN 7.0 설치 : https://devyurim.github.io/2018/05/25/16.html&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/local/cuda/version.txt                                                   // cuda 설치 확인
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/include/cudnn.h | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;     // cuDNN 설치 확인&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. Tensorflow Docker 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-도커(Docker)는 &lt;point&gt;이미지(image)파일&lt;/point&gt;을 이용하여 개발 환경을 운영할 수 있다. 텐서플로우에서 공식적으로 제공하는 &lt;point&gt;텐서플로우 도커&lt;/point&gt;를 다운로드 받을 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;우선 공식 무료 배포 이미지들을 다운로드 받으려면 &lt;a href=&quot;https://hub.docker.com/&quot;&gt;&lt;point&gt;docker hub&lt;/point&gt;&lt;/a&gt; 홈페이지에 가입이 필요하다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;DockerHub : https://hub.docker.com/
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;그리고 터미널에서 아래의 명령어를 이용하여 docker hub에 &lt;point&gt;로그인&lt;/point&gt;해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker login&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아이디와 비밀번호를 입력하고 엔터를 누르면 Login Succeeded가 뜨면 docker hub에 접속할 수 있는 권한을 얻은 것이다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;docker hub에서 &lt;point&gt;tensorflow 이미지 검색&lt;/point&gt;
-docker hub에서 &lt;strong&gt;tensorflow&lt;/strong&gt; 로 검색하여 &lt;strong&gt;tag버튼&lt;/strong&gt; 을 누르면 아래와 같이 다운로드 받을 수 있는 &lt;point&gt;태그 목록&lt;/point&gt;을 확인 할 수 있다.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40583308-0302621c-61c7-11e8-91a3-8ebecae5cc42.png&quot; width=&quot;60%&quot; /&gt; &lt;br /&gt;tensorflow docker image 파일 태그 예시&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;나는 &lt;point&gt;Tensorflow 1.8.0 gpu버전 python3&lt;/point&gt;을 사용하길 원하기 때문에 아래의 명령어를 이용하여 &lt;point&gt;텐서플로우 이미지를 다운로드&lt;/point&gt; 받았다. 자세한 사항은 아래의 사이트 참고&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;tensorflow docker hub : https://hub.docker.com/r/tensorflow/tensorflow/
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull tensorflow/tensorflow:1.8.0-gpu-py3       // 태그명이 1.8.0-gpu-py3인 텐서플로우 이미지 다운로드
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker images                                         // 도커 내 이미지 확인 명령어&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이미지를 다운 로드 받았으면 &lt;point&gt;nvidia-docker&lt;/point&gt;를 이용하여 컨테이너를 생성하면된다. docker에서 컨테이너를 생성하는 명령어는 &lt;point&gt;run&lt;/point&gt;이다. 내가 사용한 옵션은 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8891:8888 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 6006:6006
-&lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; ailab-yurim
-&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/ailab/docker/ailab-yurim:/notebooks &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0000&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-tensorflow/tensorflow:1.8.0-gpu-py3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;옵션 추가 설명&lt;/strong&gt; &lt;br /&gt;&lt;br /&gt;
--p : 포트 번호 입력 (호스트 포트번호 : 컨테이너 포트번호) &lt;br /&gt;
-   옵션에서 포트번호를 2개를 해준 이유는 8888은 &lt;point&gt;Jupyter notebook&lt;/point&gt; 연결 포트이고 6006은 &lt;point&gt;Tensorboard&lt;/point&gt; 연결 포트이다. &lt;br /&gt;
-   &lt;strong&gt;6006을 연결 안해주면&lt;/strong&gt; Tensorboard가 실행이 안되므로 포트를 꼭 맵핑해주어야 한다!!&lt;br /&gt;
-–name : 생성할 컨테이너 이름 &lt;br /&gt;
--v : 컨테이너와 맵핑할 폴더의 경로 + Jupyter notebook 설정 &lt;br /&gt;
--e : 컨테이너 접속 비밀번호 &lt;br /&gt;
-–restart always : 도커 데몬이 실행됬을때 컨테이너 자동으로 실행(run) &lt;br /&gt;
-tensorflow:1.8.0-gpu-py3 : 실행할 이미지를 &lt;point&gt;'이미지명:태그명'&lt;/point&gt; 으로 입력 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jupyter notebook 접속시 localhost라면 &lt;point&gt;http://localhost:8888&lt;/point&gt; 로 접속하면 되고, 따로 ip주소가 설정되있다면 &lt;point&gt;http://ip주소:호스트포트번호&lt;/point&gt; 로 접속하면 된다. Tensorboard도 마찬가지 이다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;point&gt;[!!!] 우분투 도커 데몬 실행 안될때&lt;/point&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;컴퓨터를 재부팅하고 docker를 재부팅 하였을때 아래와 같은 이미지의 오류와 &lt;point&gt;docker deamon을 실행할 수 없다는 오류&lt;/point&gt;가 발생하였다. &lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40583676-56f2afb0-61ce-11e8-81f7-5dfaa1de1515.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이 문제는 nvidia-docker로 컨테이너를 생성하였을 때 발생하는 &lt;point&gt;nvidia-container-runtime 문제&lt;/point&gt;로 docker engine에 nvidia-runtime을 등록해주어야 한다고 한다. github 홈페이지를 보고 아래의 명령어를 터미널에 붙여 넣어 docker engine을 다시 설정하여 문제를 해결하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nvidia-container-runtime : https://github.com/NVIDIA/nvidia-container-runtime&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /etc/systemd/system/docker.service.d
-&lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/systemd/system/docker.service.d/override.conf &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
- [서비스]
-ExecStart =
-ExecStart = / usr / bin / dockerd --host = fd : // --add-runtime = nvidia = / usr / bin / nvidia-container-runtime
-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl daemon-reload
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl restart docker&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; conference
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html&lt;/li&gt;
-  &lt;li&gt;https://sehoi.github.io/2017-01-06/docker-basic/&lt;/li&gt;
-  &lt;li&gt;https://www.tensorflow.org/install/install_linux#InstallingDocker&lt;/li&gt;
-  &lt;li&gt;https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-1.0)&lt;/li&gt;
-  &lt;li&gt;https://github.com/NVIDIA/nvidia-container-runtime&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 25 May 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>텐서플로우(Tensorflow) 설치를 위한 CUDA / cuDNN 설치 - Ubuntu 16.04 LTS Server(Titan XP)</title>
-        <link>/python/tensorflow/2018/05/25/tensorflow-2.html</link>
-        <guid isPermaLink="true">/python/tensorflow/2018/05/25/tensorflow-2.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;서버 사양은 &lt;point&gt; Ubuntu 16.04 / titan XP &lt;/point&gt; 이고, 설치할 버전은 &lt;point&gt; CUDA 9.0 / cuDNN 7.0 &lt;/point&gt; 이다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. NVIDIA 드라이버 설치 확인 및 Compute Capability 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;아래의 명령어를 통해 드라이버 설치와 그래픽카드를 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40532078-44b5b16c-6039-11e8-923b-b94512544107.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;CUDA 설치 이전에 GPU의 &lt;point&gt;Compute Capability&lt;/point&gt;를 지원하는 지 확인하여야 한다. Compute Capability에 따라 설치 할 수 있는 CUDA 버전은 NVIDIA 홈페이지에서 확인이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;NVIDIA 홈페이지 : https://developer.nvidia.com/cuda-gpus
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40532263-d5c04a14-6039-11e8-9e01-0666d5468c77.png&quot; width=&quot;30%&quot; /&gt;&lt;br /&gt;NVIDIA 홈페이지  - CUDA-Enabled GeForce Products 발췌&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;CUDA 9.0 버전은 &lt;strong&gt;Compute capability 3.0~7.x&lt;/strong&gt; 까지 지원한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. 패키지 리스트 추가
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 명령어로 패키지 소스 리스트를 추가하고 업데이트 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install sudo &lt;/span&gt;gnupg
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key adv &lt;span class=&quot;nt&quot;&gt;--fetch-keys&lt;/span&gt; http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/apt/sources.list.d/cuda.list
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 CUDA와 cuDNN의 버전은 &lt;a href=&quot;https://www.tensorflow.org/install/install_linux#InstallingAnaconda&quot;&gt;텐서플로우 홈페이지&lt;/a&gt;를 참고하여 설치하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. CUDA 9.0 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-아래의 명령어를 이용하여 &lt;point&gt;CUDA 9.0&lt;/point&gt;을 설치한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cuda-9-0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 4. cuDNN 7.0 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-아래의 명령어를 이용하여 &lt;point&gt;cuDNN 7.0&lt;/point&gt;을 설치한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libcudnn7-dev&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 5. 버전 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CUDA 설치 확인
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/local/cuda/version.txt&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;cuDNN 설치 확인
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /usr/include/cudnn.h | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-E&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; refernece
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://hiseon.me/2018/03/11/cuda-install/&lt;/li&gt;
-  &lt;li&gt;https://developer.nvidia.com/cuda-gpus&lt;/li&gt;
-  &lt;li&gt;https://www.tensorflow.org/install/install_linux#InstallingAnaconda
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 25 May 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>서버에 NVIDIA 드라이버 설치하기 - Ubuntu 16.04 LTS Server(Titan XP)</title>
-        <link>/development%20environment/ubuntu/2018/05/24/ubuntu-2.html</link>
-        <guid isPermaLink="true">/development%20environment/ubuntu/2018/05/24/ubuntu-2.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;서버 사양은 &lt;point&gt;Ubuntu 16.04 LTS/ titan XP&lt;/point&gt; 이다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1.우분투 패키지 업데이트
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2.NVIDIA 드라이버 설치 확인 및 GPU 모델 정보 확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-다음의 명령어를 이용하여 NVIDIA 드라이버가 설치되어 있는지 확인한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /proc/driver/nvidia/version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;다음과 같이 디렉토리가 없다고 뜨면 드라이버가 설치되지 않은 것이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40527347-d646022a-6026-11e8-9586-ebd4ef36f88b.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그다음 언어 설정이 되지 않았을 경우 설치에 필요한 언어셋등의 기본패키지를 설치해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; dialog language-pack-en
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US.UTF-8
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US.UTF-8
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-locale&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 아래의 내용을 /etc/default/locale에 추가해준다.(nano 에디터 사용, ctrl + o -&amp;gt; enter로 저장)&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/default/locale
-
-&lt;span class=&quot;c&quot;&gt;# 아래의 정보 추가&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US:en&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3.Ubuntu NIVIDA Repository 업데이트
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-NVIDIA 드라이버를 설치하기 전에 먼저 우분투 버전을 확인한다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/issue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40527476-b1d33ac4-6027-11e8-98fc-0d098ac2db2c.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;우분투 16.04는 NVIDIA Repository가 지원이 되므로 아래의 명령어를 통해 최신 NVIDIA 패키지 리스트를 추가한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key adv &lt;span class=&quot;nt&quot;&gt;--fetch-keys&lt;/span&gt; http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo &quot;deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/cuda.list'&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 4.NVIDIA 그래픽카드 드라이버 설치
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-아래의 NVIDIA 홈페이지에 가서 그래픽 카드 드라이버 버전을 확인한다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;http://www.nvidia.com/Download/Find.aspx?lang=en-us&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40528867-516a05cc-602d-11e8-8f64-11ec523f2a49.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;본인의 사양에 맞게 설정하고 Search 클릭하여 확인한다.&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 명령어를 통하여 설치가능한 드라이버 버전을 확인한다. nvidia-xxx로 나타나는 패키지 이름 중에서 설치 가능한 버전을 확인하면 된다.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-cache search nvidia&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;위의 홈페이지에서 조회되는 버전은 381버전 부터 390버전이므로 apt-cache로 확인해 보았을때 최상위 버전은 384 버전이다. 아래의 명령어로 설치한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nvidia-384&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;설치후 드라이버가 적용 될 수 있도록 reboot 한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 5.확인
-&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;설치가 성공적으로 되었는지 확인하기 위해서 아래의 명령어를 실행한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;lspci &lt;span class=&quot;nt&quot;&gt;-k&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40530507-0e50e916-6034-11e8-8bf5-09200668d793.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 명령어를 이용하면 드라이버 버전을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /proc/driver/nvidia/version&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;아래의 명령어를 이용하면 그래픽 카드 정보를 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nvidia-smi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/40530684-b2b150a4-6034-11e8-9375-ed2ba24c8927.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;reference&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://hiseon.me/2018/02/17/install_nvidia_driver/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 24 May 2018 00:00:00 +0900</pubDate>
       </item>
     
   </channel>

@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>안드로이드 프로그래밍(Android Programming) - 로그인(Login) 폼 만들기 | devYurim</title>
-	<meta name="description" content="  1. 로그인 액티비티 생성안드로이드에서 기본적으로 로그인 폼을 지원한다. Activity 추가시 Login Activity 를 생성한다.Activity Name과 레이아웃 xml 파일 이름, 타이틀 이름을 입력하고 Finish 버튼을 눌러서 생성한다.  2. 레이아웃 구조 수정...">
+	<meta name="description" content="  1. 로그인 액티비티 생성">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -386,8 +400,7 @@
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
 
-    <span class="c1">// UI references.
-</span>
+    <span class="c1">// UI references.</span>
     <span class="kd">private</span> <span class="n">EditText</span> <span class="n">mEmailView</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">EditText</span> <span class="n">mPasswordView</span><span class="o">;</span>
 
@@ -396,13 +409,11 @@
         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_login</span><span class="o">);</span>
 
-        <span class="c1">// Set up the login form.
-</span>
+        <span class="c1">// Set up the login form.</span>
         <span class="n">mEmailView</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email</span><span class="o">);</span>
         <span class="n">mPasswordView</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">password</span><span class="o">);</span>
 
-        <span class="c1">// event handler
-</span>
+        <span class="c1">// event handler</span>
         <span class="n">mEmailView</span><span class="o">.</span><span class="na">setOnEditorActionListener</span><span class="o">(</span><span class="k">new</span> <span class="n">TextView</span><span class="o">.</span><span class="na">OnEditorActionListener</span><span class="o">()</span>
         <span class="o">{</span>
             <span class="nd">@Override</span>
@@ -418,23 +429,18 @@
             <span class="nd">@Override</span>
             <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onEditorAction</span><span class="o">(</span><span class="n">TextView</span> <span class="n">textView</span><span class="o">,</span> <span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
                 <span class="k">if</span> <span class="o">(</span><span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_ACTION_DONE</span> <span class="o">||</span> <span class="n">id</span> <span class="o">==</span> <span class="n">EditorInfo</span><span class="o">.</span><span class="na">IME_NULL</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="c1">//attemptLogin();
-</span>
+                    <span class="c1">//attemptLogin();</span>
                     <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
                 <span class="o">}</span>
                 <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
             <span class="o">}</span>
         <span class="o">});</span>
 
-        <span class="c1">// Button
-</span>
-        <span class="n">Button</span> <span class="n">mEmailSignInButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_in_button</span><span class="o">);</span> <span class="c1">// sign in button
-</span>
-        <span class="n">Button</span> <span class="n">mEmailSignUpButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_up_button</span><span class="o">);</span> <span class="c1">// sign up button
-</span>
+        <span class="c1">// Button</span>
+        <span class="n">Button</span> <span class="n">mEmailSignInButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_in_button</span><span class="o">);</span> <span class="c1">// sign in button</span>
+        <span class="n">Button</span> <span class="n">mEmailSignUpButton</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">email_sign_up_button</span><span class="o">);</span> <span class="c1">// sign up button</span>
 
-        <span class="c1">// event handler
-</span>
+        <span class="c1">// event handler</span>
         <span class="n">mEmailSignInButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
             <span class="nd">@Override</span>
             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
@@ -459,8 +465,7 @@
 
 <p>일단 RegisterActivity를 Empty Activity로 추가 해준다음 다음과 같이 코드를 수정하였다.</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// sign-in button event handler
-</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// sign-in button event handler</span>
         <span class="n">mEmailSignInButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
             <span class="nd">@Override</span>
             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
@@ -471,8 +476,7 @@
             <span class="o">}</span>
         <span class="o">});</span>
 
-        <span class="c1">// sign-up button event handler
-</span>
+        <span class="c1">// sign-up button event handler</span>
         <span class="n">mEmailSignUpButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">(){</span>
             <span class="nd">@Override</span>
             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>

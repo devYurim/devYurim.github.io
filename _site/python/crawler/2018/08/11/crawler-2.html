@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/python/crawler/2018/08/11/python-2.html">
+	<link rel="canonical" href="/python/crawler/2018/08/11/crawler-2.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -221,6 +235,7 @@
   <li>JCR 로그인 페이지 접속</li>
   <li>아이디 입력 폼에 아이디 입력</li>
   <li>비밀번호 입력 폼에 비밀번호 입력</li>
+  <li>Stay signed in 체크박스 체크</li>
   <li>로그인 버튼 눌러서 로그인하기</li>
 </ol>
 
@@ -253,6 +268,8 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 
 <p>비밀번호 input 폼도 동일한 방법으로 확인하면 이름은 password 이고 xpath의 값은 ‘//*[@id=”password”]’ 이다.<br /></p>
 
+<p>Stay signed in 체크박스 input 폼의 이름은 rememberme 이고 xpath의 값은 ‘//*[@id=”rememberme”]’ 이다.<br /></p>
+
 <p>로그인 버튼인 Sign in 버튼은 이름은 존재하지 않고 xpath의 값은 ‘/html/body/div/div[1]/div[3]/div[1]/div/div/div/form[1]/button’ 이다.<br /></p>
 
 <p>수집한 정보를 이제 셀레니움 코드에 적용해보자.<br /><br /></p>
@@ -284,6 +301,9 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 <span class="c"># 아이디/비밀번호를 입력해준다.</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'username'</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'아이디 입력'</span><span class="p">)</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'password'</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'비밀번호 입력'</span><span class="p">)</span>
+
+<span class="c"># stay signed in 체크박스 채우기(클릭)</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'rememberme'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
 
 <span class="c"># 로그인 버튼을 누르기</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">'/html/body/div/div[1]/div[3]/div[1]/div/div/div/form/button'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
@@ -319,7 +339,7 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 
 </article>
 <!-- Disqus -->
-<a href="https://devYurim.github.io/python/crawler/2018/08/11/python-2.html#disqus_thread"></a>
+<a href="https://devYurim.github.io/python/crawler/2018/08/11/crawler-2.html#disqus_thread"></a>
 
 <div class="comments">
   
@@ -354,7 +374,7 @@ s.setAttribute('data-timestamp', +new Date());
   
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
-      <a href="/python/crawler/2018/08/11/python-1.html">
+      <a href="/python/crawler/2018/08/11/crawler-1.html">
         Python Selenium(셀레니움) 시작하기
       </a>
   </div>
@@ -362,8 +382,8 @@ s.setAttribute('data-timestamp', +new Date());
   
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
-      <a href="/python/crawler/2018/08/11/python-3.html">
-        Python Selenium(셀레니움) 크롬창 활성 탭 변경하기
+      <a href="/development%20environment/github%20blog/2018/08/12/blog-8.html">
+        Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용
       </a>
   </div>
   

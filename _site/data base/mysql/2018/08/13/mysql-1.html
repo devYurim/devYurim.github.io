@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Homebrew를 이용하여 MYSQL 설치 - MAC | devYurim</title>
+	<meta name="description" content="나는 노트북을 맥을 사용하는데 맥에서는 homebrew 라는 패키지 관리자를 설치하여 사용할 수 있다. 프로그램 설치시 유용하게 활용하고 있다. 개발 환경을 조금 더 편리하게 구성할 수 있어 편리하였다. MYSQL도 homebrew를 이용하여 편리하게 설치할 수 있다. ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/data%20base/mysql/2018/08/13/mysql-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Homebrew를 이용하여 MYSQL 설치 - MAC</h1>
+    
+    <p class="meta">
+      August 13, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br /></p>
+<p>나는 노트북을 맥을 사용하는데 맥에서는 homebrew 라는 패키지 관리자를 설치하여 사용할 수 있다. 프로그램 설치시 유용하게 활용하고 있다. 개발 환경을 조금 더 편리하게 구성할 수 있어 편리하였다. MYSQL도 homebrew를 이용하여 편리하게 설치할 수 있다. </p>
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 1. Homebrew 설치 </subtitle>
+</blockquote>
+
+<p>아래의 사이트를 참고하여 homebrew를 설치할 수 있다.<br /></p>
+<ul>
+  <li>homebrew : https://brew.sh/index_ko</li>
+</ul>
+
+<p>맥에는 루비가 설치되어 있으므로 다음의 루비 명령어를 통해서 homebrew를 설치할 수 있다. 명령어를 실행하면 homebrew가 자동으로 설치 된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="k">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>2. mysql server 설치 </subtitle>
+</blockquote>
+
+<p>일단 mysql을 사용하려면 mysql server와 mysql 데이터베이스를 GUI로 확인가능한 mysqlworkbench를 homebrew를 이용하여 설치한다. 우선 brew 명령어를 통해서 mysql에 관련된 프로그램들을 검색할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>brew doctor
+<span class="nv">$ </span>brew search mysql</code></pre></figure>
+
+<p><br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/44032947-ba290d56-9f43-11e8-8e72-4e15dc2e7e21.png" width="60%" /></center>
+<p><br /></p>
+
+<p>위의 이미지에서 formulae 의 mysql과 mysql-client casks의 mysqlworkbench를 설치한다. mysql-client는 커맨드라인에서 mysql 서버 접속시 사용된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>brew <span class="nb">install </span>mysql
+<span class="nv">$ </span>brew <span class="nb">install </span>mysql-client
+<span class="nv">$ </span>brew cask <span class="nb">install </span>mysqlworkbench</code></pre></figure>
+
+<p>이렇게 해서 mysql 서버와 mysqlworkbench 설치가 완료되었다.<br /><br /></p>
+
+<blockquote>
+  <subtitle>3. mysql 실행 확인</subtitle>
+</blockquote>
+
+<p>아래의 명령어를 실행하면 mysql 커맨드라인으로 접속이 가능하도록 설정 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>brew services start mysql
+
+<span class="o">==&gt;</span> Tapping homebrew/services
+Cloning into <span class="s1">'/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'</span>...
+remote: Counting objects: 14, <span class="k">done</span><span class="nb">.</span>
+remote: Compressing objects: 100% <span class="o">(</span>10/10<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+remote: Total 14 <span class="o">(</span>delta 0<span class="o">)</span>, reused 7 <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 0
+Unpacking objects: 100% <span class="o">(</span>14/14<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+Tapped 1 <span class="nb">command</span> <span class="o">(</span>43 files, 55.2KB<span class="o">)</span><span class="nb">.</span>
+<span class="o">==&gt;</span> Successfully started <span class="sb">`</span>mysql<span class="sb">`</span> <span class="o">(</span>label: homebrew.mxcl.mysql<span class="o">)</span></code></pre></figure>
+
+<p>그 다음 커맨드라인 명령어로 접속하면 root 계정으로 접속이 되는 것을 확인 할 수 있다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>mysql <span class="nt">-uroot</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>root 계정에 비밀번호를 설정하고 싶다면 아래의 명령어를 실행하면된다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>mysql_secure_installation
+......
+Press y|Y <span class="k">for </span>Yes, any other key <span class="k">for </span>No: no
+Please <span class="nb">set </span>the password <span class="k">for </span>root here.
+
+New password:패스워드 입력
+
+Re-enter new password: 패스워드 확인
+.....
+
+Remove anonymous <span class="nb">users</span>? <span class="o">(</span>Press y|Y <span class="k">for </span>Yes, any other key <span class="k">for </span>No<span class="o">)</span> : y
+Success.
+
+Disallow root login remotely? <span class="o">(</span>Press y|Y <span class="k">for </span>Yes, any other key <span class="k">for </span>No<span class="o">)</span> : y
+Success.
+
+Remove <span class="nb">test </span>database and access to it? <span class="o">(</span>Press y|Y <span class="k">for </span>Yes, any other key <span class="k">for </span>No<span class="o">)</span> : y
+ - Dropping <span class="nb">test </span>database...
+Success.
+
+ - Removing privileges on <span class="nb">test </span>database...
+Success.
+.....
+
+Reload privilege tables now? <span class="o">(</span>Press y|Y <span class="k">for </span>Yes, any other key <span class="k">for </span>No<span class="o">)</span> : y
+Success.
+
+All <span class="k">done</span><span class="o">!</span></code></pre></figure>
+
+<blockquote>
+  <subtitle>4. mysqlworkbench로 mysql 접속하기</subtitle>
+  <p>이제 mysqlworkbench로 접속하기 위하여 한가지 권한 셋팅을 해야한다. 권한 셋팅을 하지 않으면 아래의 오류가 발생한다. MYSQL 8.0 오류라고 한다.<br /></p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Authentication plugin <span class="s1">'caching_sha2_password'</span> cannot be loaded: dlopen<span class="o">(</span>/usr/local/mysql/lib/plugin/caching_sha2_password.so, 2<span class="o">)</span>: image not found</code></pre></figure>
+
+<p>먼저 mysql을 커맨드 라인으로 접속한다.(root계정 패스워드 0000)<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>mysql <span class="nt">-uroot</span> <span class="nt">-p0000</span></code></pre></figure>
+
+<p>그 다음 아래의 쿼리를 날려 권한 수정을 해준다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">mysql&gt; ALTER USER <span class="s1">'root'</span>@<span class="s1">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="s1">'0000'</span><span class="p">;</span></code></pre></figure>
+
+<p>권한 설정을 해준뒤 워크벤치로 접속하면 접속이 되는 것을 확인할 수 있다.<br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/44036952-11f6570a-9f4e-11e8-8e43-152615370866.png" width="60%" /></center>
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>reference</subtitle>
+</blockquote>
+
+<ul>
+  <li>https://github.com/helloheesu/SecretlyGreatly/wiki/%EB%A7%A5%EC%97%90%EC%84%9C-mysql-%EC%84%A4%EC%B9%98-%ED%9B%84-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0</li>
+  <li>https://github.com/appkr/l5code/issues/4</li>
+  <li>https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#MYSQL">#MYSQL</a>
+    
+    <a class="tag" href="/tags#Homebrew">#Homebrew</a>
+    
+    <a class="tag" href="/tags#MAC">#MAC</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/data%20base/mysql/2018/08/13/mysql-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/development%20environment/github%20blog/2018/08/12/blog-8.html">
+        Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/python/crawler/2018/08/13/crawler-3.html">
+        Python Selenium(셀레니움) 크롬창 활성 탭 변경하기
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

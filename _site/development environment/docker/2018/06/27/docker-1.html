@@ -82,6 +82,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -98,13 +102,17 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -172,7 +180,13 @@
 
 				<li><a href="/">Data Science</a>
 					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
 					</ul>
 				</li>
 
@@ -230,22 +244,14 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.<br /></p>
 
 <p>다음의 Docker 명령어로 <point>GitLab 컨테이너를 생성</point>한다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">--detach</span> <span class="se">\
-</span>
-    <span class="nt">--hostname</span> gitlab.ailab.com <span class="se">\
-</span>
-    <span class="nt">--publish</span> 8897:80 <span class="nt">--publish</span> 6015:22 <span class="se">\
-</span>
-    <span class="nt">--name</span> gitlab <span class="se">\
-</span>
-    <span class="nt">--restart</span> always <span class="se">\
-</span>
-    <span class="nt">--volume</span> /srv/gitlab/config:/home/ailab/GitLab <span class="se">\
-</span>
-    <span class="nt">--volume</span> /srv/gitlab/logs:/home/ailab/GitLab/log <span class="se">\
-</span>
-    <span class="nt">--volume</span> /srv/gitlab/data:/home/ailab/GitLab/data <span class="se">\
-</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">--detach</span> <span class="se">\</span>
+    <span class="nt">--hostname</span> gitlab.ailab.com <span class="se">\</span>
+    <span class="nt">--publish</span> 8897:80 <span class="nt">--publish</span> 6015:22 <span class="se">\</span>
+    <span class="nt">--name</span> gitlab <span class="se">\</span>
+    <span class="nt">--restart</span> always <span class="se">\</span>
+    <span class="nt">--volume</span> /srv/gitlab/config:/home/ailab/GitLab <span class="se">\</span>
+    <span class="nt">--volume</span> /srv/gitlab/logs:/home/ailab/GitLab/log <span class="se">\</span>
+    <span class="nt">--volume</span> /srv/gitlab/data:/home/ailab/GitLab/data <span class="se">\</span>
     gitlab/gitlab-ce:latest</code></pre></figure>
 
 <p><br /><br />
@@ -286,22 +292,17 @@ latest의 태그명이 붙은 이미지를 다운로드 받았다.<br /></p>
 
 <p>파일에 들어가보면 화면 중간부분에 GitLab URL부분에 <point>extenal_url 옵션</point>의 주석을 해제하고 외부에서 접속 할 url을 입력해 준다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">## GitLab URL
-</span>
-<span class="c">##! URL on which GitLab will be reachable.
-</span>
-<span class="c">##! For more details on configuring external_url see:
-</span>
-<span class="c">##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
-</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">## GitLab URL</span>
+<span class="c">##! URL on which GitLab will be reachable.</span>
+<span class="c">##! For more details on configuring external_url see:</span>
+<span class="c">##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab</span>
 external_url <span class="s1">'http://gitlab.ailab.com:8897'</span></code></pre></figure>
 
 <p><br /><br /></p>
 
 <p>조금 내리다 보면 GitLab Shell setting for GitLab 부분에서 <point>gitlab_rails['gitlab_shell_ssh_port']</point> 부분의 주석을 풀고 포트 부분을 수정해준다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">### GitLab Shell settings for GitLab
-</span>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">### GitLab Shell settings for GitLab</span>
 gitlab_rails[<span class="s1">'gitlab_shell_ssh_port'</span><span class="o">]</span> <span class="o">=</span> 6015
 <span class="c"># gitlab_rails['gitlab_shell_git_timeout'] = 800</span></code></pre></figure>
 

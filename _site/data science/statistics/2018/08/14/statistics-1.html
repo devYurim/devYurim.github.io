@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Basic Statistics - 통계학(Statistics)과 데이터(Data) | devYurim</title>
+	<meta name="description" content="&lt;p&gt; 이번 방학이 끝나기 전에 자격증을 하나 따보자! 해서 신청한게 ADsP(데이터 분석 준전문가) 시험이다. 데이터 분석에 관한 자격증이 뭐가 있나 봤더니 이게 있었다! 실제로 통계학과 분들은 이 자격증을 많이 따기도 하고 따는 사람을 본적도 있다. 취업시 많은 혜택...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/data%20science/statistics/2018/08/14/statistics-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Basic Statistics - 통계학(Statistics)과 데이터(Data)</h1>
+    
+    <p class="meta">
+      August 14, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br />&lt;p&gt; 이번 방학이 끝나기 전에 자격증을 하나 따보자! 해서 신청한게 ADsP(데이터 분석 준전문가) 시험이다. 데이터 분석에 관한 자격증이 뭐가 있나 봤더니 이게 있었다! 실제로 통계학과 분들은 이 자격증을 많이 따기도 하고 따는 사람을 본적도 있다. 취업시 많은 혜택이 있는 자격증은 아니지만 어느정도 가산점이 있고 기초를 자세히 정리하기에 좋을 것 같아서 신청하고 시험 준비중이다! 나는 통계학과 학생은 아니지만… 어느정도 머신러닝 프로그래밍을 하면서 약간의 지식은 가지고 있고 통계학만.. 잘 다루면 되지 않을까해서 일단 도전! 해보는 것이다. 이 자격증과 관련된 네이버 카페도 있는데 한 3주정도면 다들 취득할 수 있다고들 한다. 원래 저번주에 신청했지만… 갑자기 연구실 일이 폭풍같이 밀려들어서… 사실 지금 시작하는거와 다름없다. 8월 25일이 시험인데 걱정된다 ㅠ.ㅠ 학부때 통계학개론 교양 수업을 들었지만… c+이라는 아픈 기억이 있으므로 통계학 개론 기초 수업을 찾아서 들었다. 강의 이름은 K-MOOC R을 활용한 통계학개론 이라는 강의이다. 간단 명료하게 강의내용이 딱딱 정리되어 있는 스타일이라서 좋았다. 이 수업의 통계학 개론 내용과 ADsP에서 필요한 통계학 내용과 결합하여 정리할 예정이다.
+&lt;/p&gt;<br /><br /></p>
+
+<blockquote>
+  <subtitle>1. 통계학이란? </subtitle>
+</blockquote>
+
+<p>통계학(Statistics)이란 Status(국가)와 ics(학문)라는 접미어를 합쳐서 만든 단어로 국가의 경영 또는 통치에 필요한 학문이라는 뜻이다. <br />
+과거의 통계학은 경제 관련자료에 대한 기록을 주로 다뤘다면 현재의 통계학은 수학을 바탕으로 더 과학적이고 논리적 체계를 갖춘 학문으로 발전하였다. 통계학은 자료가 발생될 수 있는 모든 분야에서 활용이 가능하며 특히 빅데이터에 통계학적인 지식을 많이 접목하여 활용하고 있다.<br /></p>
+
+<blockquote>
+  <subtitle>2. 빅 데이터(Big Data)란? </subtitle>
+</blockquote>
+
+<p>빅 데이터의 특징은 3V로 표현 될 수 있다. 3V는 Velocity(데이터의 발생 속도), Volume(데이터의 크기), Variety(데이터의 다양성)을 가리킨다.<br /></p>
+<ul>
+  <li>Velocity(데이터의 발생 속도) : Velocity 관점에서 두가지로 해석 될 수 있다. 데이터가 빠른 속도로 발생한다, 사용자가 원하는 시간에 데이터 분석 결과를 제공한다.</li>
+  <li>Volumn(데이터의 크기) : 데이터의 양이 방대하다.</li>
+  <li>Variety(데이터의 다양성) : 정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석대상으로 한다.</li>
+</ul>
+
+<blockquote>
+  <subtitle>3. 인공지능(AI, Artificial Intelligence)과 데이터(Data)</subtitle>
+</blockquote>
+
+<p>인공지능은 입력은 반드시 데이터의 형태를 가지며 입력된 자료를 분석하여 최적의 분류(classification)을 할 수 있는 기계(machine)을 가리킨다.<br /></p>
+
+<center><img src="https://user-images.githubusercontent.com/20412850/44081513-d20ead8a-9fe9-11e8-8305-e2cd5f7f392d.png" width="60%" /></center>
+<p><br /></p>
+
+<p>훈련자료를 기계(machine)에 input으로 넣어 기계가 자료를 분석하여 학습한 기계를 인공지능이라고 하며 기계가 자료를 분석하여 분류할 수 있도록 학습하는 과정을 머신러닝(machine learning)이라고 한다.
+머신러닝의 종류에는 단순 학습(shallow learning)과 심화 학습(deep learning)이 있다.<br /></p>
+
+<p>단순학습(shallow learning)은 어떠한 filter를 이용해 단순히 예측값을 도출하는 반면 심화 학습(deep learning)은 인간의 신경망을 본뜬 알고리즘으로 기계 스스로 학습하며 정답값이 주어지면 hidden layers를 통해 기계 스스로 학습하며 어떠한 이유로 그렇게 학습되는지 명확하게 규명할 수 없다. 또한, 도출된 예측값을 다시 input data로 활용하여 여러번 반복하여 학습하므로 shallow learning 보다는 더욱 복잡한 예측이 가능하다.<br /><br /></p>
+
+<p>인공지능의 핵심기술은 크게 음성인식(Voice Recognition)과 형상인식(Pattern Recognition)으로 나뉠 수 있다.<br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>references</subtitle>
+</blockquote>
+
+<ul>
+  <li>http://www.kmooc.kr/courses/course-v1:PNUk+RS_C01+2017_KM_009/info</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Statistics">#Statistics</a>
+    
+    <a class="tag" href="/tags#ADsP">#ADsP</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/data%20science/statistics/2018/08/14/statistics-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/python/crawler/2018/08/13/crawler-4.html">
+        Selenium으로 로딩한 브라우저의 html 파싱하기 - BeautifulSoup 이용
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/data%20science/statistics/2018/08/14/statistics-2.html">
+        Basic Statistics - 모집단(Population)과 표본(Sample)
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
