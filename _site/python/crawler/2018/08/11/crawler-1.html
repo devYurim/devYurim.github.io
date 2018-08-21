@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>Python Selenium(셀레니움) 시작하기 | devYurim</title>
-	<meta name="description" content="연구실에서 갑자기 SCI 논문에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러로 아주 기본적인 패키지는 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 보내도 작동이 안되는 페이지...">
+	<meta name="description" content="연구실에서 갑자기 논문들에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러를 만들 수 있는 아주 기본적인 패키지는 requests와 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 ...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -86,6 +86,10 @@
 						
 					
 						
+					
+						
+					
+						
 							<li>
 								<a class="page-link" href="/about/">
 									About
@@ -102,11 +106,25 @@
 						
 					
 						
+					
+						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -181,7 +199,9 @@
 				<li><a href="/">Data Science</a>
 					<ul>
 						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/R">R programming</a></li>
 						<li><a href="/DS/ML">Machine Learning</a></li>
+						<li><a href="/DS/ADsP">ADsP</a></li>
 					</ul>
 				</li>
 				<li><a href="/">Data Base</a>
@@ -223,7 +243,7 @@
     </p>
   </header>
   <section class="post-content"><p><br /><br /></p>
-<p>연구실에서 갑자기 SCI 논문에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러로 아주 기본적인 패키지는 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 보내도 작동이 안되는 페이지들이 있기 때문에 어려움이 살짝 있다. 일종의 무적 크롤러라고 불리는 selenium을 공부해보게 되었다! 맨 처음으로 셀레니움을 작동시키기 위한 셋팅 방법을 정리하였다.</p>
+<p>연구실에서 갑자기 논문들에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러를 만들 수 있는 아주 기본적인 패키지는 requests와 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 보내도 작동이 안되는 페이지들이 있기 때문에 어려움이 살짝 있다. 일종의 무적 크롤러라고 불리는 selenium을 공부해보게 되었다! 맨 처음으로 셀레니움을 작동시키기 위한 셋팅 방법을 정리하였다.</p>
 <p><br /><br /></p>
 
 <blockquote>
@@ -274,7 +294,34 @@
 
 <p>2) Ubuntu 16.04(GUI 불가능) + Docker 컨테이너 환경</p>
 
-<p>서버에서는 GUI가 안되고 파이썬 환경이 도커 컨테이너로 생성되어 있다. 따라서, CLI 환경에서 크롬 브라우저를 설치하여야 하고 크롬 웹드라이버도 다운로드 받아야 했다.</p>
+<p>서버에서는 GUI가 안되고 파이썬 환경이 도커 컨테이너로 생성되어 있다. 따라서, CLI 환경에서 크롬 브라우저를 설치하여야 하고 크롬 웹드라이버도 다운로드 받아야 했다.<br />
+도커 컨테이너 내에서는 sudo 명령어를 사용하지 않는다. 먼저 크롬 브라우저를 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># 크롬 apt-get에 추가</span>
+<span class="nv">$ </span>wget <span class="nt">-q</span> <span class="nt">-O</span> - https://dl-ssl.google.com/linux/linux_signing_key.pub
+<span class="nv">$ </span>apt-key add -
+
+<span class="c"># apt-get 업데이트</span>
+<span class="nv">$ </span>apt-get update
+
+<span class="c"># 크롬 브라우저 설치</span>
+<span class="nv">$ </span>apt-get <span class="nb">install </span>google-chrome-stable</code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>그 다음 크롬 웹드라이버를 다운로드 받는다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Downloads 폴더에 드라이버 다운로드</span>
+<span class="nv">$ </span>wget <span class="nt">-N</span> http://chromedriver.storage.googleapis.com/2.10/chromedriver_linux64.zip <span class="nt">-P</span> ~/Downloads
+
+<span class="c"># 압축 풀기</span>
+<span class="nv">$ </span>apt-get <span class="nb">install </span>unzip
+<span class="nv">$ </span>unzip ~/Downloads/chromedriver_linux64.zip
+
+<span class="c"># 프로젝트 폴더 안에 크롬 드라이버 넣어주기</span>
+<span class="nv">$ </span><span class="nb">mv</span> <span class="nt">-f</span> ~/Downloads/chromedriver 프로젝트 경로입력</code></pre></figure>
+
+<p><br /><br /></p>
 
 <blockquote>
   <subtitle> 4. selenium 코드 테스트 </subtitle>
@@ -291,6 +338,7 @@
 <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"disable-gpu"</span><span class="p">)</span>
 <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"no-sandbox"</span><span class="p">)</span>
 
+<span class="c"># 드라이버 위치 경로 입력</span>
 <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="s">'./chromedriver.exe'</span><span class="p">,</span> <span class="n">chrome_options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
 
 <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://naver.com'</span><span class="p">)</span>

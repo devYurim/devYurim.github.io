@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>R programming - Anaconda에 R 설치후 Jupyter notebook 사용하기(Windows10, MAC OS) | devYurim</title>
+	<meta name="description" content="&lt;p&gt;Anaconda에 R을 설치하면 Jupyter notebook에서 R 프로그래밍을 사용할 수 있다. 나는 R studio보다 Jupyter notebook이 조금 더 편해서 R 프로그래밍 환경을 Jupyter notebook으로 변경하였다.&lt;/p&gt;">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/data%20science/r%20programming/2018/08/15/R-3.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/R">R programming</a></li>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+						<li><a href="/DS/ADsP">ADsP</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">R programming - Anaconda에 R 설치후 Jupyter notebook 사용하기(Windows10, MAC OS)</h1>
+    
+    <p class="meta">
+      August 15, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /><br />&lt;p&gt;Anaconda에 R을 설치하면 Jupyter notebook에서 R 프로그래밍을 사용할 수 있다. 나는 R studio보다 Jupyter notebook이 조금 더 편해서 R 프로그래밍 환경을 Jupyter notebook으로 변경하였다.&lt;/p&gt;<br /><br /></p>
+
+<blockquote>
+  <subtitle> 1. Anaconda에서 R 설치 </subtitle>
+</blockquote>
+
+<p>conda prompt에서 설치할 환경에 r을 설치한다. 나는 cuda라는 이름을 가진 아나콘다 환경에 R을 설치하려고 하므로 cuda로 conda 환경을 전환하고 설치하였다. <br />
+<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># conda prompt 실행</span>
+
+<span class="nv">$ </span>conda info <span class="nt">--envs</span>                 <span class="c"># 현재 존재하는 아나콘다 환경 확인</span>
+<span class="nv">$ </span>activate cuda                     <span class="c"># cuda라는 이름을 가진 아나콘다 환경 활성(Windows)</span>
+<span class="nv">$ </span>conda <span class="nb">install</span> <span class="nt">-c</span> r r-essentials   <span class="c"># R 패키지 설치</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>맥을 이용해 설치한다면 아래와 같이 설치한다.<br /></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># terminal 실행</span>
+
+<span class="nv">$ </span>conda info <span class="nt">--envs</span>                 <span class="c"># 현재 존재하는 아나콘다 환경 확인</span>
+<span class="nv">$ </span><span class="nb">source </span>activate cuda                     <span class="c"># cuda라는 이름을 가진 아나콘다 환경 활성(MAC OS)</span>
+<span class="nv">$ </span>conda <span class="nb">install</span> <span class="nt">-c</span> r r-essentials   <span class="c"># R 패키지 설치</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<p>r-essentials를 설치하면 r에서 기본적으로 사용하는 패키지들이 모두 설치 된다.<br /><br /></p>
+
+<blockquote>
+  <subtitle>2. jupyter notebook 켜서 확인</subtitle>
+</blockquote>
+
+<p>Jupyter notebook 를 켜서 확인한다.<br /></p>
+<center><img src="https://user-images.githubusercontent.com/20412850/44136663-8866b9c4-a0a8-11e8-8283-2a6b2b538efa.png" width="40%" /></center>
+<p><br /></p>
+
+<p>R 환경이 추가된 것을 볼 수 있다!</p>
+
+<p><br /><br /><br /></p>
+
+<blockquote>
+  <subtitle>references</subtitle>
+</blockquote>
+
+<ul>
+  <li>https://datascienceschool.net/view-notebook/867d2d5bbafa491a807ffa7c0eb60f81/</li>
+  <li>https://anaconda.org/r/r-essentials</li>
+</ul>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#R programming">#R programming</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/data%20science/r%20programming/2018/08/15/R-3.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/data%20science/r%20programming/2018/08/15/R-2.html">
+        R programming - 변수(Variable)
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/data%20science/r%20programming/2018/08/15/R-4.html">
+        R programming - 그래프(Graph) 그리기
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

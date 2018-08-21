@@ -3,9 +3,800 @@
   <channel>
     <title>devYurim</title>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>http://localhost:4000/</link>
+    <link>https://devYurim.github.io/</link>
     <description>developer blog</description>
-    <pubDate>Tue, 14 Aug 2018 19:00:52 +0900</pubDate>
+    <pubDate>Tue, 21 Aug 2018 16:15:49 +0900</pubDate>
+    
+      <item>
+        <title>3-1,2,3. 데이터 사이언스와 전략 인사이트 - 전략 인사이트 도출을 위한 필요 역량, 빅데이터 그리고 데이터 사이언스의 미래</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-6.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-6.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 전략 인사이트 도출을 위한 필요 역량 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;데이터 사이언스 의미와 역할
+    &lt;ul&gt;
+      &lt;li&gt;대상 : 정형 또는 비정형을 막론하고 인터넷, 휴대전화, 감시용 카메라 등에서 생성되는 숫자와 문자, 영상 정보 등 다양한 유형의 데이터를 대상으로 함&lt;/li&gt;
+      &lt;li&gt;기존의 통계학과 다른점은 총제적 접근법을 사용한다는 점이다.&lt;/li&gt;
+      &lt;li&gt;전략적 통찰을 추구하고, 비즈니스 핵심 이슈에 답을 하고, 사업의 성과를 견인해 나갈수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 사이언스의 3대 구성요소
+    &lt;ul&gt;
+      &lt;li&gt;IT(Data Management)&lt;/li&gt;
+      &lt;li&gt;Analytics(분석적 영역)&lt;/li&gt;
+      &lt;li&gt;비즈니스 분석(비즈니스 컨설팅)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 사이언티스트의 역량
+    &lt;ul&gt;
+      &lt;li&gt;데이터 사이언티스트의 중요한 특징 : 강력한 호기심(Intensive curiosity)&lt;/li&gt;
+      &lt;li&gt;호기심 : 문제의 이면을 파고들고, 질문들을 찾고, 검증 가능한 가설을 세우는 능력&lt;/li&gt;
+      &lt;li&gt;Hard skill : 빅데이터에 대한 이론적 지식, 분석 기술에 대한 숙련&lt;/li&gt;
+      &lt;li&gt;Soft skill : 통찰력 있는 분석(창의적 사고, 호기심, 논리적 비판), 설득력 있는 전달(스토리 텔링, Visualization), 다분야 간 협력(Communication)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 사이언스 : 과학과 인문의 교차로
+    &lt;ul&gt;
+      &lt;li&gt;전문가들은 데이터 사이언티스트에게 스토리 텔링, 커뮤니케이션, 창의력, 열정, 직관력, 비판적 시각, 글쓰기 능력, 대화 능력(인문학의 주요 주제들)등이 필요하다고 강조하고 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 사이언티스트에게 요구되는 인문학적 사고의 특성과 역할&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;과거&lt;/center&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;현재&lt;/center&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;미래&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Information&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;무슨 일이 일어났는가?&lt;br /&gt;리포팅&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;무슨일이 일어나고 있는가?&lt;br /&gt;경고&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;무슨일이 일어날 것인가?&lt;br /&gt;추출&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Insight&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;어떻게, 왜 일어났는가?&lt;br /&gt;모델링&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;차선 행동은 무엇인가?&lt;br /&gt;권고&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;최악, 최선의 상황은?&lt;br /&gt;예측, 최적화&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;인간을 바라보는 유형별 세가지 관점&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;타고난 성향의 관점 : 인간은 변하지 않는 존재로 상정&lt;/li&gt;
+  &lt;li&gt;행동적 관점 : 한 사람의 행동을 지속적으로 관찰해 그 행동을 보고 사람을 판단하는 것이 더 정확하다는 관점&lt;/li&gt;
+  &lt;li&gt;상황적 관점 : 특정 행동을 거듭하는 사람은 그 행동을 앞으로도 반복할 확률이 높다는 관점&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 빅데이터 그리고 데이터 사이언스의 미래 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가치 패러다임의 변화
+    &lt;ol&gt;
+      &lt;li&gt;디지털화(Digitalization) : 아날로그의 세상을 어떻게 효과적으로 디지털화 하는가&lt;/li&gt;
+      &lt;li&gt;연결(Connection) : 디지털화 된 정보와 대상들이 서로 연결되어, 이 연결이 얼마나 효과적이고 효율적으로 제공해 주느냐가 성패를 가름, 사물인터넷의 성숙과 함께 앞으로는 연결이 더 증가하고 극도로 복잡해 질 것이다.&lt;/li&gt;
+      &lt;li&gt;에이전시(Agency) : 복잡한 연결을 얼마나 효과적이고 믿을 만하게 관리해 주는가&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;훌륭한 데이터 사이언티스트는 인문학자들처럼 모델의 능력에 대해 항상 의구심을 가지고, 가정들과 현실의 불일치에 대해 끊임없이 고찰하고, 분석모델이 예측할 수 없는 위험을 살피기 위해 현실세계를 쳐다봐야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>2-2,3,4,5. 데이터의 가치와 미래 - 빅데이터의 가치와 영향, 비즈니스 모델, 위기요인과 통제 방안, 미래의 빅데이터</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-5.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-5.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 빅데이터의 가치 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;빅데이터의 가치 산정이 어려운 이유
+    &lt;ol&gt;
+      &lt;li&gt;데이터의 활용 방식
+&lt;br /&gt;: 재사용이나 재조합, 다목적용 데이터 개발 등이 일반화되면서 특정 데이터를 언제, 어디서, 누가 활용했는지 알 수 없다.&lt;/li&gt;
+      &lt;li&gt;새로운 가치 창출
+&lt;br /&gt;: 빅데이터 시대에는 기존에 없던 가치를 창출함에 따라 그 가치를 측정하기 어렵다.&lt;/li&gt;
+      &lt;li&gt;분석기술의 발달
+&lt;br /&gt;: 지금은 가치 없는 데이터도 새로운 분석 기법의 등장으로 거대한 가치를 만들어내는 재료가 될 가능성이 있다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 빅데이터의 영향(생활 전반의 스마트 화)&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기업 : 혁신, 경쟁력 제고, 생산성 향상&lt;/li&gt;
+  &lt;li&gt;정부 : 환경탐색, 상황분석, 미래대응&lt;/li&gt;
+  &lt;li&gt;개인 : 목적에 따라 활용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 빅데이터 활용 테크닉 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;|종류       |설명                   |
+|:———:|:—————————:|
+| 연관 규칙 학습&lt;br /&gt;(Association rule learning)|어떤 변수간에 주목할만한 상관관계가 있는지 찾아내는 방법 |
+| 유형분석&lt;br /&gt;(Classification tree analysis)|사건이 속하게 될 범주를 찾아내는 일&lt;br /&gt;(어떤 특성을 가진 집단에 속하는가?) |
+| 유전알고리즘&lt;br /&gt;(Genetic algorithm)| 최적화가 필요한 문제의 해결책을 자연선택, 돌연변이 등과 같은 메커니즘을 통해 선택|
+| 기계학습&lt;br /&gt;(Machine learning)| 훈련 데이터로부터 학습한 알려진 특성을 활용해 예측하는 일|
+| 회귀분석&lt;br /&gt;(Regression analysis)| 독립변수와 종속변수의 변화를 파악하여 두 변수의 관계를 파악|
+| 감정분석&lt;br /&gt;(Sentiment analysis)| 특정 주제에 대해 말하거나 글을 쓴 사람의 감정 분석 |
+| 소셜 네트워크 분석&lt;br /&gt;(Social network analysis)&lt;br /&gt;=사회관계망분석(SNA)| 오피니언 리더&lt;br /&gt;영향력이 있는 사람을 찾아낼 수 있으면 고객들 간 소셜관계를 파악할 수 있다. |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;4. 위기요인 및 통제 방안 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사생활 침해
+    &lt;ul&gt;
+      &lt;li&gt;위기 요인 : 특정 데이터가 본래 목적 외에 가공 처리되어 2차, 3차 목적으로 활용될 가능성이 증가&lt;/li&gt;
+      &lt;li&gt;통제 방안 : 동의에서 책임으로, 개인정보 사용자에게 책임을 지게 한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;책임 원칙의 훼손
+    &lt;ul&gt;
+      &lt;li&gt;위기요인 : 분석 대상이 되는 사람들은 예측 알고리즘의 희생양이 될 가능성이 증가한다. 잠재적 위험사항에 대해서도 책임을 추궁하는 사회로 변질될 가능성이 높아 민주주의 사회 원칙을 훼손할 수 있다.&lt;/li&gt;
+      &lt;li&gt;통제 방안 : 기존의 책임원칙 강화&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터의 오용
+    &lt;ul&gt;
+      &lt;li&gt;위기 요인 : 주어진 데이터에 잘못된 인사이트를 얻어 비즈니스에 직접 손실을 불러 올 수 있다.&lt;/li&gt;
+      &lt;li&gt;통제 방안 : 데이터 알고리즘에 대한 접근권 허용 및 객관적 인증 방안을 도입하는 필요성 제기&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 5. 빅데이터 활용 3요소 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터 : 모든것을 데이터 화&lt;/li&gt;
+  &lt;li&gt;기술 : 빅데이터 분석 알고리즘의 진화 가속&lt;/li&gt;
+  &lt;li&gt;인력 : 데이터 사이언티스트와 알고리즈미스트의 역할이 중요해 질 것으로 전망됨.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>2-1. 데이터의 가치와 미래 - 빅데이터의 이해</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-4.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-4.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 빅데이터의 정의 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터 크기 관점 : 저장, 관리 분석할 수 있는 범위를 초과하는 규모의 데이터&lt;/li&gt;
+  &lt;li&gt;데이터 분석 관점 : 다양한 종류의 대규모 데이터로부터 저렴한 비용으로 가치를 추출하고 데이터의 초고속 수집, 발굴, 분석을 지원하도록 고안된 차세대 기술 및 아키텍쳐&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터 가치 관점 : 대용량 데이터를 활용해 작은 데이터에서는 얻을 수 없었던 새로운 통찰이나 가치를 추출해내는 것
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;3V(Volume, Variety, Velocity)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;|종류       |주요 솔루션                   |
+|:———:|:—————————:|
+| 데이터의 크기(Volume)|생성되는 모든 데이터를 수집 |
+| 데이터의 다양성(Variety)|정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석 대상으로 함 |
+| 데이터의 속도(Velocity)|사용자가 원하는 시간 내에 데이터 분석결과를 제공하는 것&lt;br /&gt;데이터의 업데이터되는 속도가 매우 빨라지는 것 |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 빅데이터가 만들어내는 본질적인 변화 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사전처리 -&amp;gt; 사후처리
+&lt;br /&gt;: 정해진 특정한 정보만 수집하는 것이 아닌 가능한 많은 데이터를 모으고 그 데이터를 다양한 방식으로 조합해 숨은 정보를 찾아낸다.&lt;/li&gt;
+  &lt;li&gt;표본조사 -&amp;gt; 전수조사
+&lt;br /&gt;: 데이터 수집비용이 더는 문제가 되지 않고 클라우드 컴퓨팅 기술의 발전으로 데이터 처리 비용이 급격하게 감소하고 있다. 전수조사의 장점은 표본조사가 주지 못하는 패턴이나 정보를 제공해 준다.&lt;/li&gt;
+  &lt;li&gt;질 -&amp;gt; 양
+&lt;br /&gt;: 데이터의 수가 증가함에 따라 사소한 몇개의 오류가 대세에 영향을 주지 못한다.&lt;/li&gt;
+  &lt;li&gt;인과관계 -&amp;gt; 상관관계
+&lt;br /&gt;: 인과관계 분석은 데이터를 얻는데 드는 비용이 매우 비싼 모델이다. 비즈니스 상황에서는 상관관계 분석으로 충분하다.
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 데이터의 크기를 나타내는 단위 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;단위&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;크기&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1테라바이트(Terabyte)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1024 기가바이트(Gigabyte)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1페타바이트(Petabyte)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1024 테라바이트(Terabyte)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1엑사바이트(Exabyte)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1024 페타바이트(Petabyte)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1제타바이트(Zettabyte)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1024 엑사바이트(Exabyte)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>1-3. 데이터의 이해 - 데이터베이스의 활용</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-3.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-3.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 기업 내부 데이터베이스 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;|구분                                 |&lt;center&gt;주요 특징&lt;/center&gt;|
+|:———————————:  |:—————————|
+| 1980년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스  | 1. OLTP(On-line Transaction Processing, 온라인 거래처리)&lt;br /&gt; : 주 컴퓨터와 통신회선으로 접속되어 있는 복수의 사용자 단말에서 발생한 트랜잭션을 주 컴퓨터에서 처리하여 그 결과를 즉석에서 사용자에게 되돌려 보내주는 처리 형태 &lt;br /&gt; : 데이터는 진행중인 비즈니스 프로세스&lt;br /&gt; : 여러 과정이 하나의 단위 프로세스로 실행되도록 하는 프로세스 &lt;br /&gt; : 비즈니스 작업을 제어 및 실행 &lt;br /&gt;&lt;br /&gt;2. OLAP(On-line Analytical Processing, 온라인 분석처리)&lt;br /&gt; : 다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 제공할 수 있는 기술&lt;br /&gt; : 데이터는 모든 유형의 비즈니스 활동을 다차원적으로 보여줌 &lt;br /&gt; : 의사결정 지원, 계획 및 문제 해결을 도움    |
+| 2000년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스  | 1. CRM(Customer Relationship Management, 고객 관계 관리) &lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능하게 함으로써 보다 높은 이익을 창출 할 수 있는 솔루션 &lt;br /&gt;&lt;br /&gt; 2. SCM(Supply Chain Management, 공급망 관리) &lt;br /&gt; : 제조, 물류, 유통업체 등 유통공급망에 참여하는 모든 업체들이 협력을 바탕으로 정보기술(Information Technology)을 활용, 재고를 최적화하기 위한 솔루션 &lt;br /&gt; : 유통, 판매 및 고객데이터가 CRM과 연동되므로 CRM과 SCM은 상호밀접한 관련을 가진다.   |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 분야별 기업 내부 데이터베이스 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;|분야       |&lt;center&gt;주요 솔루션&lt;/center&gt;|
+|:———:|:—————————|
+| 제조 부문  |1. DW(Data Warehouse)&lt;br /&gt; : 정보 검색을 목적으로 구축된 데이터베이스&lt;br /&gt;&lt;br /&gt; 2.ERP(Enterprise Resource Planning, 전사적 자원관리)&lt;br /&gt; : 제조업을 포함한 다양한 비즈니스 분야에서 생산, 구매, 재고, 주문, 공급자와의 거래, 고객서비스 제공 등 주요 프로세스 관리를 돕는 여러 모듈로 구성된 통합 어플리케이션 소프트웨어 패키지&lt;br /&gt;&lt;br /&gt; 3. BI(Business Intelligence)&lt;br /&gt; : 기업의 DW(Data Warehouse)에 저장된 데이터에 접근해 경영 의사결정에 필요한 정보를 획득하고 이를 경영 활동에 활용하는 것&lt;br /&gt;&lt;br /&gt;4. CRM(Customer Relationship Management, 고객관계관리)&lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능케 함으로써 보다 높은 이익을 창출할 수 있는 솔루션     |
+| 금융 부분  |1. EAI(Enterprise Architecture Integration, 기업 어플리케이션 통합)&lt;br /&gt; : 기업 내의 ERP(전사적 자원관리), CRM(고객관계관리), SCM(공급망계획) 시스템이나 인트라넷 등의 시스템간에 상호 연동이 가능하도록 통합하는 솔루션&lt;br /&gt;&lt;br /&gt;2. EDW(Enterprise Data Warehouse)&lt;br /&gt; : 기존 DW를 전사적으로 확장한 모델인 동시에 BRP와 CRM, BSC 같은 다양한 분석 어플리케이션을 위한 원천이 됨.&lt;br /&gt; : 기업 리소스의 유기적 통합, 다원화된 관리 체계 정비, 데이터의 중복 방지 등을 위해 시스템을 재설계 하는 것&lt;br /&gt;&lt;br /&gt;3. 블록체인(Blockchain)&lt;br /&gt; : 데이터 분산 처리 기술&lt;br /&gt; : 네트워크에 참여하는 모든 사용자의 모든 거래내역 등의 데이터를 분산, 저장하는 기술&lt;br /&gt; : 블록들을 체인 형태로 묶는 형태&lt;br /&gt;&lt;br /&gt;5. ERP, e-CRM 등 이용 |
+| 유통 부분  |1. KMS(Knowledge Management System, 지식 관리 시스템)&lt;br /&gt; : 조직 내의 지식을 체계적으로 관리하는 시스템 &lt;br /&gt; : 지적 재산이 매우 중요해짐에 따라 기업을 관리하는 시스템이 등장&lt;br /&gt;&lt;br /&gt;2. RFID(Radio Frequency, 무선 주파수) 리더를 이용한 정보 인식&lt;br /&gt; : 대상(물건, 사람 등)을 식별할 수 있는 기술&lt;br /&gt;&lt;br /&gt;3. CRM, SCM 등 이용|
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 분야별 사회기반 구조로서의 데이터베이스 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인터넷의 보편화로 인해 일반 국민들도 가정에서 손쉽게 생활에 필요한 정보를 습득할 수 있게 되었고, 이로 인해 데이터베이스는 사회 전반의 기간재로서 자리매김하게 되었다.&lt;/li&gt;
+  &lt;li&gt;EDI(Electronic Data Interchange, 전자 문서 교환) : 표준화된 상거래 서식 또는 공공 서식을 서로 합의된 표준에 따라 전자문서를 만들어 컴퓨터 및 통신을 매개로 상호교환 하는 것&lt;/li&gt;
+  &lt;li&gt;CALS(Commerce At Lighted Speed, 광속 상거래) : 각종 기술 자료를 디지털화하여 관련 데이터를 통합 운영하는 업무 환경&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;|분야       |&lt;center&gt;주요 솔루션&lt;/center&gt;|
+|:———:|:—————————|
+| 물류 부문  |1. 종합물류정보망(실시간 차량추적)&lt;br /&gt; : 전자지도상에서 운행중인 차량의 위치 및 상태를 실시간으로 파악하여 서비스 가입자의 합리적인 의사결정을 지원하는 시스템&lt;br /&gt;&lt;br /&gt;2. 부가가치통신망(VAN, Value Added Network)&lt;br /&gt; : 네트워크에 단순한 전송 기능 이상의 부가가치를 첨가하여 정보를 축적, 가공, 변환 처리하여 음성 또는 데이터 정보를 제공해주는 광범위하고 복합적인 통신서비스의 집합&lt;br /&gt; |
+| 지리 부분  |국가지리정보체계(NGIS), GS, GPS |
+| 교통 부분  |지능형교통시스템(ITS) |
+| 의료 부분  |의료 EDI |
+| 교육 부분  |교육행정정보시스템(NEIS) |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 4. DW의 4대 특성 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터 주제 지향성&lt;/li&gt;
+  &lt;li&gt;데이터 통합&lt;/li&gt;
+  &lt;li&gt;데이터의 시계열성&lt;/li&gt;
+  &lt;li&gt;데이터의 비휘발성
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 5. BI VS BA &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;구분&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;BI(Business Intelligence)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;BA(Business Analytics)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;목적&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;과거의 성과를 측정하고 향후 비즈니스를 계획&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터와 통계를 기반으로 성과에 대한 이해와 비즈니스 통찰력에 초점을 둔 분석 방법&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;응용&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 기반의 의사결정&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사전예측하고 최적화하기 위함&lt;br /&gt;BI 보다 진보된 형태&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>1-2. 데이터의 이해 - 데이터베이스의 정의와 특징</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-2.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-2.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 데이터베이스의 정의 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;동시에 복수의 적용 업무를 지원할 수 있도록 복수 이용자의 요구에 대응해서 데이터를 받아들이고 저장, 공급하기 위하여 일정한 구조에 따라서 편성된 데이터의 집합&lt;/li&gt;
+  &lt;li&gt;관련된 레코드의 집합&lt;/li&gt;
+  &lt;li&gt;소프트웨어로는 데이터베이스 관리 시스템(DBMS)을 의미한다.&lt;/li&gt;
+  &lt;li&gt;DBMS는 이용자가 쉽게 데이터베이스를 구축하고 유지할 수 있도록 하는 소프트웨어로서 데이터베이스와 구분되며, 일반적으로 데이터베이스와 DBMS를 함께 데이터베이스 시스템이라고 한다.
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 데이터베이스의 특징 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;통합된 데이터(Integrated data) : 데이터베이스에서 동일한 내용의 데이터가 중복되어 있지 않음&lt;/li&gt;
+  &lt;li&gt;저장된 데이터(Stored data) : 컴퓨터가 접근할 수 있는 저장 매체에 저장되는 것&lt;/li&gt;
+  &lt;li&gt;공용 데이터(Shared data) : 여러 사용자가 서로 다른 목적으로 데이터베이스의 데이터를 공동 이용&lt;/li&gt;
+  &lt;li&gt;변화되는 데이터 : 새로운 데이터의 추가, 기존 데이터의 삭제, 갱신으로 항상 변화하면서도 항상 현재의 정확한 데이터를 유지해야 한다
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 데이터베이스의 특성 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;정보의 축적 및 전달 측면
+    &lt;ul&gt;
+      &lt;li&gt;기계가독성 : 대량의 정보를 정보처리기기가 읽고 쓸수 있음&lt;/li&gt;
+      &lt;li&gt;검색가능성 : 필요한 정보를 검색할 수 있음&lt;/li&gt;
+      &lt;li&gt;원격조작성 : 정보통신망을 이용하여 원거리에서도 온라인으로 이용할 수 있음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;정보이용 측면 : 이용자의 정보 요구에 따라 다양한 정보를 신속하게 획득하고 원하는 정보를 경제적으로 찾아 낼 수 있음&lt;/li&gt;
+  &lt;li&gt;정보관리 측면 : 방대한 양의 정보를 체계적으로 축적하고 새로운 내용 추가나 갱신이 용이함&lt;/li&gt;
+  &lt;li&gt;정보기술발전 측면 : 데이터베이스는 정보처리, 검색, 관리 소프트웨어 등 네트워크 발전기술을 견인할 수 있음&lt;/li&gt;
+  &lt;li&gt;경제, 산업적 측면 : 데이터베이스는 인프라로서 특성을 가지고 있어 경제, 산업, 사회 활동의 효율성을 제고하고 국민의 편의를 증진하는 수단으로 의미를 가짐&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>1-1. 데이터의 이해 - 데이터와 정보</title>
+        <link>/data%20science/adsp/2018/08/20/ADsP-1.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-1.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 데이터의 정의 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터는 &lt;point&gt;객관적 사실(fact)&lt;/point&gt;이라는 존재적 특성을 가진다. -&amp;gt; 데이터는 개별 데이터 자체로는 의미가 중요하지 않은 객관적 사실을 말한다.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;데이터는 &lt;point&gt;추론, 예측, 전망, 추정&lt;/point&gt;을 위한 근거(basis)로 기능하는 당위적 특성을 가진다. -&amp;gt; 다른 객체와의 상호 관계 속에서 가치를 갖는다.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 데이터의 유형 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;|구분   |형태   |
+|:-:|:-:|
+|정성적 데이터(qualitative data)   |언어, 문자 등 비정형 데이터(비정형 데이터)&lt;br /&gt;자료의 성질, 특징을 설명 또는 요약&lt;br /&gt; 상대적으로 많은 비용과 기술적 투자가 수반된다.  |
+|정량적 데이터(quantitative data)   |수치, 도형, 기호 등(정형 데이터) &lt;br /&gt; 자료를 수치화 &lt;br /&gt; 저장, 검색, 분석 활용에 용이하다.&lt;br /&gt;  |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 지식경영 핵심 이슈 &amp;lt;/subititle&amp;gt;
+&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;암묵지 : 학습과 체험을 통하여 개인에게 습득되지만 겉으로는 드러나지 않는 상태의 지식&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;형식지 : 암묵지가 문서나 메뉴얼처럼 외부로 표출되어서 여러 사람이 공유할 수 있는 지식
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;지식경영(knowledge management) : 개인의 암묵지와 집단에서의 형식지가 나선형의 형태로 회전하면서 생성, 발전, 전환되는 지식의 발전을 기반으로한 기업의 경영&lt;/li&gt;
+  &lt;li&gt;지식 나선 활동(creative route)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;|암묵지(Tacit knowledge)   |형식지(Explicit knowledge)|
+|:———————:  |:—————————:|
+| 공통화(socialization)    | 표출화(Externalization)   |
+| 내면화(internalization)  | 연결화(Combination)    |
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 4. 데이터와 정보의 관계 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DIKW 피라미드(Data, Information, Knowledge, Wisdom)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;&lt;img src=&quot;https://www.researchgate.net/publication/313020352/figure/fig4/AS:455507778510848@1485612925004/The-DIKW-pyramid-Source-Soloviev-K-2016.jpg&quot; width=&quot;80%&quot; /&gt;&lt;br /&gt;The DIKW pyramid (Source: Soloviev, K., 2016)&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;종류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;예시&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터(Data)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터를 가공하기 전의 순수한 수치나 기호&lt;br /&gt; 개별 데이터 자체로는 의미가 중요하지 않은 객관적인 사실&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A 마트 100원, B마트는 200원에 연필을 판매한다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정보(Information)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터의 가공 및 상관관계 간 이해를 통해 패턴을 인식하고 의미를 부여한 데이터&lt;br /&gt; 정보가 내포하는 의미는 유용하지 않을 수 있다.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A 마트의 연필 가격이 더 싸다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지식(Knowledge)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;상호 연결된 정보 패턴을 이해하여 이를 토대로 예측한 결과물&lt;br /&gt; 데이터를 통해 도출된 다양한 정보를 구조화하여 유의미한 정보로 분류하고 개인적인 경험을 결합시켜 고유의 지식으로 내재화 한 것&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;상대적으로 저렴한 A마트에서 연필을 사야겠다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지혜(Wisdom)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;근본 원리에 대한 깊은 이해를 바탕으로 도출되는 아이디어&lt;br /&gt; 지식의 축적과 깊은 이해를 바탕으로 도출되는 아이디어&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A마트의 다른 상품들도 B마트보다 쌀 것이라고 판단한다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>HTML 파싱하기 - BeautifulSoup</title>
+        <link>/python/crawler/2018/08/18/crawler-5.html</link>
+        <guid isPermaLink="true">/python/crawler/2018/08/18/crawler-5.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. Beautifulsoup 설치&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 html을 크롤링하고 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. HTML 크롤링하기 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 페이지 소스 가져오기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_source&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# soup에 넣어주기&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이후에는 BeautifulSoup에서 제공하는 파싱 방법대로 데이터 파싱을 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;reference&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>R programming - 그래프(Graph) 그리기</title>
+        <link>/data%20science/r%20programming/2018/08/15/R-4.html</link>
+        <guid isPermaLink="true">/data%20science/r%20programming/2018/08/15/R-4.html</guid>
+        <description>&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. ggplot2 패키지 설치 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;파이썬의 matplotlib와 같은 기능을 제공하는 패키지는 R에서 ggplot2라는 패키지 이다. 그래프를 그리려면 먼저 ggplot2 패키지를 설치해야 한다. R studio의 콘솔(Console)창에서 아래의 명령어로 ggplot2 패키지를 설치 할 수 있다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;install.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ggplot2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;ggplot2가 설치 된 후 사용할 수 있도록 패키지를 로드 해야한다. 콘솔창을 통해 로드하는 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;주의해야 할 점은 R studio를 새로 킬 때마다 패키지를 로드해줘야한다. 프로젝트를 키면 간단하게 File창/Packages에서 ggplot2를 찾아서 클릭해주면 자동으로 로드가 된다. 또는 새로 키고 난 후 위의 로드하는 명령어를 입력해주면 패키지가 로드 된다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;주피터 노트북에 이미 r-essential이 설치되어 있다면 library(ggplot2)를 입력하고 사용하면 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. 그래프 그리기 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(책) Do it! 쉽게 배우는 R 데이터 분석&lt;/li&gt;
+  &lt;li&gt;http://antilibrary.org/407
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 15 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>R programming - Anaconda에 R 설치후 Jupyter notebook 사용하기(Windows10, MAC OS)</title>
+        <link>/data%20science/r%20programming/2018/08/15/R-3.html</link>
+        <guid isPermaLink="true">/data%20science/r%20programming/2018/08/15/R-3.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt;Anaconda에 R을 설치하면 Jupyter notebook에서 R 프로그래밍을 사용할 수 있다. 나는 R studio보다 Jupyter notebook이 조금 더 편해서 R 프로그래밍 환경을 Jupyter notebook으로 변경하였다.&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. Anaconda에서 R 설치 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;conda prompt에서 설치할 환경에 r을 설치한다. 나는 cuda라는 이름을 가진 아나콘다 환경에 R을 설치하려고 하므로 cuda로 conda 환경을 전환하고 설치하였다. &lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# conda prompt 실행&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda info &lt;span class=&quot;nt&quot;&gt;--envs&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# 현재 존재하는 아나콘다 환경 확인&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;activate cuda                     &lt;span class=&quot;c&quot;&gt;# cuda라는 이름을 가진 아나콘다 환경 활성(Windows)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; r r-essentials   &lt;span class=&quot;c&quot;&gt;# R 패키지 설치&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;맥을 이용해 설치한다면 아래와 같이 설치한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# terminal 실행&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda info &lt;span class=&quot;nt&quot;&gt;--envs&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# 현재 존재하는 아나콘다 환경 확인&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;activate cuda                     &lt;span class=&quot;c&quot;&gt;# cuda라는 이름을 가진 아나콘다 환경 활성(MAC OS)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; r r-essentials   &lt;span class=&quot;c&quot;&gt;# R 패키지 설치&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;r-essentials를 설치하면 r에서 기본적으로 사용하는 패키지들이 모두 설치 된다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. jupyter notebook 켜서 확인&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jupyter notebook 를 켜서 확인한다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44136663-8866b9c4-a0a8-11e8-8283-2a6b2b538efa.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;R 환경이 추가된 것을 볼 수 있다!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://datascienceschool.net/view-notebook/867d2d5bbafa491a807ffa7c0eb60f81/&lt;/li&gt;
+  &lt;li&gt;https://anaconda.org/r/r-essentials&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>R programming - 변수(Variable)</title>
+        <link>/data%20science/r%20programming/2018/08/15/R-2.html</link>
+        <guid isPermaLink="true">/data%20science/r%20programming/2018/08/15/R-2.html</guid>
+        <description>&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 값 1개 가지는 변수 만들기 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;변수명은 대소문자를 구별하고 대시( - )나 언더바( _ ), 숫자를 조합하여 만들 수 있다. 한글 변수명도 가능하지만 오류가 날 수 있다. 변수명은 시작은 항상 소문자로 작성한다.(함수는 대문자) &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+변수 만드는 방법은 matlab과 비슷하다!&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# a에 1할당&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# a출력&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. 사칙연산&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 변수 a에 값 1할당&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 변수 b에 값 2할당&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# a+b 덧셈 결과 출력&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# b-a 뺄셈 결과 출력&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# b/2 나눗셈 결과 출력&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# a*b 곱셈 결과 출력&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;      &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# b/a의 나머지 결과 출력&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. 벡터 변수(여러 값으로 구성된 변수)와 연산 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;R의 내장 함수인 c()나 seq() 를 이용하여 여러값을 가진 변수를 만들수 있다. 즉, 파이썬의 리스트와 같은 개념이다. c()의 c는 combine의 앞글자 이며 seq()는 sequence의 줄임말이다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;      &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 숫자 5개로 구성된 변수 var1 생성 (type : numeric)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 1부터 5까지 숫자 5개로 구성된 변수 var2 생성 (type : integer)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;          &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 1부터 5까지 숫자 5개로 구성된 변수 var3 생성 (type : integer)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var4&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 1부터 10까지 2간격으로 생성(1,3,5,7,9) (type : numeric)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var5&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# &quot;a&quot; &quot;b&quot; &quot;c&quot; 3개의 문자로 구성된 변수 (type : character)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var6&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# &quot;hello&quot; &quot;world!&quot; 2개의 문자열로 구성된 변수 (type : character)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;위의 결과를 보면 어떤 것은 변수 형이 numeric이고 어떤 것은 integer 형을 가진다. numeric은 integer보다 더 큰 그룹 개념이다. 데이터 형이 integer로 좁혀지는 이유는 디테일 할 수록 메모리가 덜 소모되기 때문이다. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;파이썬의 numpy와 동일하게 벡터와 스칼라를 더했을때 모든 열에 스칼라 값을 더해준다. 벡터 크기가 같으면 각 열끼리 덧셈이 가능하다. 단, 벡터의 크기가 다르다면 벡터끼리 연산 할 수 없다. 또한, 문자열끼리 연산할 수 없다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 각 열에 2를 더해줌&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 연산 가능(같은 위치의 수끼리 더하기)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var7&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 1부터 6까지 숫자 6개로 구성된 변수 var7 생성(type : integer)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var7&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;      &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 벡터의 길이가 달라 오류 발생(var1의 길이는 5, var7의 길이는 6)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var6&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;       &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 문자열은 연산 할 수 없다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(책) Do it! 쉽게 배우는 R 데이터 분석&lt;/li&gt;
+  &lt;li&gt;http://antilibrary.org/407
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 15 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>R programming 시작하기</title>
+        <link>/data%20science/r%20programming/2018/08/15/R-1.html</link>
+        <guid isPermaLink="true">/data%20science/r%20programming/2018/08/15/R-1.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt;ADsP를 준비하면서 R 프로그래밍을 처음 접하게 되었다. 데이터 분석하거나 가공할 때 파이썬의 numpy, pandas, matplotlib, scipy등의 패키지를 사용하여 정제하고 분석하였는데 파이썬 보다는 R이 통계적 분석을 하기에는 더 편리하다고 한다. R은 다양한 통계 패키지들을 사용하기 쉽도록 제공하고 대용량 데이터에서 속도가 파이썬보다 빠르다고 한다. 이번 기회에 R을 익혀 볼 예정이다. 항상 새로운 언어를 배울 때는 기초 교재를 1~2개 정도 사는 편인데 R 교재로는 Do it! 쉽게 배우는 R 데이터 분석을 선택하였다.&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. R Studio &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 R프로그래밍을 하려면 R Studio가 있어야 한다. R Studio는 Visual Studio 같은 IDE이다. 아래의 링크에서 운영체제에 맞는 것으로 설치한다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;R Studio : https://www.rstudio.com/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44128543-83d28854-a07e-11e8-863b-68fbe145e905.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+R studio를 실행시켜보면 위의 이미지와 같은 4분할 창이 먼저 뜨게 된다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;스크립트(Script) 창 : R 코드 작성, 실행하고자 하는 행을 클릭후 run 실행(ctrl+Enter)&lt;/li&gt;
+  &lt;li&gt;콘솔(Console) 창 : 명령어 1개 실행(프롬프트)&lt;/li&gt;
+  &lt;li&gt;환경(Enviroment)
+    &lt;ul&gt;
+      &lt;li&gt;Enviroment : 데이터 정보 보여주는 창&lt;/li&gt;
+      &lt;li&gt;History : 수행 내역&lt;/li&gt;
+      &lt;li&gt;Connections : 데이터베이스 연결&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;파일(File)
+    &lt;ul&gt;
+      &lt;li&gt;working directory 정보&lt;/li&gt;
+      &lt;li&gt;plots : 내가 그린 그래프 정보&lt;/li&gt;
+      &lt;li&gt;packages : 설치된 패키지 목록
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. R studio 기본 셋팅 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 Soft-wrap 옵션을 설정한다. Tools/Global Options/Code에서 Soft wrap R source files를 체크한다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44128811-e356f6f6-a07f-11e8-814f-6aa1cf7eae60.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그 다음 프로젝트 파일을 1개 만들고 한글 깨짐을 방지하기 위해 Tools/Project Options/Code Editing에서 인코딩을 UTF-8로 설정한다.&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44128862-3f611dd2-a080-11e8-9b27-a32c6974e76a.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게하면 기본 셋팅 끝! 이런 에디터 프로그램은 한글이 깨질 수 있기 때문에 항상 인코딩에 주의해야한다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;references&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(책) Do it! 쉽게 배우는 R 데이터 분석&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
     
       <item>
         <title>Basic Statistics - 표와 그래프</title>
@@ -164,23 +955,23 @@
       </item>
     
       <item>
-        <title>Selenium으로 로딩한 브라우저의 html 파싱하기 - BeautifulSoup 이용</title>
+        <title>Selenium으로 로딩한 페이지의 html 크롤링 - BeautifulSoup</title>
         <link>/python/crawler/2018/08/13/crawler-4.html</link>
         <guid isPermaLink="true">/python/crawler/2018/08/13/crawler-4.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 브라우저의 html을 파싱하는 방법을 정리하였다.&lt;/p&gt;
+&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt;1. Beautifulsoup 설치&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;먼저 html을 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;먼저 html을 크롤링하고 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
-  &lt;subtitle&gt;2. HTML 파싱하기 &lt;/subtitle&gt;
+  &lt;subtitle&gt;2. HTML 크롤링하기 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -189,116 +980,12 @@
 &lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_source&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# soup에 넣어주기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44024356-072d0d1c-9f28-11e8-971b-33aa7e06eaa4.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;나는 위의 이미지에서 보이는 impactfactor 표에서 년도, impactfactor 값만 수집하려고 한다. html 구조를 살펴보면 표의 각 행(row)의 클래스 명은&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Python Selenium(셀레니움) 크롬창 활성 탭 변경하기</title>
-        <link>/python/crawler/2018/08/13/crawler-3.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/13/crawler-3.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. 검색 자동화 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44016757-113aa434-9f11-11e8-9005-630516a5e57f.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;먼저 위의 이미지와 같은 검색 창에서 검색 할 수 있도록 프로그램을 작성한다. &lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;검색창에 검색 어 입력&lt;/li&gt;
-  &lt;li&gt;검색어 입력시 하단에 나오는 버튼 클릭
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;이전 코드에 이어서 아래에 추가한 코드는 다음과 같다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 키워드 검색&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Peer-to-Peer Networking and Applications'&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 검색창에 키워드 입력후 검색&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'search-inputEl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'//*[@id=&quot;boundlist-1029-listEl&quot;]/ul/li'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. 활성 탭 전환하기&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;위의 코드를 이용하여 검색창에 검색어를 입력하여 검색은 가능하다. 검색 결과가 새창에 나타나므로 새로 활성화 된 창으로 화면을 변경하여야 한다. 아래의 코드를 추가함 으로써 탭 전환이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;먼저 아래의 명령어는 탭 목록들을 보여준다. 새로운 탭을 열고 로딩을 기다린뒤 윈도우 목록을 확인해보면 리스트에 두개의 항목이 들어있는 것을 볼 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;결과 : [‘CDwindow-5869F32E71D5DF1303F64200A76D021F’, ‘CDwindow-19FEAEAE68751A47C2CD0D9008B6BF4E’]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-새롭게 열린 탭으로 변경하는 코드는 다음을 하단에 추가하면 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 최근 열린 탭으로 전환&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;만약에 새로 옮긴 탭을 닫고 다시 원래 창으로 돌아가고 싶다면 아래의 코드를 입력하면 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 현재 탭 닫기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 맨 처음 탭으로 변경(0번 탭)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 로딩 기다리기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;수정한 전체 내용은 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 키워드 검색&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Peer-to-Peer Networking and Applications'&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 검색창에 키워드 입력후 검색 버튼 클릭&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'search-inputEl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'//*[@id=&quot;boundlist-1029-listEl&quot;]/ul/li'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 새로 열린 탭으로 활성 탭 변경&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window_handles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;이후에는 BeautifulSoup에서 제공하는 파싱 방법대로 데이터 파싱을 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt;reference&lt;/subtitle&gt;
@@ -311,1313 +998,6 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Homebrew를 이용하여 MYSQL 설치 - MAC</title>
-        <link>/data%20base/mysql/2018/08/13/mysql-1.html</link>
-        <guid isPermaLink="true">/data%20base/mysql/2018/08/13/mysql-1.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;나는 노트북을 맥을 사용하는데 맥에서는 homebrew 라는 패키지 관리자를 설치하여 사용할 수 있다. 프로그램 설치시 유용하게 활용하고 있다. 개발 환경을 조금 더 편리하게 구성할 수 있어 편리하였다. MYSQL도 homebrew를 이용하여 편리하게 설치할 수 있다. &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. Homebrew 설치 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;아래의 사이트를 참고하여 homebrew를 설치할 수 있다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;homebrew : https://brew.sh/index_ko&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;맥에는 루비가 설치되어 있으므로 다음의 루비 명령어를 통해서 homebrew를 설치할 수 있다. 명령어를 실행하면 homebrew가 자동으로 설치 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/usr/bin/ruby &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. mysql server 설치 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;일단 mysql을 사용하려면 mysql server와 mysql 데이터베이스를 GUI로 확인가능한 mysqlworkbench를 homebrew를 이용하여 설치한다. 우선 brew 명령어를 통해서 mysql에 관련된 프로그램들을 검색할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew doctor
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew search mysql&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44032947-ba290d56-9f43-11e8-8e72-4e15dc2e7e21.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;위의 이미지에서 formulae 의 mysql과 mysql-client casks의 mysqlworkbench를 설치한다. mysql-client는 커맨드라인에서 mysql 서버 접속시 사용된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql-client
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysqlworkbench&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;이렇게 해서 mysql 서버와 mysqlworkbench 설치가 완료되었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. mysql 실행 확인&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;아래의 명령어를 실행하면 mysql 커맨드라인으로 접속이 가능하도록 설정 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew services start mysql
-
-&lt;span class=&quot;o&quot;&gt;==&amp;gt;&lt;/span&gt; Tapping homebrew/services
-Cloning into &lt;span class=&quot;s1&quot;&gt;'/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'&lt;/span&gt;...
-remote: Counting objects: 14, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;10/10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-remote: Total 14 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 0
-Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14/14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Tapped 1 &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;43 files, 55.2KB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;==&amp;gt;&lt;/span&gt; Successfully started &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;mysql&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;label: homebrew.mxcl.mysql&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;그 다음 커맨드라인 명령어로 접속하면 root 계정으로 접속이 되는 것을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-uroot&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;root 계정에 비밀번호를 설정하고 싶다면 아래의 명령어를 실행하면된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql_secure_installation
-......
-Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No: no
-Please &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;the password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;root here.
-
-New password:패스워드 입력
-
-Re-enter new password: 패스워드 확인
-.....
-
-Remove anonymous &lt;span class=&quot;nb&quot;&gt;users&lt;/span&gt;? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
-Success.
-
-Disallow root login remotely? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
-Success.
-
-Remove &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database and access to it? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
- - Dropping &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database...
-Success.
-
- - Removing privileges on &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;database...
-Success.
-.....
-
-Reload privilege tables now? &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Press y|Y &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;Yes, any other key &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;No&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; : y
-Success.
-
-All &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;4. mysqlworkbench로 mysql 접속하기&lt;/subtitle&gt;
-  &lt;p&gt;이제 mysqlworkbench로 접속하기 위하여 한가지 권한 셋팅을 해야한다. 권한 셋팅을 하지 않으면 아래의 오류가 발생한다. MYSQL 8.0 오류라고 한다.&lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Authentication plugin &lt;span class=&quot;s1&quot;&gt;'caching_sha2_password'&lt;/span&gt; cannot be loaded: dlopen&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/local/mysql/lib/plugin/caching_sha2_password.so, 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: image not found&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;먼저 mysql을 커맨드 라인으로 접속한다.(root계정 패스워드 0000)&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-uroot&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p0000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;그 다음 아래의 쿼리를 날려 권한 수정을 해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;mysql&amp;gt; ALTER USER &lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;@&lt;span class=&quot;s1&quot;&gt;'localhost'&lt;/span&gt; IDENTIFIED WITH mysql_native_password BY &lt;span class=&quot;s1&quot;&gt;'0000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;권한 설정을 해준뒤 워크벤치로 접속하면 접속이 되는 것을 확인할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44036952-11f6570a-9f4e-11e8-8e43-152615370866.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://github.com/helloheesu/SecretlyGreatly/wiki/%EB%A7%A5%EC%97%90%EC%84%9C-mysql-%EC%84%A4%EC%B9%98-%ED%9B%84-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&lt;/li&gt;
-  &lt;li&gt;https://github.com/appkr/l5code/issues/4&lt;/li&gt;
-  &lt;li&gt;https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Jekyll 블로그 카테고리 계층 만들기 - Permalink 이용</title>
-        <link>/development%20environment/github%20blog/2018/08/12/blog-8.html</link>
-        <guid isPermaLink="true">/development%20environment/github%20blog/2018/08/12/blog-8.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt;점점 카테고리 항목이 늘어나서 기존 카테고리 방법을 응용(?)한 카테고리 표현 방법으로 변경하였다. 나중에 혹시 또 변덕이 생겨서 변경하게 될지도 모르므로 블로그에 기록을 남겨두기로 하였다. 많은 삽질과 고민끝에 아래의 이미지의 카테고리로 수정하였다.&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43993995-8a7bdcb0-9dd0-11e8-9019-3694cf254999.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;상위카테고리 Home, Python, Data Science, Development, Android를 가지고 각각 상위카테고리에 하위 카테고리가 있는 형식이다. 예를들어, Python 항목을 누르면 하위 카테고리들의 포스트들을 모두 보여주고 싶었는데 수정하려고 하니 내 역량 밖이였다 ㅠㅠ 수정 내용을 차례로 정리하였다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. _includes/header.html 파일 수정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-원래 기존에 _includes/index.html 에 카테고리 구조를 적어 놓았다. 하지만 모두 header 영역으로 취급하고 싶어서 _includes/index.html 파일을 제거하고 _includes/header.html 파일에 카테고리 구조를 표현하였다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;홈페이지 상단의 헤더부분은 branding 부분(로고, 블로그명, About, tag, search)과 카테고리 영역으로 나누었다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;기존의 header.html파일에 추가한 내용 아래와 같다. header 태그 안에 삽입하여 카테고리 영역을 추가한다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;site-category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cat1'&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Python&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Python/Crawler&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Crawler&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Python/Django&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Django&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Python/Tensorflow&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tensorflow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Data Science&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DS/ML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Machine Learning&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Development Enviroment&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DE/Github Blog&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Github Blog&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DE/Git&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Git&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DE/Docker&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Docker&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DE/Ubuntu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Ubuntu&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/DE/Java&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Java&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Android&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Android/Android&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Android&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;각 카테고리의 링크는 나중에 permalink라는 기능을 이용하여 각 페이지와 링크 시킬 예정이므로 a 태그안의 href는 permalink 항목의 내용으로 채워두었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. _sass/_header.scss 수정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;css 파일을 수정하여 디자인을 적용한다. 디자인은 아래의 코드를 응용하여 수정하였다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;http://jsfiddle.net/SRV36/1633/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-추가 코드는 아래와 같다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;border-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;border-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;list-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inline-block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#FFFFFF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 평상시에는 드랍메뉴가 안보이게 하기 */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/*top:1em;
-  /*left:0;*/&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 마우스 커서 올리면 드랍메뉴 보이게 하기 */&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;brand-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nc&quot;&gt;.site-category&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.menubar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#ffffff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. category 폴더 안의 .md 파일들 수정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;이제 permalink 라는 기능으로 각 버튼들과 페이지를 연결해주어야 한다. 아래의 이미지와 같이 마크다운 파일들을 수정한다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43994142-f3f64d7c-9dd2-11e8-8a72-0fcffcbc79c7.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; reference &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;http://re-fresh-studio.com/2013/07/post-12-dropmenu_with_css.php&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 12 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Python Selenium(셀레니움)으로 홈페이지 로그인하기</title>
-        <link>/python/crawler/2018/08/11/crawler-2.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/11/crawler-2.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;논문 Impact factor를 수집할 때 JCR 이라는 사이트에서 확인 할 수 있는데 로그인을 해야 JCR 사이트를 이용할 수 있었다. 따라서, 셀레니움 프로그램 내에서 자동으로 로그인을 하여 수집하는 방향으로 진행하였다. JCR 사이트를 이용하기 위해서는 계정이 필요하므로 미리 계정을 생성하여 준다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. 홈페이지 html dom 분석&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;셀레니움을 통하여 자동화 할 내용은 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;JCR 로그인 페이지 접속&lt;/li&gt;
-  &lt;li&gt;아이디 입력 폼에 아이디 입력&lt;/li&gt;
-  &lt;li&gt;비밀번호 입력 폼에 비밀번호 입력&lt;/li&gt;
-  &lt;li&gt;Stay signed in 체크박스 체크&lt;/li&gt;
-  &lt;li&gt;로그인 버튼 눌러서 로그인하기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;먼저 수집기를 만들기전에 수집 하고자하는 홈페이지의 html 구조 분석이 필요하다. 구글에 JCR을 검색하여 홈페이지에 들어가면 바로 로그인 창으로 넘어간 화면이 뜬다. 셀레니움 프로그램에서 아래의 url을 통해 JCR 홈페이지에 접속할 것이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;JCR 접속 url : https://error.incites.thomsonreuters.com/error/Error?DestApp=IC2JCR&amp;amp;Error=IPError&amp;amp;Params=DestApp%3DIC2JCR&amp;amp;RouterURL=https%3A%2F%2Flogin.incites.thomsonreuters.com%2F&amp;amp;Domain=.thomsonreuters.com&amp;amp;Src=IP&amp;amp;Alias=IC2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;크롬 개발자 도구를 켜고 select an element 버튼을 이용하여 각 요소별 html 구조 분석이 가능하다.&lt;br /&gt;
-select an element 버튼은 이미지에서 파란색으로 표시된 버튼이다. 이 버튼을 누르고 html 요소를 클릭하면 html 파일에서 이 요소가 있는 위치로 이동해서 보여준다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43960659-aab57100-9ced-11e8-8065-303b7f8197dc.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;먼저 개발자 도구를 이용하여 아이디 폼의 구조를 확인해보면 이름이 username 인 것을 알 수 있다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43960850-4810a500-9cee-11e8-969b-db176ec95aba.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;xpath라는 xml 구조도 찾을 수 있는데 찾은 html 위치에서 오른쪽클릭 -&amp;gt; copy -&amp;gt; copy xpath를 클릭하면 자동으로 클립보드에 복사되고 ctrl+c로 붙여넣기 하면 사용할 수 있다. 또한 여기서 이 요소의 css selector 값도 구할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43960967-a89fe200-9cee-11e8-9c0d-c1f233eebaba.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;정리하면 아이디 input 폼의 이름은 username 이고 xpath의 값은 ‘//*[@id=”username”]’ 이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;비밀번호 input 폼도 동일한 방법으로 확인하면 이름은 password 이고 xpath의 값은 ‘//*[@id=”password”]’ 이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Stay signed in 체크박스 input 폼의 이름은 rememberme 이고 xpath의 값은 ‘//*[@id=”rememberme”]’ 이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;로그인 버튼인 Sign in 버튼은 이름은 존재하지 않고 xpath의 값은 ‘/html/body/div/div[1]/div[3]/div[1]/div/div/div/form[1]/button’ 이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;수집한 정보를 이제 셀레니움 코드에 적용해보자.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. 셀레니움 코드 작성&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;이전 포스팅에서 작성했던 코드에서 시작하면 driver.get() 부분에 접속하고자 하는 url로 변경해주어 접속한다. name이 존재하는 element들(아이디, 비밀번호 입력 폼)은 find_element_by_name 함수로 접근 할 수 있고 로그인 버튼은 find_element_by_xpath 함수로 접근할 수 있다. 코드는 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;selenium&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# headless 옵션 설정&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 브라우저로 작동하는 것을 확인하고 싶다면 headless와 no-sandbox 옵션을 주석처리 해주면 된다.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChromeOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'headless'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'window-size=1920x1080'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disable-gpu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;no-sandbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# chrome webdriver 로드&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'./chromedriver.exe'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chrome_options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# url을 이용하여 브라우저로 접속&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'https://error.incites.thomsonreuters.com/error/Error?DestApp=IC2JCR&amp;amp;Error=IPError&amp;amp;Params=DestApp&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%3&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;DIC2JCR&amp;amp;RouterURL=https&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%3&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Flogin.incites.thomsonreuters.com&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;F&amp;amp;Domain=.thomsonreuters.com&amp;amp;Src=IP&amp;amp;Alias=IC2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;implicitly_wait&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 아이디/비밀번호를 입력해준다.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'아이디 입력'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'password'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'비밀번호 입력'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# stay signed in 체크박스 채우기(클릭)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'rememberme'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 로그인 버튼을 누르기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_element_by_xpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/html/body/div/div[1]/div[3]/div[1]/div/div/div/form/button'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 로그인 된 화면 캡처&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_screenshot_as_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'capture.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43968245-7d1a9d9c-9d01-11e8-8cb2-6e2781eb48b2.png&quot; width=&quot;60%&quot; /&gt; &lt;br /&gt;오른쪽 상단에 보면 아이디로 로그인 된 것을 확인 할 수 있다. &lt;br /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://beomi.github.io/2017/02/27/HowToMakeWebCrawler-With-Selenium/&lt;/li&gt;
-  &lt;li&gt;https://wkdtjsgur100.github.io/selenium-xpath/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 11 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Python Selenium(셀레니움) 시작하기</title>
-        <link>/python/crawler/2018/08/11/crawler-1.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/11/crawler-1.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;연구실에서 갑자기 SCI 논문에 대한 impactfactor 수집기를 만들게 되었다. 파이썬 웹크롤러로 아주 기본적인 패키지는 BeautifulSoup4 라는 패키지인데 사이트마다 request 방식이 get인지 post인지 구분해야하고 request를 보내도 작동이 안되는 페이지들이 있기 때문에 어려움이 살짝 있다. 일종의 무적 크롤러라고 불리는 selenium을 공부해보게 되었다! 맨 처음으로 셀레니움을 작동시키기 위한 셋팅 방법을 정리하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. selenium 이란?&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;셀레니움의 원래 용도는 웹 테스트 자동화 프레임워크이다. selenium webdriver를 이용하여 다양한 브라우저를 조종할 수 있다. 셀레니움은 구글 크롬, 파이어폭스, 사파리, 마이크로소프트 엣지등의 브라우저를 조종할 수 있는 웹드라이버를 통하여 작동하기 때문에 웹 UI나 기능 테스트에 주로 사용한다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;BeautifulSoup 같은 다른 웹 수집기도 있지만 이러한 수집기들은 Javascript로 실행하는 비동기적인 컨텐츠(뒤 늦게 불려와지는 컨텐츠)들은 수집하기 어려운 단점이 있다. 셀레니움을 크롤러로 사용했을 때 웹드라이버를 통하여 실제 사람이 사용하는 것과 비슷하게 작동하기 때문에 이미 페이지가 렌더링 된 상태에서 원하는 페이지의 html 파일을 수집할 수 있다.(html 파일에는 수집하고자 하는 다양한 정보들이 들어있다.)&lt;/p&gt;
-
-&lt;p&gt;아직 많이 사용해 보지 않아서 정확한 단점은 알 수 없지만 처음 사용해 봤을 때 느낀점은 수집이 느리다는 단점이 있었다. 하지만 보이는 곳 어디든 수집이 가능하다는 장점이 있다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. selenium 설치&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;셀레니움은 pip를 이용하여 간단하게 설치할 수 있다. 그리고 페이지를 랜더링 한 후 html을 파싱해올 때 BeutifulSoup4를 사용하므로 만약에 설치되어 있지 않다면 같이 설치해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;selenium
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 3. 크롬 브라우저 설치 및 크롬 웹드라이버 다운로드&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;우선 셀레니움은 webdriver를 이용하여 작동하는데 기본적으로 많이 사용하는 크롬 웹드라이버를 사용하여 작동할 예정이다. 운영체제 환경마다 셋팅하는 방법이 조금씩 다르다. 연구실 컴퓨터는 윈도우(GUI가능), 노트북은 맥 OS(GUI가능), 연구실 서버는 Ubuntu16.04 LTS(GUI 불가능)를 사용하므로 세가지 운영체제에 대하여 정리하였다. 크롬 웹드라이버를 이용하므로 반드시 크롬 브라우저는 설치되어 있어야 한다!&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;아래의 주소에서 크롬 드라이버를 다운로드 받을 수 있다(GUI 환경)&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;크롬 드라이버 다운로드 : https://sites.google.com/a/chromium.org/chromedriver/downloads&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43917296-e66a623a-9c4a-11e8-8eb0-339d64fb49b7.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;위의 홈페이지 url로 접속해보면 이렇게 크롬 웹 드라이버를 받을 수 있는 화면이 나온다. 오른쪽 중간쯤에 Latest Release의 크롬 드라이버링크를 클릭한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43917385-289044e0-9c4b-11e8-9841-18986b56f94a.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;들어가보면 운영체제 별로 웹 드라이버를 다운로드 받을 수 있게 되어 있다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;1) Windows 10 / MAC OS(GUI 가능)&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;반드시 운영체제에 맞는 드라이버를 다운로드 받아야 한다. 웹 드라이버를 다운로드 받게되면 압축파일이 받아지게 되는데 압축을 풀고난 크롬드라이버를 파이썬 코드와 같은 경로에 두거나 경로를 기억해둔다. 나는 압축을 풀고 웹 드라이버 파일을 파이썬 코드 파일과 동일한 경로에 두었다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;2) Ubuntu 16.04(GUI 불가능) + Docker 컨테이너 환경&lt;/p&gt;
-
-&lt;p&gt;서버에서는 GUI가 안되고 파이썬 환경이 도커 컨테이너로 생성되어 있다. 따라서, CLI 환경에서 크롬 브라우저를 설치하여야 하고 크롬 웹드라이버도 다운로드 받아야 했다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 4. selenium 코드 테스트 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;우분투 서버 환경에서는 GUI를 지원하지 않기 때문에 세 환경 모두 headless 버전으로 셀레니움 코드를 테스트 하였다. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;selenium&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# headless 옵션 설정&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChromeOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'headless'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'window-size=1920x1080'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;disable-gpu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;no-sandbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webdriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'./chromedriver.exe'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chrome_options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'https://naver.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;implicitly_wait&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_screenshot_as_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'capture_naver.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;
-캡쳐화면을 확인해보면 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43968016-e66bf544-9d00-11e8-922b-75147af16884.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://beomi.github.io/2017/02/27/HowToMakeWebCrawler-With-Selenium/&lt;/li&gt;
-  &lt;li&gt;http://selenium-python.readthedocs.io/&lt;/li&gt;
-  &lt;li&gt;http://ocsusu.tistory.com/61&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 11 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Docker를 이용하여 Django 웹 데이터베이스 서버 셋팅</title>
-        <link>/python/django/development%20environment/docker/2018/08/09/django-docker-1.html</link>
-        <guid isPermaLink="true">/python/django/development%20environment/docker/2018/08/09/django-docker-1.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;docker 컨테이너 연결을 하고 난 뒤 django 서버 셋팅하는 방법을 정리하였다. 데이터베이스 컨테이너와 웹서버 컨테이너를 연결하는 방법은 아래의 포스팅을 참고하면 될 것 같다.&lt;br /&gt;
-* 도커 컨테이너 연결 : https://devyurim.github.io/ubuntu/docker/2018/06/27/ubuntu-docker-6.html
-&lt;br /&gt;&lt;br /&gt;
-
-도커 컨테이너 내에서 장고 서버를 구동하기 위한 셋팅 방법을 정리하였다. 장고 걸스 튜토리얼이 많은 도움이 되었다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. django 프로젝트 생성 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;장고 컨테이너 내부로 접속하여 장고 웹서버가 작동되는지 확인이 필요하다. 먼저 아래의 명령어를 실행하여 장고 프로젝트를 생성한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;django-admin startproject mysite .&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;위의 명령어를 실행하여 생성되는 디렉터리 구조는 다음과 같다.&lt;br /&gt;
-                        ├──manage.py &lt;br /&gt;
-                        └──mysite &lt;br /&gt;
-        ├── &lt;strong&gt;init&lt;/strong&gt;.py &lt;br /&gt;
-        ├── settings.py &lt;br /&gt;
-        ├── urls.py &lt;br /&gt;
-        └── wsgi.py &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;간단하게 역할들을 살펴보면 아래의 설명과 같다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;manage.py : 스크립트, 사이트 관리를 도와주는 역할, 스크립트 실행으로 웹서버를 실행할 수 있다.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;mysite/settings.py : 웹사이트 설정 파일&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;mysite/urls.py : Django 로 작성된 사이트의 “목차”라고 할 수 있다. &lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;mysite/wsgi.py : nginx나 apache를 연동하기 위한 interface&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. mysite/settings.py 파일 수정 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-그 다음 mysite/settings.py 파일을 수정해야한다. 에디터로 다음의 내용을 수정한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;먼저 시간, 호스트 접근권한을 변경하여 준다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;TIME_ZONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Asia/Seoul'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ALLOWED_HOSTS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'xxx.xxx.xxx.xxx(서버ip)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'127.0.0.1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'.pythonanywhere.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#만약에 서버가 있다면 서버의 ip 주소도 추가해준다.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;LANGUAGE_CODE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'en-us'&lt;/span&gt;       &lt;span class=&quot;c&quot;&gt;# 한국어로 바꾸고 싶다면 'ko-kr'로 변경 해주면 된다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 STATIC_URL밑에 STATIC_ROOT를 추가한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;STATIC_URL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/static/'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;STATIC_ROOT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BASE_DIR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'static'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이렇게 수정한다음 저장하고 아래의 명령어로 migrate를 해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py migrate&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 장고 서버를 실행 한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py runserver 0.0.0.0:8000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;다음과 같은 화면이 나오면 성공이다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43830179-b0c7ed74-9b3b-11e8-9e31-d563e2432ea8.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. 데이터베이스 설정 변경 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;장고 서버에서 셋팅하기전 데이터 베이스 컨테이너와 link가 잘 되었는지 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; mariadb &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; root &lt;span class=&quot;nt&quot;&gt;-p0000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;잘 접속이 되면 이제 장고 컨테이너에 링크된 mariadb를 셋팅하면 된다. 장고 서버는 기본 데이터베이스가 sqlite3으로 설정되어 있다.&lt;br /&gt;
-나는 mariadb를 사용하길 원하므로 mysite/settings.py 에서 다음과 같이 장고 서버의 셋팅을 변경한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;DATABASES&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'default'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'ENGINE'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'django.db.backends.mysql'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'NAME'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'impactfactor'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c&quot;&gt;# default로 사용하려는 데이터베이스 명&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'USER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                        &lt;span class=&quot;c&quot;&gt;# 유저 명&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'PASSWORD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'0000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                    &lt;span class=&quot;c&quot;&gt;# 비밀번호&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'HOST'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'mariadb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                     &lt;span class=&quot;c&quot;&gt;# 호스트 명&lt;/span&gt;
-        &lt;span class=&quot;s&quot;&gt;'PORT'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                            &lt;span class=&quot;c&quot;&gt;# 포트 번호 (default 3306)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;migrate가 성공하고 난 뒤 다시 서버를 실행하면 정상적으로 실행되는 것을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py migrate
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py runserver 0.0.0.0:8000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43830179-b0c7ed74-9b3b-11e8-9e31-d563e2432ea8.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;4. django 어플리케이션 생성 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;데이터 베이스 화면을 보고싶다면 어플리케이션을 작성(데이터베이스 관련)하고 관리자 계정을 생성하여야 한다. 먼저 관리자 계정을 생성하려면 프로젝트 내부에 어플리케이션이 있어야 한다. manage.py가 있는 경로에서 다음의 명령어로 어플리케이션 폴더를 생성한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py startapp show      &lt;span class=&quot;c&quot;&gt;# startapp 다음에 어플리케이션 이름을 입력한다.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;
-그럼 현재 디렉터리가 다음과 같을 것이다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;├──manage.py &lt;br /&gt;
-├──mysite &lt;br /&gt;
- |        ├── &lt;strong&gt;init&lt;/strong&gt;.py &lt;br /&gt;
- |        ├── settings.py &lt;br /&gt;
- |        ├── urls.py &lt;br /&gt;
- |        ├── wsgi.py &lt;br /&gt;
-└── show &lt;br /&gt;
-         ├── migrations &lt;br /&gt;
-          |           └── &lt;strong&gt;init&lt;/strong&gt;.py &lt;br /&gt;
-         ├── &lt;strong&gt;init&lt;/strong&gt;.py &lt;br /&gt;
-         ├── admin.py &lt;br /&gt;
-         ├── models.py &lt;br /&gt;
-         ├── tests.py &lt;br /&gt;
-         └── views.py &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;mysite/settings.py를 열고 다음의 항목에 어플리케이션(show)을 추가해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;INSTALLED_APPS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.admin'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.auth'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.contenttypes'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.sessions'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.messages'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'django.contrib.staticfiles'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'show'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;데이터베이스 테이블을 만들기 위해서 show/models.py 파일을 아래와 같이 수정한다.&lt;br /&gt;
-테이블명이 클래스명이 되며 클래스의 변수는 테이블의 각 컬럼이 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.db&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Journal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;isbn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BigIntegerField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;primary_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CharField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 show/admin.py 파일을 수정하여 관리자 페이지에 테이블이 나타나도록 수정한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.contrib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;show.models&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Journal&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Journal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음 변경사항을 반영하기 위해 아래의 명령어를 실행한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py makemigrations
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py migrate&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;migrate를 하면 데이터베이스에 테이블이 만들어지면서 동기화가 된다. mysql 데이터베이스를 확인해보면 다음과 같다. 아래의 데이터베이스는 추가적으로 여러개의 모델을 생성하여 테이블을 여러개 생성한 결과이다. &lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43893594-6fde0030-9c0a-11e8-8349-d6e4f3e9dfc1.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;5. django 관리자 계정 생성 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;이제 데이터 베이스에 관련된 셋팅은 다 되었고 최종적으로 확인하기 위하여 관리자 계정을 생성해야한다. 서버를 켜둔 상태로 다른 프롬프트 창을 열어 컨테이너에 재접속하여 아래의 명령어로 관리자 계정을 생성한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python manage.py createsuperuser
-Username &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;leave blank to use &lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;c&quot;&gt;# 관리자 계정명&lt;/span&gt;
-Email address: &lt;span class=&quot;c&quot;&gt;# 이메일&lt;/span&gt;
-Password: &lt;span class=&quot;c&quot;&gt;# 패스워드 입력&lt;/span&gt;
-Password &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;again&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;c&quot;&gt;# 패스워드 확인&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;호스트주소:포트/admin(ex. 127.0.0.1:8888/admin) 으로 접속하면 관리자 계정 로그인창이 뜬다. 방금 생성한 관리자 계정으로 로그인하면 접속이 되고 models.py에서 만들었던 테이블이 생성되 있는 것을 볼 수 있다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43833454-b5d5b3be-9b45-11e8-8a4a-b1afd1e02201.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://tutorial.djangogirls.org/ko&lt;/li&gt;
-  &lt;li&gt;http://blog.daum.net/_blog/BlogTypeView.do?blogid=0QtKg&amp;amp;articleno=28&amp;amp;categoryId=0&amp;amp;totalcnt=30&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Docker 컨테이너 연결하기(Mariadb - Django/Python) - Ubuntu 16.04 LTS (Server)</title>
-        <link>/development%20environment/docker/2018/08/09/docker-2.html</link>
-        <guid isPermaLink="true">/development%20environment/docker/2018/08/09/docker-2.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;연구실 서버에서 사용 할 데이터베이스를 docker를 이용하여 구축하였다. 연구실 서버가 외부에서도 사용가능 하니 로컬 데이터베이스가 아닌 서버 데이터베이스에 정보를 저장할 수 있도록 하기 위함이다.&lt;br /&gt;
-웹 프레임워크와 연동하여야 해서 조금 복잡하였다. 만드려는 컨테이너 구조는 아래의 그림과 같다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43888367-7c335e1a-9bfc-11e8-9f64-9222d2dac549.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-데이터 베이스 컨테이너와 웹서버 컨테이너가 연결되어 있는 구조이다. docker-compose는 사용하지 않고 웹서버 컨테이너 생성시 link 기능으로 연결해주었다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. Mariadb 도커 컨테이너 만들기&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;데이터베이스 컨테이너를 생성 시 mariadb 이미지를 사용하였다.일단 아래의 명령어를 통해 docker hub에서 mariadb 이미지를 다운로드 받는다. 아래의 명령어는 태그명을 latest를 가지는 mariadb 이미지를 다운로드 받는 명령어이다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull mariadb:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;다운로드 받은 이미지를 이용하여 데이터베이스 컨테이너를 생성(docker run)한다. 컨테이너가 삭제될 때 데이터가 날아가지 않도록 꼭 호스트의 데이터 볼륨과 연동해주어야 한다. 컨테이너를 생성하는 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;옵션&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;기능&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;–name&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;컨테이너 이름&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-v&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;데이터 볼륨 맵핑(경로)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-p&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;포트 맵핑(호스트포트:서비스포트)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-e MYSQL_ROOT_PASSWORD&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;MYSQL ROOT 패스워드 설정&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-d&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;사용하려는 이미지(이미지이름:태그명)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /my/own/datadir:/home/ailab/DB &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'0000'&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; mariadb:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;mariadb 컨테이너 내부로 접속하여 데이터베이스가 잘 구동 되는지 확인한다. 컨테이너 내부로 접속하여 mysql을 실행하는 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; mariadb /bin/bash   // 도커 컨테이너 내부 접속
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt;패스워드입력                // mysql 접속&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;유저 생성 안했을 시 root로 접속&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;추가적으로 mysql을 커맨드 라인으로 조작하는 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;show database&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                    // 데이터베이스 보기
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;use database이름&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                 // 데이터베이스 선택
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;show tabels&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                      // 데이터베이스 내부 테이블 보기&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. Python 컨테이너 내부에서 django 설치 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Django 이미지를 따로 사용하지 않고 기존에 사용하고 있던 Python/Tensorflow 개발용 컨테이너에 django를 설치하여 개발용 웹서버로 만들었다.
-기존에 사용하던 포트 이외 Django용 포트만 연결하여 주면 된다. 이 컨테이너에 데이터베이스 컨테이너를 연결해야하므로 link 명령어를 이용하여 데이터베이스를 연동하였다.
-먼저 텐서플로우 이미지를 이용하여 컨테이너를 생성하는 명령어는 아래와 같다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;텐서플로우 이미지 사용(주피터 노트북, 텐서플로우, 파이썬) / 8888 : 주피터 노트북 포트 , 8000 : 장고 포트, 3306 : 마리아 데이터베이스 포트) &lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;옵션&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;기능&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;NV_GPU&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;GPU 번호 지정&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;–name&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;컨테이너 이름&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;–link&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;연결할 컨테이너 이름(여기서는 mariadb 컨테이너)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-v&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;데이터 볼륨 맵핑(경로)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-p&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;포트 맵핑(호스트포트:서비스포트)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-e PASSWORD&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;host url로 접속시 패스워드 설정&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-d&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;사용하려는 이미지(이미지이름:태그명)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ NV_GPU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 nvidia-docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; crawler-journal &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;--link&lt;/span&gt; mariadb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/ailab/docker/crawler-journal:/notebooks &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8894:8888 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 81:8000 &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 6012:3306  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; crawler-journal:08.08&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;방금 생성한 도커 컨테이너 내부로 접속하여 장고를 설치하는 명령어는 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; crawler-journal /bin/bash   // 도커 컨테이너 내부 접속
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;django                          // 장고 설치&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. mariadb 컨테이너 연결 확인 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;현재의 컨테이너(웹 서버용)와 데이터베이스 컨테이너가 잘 연결(link) 되었는지 확인하기 위해서 몇가지 추가 작업이 필요하다. 먼저 웹 서버 컨테이너에서 mysql 서버에 접속하기 위해서는 apt-get으로 mysqlclient 패키지를 설치해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-get update
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysqlclient&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그다음 아래의 명령어로 mysql 서버에 접속한다. 이때 host는 mariadb(데이터베이스 컨테이너 이름)이고 계정은 따로 만들지 않았으니 root로 접속하고 패스워드(0000)를 입력해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mysql &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; mariadb &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; root &lt;span class=&quot;nt&quot;&gt;-p0000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;데이터 베이스에 접속이 되면 컨테이너간 통신이 되는 것이다. 원래 호스트 주소 입력란에 127.0.0.1 같은 ip주소를 입력해야 하지만 docker 컨테이너의 ip는 도커가 할당해주는 가상 ip주소 이기 때문에 ip 주소가 변하게 된다.(고정 ip 주소가 아니다.) 그렇기 때문에 link 기능을 이용하여 도커 컨테이너 내부에서 알아서 호스트 주소를 받을 수 있게 하는것이 link 기능이라고 한다. 따라서 mysql -h 입력란에 컨테이너 이름을 입력하여도 연결이 가능한 것이다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이렇게 해서 mariadb 컨테이너와 django/python 컨테이너가 연결이 되었다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://www.fun25.co.kr/blog/python-install-mysqlclient/&lt;/li&gt;
-  &lt;li&gt;https://wayhome25.github.io/mysql/2017/03/16/mysql-02-mysql-client/&lt;/li&gt;
-  &lt;li&gt;http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter06/02&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Git 설치와 초기 설정 for Mac OS X</title>
-        <link>/development%20environment/git/2018/08/08/git-1.html</link>
-        <guid isPermaLink="true">/development%20environment/git/2018/08/08/git-1.html</guid>
-        <description>&lt;blockquote&gt;
-  &lt;subtitle&gt;1. Homebrew 이용하여 Git 설치&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;point&gt;Homebrew&lt;/point&gt;를 이용하여 git을 간단하게 설치 할 수 있다. 명령어는 아래와 같다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;또는 직접 홈페이지에 가서 다운을 받아 설치하여도 된다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Git 설치 : https://git-scm.com &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. Git 계정 설정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;로컬 디렉토리에서 git 저장소로 변경 push 하려면 github 계정명과 패스워드를 계속 입력해야하는 번거로움이 있다. &lt;br /&gt;
-초기에 계정 설정을 한번만 해주면 (초기화 하지 않는 이상) 계속 유지되기 때문에 계정 설정을 해주는 것이 편리하다. &lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;계정설정은 &lt;point&gt;git config&lt;/point&gt; 라는 명령어로 실행할 수 있다. 명령어는 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;abcd&quot;&lt;/span&gt; // git user name
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email abcd@abcd // git user email&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;프로젝트마다 다른 email을 사용하고 싶으면 &lt;point&gt;--global&lt;/point&gt; 옵션을 제거하면 된다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;git config 설정확인 명령어는 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. git에 SSH 공개키 등록 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;계정 정보를 입력하고 난 후 인증은 &lt;point&gt;SSH 공개키&lt;/point&gt;로 인증해야 한다. 먼저 공개키가 있는지 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ~/.ssh/id_rsa.pub&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;디렉터리가 없다고 뜨면 아래의 명령어로 공개키를 생성한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;
-엔터 세번을 눌러 공개키를 만든다.(패스프레이즈 설정하지 않을 경우)&lt;br /&gt;
-다시 아래의 명령어로 공개키를 확인한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ~/.ssh/id_rsa.pub&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43790783-9ade549a-9aae-11e8-994d-c4f1eac714a0.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-나온 공개키를 github의 settings -&amp;gt; &lt;point&gt;SSH and GPG keys&lt;/point&gt; 카테고리를 클릭하고 오른쪽 부분의 new SSH key 버튼을 클릭하여 생성한 공개키를 등록한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43791012-4655461c-9aaf-11e8-8411-0457e2b94bb4.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-위의 이미지처럼 등록되면 성공!&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://git-scm.com/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&lt;/li&gt;
-  &lt;li&gt;https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&lt;/li&gt;
-  &lt;li&gt;https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Jekyll build 오류 해결 방법 - Windows 10</title>
-        <link>/development%20environment/github%20blog/2018/08/07/blog-7.html</link>
-        <guid isPermaLink="true">/development%20environment/github%20blog/2018/08/07/blog-7.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt;갑자기 윈도우에서 포스팅을 작성하고 확인하려고 jekyll build를 하였더니 아래의 오류가 발생하였다. &amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;PS C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\u&lt;/span&gt;ser&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;ropbox&lt;span class=&quot;se&quot;&gt;\5&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; 블로그&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;evYurim.github.io&amp;gt; jekyll build
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/spec_set.rb:91:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;block &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;materialize&lt;span class=&quot;s1&quot;&gt;': Could not find eventmachine-1.2.7-x64-mingw32 in any of the sources (Bundler::GemNotFound)
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/spec_set.rb:85:in `map!'&lt;/span&gt;
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/spec_set.rb:85:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;materialize&lt;span class=&quot;s1&quot;&gt;'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/definition.rb:171:in `specs'&lt;/span&gt;
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/definition.rb:238:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;specs_for&lt;span class=&quot;s1&quot;&gt;'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/definition.rb:227:in `requested_specs'&lt;/span&gt;
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/runtime.rb:108:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;block &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;definition_method&lt;span class=&quot;s1&quot;&gt;'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler/runtime.rb:20:in `setup'&lt;/span&gt;
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.16.3/lib/bundler.rb:107:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;setup&lt;span class=&quot;s1&quot;&gt;'
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.8.0/lib/jekyll/plugin_manager.rb:50:in `require_from_bundler'&lt;/span&gt;
-        from C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/jekyll-3.8.0/exe/jekyll:11:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&amp;lt;top &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;required&lt;span class=&quot;o&quot;&gt;)&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'
-        from C:/Ruby24-x64/bin/jekyll:23:in `load'&lt;/span&gt;
-        from C:/Ruby24-x64/bin/jekyll:23:in &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&amp;lt;main&amp;gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;구글에 검색하여 알아보았더니 bundle을 이용하여 gem버전을 업데이트 해줘야한다고 한다. 아래의 명령어로 해결하였다!&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-Could not find eventmachine-1.2.7-x64-mingw32 &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;any of the sources
-Run &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;missing gems.
-PS C:&lt;span class=&quot;se&quot;&gt;\U&lt;/span&gt;sers&lt;span class=&quot;se&quot;&gt;\u&lt;/span&gt;ser&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;ropbox&lt;span class=&quot;se&quot;&gt;\5&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; 블로그&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;evYurim.github.io&amp;gt; bundle &lt;span class=&quot;nb&quot;&gt;install
-&lt;/span&gt;Fetching gem metadata from https://rubygems.org/.............
-Using rake 10.5.0
-Using public_suffix 3.0.2
-Using addressable 2.5.2
-.....
-Using jekyll-category-pages 1.0.0
-Using jekyll-theme-type 1.1 from &lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;at &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;.&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
-Bundle &lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; 3 Gemfile dependencies, 30 gems now installed.
-Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle info &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gemname]&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to see where a bundled gem is installed.
-Post-install message from sass:
-
-Ruby Sass is deprecated and will be unmaintained as of 26 March 2019.
-
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; If you use Sass as a command-line tool, we recommend using Dart Sass, the new
-  primary implementation: https://sass-lang.com/install
-
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; If you use Sass as a plug-in &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;a Ruby web framework, we recommend using the
-  sassc gem: https://github.com/sass/sassc-ruby#readme
-
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; For more details, please refer to the Sass blog:
-  http://sass.logdown.com/posts/7081811&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;다시 jekyll build를 실행하니 작동하였다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; reference &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 07 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>지킬(Jekyll) 블로그 카테고리(category) 만들기</title>
-        <link>/development%20environment/github%20blog/2018/08/07/blog-6.html</link>
-        <guid isPermaLink="true">/development%20environment/github%20blog/2018/08/07/blog-6.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt;포스트 개수가 많아지다 보니 관리가 힘들어서 카테고리를 만들었다. 카테고리 만든 방법을 간단하게 정리하였다.&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 1. _layouts 폴더에 category.html 파일 생성 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;먼저 _layouts 폴더에 &lt;point&gt;category.html&lt;/point&gt; 파일을 생성해준다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43759600-a57e6fc4-9a5a-11e8-8de3-b9fd7d4691cf.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;category.html은 category 이름에 맞는 포스트들의 타이트들을 리스트로 보여준다. 코드는 아래와 같다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
-layout: default
----
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;posts-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.baseurl }}{{ post.url }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-          {{ post.title }}
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;{{ post.date | date_to_string }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/small&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  {% endfor %}
-  
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt; 2. _includes 폴더의 index.html 파일 수정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-아래의 내용과 같이 수정한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;header&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;site-category&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-    
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == &quot;category&quot; %}
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;category-link {% if page.url == node.url %} active{% endif %}&quot;&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.baseurl }}{{ node.url }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ node.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/header&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. category 폴더 생성 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-(맨 바깥의 디렉토리) 계정명.github.io 폴더 안에 &lt;point&gt;category&lt;/point&gt; 폴더를 만들어준 다음 원하는 카테고리 명의 markdown 파일을 추가해준다. &lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43759845-6fee187c-9a5b-11e8-9f09-9be929a5b3a6.png&quot; width=&quot;40%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;마크다운 파일 내용은 아래와 같다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;category&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;여기에 카테고리 이름 입력!&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;예를들어, docker 카테고리를 만들고 싶다면 category 폴더의 docker.md의 내용은 다음과 같다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43760274-88df8d92-9a5c-11e8-8860-22ecf8097bd5.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;4. 블로그 포스트에 category 추가하기&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;
-위의 세가지 셋팅 후 포스트를 작성 시 &lt;point&gt;카테고리 항목만 추가&lt;/point&gt;하여 주면 카테고리 지정이 된다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/43760664-bc1e00f2-9a5d-11e8-8c2f-0f8c7ac335d6.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-위의 이미지처럼 categories 항목을 추가해주고 원하는 카테고리 이름을 작성해주면 된다. (복수 카테고리도 가능하다.)&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;주의 해야 할 점은 반드시! &lt;point&gt;category 폴더에 원하는 category&lt;/point&gt;를 만들어주고 포스트에 같은 카테고리 명을 입력해야 한다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 07 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Docker를 이용하여 GitLab 설치하기 - Ubuntu 16.04 LTS (Server)</title>
-        <link>/development%20environment/docker/2018/06/27/docker-1.html</link>
-        <guid isPermaLink="true">/development%20environment/docker/2018/06/27/docker-1.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;이제 연구실 서버 외부 접속이 가능해져서 코드 버전 관리를 위해 &lt;point&gt;GitLab&lt;/point&gt;을 설치했다! 연구실 서버 환경은 우분투 16.04 LTS에 Docker를 사용하고 있다.&lt;br /&gt;
-GitLab 도커 이미지는 CE(Community Edition)과 EE(Enterprise Edition) 버전이 있는데 나는 &lt;point&gt;CE 버전&lt;/point&gt;으로 설치하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. GitLab Docker 이미지 다운로드&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;다음의 Docker 명령어를 통해서 gitlab 이미지를 Docker Hub에서 다운로드 받을 수 있다.&lt;br /&gt;
-latest의 태그명이 붙은 이미지를 다운로드 받았다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gitlab/gitlab-ce:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. gitlab 설치&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;다음의 Docker 명령어로 &lt;point&gt;GitLab 컨테이너를 생성&lt;/point&gt;한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--detach&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--hostname&lt;/span&gt; gitlab.ailab.com &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 8897:80 &lt;span class=&quot;nt&quot;&gt;--publish&lt;/span&gt; 6015:22 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; gitlab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; always &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/config:/home/ailab/GitLab &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/logs:/home/ailab/GitLab/log &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt; /srv/gitlab/data:/home/ailab/GitLab/data &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    gitlab/gitlab-ce:latest&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-80번 포트는 http용 포트, 22번 포트는 ssh deamon용 포트이다. 도커 포트 맵핑은 &lt;point&gt;호스트포트:컨테이너포트&lt;/point&gt;로 이루어지며
-나의 경우 publish 옵션을 보면 80번 컨테이너 포트는 호스트 포트 8897로, 22번 컨테이너 포트는 호스트 포트 6015 로 맵핑을 시켜두었다.&lt;br /&gt;
-즉, 웹에서 접근시 &lt;point&gt;서버 주소:8897&lt;/point&gt; 로 접속할 수 있고 SSH로 GitLab 접속시 &lt;point&gt;서버 주소와 ssh 6015 포트&lt;/point&gt;로 접속할 수 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41970003-37695cc8-7a44-11e8-8089-ee473171e63c.png&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;데이터 저장 맵핑 설명은 다음을 참고하였다.&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;참고로, &lt;point&gt;노출 host 포트&lt;/point&gt;는 다음과 같다고 문서에 적혀있다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;80 (http)&lt;/li&gt;
-  &lt;li&gt;443 (if you configure HTTPS)&lt;/li&gt;
-  &lt;li&gt;8080 (used by Unicorn)&lt;/li&gt;
-  &lt;li&gt;22 (used by the SSH deamon)
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. Gitlab Configuration 수정&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;point&gt;외부에서 접속할 수 있도록 하기 위해서는 한가지 셋팅이 더 필요하다.&lt;/point&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-먼저 아래의 Docker 명령어로 gitlab 이름의 컨테이너로 접속한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; gitlab /bin/bash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;다음 아래의 경로로 접속하여 nano 에디터로 &lt;point&gt;gitlab.rb&lt;/point&gt; 파일을 수정한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/gitlab
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;nano gitlab.rb&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;파일에 들어가보면 화면 중간부분에 GitLab URL부분에 &lt;point&gt;extenal_url 옵션&lt;/point&gt;의 주석을 해제하고 외부에서 접속 할 url을 입력해 준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;## GitLab URL&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! URL on which GitLab will be reachable.&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! For more details on configuring external_url see:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab&lt;/span&gt;
-external_url &lt;span class=&quot;s1&quot;&gt;'http://gitlab.ailab.com:8897'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;조금 내리다 보면 GitLab Shell setting for GitLab 부분에서 &lt;point&gt;gitlab_rails['gitlab_shell_ssh_port']&lt;/point&gt; 부분의 주석을 풀고 포트 부분을 수정해준다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;### GitLab Shell settings for GitLab&lt;/span&gt;
-gitlab_rails[&lt;span class=&quot;s1&quot;&gt;'gitlab_shell_ssh_port'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 6015
-&lt;span class=&quot;c&quot;&gt;# gitlab_rails['gitlab_shell_git_timeout'] = 800&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;ctrl+o로 저장하고 enter를 누른후 ctrl+x로 나노 에디터를 빠져나온다.&lt;br /&gt;
-서버 주소:포트번호(xxx.xxx.xxx.xxx:8897)로 사이트를 접속하면 정상적으로 접속이 되는 것을 확인할 수 있다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971445-6e0bd990-7a49-11e8-91c9-ca415231c5fb.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;root 계정이 사용할 비밀번호를 입력하고 id는 root 비밀번호는 방금 설정한 비밀번호로 sign in 하면 로그인이 되는 것을 확인 할 수 있다.&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971750-78972b02-7a4a-11e8-99f5-4b9bd8af1acd.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;또한 root 계정 이외에 &lt;point&gt;개인 계정&lt;/point&gt;을 만들고 싶다면 register 부분에서 생성하면 사용할 수 있다&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41972266-503a48d6-7a4c-11e8-8cc9-359bcee7372c.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/41971844-c1fe2c50-7a4a-11e8-9721-1dc24bf195ea.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이렇게 나의 소스코드를 안전하게 관리할 수 있는 개인 계정 서버가 생성되었다!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://docs.gitlab.com/omnibus/docker/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Jun 2018 00:00:00 +0900</pubDate>
       </item>
     
   </channel>

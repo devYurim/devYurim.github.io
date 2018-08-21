@@ -2,143 +2,187 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-3.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-2.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/data%20science/statistics/2018/08/14/statistics-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/13/crawler-4.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/13/crawler-3.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/data%20base/mysql/2018/08/13/mysql-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/12/blog-8.html</loc>
+        <loc>https://devYurim.github.io/python/crawler/2018/08/18/crawler-5.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/11/crawler-2.html</loc>
+        <loc>https://devYurim.github.io/data%20science/r%20programming/2018/08/15/R-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/crawler/2018/08/11/crawler-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/r%20programming/2018/08/15/R-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/django/development%20environment/docker/2018/08/09/django-docker-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/r%20programming/2018/08/15/R-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/docker/2018/08/09/docker-2.html</loc>
+        <loc>https://devYurim.github.io/data%20science/r%20programming/2018/08/15/R-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/git/2018/08/08/git-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/statistics/2018/08/14/statistics-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/07/blog-7.html</loc>
+        <loc>https://devYurim.github.io/data%20science/statistics/2018/08/14/statistics-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/08/07/blog-6.html</loc>
+        <loc>https://devYurim.github.io/data%20science/statistics/2018/08/14/statistics-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/docker/2018/06/27/docker-1.html</loc>
+        <loc>https://devYurim.github.io/python/crawler/2018/08/13/crawler-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/29/ubuntu-4.html</loc>
+        <loc>https://devYurim.github.io/python/crawler/2018/08/13/crawler-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/28/ubuntu-3.html</loc>
+        <loc>https://devYurim.github.io/data%20base/mysql/2018/08/13/mysql-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/08/12/blog-8.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/tensorflow/2018/05/25/tensorflow-2.html</loc>
+        <loc>https://devYurim.github.io/python/crawler/2018/08/11/crawler-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/24/ubuntu-2.html</loc>
+        <loc>https://devYurim.github.io/python/crawler/2018/08/11/crawler-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/ubuntu/2018/05/02/ubuntu-1.html</loc>
+        <loc>https://devYurim.github.io/python/django/development%20environment/docker/2018/08/09/django-docker-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/java/2018/05/02/java-1.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/docker/2018/08/09/docker-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/python/tensorflow/2018/04/30/tensorflow-1.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/git/2018/08/08/git-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/data%20science/machine%20learning/2018/04/13/ml-1.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/08/07/blog-7.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/19/android-6.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/17/android-5.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/docker/2018/06/27/docker-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/17/android-4.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/ubuntu/2018/05/29/ubuntu-4.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/17/android-3.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/ubuntu/2018/05/28/ubuntu-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/03/android-2.html</loc>
+        <loc>https://devYurim.github.io/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/android/android/2018/01/03/android-1.html</loc>
+        <loc>https://devYurim.github.io/python/tensorflow/2018/05/25/tensorflow-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-5.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/ubuntu/2018/05/24/ubuntu-2.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-4.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/ubuntu/2018/05/02/ubuntu-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-3.html</loc>
+        <loc>https://devYurim.github.io/development%20environment/java/2018/05/02/java-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-2.html</loc>
+        <loc>https://devYurim.github.io/python/tensorflow/2018/04/30/tensorflow-1.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/development%20environment/github%20blog/2018/01/01/blog-1.html</loc>
+        <loc>https://devYurim.github.io/data%20science/machine%20learning/2018/04/13/ml-1.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/19/android-6.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/17/android-5.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/17/android-4.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/17/android-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/03/android-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/android/android/2018/01/03/android-1.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/01/01/blog-5.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/01/01/blog-4.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/01/01/blog-3.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/01/01/blog-2.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://devYurim.github.io/development%20environment/github%20blog/2018/01/01/blog-1.html</loc>
     </url>
     
 
@@ -146,7 +190,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/404.html</loc>
+        <loc>https://devYurim.github.io/404.html</loc>
     </url>
     
     
@@ -154,7 +198,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/Android/Android</loc>
+        <loc>https://devYurim.github.io/DS/ADsP</loc>
     </url>
     
     
@@ -162,7 +206,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/Python/Crawler</loc>
+        <loc>https://devYurim.github.io/Android/Android</loc>
     </url>
     
     
@@ -170,7 +214,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/Python/Django</loc>
+        <loc>https://devYurim.github.io/Python/Crawler</loc>
     </url>
     
     
@@ -178,7 +222,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DE/Docker</loc>
+        <loc>https://devYurim.github.io/Python/Django</loc>
     </url>
     
     
@@ -186,7 +230,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DE/Git</loc>
+        <loc>https://devYurim.github.io/DE/Docker</loc>
     </url>
     
     
@@ -194,7 +238,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DE/Github Blog</loc>
+        <loc>https://devYurim.github.io/DE/Git</loc>
     </url>
     
     
@@ -202,7 +246,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DE/Java</loc>
+        <loc>https://devYurim.github.io/DE/Github Blog</loc>
     </url>
     
     
@@ -210,7 +254,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DS/ML</loc>
+        <loc>https://devYurim.github.io/DE/Java</loc>
     </url>
     
     
@@ -218,7 +262,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DB/MYSQL</loc>
+        <loc>https://devYurim.github.io/DS/ML</loc>
     </url>
     
     
@@ -226,7 +270,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DS/Statistics</loc>
+        <loc>https://devYurim.github.io/DB/MYSQL</loc>
     </url>
     
     
@@ -234,7 +278,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/Python/Tensorflow</loc>
+        <loc>https://devYurim.github.io/DS/R</loc>
     </url>
     
     
@@ -242,7 +286,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/DE/Ubuntu</loc>
+        <loc>https://devYurim.github.io/DS/Statistics</loc>
     </url>
     
     
@@ -250,17 +294,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/about/</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/</loc>
+        <loc>https://devYurim.github.io/Python/Tensorflow</loc>
     </url>
     
     
@@ -268,7 +302,15 @@
     
     
     <url>
-        <loc>http://localhost:4000/search.html</loc>
+        <loc>https://devYurim.github.io/DE/Ubuntu</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/about/</loc>
     </url>
     
     
@@ -278,7 +320,27 @@
     
     
     <url>
-        <loc>http://localhost:4000/tags.html</loc>
+        <loc>https://devYurim.github.io/</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/search.html</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/tags.html</loc>
     </url>
     
     
@@ -286,7 +348,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Android%252FAndroid/</loc>
+        <loc>https://devYurim.github.io/category/Android%252FAndroid/</loc>
     </url>
     
     
@@ -294,7 +356,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Android%252FAndroid/page2.html</loc>
+        <loc>https://devYurim.github.io/category/Android%252FAndroid/page2.html</loc>
     </url>
     
     
@@ -302,7 +364,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Data+Base%252FMYSQL/</loc>
+        <loc>https://devYurim.github.io/category/Data+Base%252FMYSQL/</loc>
     </url>
     
     
@@ -310,7 +372,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Data+Science%252FMachine+Learning/</loc>
+        <loc>https://devYurim.github.io/category/Data+Science%252FADsP/</loc>
     </url>
     
     
@@ -318,7 +380,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Data+Science%252FStatistics/</loc>
+        <loc>https://devYurim.github.io/category/Data+Science%252FADsP/page2.html</loc>
     </url>
     
     
@@ -326,7 +388,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Enviroment%252FDocker/</loc>
+        <loc>https://devYurim.github.io/category/Data+Science%252FMachine+Learning/</loc>
     </url>
     
     
@@ -334,7 +396,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FDocker/</loc>
+        <loc>https://devYurim.github.io/category/Data+Science%252FR+programming/</loc>
     </url>
     
     
@@ -342,7 +404,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FGit/</loc>
+        <loc>https://devYurim.github.io/category/Data+Science%252FStatistics/</loc>
     </url>
     
     
@@ -350,7 +412,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FGithub+Blog/</loc>
+        <loc>https://devYurim.github.io/category/Development+Enviroment%252FDocker/</loc>
     </url>
     
     
@@ -358,7 +420,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FGithub+Blog/page2.html</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FDocker/</loc>
     </url>
     
     
@@ -366,7 +428,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FJava/</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FGit/</loc>
     </url>
     
     
@@ -374,7 +436,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Development+Environment%252FUbuntu/</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FGithub+Blog/</loc>
     </url>
     
     
@@ -382,7 +444,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Python%252FCrawler/</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FGithub+Blog/page2.html</loc>
     </url>
     
     
@@ -390,7 +452,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Python%252FDjango/</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FJava/</loc>
     </url>
     
     
@@ -398,7 +460,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/category/Python%252FTensorflow/</loc>
+        <loc>https://devYurim.github.io/category/Development+Environment%252FUbuntu/</loc>
     </url>
     
     
@@ -406,7 +468,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page2/</loc>
+        <loc>https://devYurim.github.io/category/Python%252FCrawler/</loc>
     </url>
     
     
@@ -414,7 +476,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page3/</loc>
+        <loc>https://devYurim.github.io/category/Python%252FDjango/</loc>
     </url>
     
     
@@ -422,7 +484,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page4/</loc>
+        <loc>https://devYurim.github.io/category/Python%252FTensorflow/</loc>
     </url>
     
     
@@ -430,7 +492,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page5/</loc>
+        <loc>https://devYurim.github.io/blog/page2/</loc>
     </url>
     
     
@@ -438,7 +500,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page6/</loc>
+        <loc>https://devYurim.github.io/blog/page3/</loc>
     </url>
     
     
@@ -446,7 +508,55 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/page7/</loc>
+        <loc>https://devYurim.github.io/blog/page4/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page5/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page6/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page7/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page8/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page9/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://devYurim.github.io/blog/page10/</loc>
     </url>
     
     

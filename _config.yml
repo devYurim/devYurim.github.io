@@ -1,4 +1,5 @@
 # SITE CONFIGURATION
+encoding: "utf-8"
 baseurl:
 url: "https://devYurim.github.io"
 

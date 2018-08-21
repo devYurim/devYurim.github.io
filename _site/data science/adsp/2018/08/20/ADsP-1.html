@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>1-1. 데이터의 이해 - 데이터와 정보 | devYurim</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/data%20science/adsp/2018/08/20/ADsP-1.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">devYurim</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/about/">
+									About
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Python</a>
+					<ul>
+							<li><a href="/Python/Crawler">Crawler</a></li>
+							<li><a href="/Python/Django">Django</a></li>
+							<li><a href="/Python/Tensorflow">Tensorflow</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Data Science</a>
+					<ul>
+						<li><a href="/DS/Statistics">Statistics</a></li>
+						<li><a href="/DS/R">R programming</a></li>
+						<li><a href="/DS/ML">Machine Learning</a></li>
+						<li><a href="/DS/ADsP">ADsP</a></li>
+					</ul>
+				</li>
+				<li><a href="/">Data Base</a>
+					<ul>
+						<li><a href="/DB/MYSQL">MYSQL</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Development Enviroment</a>
+					<ul>
+						  <li><a href="/DE/Github Blog">Github Blog</a></li>
+						  <li><a href="/DE/Git">Git</a></li>
+						  <li><a href="/DE/Docker">Docker</a></li>
+						  <li><a href="/DE/Ubuntu">Ubuntu</a></li>
+						  <li><a href="/DE/Java">Java</a></li>
+					</ul>
+				</li>
+
+				<li><a href="/">Android</a>
+					<ul>
+						<li><a href="/Android/Android">Android</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">1-1. 데이터의 이해 - 데이터와 정보</h1>
+    
+    <p class="meta">
+      August 20, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /></p>
+
+<blockquote>
+  <subtitle> 1. 데이터의 정의 </subtitle>
+</blockquote>
+
+<ul>
+  <li>데이터는 <point>객관적 사실(fact)</point>이라는 존재적 특성을 가진다. -&gt; 데이터는 개별 데이터 자체로는 의미가 중요하지 않은 객관적 사실을 말한다.<br /></li>
+  <li>데이터는 <point>추론, 예측, 전망, 추정</point>을 위한 근거(basis)로 기능하는 당위적 특성을 가진다. -&gt; 다른 객체와의 상호 관계 속에서 가치를 갖는다.<br />
+<br /></li>
+</ul>
+
+<blockquote>
+  <subtitle> 2. 데이터의 유형 </subtitle>
+</blockquote>
+
+<p>|구분   |형태   |
+|:-:|:-:|
+|정성적 데이터(qualitative data)   |언어, 문자 등 비정형 데이터(비정형 데이터)<br />자료의 성질, 특징을 설명 또는 요약<br /> 상대적으로 많은 비용과 기술적 투자가 수반된다.  |
+|정량적 데이터(quantitative data)   |수치, 도형, 기호 등(정형 데이터) <br /> 자료를 수치화 <br /> 저장, 검색, 분석 활용에 용이하다.<br />  |
+<br /><br /></p>
+
+<blockquote>
+  <subtitle> 3. 지식경영 핵심 이슈 &lt;/subititle&gt;
+</subtitle>
+</blockquote>
+
+<ul>
+  <li>암묵지 : 학습과 체험을 통하여 개인에게 습득되지만 겉으로는 드러나지 않는 상태의 지식</li>
+  <li>
+    <p>형식지 : 암묵지가 문서나 메뉴얼처럼 외부로 표출되어서 여러 사람이 공유할 수 있는 지식
+<br /></p>
+  </li>
+  <li>지식경영(knowledge management) : 개인의 암묵지와 집단에서의 형식지가 나선형의 형태로 회전하면서 생성, 발전, 전환되는 지식의 발전을 기반으로한 기업의 경영</li>
+  <li>지식 나선 활동(creative route)</li>
+</ul>
+
+<p>|암묵지(Tacit knowledge)   |형식지(Explicit knowledge)|
+|:———————:  |:—————————:|
+| 공통화(socialization)    | 표출화(Externalization)   |
+| 내면화(internalization)  | 연결화(Combination)    |
+<br /><br /></p>
+
+<blockquote>
+  <subtitle> 4. 데이터와 정보의 관계 </subtitle>
+</blockquote>
+
+<ul>
+  <li>DIKW 피라미드(Data, Information, Knowledge, Wisdom)</li>
+</ul>
+<center><img src="https://www.researchgate.net/publication/313020352/figure/fig4/AS:455507778510848@1485612925004/The-DIKW-pyramid-Source-Soloviev-K-2016.jpg" width="80%" /><br />The DIKW pyramid (Source: Soloviev, K., 2016)</center>
+<p><br /><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">종류</th>
+      <th style="text-align: center">설명</th>
+      <th style="text-align: center">예시</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">데이터(Data)</td>
+      <td style="text-align: center">데이터를 가공하기 전의 순수한 수치나 기호<br /> 개별 데이터 자체로는 의미가 중요하지 않은 객관적인 사실</td>
+      <td style="text-align: center">A 마트 100원, B마트는 200원에 연필을 판매한다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">정보(Information)</td>
+      <td style="text-align: center">데이터의 가공 및 상관관계 간 이해를 통해 패턴을 인식하고 의미를 부여한 데이터<br /> 정보가 내포하는 의미는 유용하지 않을 수 있다.</td>
+      <td style="text-align: center">A 마트의 연필 가격이 더 싸다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">지식(Knowledge)</td>
+      <td style="text-align: center">상호 연결된 정보 패턴을 이해하여 이를 토대로 예측한 결과물<br /> 데이터를 통해 도출된 다양한 정보를 구조화하여 유의미한 정보로 분류하고 개인적인 경험을 결합시켜 고유의 지식으로 내재화 한 것</td>
+      <td style="text-align: center">상대적으로 저렴한 A마트에서 연필을 사야겠다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">지혜(Wisdom)</td>
+      <td style="text-align: center">근본 원리에 대한 깊은 이해를 바탕으로 도출되는 아이디어<br /> 지식의 축적과 깊은 이해를 바탕으로 도출되는 아이디어</td>
+      <td style="text-align: center">A마트의 다른 상품들도 B마트보다 쌀 것이라고 판단한다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /><br /><br /><br /></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#ADsP Part1">#ADsP Part1</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://devYurim.github.io/data%20science/adsp/2018/08/20/ADsP-1.html#disqus_thread"></a>
+
+<div class="comments">
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-devyurim-github-io-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/python/crawler/2018/08/18/crawler-5.html">
+        HTML 파싱하기 - BeautifulSoup
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/data%20science/adsp/2018/08/20/ADsP-2.html">
+        1-2. 데이터의 이해 - 데이터베이스의 정의와 특징
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
