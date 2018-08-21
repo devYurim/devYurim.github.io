@@ -5,7 +5,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://devYurim.github.io/</link>
     <description>developer blog</description>
-    <pubDate>Tue, 21 Aug 2018 16:15:49 +0900</pubDate>
+    <pubDate>Tue, 21 Aug 2018 17:40:46 +0900</pubDate>
     
       <item>
         <title>3-1,2,3. 데이터 사이언스와 전략 인사이트 - 전략 인사이트 도출을 위한 필요 역량, 빅데이터 그리고 데이터 사이언스의 미래</title>
@@ -17,37 +17,44 @@
   &lt;subtitle&gt; 1. 전략 인사이트 도출을 위한 필요 역량 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;1) 데이터 사이언스 의미와 역할&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;대상 : 정형 또는 비정형을 막론하고 인터넷, 휴대전화, 감시용 카메라 등에서 생성되는 숫자와 문자, 영상 정보 등 다양한 유형의 데이터를 대상으로 함&lt;/li&gt;
+  &lt;li&gt;기존의 통계학과 다른점은 총제적 접근법을 사용한다는 점이다.&lt;/li&gt;
+  &lt;li&gt;전략적 통찰을 추구하고, 비즈니스 핵심 이슈에 답을 하고, 사업의 성과를 견인해 나갈수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;데이터 사이언스 의미와 역할
-    &lt;ul&gt;
-      &lt;li&gt;대상 : 정형 또는 비정형을 막론하고 인터넷, 휴대전화, 감시용 카메라 등에서 생성되는 숫자와 문자, 영상 정보 등 다양한 유형의 데이터를 대상으로 함&lt;/li&gt;
-      &lt;li&gt;기존의 통계학과 다른점은 총제적 접근법을 사용한다는 점이다.&lt;/li&gt;
-      &lt;li&gt;전략적 통찰을 추구하고, 비즈니스 핵심 이슈에 답을 하고, 사업의 성과를 견인해 나갈수 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터 사이언스의 3대 구성요소
-    &lt;ul&gt;
-      &lt;li&gt;IT(Data Management)&lt;/li&gt;
-      &lt;li&gt;Analytics(분석적 영역)&lt;/li&gt;
-      &lt;li&gt;비즈니스 분석(비즈니스 컨설팅)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터 사이언티스트의 역량
-    &lt;ul&gt;
-      &lt;li&gt;데이터 사이언티스트의 중요한 특징 : 강력한 호기심(Intensive curiosity)&lt;/li&gt;
-      &lt;li&gt;호기심 : 문제의 이면을 파고들고, 질문들을 찾고, 검증 가능한 가설을 세우는 능력&lt;/li&gt;
-      &lt;li&gt;Hard skill : 빅데이터에 대한 이론적 지식, 분석 기술에 대한 숙련&lt;/li&gt;
-      &lt;li&gt;Soft skill : 통찰력 있는 분석(창의적 사고, 호기심, 논리적 비판), 설득력 있는 전달(스토리 텔링, Visualization), 다분야 간 협력(Communication)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터 사이언스 : 과학과 인문의 교차로
-    &lt;ul&gt;
-      &lt;li&gt;전문가들은 데이터 사이언티스트에게 스토리 텔링, 커뮤니케이션, 창의력, 열정, 직관력, 비판적 시각, 글쓰기 능력, 대화 능력(인문학의 주요 주제들)등이 필요하다고 강조하고 있다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터 사이언티스트에게 요구되는 인문학적 사고의 특성과 역할&lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;p&gt;2) 데이터 사이언스의 3대 구성요소&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;IT(Data Management)&lt;/li&gt;
+  &lt;li&gt;Analytics(분석적 영역)&lt;/li&gt;
+  &lt;li&gt;비즈니스 분석(비즈니스 컨설팅)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) 데이터 사이언티스트의 역량&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 사이언티스트의 중요한 특징 : 강력한 호기심(Intensive curiosity)&lt;/li&gt;
+  &lt;li&gt;호기심 : 문제의 이면을 파고들고, 질문들을 찾고, 검증 가능한 가설을 세우는 능력&lt;/li&gt;
+  &lt;li&gt;Hard skill : 빅데이터에 대한 이론적 지식, 분석 기술에 대한 숙련&lt;/li&gt;
+  &lt;li&gt;Soft skill : 통찰력 있는 분석(창의적 사고, 호기심, 논리적 비판), 설득력 있는 전달(스토리 텔링, Visualization), 다분야 간 협력(Communication)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;4) 데이터 사이언스 : 과학과 인문의 교차로&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;전문가들은 데이터 사이언티스트에게 스토리 텔링, 커뮤니케이션, 창의력, 열정, 직관력, 비판적 시각, 글쓰기 능력, 대화 능력(인문학의 주요 주제들)등이 필요하다고 강조하고 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;5) 데이터 사이언티스트에게 요구되는 인문학적 사고의 특성과 역할&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -76,9 +83,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;인간을 바라보는 유형별 세가지 관점&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;6) 인간을 바라보는 유형별 세가지 관점&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;타고난 성향의 관점 : 인간은 변하지 않는 존재로 상정&lt;/li&gt;
@@ -143,20 +148,52 @@
   &lt;li&gt;개인 : 목적에 따라 활용&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;subtitle&gt; 3. 빅데이터 활용 테크닉 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;|종류       |설명                   |
-|:———:|:—————————:|
-| 연관 규칙 학습&lt;br /&gt;(Association rule learning)|어떤 변수간에 주목할만한 상관관계가 있는지 찾아내는 방법 |
-| 유형분석&lt;br /&gt;(Classification tree analysis)|사건이 속하게 될 범주를 찾아내는 일&lt;br /&gt;(어떤 특성을 가진 집단에 속하는가?) |
-| 유전알고리즘&lt;br /&gt;(Genetic algorithm)| 최적화가 필요한 문제의 해결책을 자연선택, 돌연변이 등과 같은 메커니즘을 통해 선택|
-| 기계학습&lt;br /&gt;(Machine learning)| 훈련 데이터로부터 학습한 알려진 특성을 활용해 예측하는 일|
-| 회귀분석&lt;br /&gt;(Regression analysis)| 독립변수와 종속변수의 변화를 파악하여 두 변수의 관계를 파악|
-| 감정분석&lt;br /&gt;(Sentiment analysis)| 특정 주제에 대해 말하거나 글을 쓴 사람의 감정 분석 |
-| 소셜 네트워크 분석&lt;br /&gt;(Social network analysis)&lt;br /&gt;=사회관계망분석(SNA)| 오피니언 리더&lt;br /&gt;영향력이 있는 사람을 찾아낼 수 있으면 고객들 간 소셜관계를 파악할 수 있다. |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;종류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;연관 규칙 학습&lt;br /&gt;(Association rule learning)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;어떤 변수간에 주목할만한 상관관계가 있는지 찾아내는 방법&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유형분석&lt;br /&gt;(Classification tree analysis)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사건이 속하게 될 범주를 찾아내는 일&lt;br /&gt;(어떤 특성을 가진 집단에 속하는가?)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유전알고리즘&lt;br /&gt;(Genetic algorithm)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;최적화가 필요한 문제의 해결책을 자연선택, 돌연변이 등과 같은 메커니즘을 통해 선택&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;기계학습&lt;br /&gt;(Machine learning)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;훈련 데이터로부터 학습한 알려진 특성을 활용해 예측하는 일&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;회귀분석&lt;br /&gt;(Regression analysis)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;독립변수와 종속변수의 변화를 파악하여 두 변수의 관계를 파악&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;감정분석&lt;br /&gt;(Sentiment analysis)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;특정 주제에 대해 말하거나 글을 쓴 사람의 감정 분석&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;소셜 네트워크 분석&lt;br /&gt;(Social network analysis)&lt;br /&gt;=사회관계망분석(SNA)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;오피니언 리더&lt;br /&gt;영향력이 있는 사람을 찾아낼 수 있으면 고객들 간 소셜관계를 파악할 수 있다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt;4. 위기요인 및 통제 방안 &lt;/subtitle&gt;
@@ -212,19 +249,39 @@
 &lt;ul&gt;
   &lt;li&gt;데이터 크기 관점 : 저장, 관리 분석할 수 있는 범위를 초과하는 규모의 데이터&lt;/li&gt;
   &lt;li&gt;데이터 분석 관점 : 다양한 종류의 대규모 데이터로부터 저렴한 비용으로 가치를 추출하고 데이터의 초고속 수집, 발굴, 분석을 지원하도록 고안된 차세대 기술 및 아키텍쳐&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터 가치 관점 : 대용량 데이터를 활용해 작은 데이터에서는 얻을 수 없었던 새로운 통찰이나 가치를 추출해내는 것
-&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;데이터 가치 관점 : 대용량 데이터를 활용해 작은 데이터에서는 얻을 수 없었던 새로운 통찰이나 가치를 추출해내는 것&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;3V(Volume, Variety, Velocity)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;|종류       |주요 솔루션                   |
-|:———:|:—————————:|
-| 데이터의 크기(Volume)|생성되는 모든 데이터를 수집 |
-| 데이터의 다양성(Variety)|정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석 대상으로 함 |
-| 데이터의 속도(Velocity)|사용자가 원하는 시간 내에 데이터 분석결과를 제공하는 것&lt;br /&gt;데이터의 업데이터되는 속도가 매우 빨라지는 것 |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;종류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;주요 솔루션&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터의 크기(Volume)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;생성되는 모든 데이터를 수집&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터의 다양성(Variety)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석 대상으로 함&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터의 속도(Velocity)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사용자가 원하는 시간 내에 데이터 분석결과를 제공하는 것&lt;br /&gt;데이터의 업데이터되는 속도가 매우 빨라지는 것&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 2. 빅데이터가 만들어내는 본질적인 변화 &lt;/subtitle&gt;
@@ -238,9 +295,10 @@
   &lt;li&gt;질 -&amp;gt; 양
 &lt;br /&gt;: 데이터의 수가 증가함에 따라 사소한 몇개의 오류가 대세에 영향을 주지 못한다.&lt;/li&gt;
   &lt;li&gt;인과관계 -&amp;gt; 상관관계
-&lt;br /&gt;: 인과관계 분석은 데이터를 얻는데 드는 비용이 매우 비싼 모델이다. 비즈니스 상황에서는 상관관계 분석으로 충분하다.
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;br /&gt;: 인과관계 분석은 데이터를 얻는데 드는 비용이 매우 비싼 모델이다. 비즈니스 상황에서는 상관관계 분석으로 충분하다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 3. 데이터의 크기를 나타내는 단위 &lt;/subtitle&gt;
@@ -288,22 +346,55 @@
   &lt;subtitle&gt; 1. 기업 내부 데이터베이스 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;|구분                                 |&lt;center&gt;주요 특징&lt;/center&gt;|
-|:———————————:  |:—————————|
-| 1980년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스  | 1. OLTP(On-line Transaction Processing, 온라인 거래처리)&lt;br /&gt; : 주 컴퓨터와 통신회선으로 접속되어 있는 복수의 사용자 단말에서 발생한 트랜잭션을 주 컴퓨터에서 처리하여 그 결과를 즉석에서 사용자에게 되돌려 보내주는 처리 형태 &lt;br /&gt; : 데이터는 진행중인 비즈니스 프로세스&lt;br /&gt; : 여러 과정이 하나의 단위 프로세스로 실행되도록 하는 프로세스 &lt;br /&gt; : 비즈니스 작업을 제어 및 실행 &lt;br /&gt;&lt;br /&gt;2. OLAP(On-line Analytical Processing, 온라인 분석처리)&lt;br /&gt; : 다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 제공할 수 있는 기술&lt;br /&gt; : 데이터는 모든 유형의 비즈니스 활동을 다차원적으로 보여줌 &lt;br /&gt; : 의사결정 지원, 계획 및 문제 해결을 도움    |
-| 2000년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스  | 1. CRM(Customer Relationship Management, 고객 관계 관리) &lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능하게 함으로써 보다 높은 이익을 창출 할 수 있는 솔루션 &lt;br /&gt;&lt;br /&gt; 2. SCM(Supply Chain Management, 공급망 관리) &lt;br /&gt; : 제조, 물류, 유통업체 등 유통공급망에 참여하는 모든 업체들이 협력을 바탕으로 정보기술(Information Technology)을 활용, 재고를 최적화하기 위한 솔루션 &lt;br /&gt; : 유통, 판매 및 고객데이터가 CRM과 연동되므로 CRM과 SCM은 상호밀접한 관련을 가진다.   |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;구분&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;주요 특징&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1980년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. OLTP(On-line Transaction Processing, 온라인 거래처리)&lt;br /&gt; : 주 컴퓨터와 통신회선으로 접속되어 있는 복수의 사용자 단말에서 발생한 트랜잭션을 주 컴퓨터에서 처리하여 그 결과를 즉석에서 사용자에게 되돌려 보내주는 처리 형태 &lt;br /&gt; : 데이터는 진행중인 비즈니스 프로세스&lt;br /&gt; : 여러 과정이 하나의 단위 프로세스로 실행되도록 하는 프로세스 &lt;br /&gt; : 비즈니스 작업을 제어 및 실행 &lt;br /&gt;&lt;br /&gt;2. OLAP(On-line Analytical Processing, 온라인 분석처리)&lt;br /&gt; : 다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 제공할 수 있는 기술&lt;br /&gt; : 데이터는 모든 유형의 비즈니스 활동을 다차원적으로 보여줌 &lt;br /&gt; : 의사결정 지원, 계획 및 문제 해결을 도움&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2000년대&lt;br /&gt;기업내부&lt;br /&gt;데이터베이스&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. CRM(Customer Relationship Management, 고객 관계 관리) &lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능하게 함으로써 보다 높은 이익을 창출 할 수 있는 솔루션 &lt;br /&gt;&lt;br /&gt; 2. SCM(Supply Chain Management, 공급망 관리) &lt;br /&gt; : 제조, 물류, 유통업체 등 유통공급망에 참여하는 모든 업체들이 협력을 바탕으로 정보기술(Information Technology)을 활용, 재고를 최적화하기 위한 솔루션 &lt;br /&gt; : 유통, 판매 및 고객데이터가 CRM과 연동되므로 CRM과 SCM은 상호밀접한 관련을 가진다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 2. 분야별 기업 내부 데이터베이스 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;|분야       |&lt;center&gt;주요 솔루션&lt;/center&gt;|
-|:———:|:—————————|
-| 제조 부문  |1. DW(Data Warehouse)&lt;br /&gt; : 정보 검색을 목적으로 구축된 데이터베이스&lt;br /&gt;&lt;br /&gt; 2.ERP(Enterprise Resource Planning, 전사적 자원관리)&lt;br /&gt; : 제조업을 포함한 다양한 비즈니스 분야에서 생산, 구매, 재고, 주문, 공급자와의 거래, 고객서비스 제공 등 주요 프로세스 관리를 돕는 여러 모듈로 구성된 통합 어플리케이션 소프트웨어 패키지&lt;br /&gt;&lt;br /&gt; 3. BI(Business Intelligence)&lt;br /&gt; : 기업의 DW(Data Warehouse)에 저장된 데이터에 접근해 경영 의사결정에 필요한 정보를 획득하고 이를 경영 활동에 활용하는 것&lt;br /&gt;&lt;br /&gt;4. CRM(Customer Relationship Management, 고객관계관리)&lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능케 함으로써 보다 높은 이익을 창출할 수 있는 솔루션     |
-| 금융 부분  |1. EAI(Enterprise Architecture Integration, 기업 어플리케이션 통합)&lt;br /&gt; : 기업 내의 ERP(전사적 자원관리), CRM(고객관계관리), SCM(공급망계획) 시스템이나 인트라넷 등의 시스템간에 상호 연동이 가능하도록 통합하는 솔루션&lt;br /&gt;&lt;br /&gt;2. EDW(Enterprise Data Warehouse)&lt;br /&gt; : 기존 DW를 전사적으로 확장한 모델인 동시에 BRP와 CRM, BSC 같은 다양한 분석 어플리케이션을 위한 원천이 됨.&lt;br /&gt; : 기업 리소스의 유기적 통합, 다원화된 관리 체계 정비, 데이터의 중복 방지 등을 위해 시스템을 재설계 하는 것&lt;br /&gt;&lt;br /&gt;3. 블록체인(Blockchain)&lt;br /&gt; : 데이터 분산 처리 기술&lt;br /&gt; : 네트워크에 참여하는 모든 사용자의 모든 거래내역 등의 데이터를 분산, 저장하는 기술&lt;br /&gt; : 블록들을 체인 형태로 묶는 형태&lt;br /&gt;&lt;br /&gt;5. ERP, e-CRM 등 이용 |
-| 유통 부분  |1. KMS(Knowledge Management System, 지식 관리 시스템)&lt;br /&gt; : 조직 내의 지식을 체계적으로 관리하는 시스템 &lt;br /&gt; : 지적 재산이 매우 중요해짐에 따라 기업을 관리하는 시스템이 등장&lt;br /&gt;&lt;br /&gt;2. RFID(Radio Frequency, 무선 주파수) 리더를 이용한 정보 인식&lt;br /&gt; : 대상(물건, 사람 등)을 식별할 수 있는 기술&lt;br /&gt;&lt;br /&gt;3. CRM, SCM 등 이용|
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분야&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;주요 솔루션&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;제조 부문&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. DW(Data Warehouse)&lt;br /&gt; : 정보 검색을 목적으로 구축된 데이터베이스&lt;br /&gt;&lt;br /&gt; 2.ERP(Enterprise Resource Planning, 전사적 자원관리)&lt;br /&gt; : 제조업을 포함한 다양한 비즈니스 분야에서 생산, 구매, 재고, 주문, 공급자와의 거래, 고객서비스 제공 등 주요 프로세스 관리를 돕는 여러 모듈로 구성된 통합 어플리케이션 소프트웨어 패키지&lt;br /&gt;&lt;br /&gt; 3. BI(Business Intelligence)&lt;br /&gt; : 기업의 DW(Data Warehouse)에 저장된 데이터에 접근해 경영 의사결정에 필요한 정보를 획득하고 이를 경영 활동에 활용하는 것&lt;br /&gt;&lt;br /&gt;4. CRM(Customer Relationship Management, 고객관계관리)&lt;br /&gt; : 선별된 고객으로부터 수익을 창출하고 장기적인 고객관계를 가능케 함으로써 보다 높은 이익을 창출할 수 있는 솔루션&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;금융 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. EAI(Enterprise Architecture Integration, 기업 어플리케이션 통합)&lt;br /&gt; : 기업 내의 ERP(전사적 자원관리), CRM(고객관계관리), SCM(공급망계획) 시스템이나 인트라넷 등의 시스템간에 상호 연동이 가능하도록 통합하는 솔루션&lt;br /&gt;&lt;br /&gt;2. EDW(Enterprise Data Warehouse)&lt;br /&gt; : 기존 DW를 전사적으로 확장한 모델인 동시에 BRP와 CRM, BSC 같은 다양한 분석 어플리케이션을 위한 원천이 됨.&lt;br /&gt; : 기업 리소스의 유기적 통합, 다원화된 관리 체계 정비, 데이터의 중복 방지 등을 위해 시스템을 재설계 하는 것&lt;br /&gt;&lt;br /&gt;3. 블록체인(Blockchain)&lt;br /&gt; : 데이터 분산 처리 기술&lt;br /&gt; : 네트워크에 참여하는 모든 사용자의 모든 거래내역 등의 데이터를 분산, 저장하는 기술&lt;br /&gt; : 블록들을 체인 형태로 묶는 형태&lt;br /&gt;&lt;br /&gt;5. ERP, e-CRM 등 이용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유통 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. KMS(Knowledge Management System, 지식 관리 시스템)&lt;br /&gt; : 조직 내의 지식을 체계적으로 관리하는 시스템 &lt;br /&gt; : 지적 재산이 매우 중요해짐에 따라 기업을 관리하는 시스템이 등장&lt;br /&gt;&lt;br /&gt;2. RFID(Radio Frequency, 무선 주파수) 리더를 이용한 정보 인식&lt;br /&gt; : 대상(물건, 사람 등)을 식별할 수 있는 기술&lt;br /&gt;&lt;br /&gt;3. CRM, SCM 등 이용&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 3. 분야별 사회기반 구조로서의 데이터베이스 &lt;/subtitle&gt;
@@ -315,14 +406,38 @@
   &lt;li&gt;CALS(Commerce At Lighted Speed, 광속 상거래) : 각종 기술 자료를 디지털화하여 관련 데이터를 통합 운영하는 업무 환경&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;|분야       |&lt;center&gt;주요 솔루션&lt;/center&gt;|
-|:———:|:—————————|
-| 물류 부문  |1. 종합물류정보망(실시간 차량추적)&lt;br /&gt; : 전자지도상에서 운행중인 차량의 위치 및 상태를 실시간으로 파악하여 서비스 가입자의 합리적인 의사결정을 지원하는 시스템&lt;br /&gt;&lt;br /&gt;2. 부가가치통신망(VAN, Value Added Network)&lt;br /&gt; : 네트워크에 단순한 전송 기능 이상의 부가가치를 첨가하여 정보를 축적, 가공, 변환 처리하여 음성 또는 데이터 정보를 제공해주는 광범위하고 복합적인 통신서비스의 집합&lt;br /&gt; |
-| 지리 부분  |국가지리정보체계(NGIS), GS, GPS |
-| 교통 부분  |지능형교통시스템(ITS) |
-| 의료 부분  |의료 EDI |
-| 교육 부분  |교육행정정보시스템(NEIS) |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분야&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;주요 솔루션&lt;/center&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;물류 부문&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 종합물류정보망(실시간 차량추적)&lt;br /&gt; : 전자지도상에서 운행중인 차량의 위치 및 상태를 실시간으로 파악하여 서비스 가입자의 합리적인 의사결정을 지원하는 시스템&lt;br /&gt;&lt;br /&gt;2. 부가가치통신망(VAN, Value Added Network)&lt;br /&gt; : 네트워크에 단순한 전송 기능 이상의 부가가치를 첨가하여 정보를 축적, 가공, 변환 처리하여 음성 또는 데이터 정보를 제공해주는 광범위하고 복합적인 통신서비스의 집합&lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지리 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;국가지리정보체계(NGIS), GS, GPS&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;교통 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;지능형교통시스템(ITS)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;의료 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;의료 EDI&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;교육 부분&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;교육행정정보시스템(NEIS)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 4. DW의 4대 특성 &lt;/subtitle&gt;
@@ -332,9 +447,10 @@
   &lt;li&gt;데이터 주제 지향성&lt;/li&gt;
   &lt;li&gt;데이터 통합&lt;/li&gt;
   &lt;li&gt;데이터의 시계열성&lt;/li&gt;
-  &lt;li&gt;데이터의 비휘발성
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;데이터의 비휘발성&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 5. BI VS BA &lt;/subtitle&gt;
@@ -381,9 +497,10 @@
   &lt;li&gt;동시에 복수의 적용 업무를 지원할 수 있도록 복수 이용자의 요구에 대응해서 데이터를 받아들이고 저장, 공급하기 위하여 일정한 구조에 따라서 편성된 데이터의 집합&lt;/li&gt;
   &lt;li&gt;관련된 레코드의 집합&lt;/li&gt;
   &lt;li&gt;소프트웨어로는 데이터베이스 관리 시스템(DBMS)을 의미한다.&lt;/li&gt;
-  &lt;li&gt;DBMS는 이용자가 쉽게 데이터베이스를 구축하고 유지할 수 있도록 하는 소프트웨어로서 데이터베이스와 구분되며, 일반적으로 데이터베이스와 DBMS를 함께 데이터베이스 시스템이라고 한다.
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;DBMS는 이용자가 쉽게 데이터베이스를 구축하고 유지할 수 있도록 하는 소프트웨어로서 데이터베이스와 구분되며, 일반적으로 데이터베이스와 DBMS를 함께 데이터베이스 시스템이라고 한다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 2. 데이터베이스의 특징 &lt;/subtitle&gt;
@@ -393,9 +510,10 @@
   &lt;li&gt;통합된 데이터(Integrated data) : 데이터베이스에서 동일한 내용의 데이터가 중복되어 있지 않음&lt;/li&gt;
   &lt;li&gt;저장된 데이터(Stored data) : 컴퓨터가 접근할 수 있는 저장 매체에 저장되는 것&lt;/li&gt;
   &lt;li&gt;공용 데이터(Shared data) : 여러 사용자가 서로 다른 목적으로 데이터베이스의 데이터를 공동 이용&lt;/li&gt;
-  &lt;li&gt;변화되는 데이터 : 새로운 데이터의 추가, 기존 데이터의 삭제, 갱신으로 항상 변화하면서도 항상 현재의 정확한 데이터를 유지해야 한다
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;변화되는 데이터 : 새로운 데이터의 추가, 기존 데이터의 삭제, 갱신으로 항상 변화하면서도 항상 현재의 정확한 데이터를 유지해야 한다&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 3. 데이터베이스의 특성 &lt;/subtitle&gt;
@@ -431,20 +549,42 @@
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;데이터는 &lt;point&gt;객관적 사실(fact)&lt;/point&gt;이라는 존재적 특성을 가진다. -&amp;gt; 데이터는 개별 데이터 자체로는 의미가 중요하지 않은 객관적 사실을 말한다.&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;데이터는 &lt;point&gt;추론, 예측, 전망, 추정&lt;/point&gt;을 위한 근거(basis)로 기능하는 당위적 특성을 가진다. -&amp;gt; 다른 객체와의 상호 관계 속에서 가치를 갖는다.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;데이터는 &lt;point&gt;객관적 사실(fact)&lt;/point&gt;이라는 존재적 특성을 가진다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;-&amp;gt; 데이터는 개별 데이터 자체로는 의미가 중요하지 않은 객관적 사실을 말한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터는 &lt;point&gt;추론, 예측, 전망, 추정&lt;/point&gt;을 위한 근거(basis)로 기능하는 당위적 특성을 가진다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&amp;gt; 다른 객체와의 상호 관계 속에서 가치를 갖는다.&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 2. 데이터의 유형 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;|구분   |형태   |
-|:-:|:-:|
-|정성적 데이터(qualitative data)   |언어, 문자 등 비정형 데이터(비정형 데이터)&lt;br /&gt;자료의 성질, 특징을 설명 또는 요약&lt;br /&gt; 상대적으로 많은 비용과 기술적 투자가 수반된다.  |
-|정량적 데이터(quantitative data)   |수치, 도형, 기호 등(정형 데이터) &lt;br /&gt; 자료를 수치화 &lt;br /&gt; 저장, 검색, 분석 활용에 용이하다.&lt;br /&gt;  |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;구분&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;형태&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정성적 데이터(qualitative data)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;언어, 문자 등 비정형 데이터(비정형 데이터)&lt;br /&gt; 자료의 성질, 특징을 설명 또는 요약 &lt;br /&gt; 상대적으로 많은 비용과 기술적 투자가 수반된다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정량적 데이터(quantitative data)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;수치, 도형, 기호 등(정형 데이터) &lt;br /&gt; 자료를 수치화 &lt;br /&gt; 저장, 검색, 분석 활용에 용이하다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 3. 지식경영 핵심 이슈 &amp;lt;/subititle&amp;gt;
@@ -453,19 +593,36 @@
 
 &lt;ul&gt;
   &lt;li&gt;암묵지 : 학습과 체험을 통하여 개인에게 습득되지만 겉으로는 드러나지 않는 상태의 지식&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;형식지 : 암묵지가 문서나 메뉴얼처럼 외부로 표출되어서 여러 사람이 공유할 수 있는 지식
-&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;지식경영(knowledge management) : 개인의 암묵지와 집단에서의 형식지가 나선형의 형태로 회전하면서 생성, 발전, 전환되는 지식의 발전을 기반으로한 기업의 경영&lt;/li&gt;
+  &lt;li&gt;형식지 : 암묵지가 문서나 메뉴얼처럼 외부로 표출되어서 여러 사람이 공유할 수 있는 지식&lt;/li&gt;
+  &lt;li&gt;지식경영(knowledge management)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;: 개인의 암묵지와 집단에서의 형식지가 나선형의 형태로 회전하면서 생성, 발전, 전환되는 지식의 발전을 기반으로한 기업의 경영&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;지식 나선 활동(creative route)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;|암묵지(Tacit knowledge)   |형식지(Explicit knowledge)|
-|:———————:  |:—————————:|
-| 공통화(socialization)    | 표출화(Externalization)   |
-| 내면화(internalization)  | 연결화(Combination)    |
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;암묵지(Tacit knowledge)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;형식지(Explicit knowledge)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;공통화(socialization)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;표출화(Externalization)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;내면화(internalization)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;연결화(Combination)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;subtitle&gt; 4. 데이터와 정보의 관계 &lt;/subtitle&gt;
@@ -481,29 +638,29 @@
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;종류&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;center&gt;설명&lt;/center&gt;&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;예시&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;데이터(Data)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;데이터를 가공하기 전의 순수한 수치나 기호&lt;br /&gt; 개별 데이터 자체로는 의미가 중요하지 않은 객관적인 사실&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터&lt;br /&gt;(Data)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;- 데이터를 가공하기 전의 순수한 수치나 기호&lt;br /&gt; - 개별 데이터 자체로는 의미가 중요하지 않은 객관적인 사실&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;A 마트 100원, B마트는 200원에 연필을 판매한다.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;정보(Information)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;데이터의 가공 및 상관관계 간 이해를 통해 패턴을 인식하고 의미를 부여한 데이터&lt;br /&gt; 정보가 내포하는 의미는 유용하지 않을 수 있다.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정보&lt;br /&gt;(Information)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;- 데이터의 가공 및 상관관계 간 이해를 통해 패턴을 인식하고 의미를 부여한 데이터&lt;br /&gt; - 정보가 내포하는 의미는 유용하지 않을 수 있다.&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;A 마트의 연필 가격이 더 싸다.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;지식(Knowledge)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;상호 연결된 정보 패턴을 이해하여 이를 토대로 예측한 결과물&lt;br /&gt; 데이터를 통해 도출된 다양한 정보를 구조화하여 유의미한 정보로 분류하고 개인적인 경험을 결합시켜 고유의 지식으로 내재화 한 것&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지식&lt;br /&gt;(Knowledge)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;- 상호 연결된 정보 패턴을 이해하여 이를 토대로 예측한 결과물&lt;br /&gt; - 데이터를 통해 도출된 다양한 정보를 구조화하여 유의미한 정보로 분류하고 개인적인 경험을 결합시켜 고유의 지식으로 내재화 한 것&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;상대적으로 저렴한 A마트에서 연필을 사야겠다.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;지혜(Wisdom)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;근본 원리에 대한 깊은 이해를 바탕으로 도출되는 아이디어&lt;br /&gt; 지식의 축적과 깊은 이해를 바탕으로 도출되는 아이디어&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;지혜&lt;br /&gt;(Wisdom)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;- 근본 원리에 대한 깊은 이해를 바탕으로 도출되는 아이디어&lt;br /&gt; - 지식의 축적과 깊은 이해를 바탕으로 도출되는 아이디어&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;A마트의 다른 상품들도 B마트보다 쌀 것이라고 판단한다.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;

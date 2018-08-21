@@ -1,5 +1,4 @@
 # SITE CONFIGURATION
-encoding: "utf-8"
 baseurl:
 url: "https://devYurim.github.io"
 
@@ -90,6 +89,7 @@ plugins:
 gem:
     - jekyll-sitemap
     - jekyll-feed
+    - wdm
 theme: jekyll-theme-type
 exclude:
   - Gemfile
