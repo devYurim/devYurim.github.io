@@ -2,8 +2,8 @@
 <html class="no-js">
   <head>
 	<meta charset="utf-8">
-	<title>HTML 파싱하기 - BeautifulSoup | devYurim</title>
-	<meta name="description" content="저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.">
+	<title>(ADsP 2과목) 4-1. 데이터 분석 기획의 이해 - 분석 기획 방향성 도출 | devYurim</title>
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/python/crawler/2018/08/18/crawler-5.html">
+	<link rel="canonical" href="/data%20science/adsp/2018/08/21/ADsP-8.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="devYurim" href="/feed.xml" />
@@ -235,49 +235,116 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">HTML 파싱하기 - BeautifulSoup</h1>
+    <h1 class="title">(ADsP 2과목) 4-1. 데이터 분석 기획의 이해 - 분석 기획 방향성 도출</h1>
     
     <p class="meta">
-      August 18, 2018
+      August 21, 2018
       
     </p>
   </header>
-  <section class="post-content"><p><br /><br /></p>
-<p>저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.</p>
-<p><br /><br /></p>
+  <section class="post-content"><p><br /></p>
 
 <blockquote>
-  <subtitle>1. Beautifulsoup 설치</subtitle>
-</blockquote>
-
-<p>먼저 html을 크롤링하고 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.<br /></p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>pip <span class="nb">install </span>bs4</code></pre></figure>
-
-<blockquote>
-  <subtitle>2. HTML 크롤링하기 </subtitle>
-</blockquote>
-
-<p>먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.<br /><br /></p>
-
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 페이지 소스 가져오기</span>
-<span class="n">html</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">page_source</span>
-
-<span class="c"># soup에 넣어주기</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">text</span><span class="p">)</span></code></pre></figure>
-
-<p><br /><br /></p>
-
-<p>이후에는 BeautifulSoup에서 제공하는 파싱 방법대로 데이터 파싱을 진행하면 된다.<br /><br /><br /></p>
-
-<blockquote>
-  <subtitle>reference</subtitle>
+  <subtitle> 1. 분석 기획의 특징 </subtitle>
 </blockquote>
 
 <ul>
-  <li>https://kiddwannabe.blog.me/221288079822</li>
+  <li>분석 기획 : 실제 분석을 수행하기에 앞서 분석을 수행할 과제의 정의 및 의도했던 결과를 도출 할 수 있도록 이를 적절하게 관리 할 수 있는 방안을 사전에 계획하는 작업</li>
+  <li>분석기획을 하기 위해서는 컴퓨터 사이언스, 수학&amp;통계학 지식, 비즈니스 분석능력에 대한 고른 역량과 시각이 필요하다.</li>
 </ul>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>2.분석 주제 유형(4가지 유형을 융합적으로 반복) </subtitle>
+</blockquote>
+
+<ol>
+  <li>최적화(Optimization) : 분석 대상 및 분석 방법을 이해하고 현 문제를 최적화의 형태로 수행</li>
+  <li>솔루션(Solution) : 분석 과제는 수행되고, 분석 방법을 알지 못하는 경우 솔루션을 찾는 방식으로 분석과제 수행</li>
+  <li>통찰(Insight) : 분석 대상이 불분명하고, 분석 방법을 알고 있는 경우 인사이트 도출</li>
+  <li>발견(Discovery) : 분석 대상, 방법을 모른다면 발견을 통하여 분석 대상 자체를 새롭게 도출</li>
+</ol>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">분석의 대상(What)<br />분석의 방법(How)</th>
+      <th style="text-align: center">Known</th>
+      <th style="text-align: center">Un-Known</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Known</td>
+      <td style="text-align: center">최적화(Optimization)</td>
+      <td style="text-align: center">통찰(Insight)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Un-Known</td>
+      <td style="text-align: center">솔루션(Solution)</td>
+      <td style="text-align: center">발견(Discovery)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>3. 목표 시점별 분석 기획 방안 </subtitle>
+</blockquote>
+
+<ul>
+  <li>과제 중심적인 접근 방식 : 당면한 과제를 빠르게 해결</li>
+  <li>장기적인 마스터 플랜 방식 : 지속적인 분석 내재화</li>
+  <li>이 둘을 융합적으로 적용하는 것이 바람직 함</li>
+</ul>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">당면한 분석 주제의 해결<br />(과제 단위)</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">지속적 분석 문화 내재화<br />(마스터 플랜 단위)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Speed &amp; Test</td>
+      <td style="text-align: center">&lt;1차 목표&gt;</td>
+      <td style="text-align: center">Accuracy &amp; Deploy</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Quick-Win</td>
+      <td style="text-align: center"><과제의 유형=""></과제의></td>
+      <td style="text-align: center">Long Term View</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Problem Solving</td>
+      <td style="text-align: center"><접근 방식=""></접근></td>
+      <td style="text-align: center">Problem Definition</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+cf) Quick-win(즉각적인 실행을 통한 성과 도출) : 프로세스 진행과정에서 일반적인 상식과 경험으로 원인이 명백한 경우 불합리한 요소를 개선 단계까지 미루지 않고, 바로 개선함으로써 과제를 단기로 달성하고 추진하는 과정</p>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 4. 분석 기획 시 고려 사항 </subtitle>
+</blockquote>
+
+<ol>
+  <li>가용한 데이터 : 분석을 위한 데이터 확보가 필수적이다. 데이터 유형에 따라 적용가능한 솔루션 및 분석 방법이 다르기 때문에 데이터 유형에 대한 분석이 선행적으로 이루어져야 한다.</li>
+  <li>적절한 유스케이스(Proper Use-Case) 탐색 : 유사 분석 시나리오 및 솔루션이 있다면 이를 최대한 활용하는 것이 중요하다.</li>
+  <li>장애 요소들에 대한 사전 계획 수립이 필요(Low Barrier of Execution) : 정확도를 올리기 위한 비용 사전 고려, 조직의 역량 내재화를 위한 충분하고 계속적인 교육 및 활용 방안 등의 변화관리(Change Management)가 고려되어야 한다.</li>
+</ol>
 
 <p><br /><br /><br /><br /><br /></p>
 </section>
@@ -285,7 +352,7 @@
 <footer>
   <div class="tags">
     
-    <a class="tag" href="/tags#BeautifulSoup">#BeautifulSoup</a>
+    <a class="tag" href="/tags#ADsP-Part2">#ADsP-Part2</a>
     
   </div>
 </footer>
@@ -293,7 +360,7 @@
 
 </article>
 <!-- Disqus -->
-<a href="https://devYurim.github.io/python/crawler/2018/08/18/crawler-5.html#disqus_thread"></a>
+<a href="https://devYurim.github.io/data%20science/adsp/2018/08/21/ADsP-8.html#disqus_thread"></a>
 
 <div class="comments">
   
@@ -328,16 +395,16 @@ s.setAttribute('data-timestamp', +new Date());
   
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
-      <a href="/data%20science/r%20programming/2018/08/15/R-4.html">
-        R programming - 그래프(Graph) 그리기
+      <a href="/data%20science/adsp/2018/08/21/ADsP-7.html">
+        (ADsP 1과목) 4. 추가 정리 사항
       </a>
   </div>
   
   
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
-      <a href="/data%20science/adsp/2018/08/20/ADsP-1.html">
-        1-1. 데이터의 이해 - 데이터와 정보
+      <a href="/data%20science/adsp/2018/08/21/ADsP-9.html">
+        (ADsP 2과목) 4-2. 데이터 분석 기획의 이해 - 분석 방법론
       </a>
   </div>
   

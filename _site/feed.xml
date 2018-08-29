@@ -3,12 +3,360 @@
   <channel>
     <title>devYurim</title>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://devYurim.github.io/</link>
+    <link>http://localhost:4000/</link>
     <description>developer blog</description>
-    <pubDate>Tue, 21 Aug 2018 17:40:46 +0900</pubDate>
+    <pubDate>Wed, 29 Aug 2018 19:45:30 +0900</pubDate>
     
       <item>
-        <title>3-1,2,3. 데이터 사이언스와 전략 인사이트 - 전략 인사이트 도출을 위한 필요 역량, 빅데이터 그리고 데이터 사이언스의 미래</title>
+        <title>(ADsP 2과목) 4-2. 데이터 분석 기획의 이해 - 분석 방법론</title>
+        <link>/data%20science/adsp/2018/08/21/ADsP-9.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/21/ADsP-9.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. KDD(Knowledge Discovery in Database) 분석 방법론 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1996년 Fayyad가 체계적으로 정리한 데이터 마이닝 프로세스&lt;/li&gt;
+  &lt;li&gt;데이터 마이닝, 기계학습, 인공지능, 패턴인식, 데이터 시각화 등에서 응용될 수 있는 구조를 가짐&lt;/li&gt;
+  &lt;li&gt;분석 절차
+    &lt;ol&gt;
+      &lt;li&gt;분석 대상의 비즈니스 도메인에 대한 이해와 프로젝트 목표를 정확하게 설정&lt;/li&gt;
+      &lt;li&gt;데이터셋 선택(Selection)&lt;/li&gt;
+      &lt;li&gt;데이터 전처리(Preprocessing) : 잡음(Noise), 이상값(Outlier), 결측치(Missing value) 제거&lt;/li&gt;
+      &lt;li&gt;데이터 변환(Transformation) : 변수 선택, 차원 축소 등&lt;/li&gt;
+      &lt;li&gt;데이터 마이닝(Data Mining) : 분석 목적에 맞는 데이터 마이닝 기법 알고리즘 선택, 데이터 패턴 찾기, 데이터 분류, 예측 작업 시행&lt;/li&gt;
+      &lt;li&gt;데이터 마이닝 결과 평가(Interpretation/Evaluation) : 분석 결과에 대한 해석, 평가, 활용&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 2. CRISP-DM(Cross Industry Standard Process for Data Mining) 분석 방법론&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1996년 유럽 연합의 ESPRIT 프로젝트에서 시작&lt;/li&gt;
+  &lt;li&gt;계층적 프로세스 모델로 4개 레벨로 구성&lt;/li&gt;
+  &lt;li&gt;분석 절차
+    &lt;ol&gt;
+      &lt;li&gt;업무 이해(Business Understanding) : 비즈니스 관점 프로젝트의 목적과 요구사항 이해, 초기 프로젝트 계획 수립&lt;/li&gt;
+      &lt;li&gt;데이터 이해(Data Understanding) : 분석을 위한 데이터 수집, 데이터 속성 이해, 데이터 기술 분석, 데이터 탐색, 데이터 품질 확인&lt;/li&gt;
+      &lt;li&gt;데이터 준비(Data Preparation) : 분석 기법에 적합한 데이터셋 선택, 데이터 정제, 통합, 포맷팅&lt;/li&gt;
+      &lt;li&gt;모델링(Modeling) : 모델링 기법과 알고리즘 선택, 파라미터 최적화, 과적합(Overfitting) 발견&lt;/li&gt;
+      &lt;li&gt;평가(Evaluation) : 모델이 프로젝트의 목적에 부합하는지 평가, 분석 결과 평가, 모델링 과정 평가, 모델 적용성 평가&lt;/li&gt;
+      &lt;li&gt;전개(Deployment) : 완성된 모델을 실제 업무에 적용하기 위한 계획 수립 및 유지 보수 계획 마련, 프로젝트 종료 보고서 작성, 프로젝트 리뷰&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 3. KDD VS CRISP-DM &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;KDD&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;CRISP-DM&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;분석 대상 비즈니스 이해&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;업무 이해(Business Understanding)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터셋 선택(Selection)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 이해(Data Understanding)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 전처리(Preprocessing)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 변환(Transformation)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 준비(Data Preparation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 마이닝(Data Mining)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;모델링(Modeling)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 마이닝 결과 평가(Interpretation/Evaluation)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;평가(Evaluation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;데이터 마이닝 활용&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;전개(Deployment)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 4. 빅데이터 분석 방법론 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기획 : 계획을 위한 수립 및 진행과정&lt;/li&gt;
+  &lt;li&gt;계획 : 기획을 통해 산출되는 결과&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 5. 분석 기획(Planning) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1) 비즈니스 이해 및 범위 설정 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;비즈니스 이해 : 비즈니스 자료 조사&lt;/li&gt;
+  &lt;li&gt;프로젝트 범위 설정 : 프로젝트에 참여하는 관계자들(Stakeholders)의 이해를 일치시키기 위하여 구조화된 프로젝트 범위 정의서인 SOW(Statement of Work) 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+2) 프로젝트 정의 및 계획 수립 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 분석 프로젝트 정의 : 프로젝트 목표 및 KPI(핵심 성과 지표), 목표 수준 등을 구체화, 모델 이미지 평가 기준 설정&lt;/li&gt;
+  &lt;li&gt;프로젝트 수행 계획 수립 : 프로젝트 수행 계획서 작성하는 단계, 프로젝트의 목적 및 배경, 기대효과, 수행 방법, 일정 및 추진 조직, WBS 작성(전체업무를 구성 요소를 만든 후 각 요소 평가하고 일정별로 계획하며 완수 할 수 있는 사람에게 할당해주는 역할을 함)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+3) 프로젝트 위험 계획 수립&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 분석 위험 식별, 계획 수립 단계에서 발생 가능한 모든 위험을 식별, 식별된 위험의 우선순위 설정&lt;/li&gt;
+  &lt;li&gt;위험 대응 계획 수립 : 회피(Avoid), 전이(Transfer), 완화(Mitigate), 수용(Accept)로 구분하여 위험 관리 계획서 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 6. 데이터 준비(Preparing) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1) 필요 데이터 정의 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 정의 : 데이터 정의서 작성(메타데이터 정의서, ERD(Entity Relationship Diagram))&lt;/li&gt;
+  &lt;li&gt;데이터 획득 방안 수립&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+2) 데이터 스토어 설계 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;정형 데이터 스토어 설계 : 관계형데이터베이스(RDBMS) 이용, 데이터 매핑 정의서&lt;/li&gt;
+  &lt;li&gt;비정형 데이터 스토어 설계 : 하둡, NoSQL 이용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+3) 데이터 수집 및 정합성 점검&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 수집 및 저장 : ETL(Extract Transform Laod)로 데이터 수집(ex. 크롤러)&lt;/li&gt;
+  &lt;li&gt;데이터 정합성(무결성) 점검&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 7. 데이터 분석(Analyzing) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1) 분석용 데이터 준비 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;비즈니스 룰 확인 : 비즈니스 이해, 도메인 문제점 인식, 프로젝트 정의 등을 통해 프로젝트 목표 정확히 인식&lt;/li&gt;
+  &lt;li&gt;분석용 데이터셋 준비 : 데이터 스토어로부터 분석에 필요한 정형, 비정형 데이터 추출&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+2) 텍스트 분석 &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;어휘/구문 분석(Word Analysis), 감정 분석(Sentimental Analysis), 토픽 분석(Topic Analysis), 오피니언 분석(Opinion Analysis), 소셜 네트워크 분석(SNA)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+3) 탐색적 분석(EDA) &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;기초 통계량 산출, 데이터 분포와 변수간의 관계 파악, 데이터 시각화&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+4) 모델링(Modeling) &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터 분할 : 훈련용 데이터셋과 테스트용 데이터셋으로 분리하여 과적합 방지&lt;/li&gt;
+  &lt;li&gt;데이터 모델링&lt;/li&gt;
+  &lt;li&gt;모델 적용 및 운영 방안 : 모델에 대한 상세한 알고리즘 작성
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5) 모델 평가 및 검증 : 테스트 데이터셋을 이용하여 모델 검증 작업 실시, 보고서 작성
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 8. 시스템 구현(Developing) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;시스템 분석 및 설계 구현&lt;/li&gt;
+  &lt;li&gt;시스템 테스트 및 운영 : 단위테스트, 통합테스트, 시스템 테스트 실시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 9. 평가 및 전개(Deploying) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모델 발전 계획 수립&lt;/li&gt;
+  &lt;li&gt;프로젝트 평가 보고 : 프로젝트의 성과를 정량적, 정성적으로 평가 하고 최종보고서 작성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>(ADsP 2과목) 4-1. 데이터 분석 기획의 이해 - 분석 기획 방향성 도출</title>
+        <link>/data%20science/adsp/2018/08/21/ADsP-8.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/21/ADsP-8.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 분석 기획의 특징 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;분석 기획 : 실제 분석을 수행하기에 앞서 분석을 수행할 과제의 정의 및 의도했던 결과를 도출 할 수 있도록 이를 적절하게 관리 할 수 있는 방안을 사전에 계획하는 작업&lt;/li&gt;
+  &lt;li&gt;분석기획을 하기 위해서는 컴퓨터 사이언스, 수학&amp;amp;통계학 지식, 비즈니스 분석능력에 대한 고른 역량과 시각이 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2.분석 주제 유형(4가지 유형을 융합적으로 반복) &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;최적화(Optimization) : 분석 대상 및 분석 방법을 이해하고 현 문제를 최적화의 형태로 수행&lt;/li&gt;
+  &lt;li&gt;솔루션(Solution) : 분석 과제는 수행되고, 분석 방법을 알지 못하는 경우 솔루션을 찾는 방식으로 분석과제 수행&lt;/li&gt;
+  &lt;li&gt;통찰(Insight) : 분석 대상이 불분명하고, 분석 방법을 알고 있는 경우 인사이트 도출&lt;/li&gt;
+  &lt;li&gt;발견(Discovery) : 분석 대상, 방법을 모른다면 발견을 통하여 분석 대상 자체를 새롭게 도출&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;분석의 대상(What)&lt;br /&gt;분석의 방법(How)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Known&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Un-Known&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Known&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;최적화(Optimization)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;통찰(Insight)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Un-Known&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;솔루션(Solution)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;발견(Discovery)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;3. 목표 시점별 분석 기획 방안 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;과제 중심적인 접근 방식 : 당면한 과제를 빠르게 해결&lt;/li&gt;
+  &lt;li&gt;장기적인 마스터 플랜 방식 : 지속적인 분석 내재화&lt;/li&gt;
+  &lt;li&gt;이 둘을 융합적으로 적용하는 것이 바람직 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;당면한 분석 주제의 해결&lt;br /&gt;(과제 단위)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;지속적 분석 문화 내재화&lt;br /&gt;(마스터 플랜 단위)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Speed &amp;amp; Test&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&amp;lt;1차 목표&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Accuracy &amp;amp; Deploy&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Quick-Win&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;과제의 유형=&quot;&quot;&gt;&lt;/과제의&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Long Term View&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Problem Solving&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;접근 방식=&quot;&quot;&gt;&lt;/접근&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Problem Definition&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+cf) Quick-win(즉각적인 실행을 통한 성과 도출) : 프로세스 진행과정에서 일반적인 상식과 경험으로 원인이 명백한 경우 불합리한 요소를 개선 단계까지 미루지 않고, 바로 개선함으로써 과제를 단기로 달성하고 추진하는 과정&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 4. 분석 기획 시 고려 사항 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;가용한 데이터 : 분석을 위한 데이터 확보가 필수적이다. 데이터 유형에 따라 적용가능한 솔루션 및 분석 방법이 다르기 때문에 데이터 유형에 대한 분석이 선행적으로 이루어져야 한다.&lt;/li&gt;
+  &lt;li&gt;적절한 유스케이스(Proper Use-Case) 탐색 : 유사 분석 시나리오 및 솔루션이 있다면 이를 최대한 활용하는 것이 중요하다.&lt;/li&gt;
+  &lt;li&gt;장애 요소들에 대한 사전 계획 수립이 필요(Low Barrier of Execution) : 정확도를 올리기 위한 비용 사전 고려, 조직의 역량 내재화를 위한 충분하고 계속적인 교육 및 활용 방안 등의 변화관리(Change Management)가 고려되어야 한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>(ADsP 1과목) 4. 추가 정리 사항</title>
+        <link>/data%20science/adsp/2018/08/21/ADsP-7.html</link>
+        <guid isPermaLink="true">/data%20science/adsp/2018/08/21/ADsP-7.html</guid>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 1. 분석의 전형적인 의사결정 오류 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;로직 오류 : 의도치 않은, 바라지 않은 결과 유발(작동은 됨)&lt;/li&gt;
+  &lt;li&gt;프로세스 오류 : 작동에 문제가 발생한 오류&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 +0900</pubDate>
+      </item>
+    
+      <item>
+        <title>(ADsP 1과목) 3-1,2,3. 데이터 사이언스와 전략 인사이트 - 전략 인사이트 도출을 위한 필요 역량, 빅데이터 그리고 데이터 사이언스의 미래</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-6.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-6.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -114,7 +462,7 @@
       </item>
     
       <item>
-        <title>2-2,3,4,5. 데이터의 가치와 미래 - 빅데이터의 가치와 영향, 비즈니스 모델, 위기요인과 통제 방안, 미래의 빅데이터</title>
+        <title>(ADsP 1과목) 2-2,3,4,5. 데이터의 가치와 미래 - 빅데이터의 가치와 영향, 비즈니스 모델, 위기요인과 통제 방안, 미래의 빅데이터</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-5.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-5.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -237,7 +585,7 @@
       </item>
     
       <item>
-        <title>2-1. 데이터의 가치와 미래 - 빅데이터의 이해</title>
+        <title>(ADsP 1과목) 2-1. 데이터의 가치와 미래 - 빅데이터의 이해</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-4.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-4.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -337,7 +685,7 @@
       </item>
     
       <item>
-        <title>1-3. 데이터의 이해 - 데이터베이스의 활용</title>
+        <title>(ADsP 1과목) 1-3. 데이터의 이해 - 데이터베이스의 활용</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-3.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-3.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -484,7 +832,7 @@
       </item>
     
       <item>
-        <title>1-2. 데이터의 이해 - 데이터베이스의 정의와 특징</title>
+        <title>(ADsP 1과목) 1-2. 데이터의 이해 - 데이터베이스의 정의와 특징</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-2.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-2.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -539,7 +887,7 @@
       </item>
     
       <item>
-        <title>1-1. 데이터의 이해 - 데이터와 정보</title>
+        <title>(ADsP 1과목) 1-1. 데이터의 이해 - 데이터와 정보</title>
         <link>/data%20science/adsp/2018/08/20/ADsP-1.html</link>
         <guid isPermaLink="true">/data%20science/adsp/2018/08/20/ADsP-1.html</guid>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -587,8 +935,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;subtitle&gt; 3. 지식경영 핵심 이슈 &amp;lt;/subititle&amp;gt;
-&lt;/subtitle&gt;
+  &lt;subtitle&gt; 3. 지식경영 핵심 이슈 &lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -631,7 +978,7 @@
 &lt;ul&gt;
   &lt;li&gt;DIKW 피라미드(Data, Information, Knowledge, Wisdom)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;center&gt;&lt;img src=&quot;https://www.researchgate.net/publication/313020352/figure/fig4/AS:455507778510848@1485612925004/The-DIKW-pyramid-Source-Soloviev-K-2016.jpg&quot; width=&quot;80%&quot; /&gt;&lt;br /&gt;The DIKW pyramid (Source: Soloviev, K., 2016)&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;https://www.researchgate.net/publication/313020352/figure/fig4/AS:455507778510848@1485612925004/The-DIKW-pyramid-Source-Soloviev-K-2016.jpg&quot; width=&quot;60%&quot; /&gt;&lt;br /&gt;The DIKW pyramid (Source: Soloviev, K., 2016)&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;table&gt;
@@ -669,52 +1016,6 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>HTML 파싱하기 - BeautifulSoup</title>
-        <link>/python/crawler/2018/08/18/crawler-5.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/18/crawler-5.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. Beautifulsoup 설치&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;먼저 html을 크롤링하고 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. HTML 크롤링하기 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 페이지 소스 가져오기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_source&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# soup에 넣어주기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이후에는 BeautifulSoup에서 제공하는 파싱 방법대로 데이터 파싱을 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Aug 2018 00:00:00 +0900</pubDate>
       </item>
     
       <item>
@@ -1055,106 +1356,6 @@ R studio를 실행시켜보면 위의 이미지와 같은 4분할 창이 먼저 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Basic Statistics - 통계학(Statistics)과 데이터(Data)</title>
-        <link>/data%20science/statistics/2018/08/14/statistics-1.html</link>
-        <guid isPermaLink="true">/data%20science/statistics/2018/08/14/statistics-1.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;p&amp;gt; 이번 방학이 끝나기 전에 자격증을 하나 따보자! 해서 신청한게 ADsP(데이터 분석 준전문가) 시험이다. 데이터 분석에 관한 자격증이 뭐가 있나 봤더니 이게 있었다! 실제로 통계학과 분들은 이 자격증을 많이 따기도 하고 따는 사람을 본적도 있다. 취업시 많은 혜택이 있는 자격증은 아니지만 어느정도 가산점이 있고 기초를 자세히 정리하기에 좋을 것 같아서 신청하고 시험 준비중이다! 나는 통계학과 학생은 아니지만… 어느정도 머신러닝 프로그래밍을 하면서 약간의 지식은 가지고 있고 통계학만.. 잘 다루면 되지 않을까해서 일단 도전! 해보는 것이다. 이 자격증과 관련된 네이버 카페도 있는데 한 3주정도면 다들 취득할 수 있다고들 한다. 원래 저번주에 신청했지만… 갑자기 연구실 일이 폭풍같이 밀려들어서… 사실 지금 시작하는거와 다름없다. 8월 25일이 시험인데 걱정된다 ㅠ.ㅠ 학부때 통계학개론 교양 수업을 들었지만… c+이라는 아픈 기억이 있으므로 통계학 개론 기초 수업을 찾아서 들었다. 강의 이름은 K-MOOC R을 활용한 통계학개론 이라는 강의이다. 간단 명료하게 강의내용이 딱딱 정리되어 있는 스타일이라서 좋았다. 이 수업의 통계학 개론 내용과 ADsP에서 필요한 통계학 내용과 결합하여 정리할 예정이다.
-&amp;lt;/p&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. 통계학이란? &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;통계학(Statistics)이란 Status(국가)와 ics(학문)라는 접미어를 합쳐서 만든 단어로 국가의 경영 또는 통치에 필요한 학문이라는 뜻이다. &lt;br /&gt;
-과거의 통계학은 경제 관련자료에 대한 기록을 주로 다뤘다면 현재의 통계학은 수학을 바탕으로 더 과학적이고 논리적 체계를 갖춘 학문으로 발전하였다. 통계학은 자료가 발생될 수 있는 모든 분야에서 활용이 가능하며 특히 빅데이터에 통계학적인 지식을 많이 접목하여 활용하고 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. 빅 데이터(Big Data)란? &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;빅 데이터의 특징은 3V로 표현 될 수 있다. 3V는 Velocity(데이터의 발생 속도), Volume(데이터의 크기), Variety(데이터의 다양성)을 가리킨다.&lt;br /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Velocity(데이터의 발생 속도) : Velocity 관점에서 두가지로 해석 될 수 있다. 데이터가 빠른 속도로 발생한다, 사용자가 원하는 시간에 데이터 분석 결과를 제공한다.&lt;/li&gt;
-  &lt;li&gt;Volumn(데이터의 크기) : 데이터의 양이 방대하다.&lt;/li&gt;
-  &lt;li&gt;Variety(데이터의 다양성) : 정형화된 데이터를 넘어 텍스트, 오디오, 비디오 등 모든 유형의 데이터를 분석대상으로 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;3. 인공지능(AI, Artificial Intelligence)과 데이터(Data)&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;인공지능은 입력은 반드시 데이터의 형태를 가지며 입력된 자료를 분석하여 최적의 분류(classification)을 할 수 있는 기계(machine)을 가리킨다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/44081513-d20ead8a-9fe9-11e8-8305-e2cd5f7f392d.png&quot; width=&quot;60%&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;훈련자료를 기계(machine)에 input으로 넣어 기계가 자료를 분석하여 학습한 기계를 인공지능이라고 하며 기계가 자료를 분석하여 분류할 수 있도록 학습하는 과정을 머신러닝(machine learning)이라고 한다.
-머신러닝의 종류에는 단순 학습(shallow learning)과 심화 학습(deep learning)이 있다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;단순학습(shallow learning)은 어떠한 filter를 이용해 단순히 예측값을 도출하는 반면 심화 학습(deep learning)은 인간의 신경망을 본뜬 알고리즘으로 기계 스스로 학습하며 정답값이 주어지면 hidden layers를 통해 기계 스스로 학습하며 어떠한 이유로 그렇게 학습되는지 명확하게 규명할 수 없다. 또한, 도출된 예측값을 다시 input data로 활용하여 여러번 반복하여 학습하므로 shallow learning 보다는 더욱 복잡한 예측이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;인공지능의 핵심기술은 크게 음성인식(Voice Recognition)과 형상인식(Pattern Recognition)으로 나뉠 수 있다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;references&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;http://www.kmooc.kr/courses/course-v1:PNUk+RS_C01+2017_KM_009/info&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Aug 2018 00:00:00 +0900</pubDate>
-      </item>
-    
-      <item>
-        <title>Selenium으로 로딩한 페이지의 html 크롤링 - BeautifulSoup</title>
-        <link>/python/crawler/2018/08/13/crawler-4.html</link>
-        <guid isPermaLink="true">/python/crawler/2018/08/13/crawler-4.html</guid>
-        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;저번 포스팅에 이어서 원하는 탭으로 이동하였고 원하는 정보를 수집할 수 있게 되었다. 이번에는 셀레니움을 이용하여 로딩한 페이지의 html을 크롤링하는 방법을 정리하였다.&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;1. Beautifulsoup 설치&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;먼저 html을 크롤링하고 파싱하기 위해서는 BeautifulSoup 패키지가 필요하다. 아나콘다를 사용하면 이미 설치되어 있지만 아니라면 pip 를 이용하여 패키지를 설치해야한다.&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bs4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;2. HTML 크롤링하기 &lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;먼저 selenium을 통해 해당 페이지의 html 소스를 가져온다. 이 html 소스를 beautifulsoup에 넣어주면 태그명, 클래스명, 아이디명, css selector 등으로 html 파싱이 가능하다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# 페이지 소스 가져오기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page_source&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# soup에 넣어주기&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'html.parser'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;이후에는 BeautifulSoup에서 제공하는 파싱 방법대로 데이터 파싱을 진행하면 된다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;subtitle&gt;reference&lt;/subtitle&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;https://kiddwannabe.blog.me/221288079822&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Aug 2018 00:00:00 +0900</pubDate>
       </item>
     
   </channel>

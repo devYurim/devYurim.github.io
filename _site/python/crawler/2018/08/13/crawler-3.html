@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>Python Selenium(셀레니움) 크롬창 활성 탭 변경하기 | devYurim</title>
-	<meta name="description" content="JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.">
+	<meta name="description" content="JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 활성 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -242,13 +242,13 @@
       
     </p>
   </header>
-  <section class="post-content"><p><br /><br /></p>
-<p>JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 탭을 변경하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.</p>
-<p><br /><br /></p>
+  <section class="post-content"><p><br /><br />
+JCR 홈페이지에서 로그인을 한 뒤에 검색을 하면 새로운 탭이 켜지고 새로운 탭에 검색결과가 나타났다. 그래서 셀레니움을 통해 <point>활성 탭을 변경</point>하고 검색 내용을 수집할 수 있는 방법을 검색하여 찾아 보았다. 이전 포스팅에 이어서 수행 결과를 정리하였다.<br /><br /></p>
 
 <blockquote>
   <subtitle> 1. 검색 자동화 </subtitle>
 </blockquote>
+
 <center><img src="https://user-images.githubusercontent.com/20412850/44016757-113aa434-9f11-11e8-9005-630516a5e57f.png" width="60%" /></center>
 <p><br /></p>
 
@@ -259,7 +259,7 @@
 <br /></li>
 </ol>
 
-<p>이전 코드에 이어서 아래에 추가한 코드는 다음과 같다. <br /></p>
+<p>이전 코드에 이어서(로그인 버튼 누르기 다음) 아래에 추가한 코드는 다음과 같다. <br /></p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 키워드 검색</span>
 <span class="nb">input</span> <span class="o">=</span> <span class="s">'Peer-to-Peer Networking and Applications'</span>
@@ -268,8 +268,11 @@
 <span class="n">search</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'search-inputEl'</span><span class="p">)</span>
 <span class="n">search</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
 
+<span class="c"># 검색창 하단에 표시되는 버튼 클릭</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">'//*[@id="boundlist-1029-listEl"]/ul/li'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c"># 로딩 기다리기</span></code></pre></figure>
+
+<p><br /><br /></p>
 
 <blockquote>
   <subtitle>2. 활성 탭 전환하기</subtitle>
@@ -282,11 +285,11 @@
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">)</span></code></pre></figure>
 
 <ul>
-  <li>결과 : [‘CDwindow-5869F32E71D5DF1303F64200A76D021F’, ‘CDwindow-19FEAEAE68751A47C2CD0D9008B6BF4E’]</li>
+  <li>결과 : [‘CDwindow-5869F32E71D5DF1303F64200A76D021F’, ‘CDwindow-19FEAEAE68751A47C2CD0D9008B6BF4E’]
+<br /><br /></li>
 </ul>
 
-<p><br /><br />
-새롭게 열린 탭으로 변경하는 코드는 다음을 하단에 추가하면 된다.<br /></p>
+<p>새롭게 열린 탭으로 변경하는 코드는 아래의 코드를 추가하면 된다.<br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 최근 열린 탭으로 전환</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">switch_to</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -309,9 +312,42 @@
 
 <p><br /><br /></p>
 
-<p>수정한 전체 내용은 아래와 같다.<br /></p>
+<p>수정한 전체 코드는 아래와 같다.<br /></p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># 키워드 검색</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+
+<span class="c"># headless 옵션 설정</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'headless'</span><span class="p">)</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"no-sandbox"</span><span class="p">)</span>
+
+<span class="c"># 브라우저 윈도우 사이즈</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'window-size=1920x1080'</span><span class="p">)</span>
+
+<span class="c"># 사람처럼 보이게 하는 옵션들</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"disable-gpu"</span><span class="p">)</span>   <span class="c"># 가속 사용 x</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"lang=ko_KR"</span><span class="p">)</span>    <span class="c"># 가짜 플러그인 탑재</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'</span><span class="p">)</span>  <span class="c"># user-agent 이름 설정</span>
+
+<span class="c"># 드라이버 위치 경로 입력</span>
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="s">'./chromedriver.exe'</span><span class="p">,</span> <span class="n">chrome_options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+
+<span class="c"># url을 이용하여 브라우저로 접속</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://error.incites.thomsonreuters.com/error/Error?DestApp=IC2JCR&amp;Error=IPError&amp;Params=DestApp</span><span class="si">%3</span><span class="s">DIC2JCR&amp;RouterURL=https</span><span class="si">%3</span><span class="s">A</span><span class="si">%2</span><span class="s">F</span><span class="si">%2</span><span class="s">Flogin.incites.thomsonreuters.com</span><span class="si">%2</span><span class="s">F&amp;Domain=.thomsonreuters.com&amp;Src=IP&amp;Alias=IC2'</span><span class="p">)</span>
+
+<span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c"># 아이디/비밀번호를 입력해준다.</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'username'</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'아이디 입력'</span><span class="p">)</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'password'</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">'비밀번호 입력'</span><span class="p">)</span>
+
+<span class="c"># stay signed in 체크박스 채우기(클릭)</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s">'rememberme'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+
+<span class="c"># 로그인 버튼을 누르기</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">'/html/body/div/div[1]/div[3]/div[1]/div/div/div/form/button'</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+<span class="c"># 키워드 검색</span>
 <span class="nb">input</span> <span class="o">=</span> <span class="s">'Peer-to-Peer Networking and Applications'</span>
 
 <span class="c"># 검색창에 키워드 입력후 검색 버튼 클릭</span>
@@ -325,7 +361,12 @@
 
 <span class="c"># 새로 열린 탭으로 활성 탭 변경</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">switch_to</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">window_handles</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code></pre></figure>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c"># 로그인 된 화면 캡처</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get_screenshot_as_file</span><span class="p">(</span><span class="s">'capture.png'</span><span class="p">)</span>
+
+<span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span></code></pre></figure>
 
 <p><br /><br /><br /></p>
 
@@ -395,7 +436,7 @@ s.setAttribute('data-timestamp', +new Date());
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
       <a href="/python/crawler/2018/08/13/crawler-4.html">
-        Selenium으로 로딩한 페이지의 html 크롤링 - BeautifulSoup
+        Selenium으로 로딩한 페이지의 html 파싱 - BeautifulSoup
       </a>
   </div>
   

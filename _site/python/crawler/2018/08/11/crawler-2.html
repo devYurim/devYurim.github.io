@@ -243,7 +243,7 @@
     </p>
   </header>
   <section class="post-content"><p><br /><br /></p>
-<p>논문 Impact factor를 수집할 때 JCR 이라는 사이트에서 확인 할 수 있는데 로그인을 해야 JCR 사이트를 이용할 수 있었다. 따라서, 셀레니움 프로그램 내에서 자동으로 로그인을 하여 수집하는 방향으로 진행하였다. JCR 사이트를 이용하기 위해서는 계정이 필요하므로 미리 계정을 생성하여 준다.</p>
+<p>논문 Impact factor를 수집할 때 JCR 이라는 사이트에서 확인 할 수 있는데 로그인을 해야 JCR 사이트를 이용할 수 있었다. 따라서, 셀레니움 프로그램 내에서 <point>자동으로 로그인</point>을 하여 수집하는 방향으로 진행하였다. JCR 사이트를 이용하기 위해서는 계정이 필요하므로 미리 계정을 생성하여 준다.</p>
 <p><br /><br /><br /></p>
 
 <blockquote>
@@ -261,7 +261,7 @@
 
 <p><br /></p>
 
-<p>먼저 수집기를 만들기전에 수집 하고자하는 홈페이지의 html 구조 분석이 필요하다. 구글에 JCR을 검색하여 홈페이지에 들어가면 바로 로그인 창으로 넘어간 화면이 뜬다. 셀레니움 프로그램에서 아래의 url을 통해 JCR 홈페이지에 접속할 것이다.<br /></p>
+<p>먼저 수집기를 만들기전에 수집 하고자하는 홈페이지의 <point>html 구조 분석</point>이 필요하다. 구글에 JCR을 검색하여 홈페이지에 들어가면 바로 로그인 창으로 넘어간 화면이 뜬다. 셀레니움 프로그램에서 아래의 url을 통해 JCR 홈페이지에 접속할 것이다.<br /></p>
 
 <ul>
   <li>JCR 접속 url : https://error.incites.thomsonreuters.com/error/Error?DestApp=IC2JCR&amp;Error=IPError&amp;Params=DestApp%3DIC2JCR&amp;RouterURL=https%3A%2F%2Flogin.incites.thomsonreuters.com%2F&amp;Domain=.thomsonreuters.com&amp;Src=IP&amp;Alias=IC2</li>
@@ -269,12 +269,13 @@
 
 <p><br /></p>
 
-<p>크롬 개발자 도구를 켜고 select an element 버튼을 이용하여 각 요소별 html 구조 분석이 가능하다.<br />
+<point>크롬 개발자 도구(맨 오른쪽 점 3개짜리 버튼-&gt;도구더보기-&gt;개발자 도구)</point>
+<p>를 켜고 select an element 버튼을 이용하여 각 요소별 html 구조 분석이 가능하다.<br />
 select an element 버튼은 이미지에서 파란색으로 표시된 버튼이다. 이 버튼을 누르고 html 요소를 클릭하면 html 파일에서 이 요소가 있는 위치로 이동해서 보여준다.<br /></p>
 <center><img src="https://user-images.githubusercontent.com/20412850/43960659-aab57100-9ced-11e8-8065-303b7f8197dc.png" width="60%" /></center>
 <p><br /></p>
 
-<p>먼저 개발자 도구를 이용하여 아이디 폼의 구조를 확인해보면 이름이 username 인 것을 알 수 있다. <br /></p>
+<p>먼저 개발자 도구를 이용하여 아이디 폼의 구조를 확인해보면 이름이 <point>username</point> 인 것을 알 수 있다. <br /></p>
 
 <center><img src="https://user-images.githubusercontent.com/20412850/43960850-4810a500-9cee-11e8-969b-db176ec95aba.png" width="60%" /></center>
 <p><br /></p>
@@ -284,13 +285,13 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 <center><img src="https://user-images.githubusercontent.com/20412850/43960967-a89fe200-9cee-11e8-9c0d-c1f233eebaba.png" width="60%" /></center>
 <p><br /></p>
 
-<p>정리하면 아이디 input 폼의 이름은 username 이고 xpath의 값은 ‘//*[@id=”username”]’ 이다.<br /></p>
+<p>정리하면 아이디 input 폼의 이름은 <point>username</point> 이고 xpath의 값은 <point>//*[@id="username"]</point> 이다.<br /></p>
 
-<p>비밀번호 input 폼도 동일한 방법으로 확인하면 이름은 password 이고 xpath의 값은 ‘//*[@id=”password”]’ 이다.<br /></p>
+<p>비밀번호 input 폼도 동일한 방법으로 확인하면 이름은 <point>password</point> 이고 xpath의 값은 <point>//*[@id="password"]</point> 이다.<br /></p>
 
-<p>Stay signed in 체크박스 input 폼의 이름은 rememberme 이고 xpath의 값은 ‘//*[@id=”rememberme”]’ 이다.<br /></p>
+<p>Stay signed in 체크박스 input 폼의 이름은 <point>rememberme</point> 이고 xpath의 값은 <point>//*[@id="rememberme"]</point> 이다.<br /></p>
 
-<p>로그인 버튼인 Sign in 버튼은 이름은 존재하지 않고 xpath의 값은 ‘/html/body/div/div[1]/div[3]/div[1]/div/div/div/form[1]/button’ 이다.<br /></p>
+<p>로그인 버튼인 Sign in 버튼은 이름은 존재하지 않고 xpath의 값은 <point>/html/body/div/div[1]/div[3]/div[1]/div/div/div/form[1]/button</point> 이다.<br /></p>
 
 <p>수집한 정보를 이제 셀레니움 코드에 적용해보자.<br /><br /></p>
 
@@ -302,15 +303,21 @@ select an element 버튼은 이미지에서 파란색으로 표시된 버튼이�
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
 
-<span class="c"># headless 옵션 설정</span>
-<span class="c"># 브라우저로 작동하는 것을 확인하고 싶다면 headless와 no-sandbox 옵션을 주석처리 해주면 된다.</span>
 <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+
+<span class="c"># headless 옵션 설정</span>
 <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'headless'</span><span class="p">)</span>
-<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'window-size=1920x1080'</span><span class="p">)</span>
-<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"disable-gpu"</span><span class="p">)</span>
 <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"no-sandbox"</span><span class="p">)</span>
 
-<span class="c"># chrome webdriver 로드</span>
+<span class="c"># 브라우저 윈도우 사이즈</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'window-size=1920x1080'</span><span class="p">)</span>
+
+<span class="c"># 사람처럼 보이게 하는 옵션들</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"disable-gpu"</span><span class="p">)</span>   <span class="c"># 가속 사용 x</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">"lang=ko_KR"</span><span class="p">)</span>    <span class="c"># 가짜 플러그인 탑재</span>
+<span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'</span><span class="p">)</span>  <span class="c"># user-agent 이름 설정</span>
+
+<span class="c"># 드라이버 위치 경로 입력</span>
 <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="s">'./chromedriver.exe'</span><span class="p">,</span> <span class="n">chrome_options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
 
 <span class="c"># url을 이용하여 브라우저로 접속</span>

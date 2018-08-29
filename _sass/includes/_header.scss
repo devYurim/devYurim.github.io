@@ -1,7 +1,6 @@
 .site-header {
   //@extend %padding-small;
   background: $brand-color;
-  border-bottom: 1px solid $border-color;
   display: inline-block;
   float: left;
   width: 100%;
@@ -96,11 +95,14 @@
   .site-category{
     background: $brand-color;
     border-top: 1px solid $border-color;
-    margin:auto;
+    border-bottom: 1px solid $border-color;
+    margin:0 auto;
     padding:0;
     font-size:14px;
     text-align: center;
     clear:left;
+    display: inline-block;
+    width: 100%;
     }
 
     .site-category ul{
@@ -109,21 +111,21 @@
     list-style:none;
     line-height: 1.5;
     margin:0 auto;
-    padding:0;
+    text-align: center;
     display:inline-block;
     }
 
     .site-category li{
     float: left;
     display:inline;
-
+    text-align:center;
     }
 
     .site-category li a{
     background: $brand-color;
-    display:block;
+    display:inline-block;
     font-weight:normal;
-    line-height:50px;
+    line-height:58px;
     margin:0px;
     padding:0px 25px;
     text-align:center;
@@ -139,15 +141,15 @@
     .site-category li ul{
     background: rgb(109,109,109);
     display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
-    height:auto;
+    //height:auto;
     padding:0px;
     margin:0px;
     border:0px;
     position:absolute;
     width:200px;
     z-index:200;
-    /*top:1em;
-    /*left:0;*/
+    /*top:1em;*/
+    //left:0;
     }
 
     .site-category li:hover ul{
@@ -173,7 +175,7 @@
     font-size:12px;
     font-style:normal;
     margin:0px;
-    padding:0px 10px 0px 15px;
+    padding:0px 0px 0px 15px;
     text-align:left;
     }
 

@@ -7,7 +7,7 @@ tags: [Tensorflow]
 ---
 
 <br><br>
-<p>서버 사양은 <point> Ubuntu 16.04 / titan XP </point> 이고, 설치할 버전은 <point> CUDA 9.0 / cuDNN 7.0 </point> 이다.</p>
+서버 사양은 <point> Ubuntu 16.04 / titan XP </point> 이고, 설치할 버전은 <point> CUDA 9.0 / cuDNN 7.0 </point> 이다.
 <br><br>
 
 > <subtitle> 1. NVIDIA 드라이버 설치 확인 및 Compute Capability 확인
@@ -30,12 +30,11 @@ CUDA 설치 이전에 GPU의 <point>Compute Capability</point>를 지원하는 �
 <center><img src="https://user-images.githubusercontent.com/20412850/40532263-d5c04a14-6039-11e8-9e01-0666d5468c77.png" width="30%"><br>NVIDIA 홈페이지  - CUDA-Enabled GeForce Products 발췌</center>
 <br><br>
 
-CUDA 9.0 버전은 **Compute capability 3.0~7.x** 까지 지원한다.<br><br>
+CUDA 9.0 버전은 <point>Compute capability 3.0~7.x</point> 까지 지원한다.<br><br>
 
 
 > <subtitle> 2. 패키지 리스트 추가
 
-<br>
 
 아래의 명령어로 패키지 소스 리스트를 추가하고 업데이트 한다.<br>
 
@@ -53,7 +52,6 @@ $ sudo apt-get update
 
 > <subtitle> 3. CUDA 9.0 설치
 
-<br>
 아래의 명령어를 이용하여 <point>CUDA 9.0</point>을 설치한다.<br>
 
 {% highlight shell %}
@@ -63,7 +61,6 @@ $ sudo apt-get install cuda-9-0
 
 > <subtitle> 4. cuDNN 7.0 설치
 
-<br>
 아래의 명령어를 이용하여 <point>cuDNN 7.0</point>을 설치한다.<br>
 
 {% highlight shell %}
@@ -74,19 +71,19 @@ $ sudo apt-get install libcudnn7-dev
 > <subtitle> 5. 버전 확인
 
 * CUDA 설치 확인
-<br>
+
 {% highlight shell %}
 $ cat /usr/local/cuda/version.txt
 {% endhighlight %}
 <br>
 
 * cuDNN 설치 확인
-<br>
+
 {% highlight shell %}
 $ cat /usr/include/cudnn.h | grep -E "CUDNN_MAJOR|CUDNN_MINOR|CUDNN_PATCHLEVEL"
 {% endhighlight %}
 
-<br><br>
+<br><br><br>
 
 > <subtitle> refernece
 

@@ -67,6 +67,7 @@ theme_settings:
   # Post navigation
   post_navigation: true
 
+encoding: 'utf-8'
 # Configure the plugin here
 category_path: "category" # <- default value
 category_layout: "category.html" # <- default value
