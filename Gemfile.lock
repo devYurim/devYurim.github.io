@@ -55,7 +55,7 @@ GEM
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
-    rake (10.5.0)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -67,7 +67,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -76,8 +75,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.12)
   jekyll-theme-type!
-  rake (~> 10.0)
-  wdm (>= 0.1.0)
+  rake (~> 12.3)
 
 BUNDLED WITH
    1.16.4
